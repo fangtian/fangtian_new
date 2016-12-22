@@ -2090,6 +2090,10 @@ footer .copyright {
   -webkit-animation-name: fadeInRotate;
   animation-name: fadeInRotate;
 }
+.zoomInSmall.active {
+  -webkit-animation-name: zoomInSmall;
+  animation-name: zoomInSmall;
+}
 /*some keyframes*/
 @-webkit-keyframes fadeInLeftSm {
   0% {
@@ -2251,6 +2255,7 @@ footer .copyright {
     transform: translateX(0px) rotate(0deg);
   }
 }
+/*animation-delay*/
 .delay-02 {
   -webkit-animation-delay: .2s;
   animation-delay: .2s;
