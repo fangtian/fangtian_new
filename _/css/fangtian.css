@@ -998,10 +998,32 @@ header #dropdown-wx-menu .wx_desc {
   padding-top: 10px;
 }
 #course .course_list .classitem .btn {
-  margin: 5px 0px;
+  margin: 5px 5px;
 }
 #course .course_list .classitem .thumbnail {
   margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  #course .course_list .classitem {
+    position: relative;
+  }
+  #course .course_list .classitem .badge {
+    position: absolute;
+    right: 5%;
+    bottom: 45px;
+  }
+  #course .course_list .classitem .btn-center {
+    text-align: center;
+    margin: 0px auto;
+  }
+  #course .course_list .classitem .btn-center .btn {
+    width: 45%;
+  }
+}
+@media (max-width: 991px) and (max-width: 767px) {
+  #course .course_list .classitem .btn-center {
+    margin: 5px 8px;
+  }
 }
 #course .course_title {
   padding: 5px 5px 0;

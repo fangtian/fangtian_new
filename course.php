@@ -30,10 +30,21 @@
       <section class="col-lg-10 clearfix">
         <div class="query_zone clearfix">
           <div class="key clearfix">
-            <div class="col-sm-3 col-xs-6"><span data-toggle="collapse" data-target="#location" class="btn btn-info" id="key-location">所在地</span><button id = "location-close" type="button" class="close hidden" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
-            <div class="col-sm-3 col-xs-6"><span data-toggle="collapse" data-target="#level" class="btn btn-info">年级</span></div>
-            <div class="col-sm-3 col-xs-6"><span data-toggle="collapse" data-target="#method" class="btn btn-info">授课方式</span></div>
-            <div class="col-sm-3 col-xs-6"><span data-toggle="collapse" data-target="#subject" class="btn btn-info">科目</span></div>
+            <div class="col-sm-3 col-xs-6">
+                <span data-toggle="collapse" data-target="#location" class="btn btn-info" id="key-location">所在地</span>
+                <button id = "location-close" type="button" class="close hidden" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            <div class="col-sm-3 col-xs-6">
+                <span data-toggle="collapse" data-target="#level" class="btn btn-info">年级</span>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <span data-toggle="collapse" data-target="#method" class="btn btn-info">授课方式</span>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <span data-toggle="collapse" data-target="#subject" class="btn btn-info">科目</span>
+              </div>
 
           </div>
 
@@ -89,7 +100,7 @@
         <div class="course_list">
           <div class="classitem">
             <div class="row">
-              <div class="col-md-2">
+              <div class="col-md-2 clearfix">
                 <div class="course_img">
                   <a href="#" class="thumbnail">
                   <img src="_/images/course_icon.jpg" alt="...">
@@ -123,18 +134,21 @@
               </div>
               <div class="col-md-2">
                 <span class="badge">学位<br>97人</span>
-                <button class="btn btn-info" type="button">
+                <div class="btn-center">
+                   <button class="btn btn-info" type="button">
                   我要试听
-                </button>
-                <button class="btn btn-danger" type="button">
-                  马上报名
-                </button>
+                  </button>
+                  <button class="btn btn-danger" type="button">
+                    马上报名
+                  </button>
+                </div>
+               
               </div>
               
             </div>
           </div><div class="classitem">
             <div class="row">
-              <div class="col-md-2">
+              <div class="col-md-2 clearfix">
                 <div class="course_img">
                   <a href="#" class="thumbnail">
                   <img src="_/images/course_icon.jpg" alt="...">
@@ -167,13 +181,11 @@
                 </div>
               </div>
               <div class="col-md-2">
-                <span class="badge">97人</span>
-                <button class="btn btn-info" type="button">
-                  我要试听
-                </button>
-                <button class="btn btn-info" type="button">
-                  马上报名
-                </button>
+                <span class="badge">学位<br>97人</span>
+                <div class="btn-center">
+                  <button class="btn btn-info" type="button">我要试听</button>
+                  <button class="btn btn-danger" type="button">马上报名</button>
+                </div>
               </div>
               
             </div>

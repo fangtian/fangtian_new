@@ -910,10 +910,29 @@ header {
                 padding-top: 10px;
             }
             .btn {
-                margin: 5px 0px;
+                margin: 5px 5px;
             }
             .thumbnail {
                 margin-bottom: 0;
+            }
+            @media (max-width: @screen-sm-max) {
+                position: relative;
+                .badge {
+                    position: absolute;
+                    right: 5%;
+                    bottom: 45px;
+                }
+                .btn-center {
+                    
+                    text-align: center;
+                    margin: 0px auto;
+                    .btn{
+                        width: 45%;
+                    }
+                    @media (max-width: @screen-xs-max) {
+                        margin: 5px 8px;
+                    }
+                }
             }
         }
     }
