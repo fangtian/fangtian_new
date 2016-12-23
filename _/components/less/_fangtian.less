@@ -27,8 +27,8 @@ header {
     // background: url(../images/header.jpg) no-repeat fixed 50% 0% transparent;
     // height: 350px;
     // @media (max-width: @screen-xs-max) {
-    // 	background: url(../images/header_xs.jpg) no-repeat fixed 50% 0% transparent;
-    // 	height: 200px;
+    //  background: url(../images/header_xs.jpg) no-repeat fixed 50% 0% transparent;
+    //  height: 200px;
     // }
     .navbar-default .navbar-nav > li > a:hover,
     .navbar-default .navbar-nav > li > a:focus {
@@ -714,10 +714,10 @@ header {
         background-color: @brand-info;
         color: white;
         // p {
-        // 	color: lighten(@gray, 20%);
+        //  color: lighten(@gray, 20%);
         // }
         // p.marker {
-        // 	color: @brand-warning;
+        //  color: @brand-warning;
         // }
         .addressphone {
             margin-bottom: 30px;
@@ -959,7 +959,7 @@ header {
             color: @gray;
         }
         // form {
-        // 	margin-top: 20px;
+        //  margin-top: 20px;
         // }
     }
     .upload_img {
@@ -1905,6 +1905,16 @@ footer {
         font-size: 13px;
         line-height: 16px;
         letter-spacing: 2px;
+        i {
+            font-style: normal;
+        }
+        @media (max-width: @screen-xs-max) {
+            span {
+                display: block;
+                margin: 10px auto;
+                width: 250px;
+            }
+        }
     }
 }
 
@@ -1972,15 +1982,16 @@ footer {
     -webkit-animation-name: fadeInUpSmall;
     animation-name: fadeInUpSmall;
 }
-.fadeInRotate.active{
-	-webkit-animation-name: fadeInRotate;
+
+.fadeInRotate.active {
+    -webkit-animation-name: fadeInRotate;
     animation-name: fadeInRotate;
 }
-.zoomInSmall.active{
-	-webkit-animation-name: zoomInSmall;
+
+.zoomInSmall.active {
+    -webkit-animation-name: zoomInSmall;
     animation-name: zoomInSmall;
 }
-
 
 
 /*some keyframes*/
@@ -2040,20 +2051,23 @@ footer {
         transform: scale(1);
     }
 }
-@keyframes fadeInRotate{
-	0%{
-		opacity: 1;
-		transform-origin:center center;
-		transform: translateX(-150px) rotate(-360deg);
-	}	
-	100%{
-		opacity: 1;
-		transform-origin:center center;
-		transform: translateX(0px) rotate(0deg);
-	}
+
+@keyframes fadeInRotate {
+    0% {
+        opacity: 1;
+        transform-origin: center center;
+        transform: translateX(-150px) rotate(-360deg);
+    }
+    100% {
+        opacity: 1;
+        transform-origin: center center;
+        transform: translateX(0px) rotate(0deg);
+    }
 }
 
+
 /*animation-delay*/
+
 .delay-02 {
     animation-delay: .2s;
 }
@@ -2069,9 +2083,11 @@ footer {
 .delay-08 {
     animation-delay: .8s;
 }
+
 .delay-1 {
     animation-delay: 1s;
 }
-.delay-2{
+
+.delay-2 {
     animation-delay: 2s;
 }

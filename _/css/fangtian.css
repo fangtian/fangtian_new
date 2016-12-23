@@ -2025,6 +2025,16 @@ footer .copyright {
   line-height: 16px;
   letter-spacing: 2px;
 }
+footer .copyright i {
+  font-style: normal;
+}
+@media (max-width: 767px) {
+  footer .copyright span {
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+  }
+}
 #back-top {
   display: none;
 }
