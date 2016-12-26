@@ -249,7 +249,13 @@ header #dropdown-wx-menu .wx_desc {
   min-height: 250px;
   margin-bottom: 10px;
 }
-#home #homecontainer .about .info_wrap h4::after {
+#home #homecontainer .about .info_wrap .title {
+  color: #888888;
+}
+#home #homecontainer .about .info_wrap .sub_title {
+  position: relative;
+}
+#home #homecontainer .about .info_wrap .sub_title h4::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -257,10 +263,7 @@ header #dropdown-wx-menu .wx_desc {
   width: 100px;
   height: 2px;
   background: #b93e3e;
-  margin: -50px 0 150px -50px;
-}
-#home #homecontainer .about .info_wrap .title {
-  color: #888888;
+  margin: 0px 0 -10px -50px;
 }
 #home #homecontainer .about .info_wrap .box_txt {
   padding-top: 20px;
@@ -714,18 +717,21 @@ header #dropdown-wx-menu .wx_desc {
   min-height: 350px;
   background: transparent;
 }
-#about .title {
-  margin: 10px;
+#about .caption {
+  width: 100%;
   position: absolute;
   top: 200px;
-  color: #777777;
 }
 @media (max-width: 767px) {
-  #about .title {
+  #about .caption {
     top: 100px;
   }
 }
-#about .title h1 {
+#about .title {
+  margin: 10px auto;
+  color: #777777;
+}
+#about .title h3 {
   letter-spacing: 10px;
   margin-bottom: 20px;
 }

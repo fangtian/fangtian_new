@@ -59,9 +59,11 @@ header {
         border-bottom: 1px solid #f0f0f0;
     }
     .navbar .container .navbar-brand {
+        
         background-image: url(../images/logo_b.png), none;
         background-repeat: no-repeat;
         background-size: 100%;
+
         height: 42px;
         width: 150px;
         padding: 0;
@@ -253,18 +255,21 @@ header {
                 padding: 0 20px;
                 min-height: 250px;
                 margin-bottom: 10px;
-                h4::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: 50%;
-                    width: 100px;
-                    height: 2px;
-                    background: #b93e3e;
-                    margin: -50px 0 150px -50px;
-                }
                 .title {
                     color: lighten(@gray, 20%);
+                }
+                .sub_title {
+                    position: relative;
+                    h4::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        width: 100px;
+                        height: 2px;
+                        background: #b93e3e;
+                        margin: 0px 0 -10px -50px;
+                    }
                 }
                 .box_txt {
                     padding-top: 20px;
@@ -645,15 +650,20 @@ header {
         min-height: 350px;
         background: transparent;
     }
-    .title {
-        margin: 10px;
+    .caption{
+        width: 100%;
         position: absolute;
         top: 200px;
+        
         @media (max-width: @screen-xs-max) {
             top: 100px;
         }
+    }
+    .title {
+        margin: 10px auto;
+
         color: @gray-light;
-        h1 {
+        h3 {
             letter-spacing: 10px;
             margin-bottom: 20px;
         }
@@ -923,10 +933,9 @@ header {
                     bottom: 45px;
                 }
                 .btn-center {
-                    
                     text-align: center;
                     margin: 0px auto;
-                    .btn{
+                    .btn {
                         width: 45%;
                     }
                     @media (max-width: @screen-xs-max) {
