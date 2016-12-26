@@ -947,6 +947,13 @@ header #dropdown-wx-menu .wx_desc {
   #course {
     margin-top: 50px;
   }
+  #course * {
+    margin: 0;
+    padding: 0;
+  }
+  #course .container {
+    padding: 0 5px;
+  }
 }
 #course .query_zone {
   margin-top: 20px;
@@ -1003,32 +1010,44 @@ header #dropdown-wx-menu .wx_desc {
   min-height: 60px;
   padding-top: 10px;
 }
+#course .course_list .classitem .col-sm-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 #course .course_list .classitem .btn {
-  margin: 5px 5px;
+  margin: 5px 5px 0 0;
 }
 #course .course_list .classitem .thumbnail {
   margin-bottom: 0;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   #course .course_list .classitem {
-    position: relative;
+    padding: 5px;
+  }
+  #course .course_list .classitem .detail {
+    padding-left: 15px;
+  }
+  #course .course_list .classitem .detail h4 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  #course .course_list .classitem .detail p {
+    margin-top: 5px;
   }
   #course .course_list .classitem .badge {
-    position: absolute;
-    right: 5%;
-    bottom: 45px;
+    display: block;
+    margin: 5px auto;
   }
   #course .course_list .classitem .btn-center {
     text-align: center;
-    margin: 0px auto;
   }
   #course .course_list .classitem .btn-center .btn {
-    width: 45%;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
   }
-}
-@media (max-width: 991px) and (max-width: 767px) {
-  #course .course_list .classitem .btn-center {
-    margin: 5px 8px;
+  #course .course_list .classitem .btn-center :last-child {
+    margin-left: 20px;
   }
 }
 #course .course_title {

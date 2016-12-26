@@ -59,11 +59,9 @@ header {
         border-bottom: 1px solid #f0f0f0;
     }
     .navbar .container .navbar-brand {
-        
         background-image: url(../images/logo_b.png), none;
         background-repeat: no-repeat;
         background-size: 100%;
-
         height: 42px;
         width: 150px;
         padding: 0;
@@ -650,18 +648,16 @@ header {
         min-height: 350px;
         background: transparent;
     }
-    .caption{
+    .caption {
         width: 100%;
         position: absolute;
         top: 200px;
-        
         @media (max-width: @screen-xs-max) {
             top: 100px;
         }
     }
     .title {
         margin: 10px auto;
-
         color: @gray-light;
         h3 {
             letter-spacing: 10px;
@@ -863,6 +859,13 @@ header {
     background-color: @gray-lighter;
     margin-top: 90px;
     @media (max-width: @screen-xs-max) {
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 0 5px;
+        }
         margin-top: 50px;
     }
     .query_zone {
@@ -919,27 +922,41 @@ header {
                 min-height: 60px;
                 padding-top: 10px;
             }
+            .col-sm-2 {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
             .btn {
-                margin: 5px 5px;
+               margin: 5px 5px 0 0;
             }
             .thumbnail {
                 margin-bottom: 0;
             }
-            @media (max-width: @screen-sm-max) {
-                position: relative;
+            @media (max-width: @screen-xs-max) {
+                padding: 5px;
+                .detail {
+                    padding-left: 15px;
+                    h4 {
+                        margin-bottom: 5px;
+                        margin-top: 5px;
+                    }
+                    p {
+                        margin-top: 5px;
+                    }
+                }
                 .badge {
-                    position: absolute;
-                    right: 5%;
-                    bottom: 45px;
+                    display: block;
+                    margin: 5px auto;
                 }
                 .btn-center {
                     text-align: center;
-                    margin: 0px auto;
                     .btn {
-                        width: 45%;
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 60px;
                     }
-                    @media (max-width: @screen-xs-max) {
-                        margin: 5px 8px;
+                    :last-child {
+                        margin-left: 20px;
                     }
                 }
             }
