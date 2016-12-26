@@ -121,141 +121,51 @@ header #dropdown-wx-menu .wx_desc {
   text-decoration: none;
 }
 #home #homecontainer .intro {
-  padding: 70px 0 0px;
-  background-color: #27272b;
-  color: white;
-  background-image: url("../images/node-top.png");
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-size: 1280px 120px;
-  z-index: 2;
-  position: relative;
-}
-#home #homecontainer .intro .jumbotron {
-  background-color: transparent;
-  padding: 0;
-  background-size: 10%;
   text-align: center;
+  background-image: url(../images/bg-index-body.jpg);
+  background-repeat: repeat;
 }
-#home #homecontainer .intro .jumbotron a {
-  -webkit-border-radius: 0px;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 0px;
-  -moz-background-clip: padding;
-  border-radius: 0px;
-  background-clip: padding-box;
-  width: 250px;
-}
-#home #homecontainer .intro .jumbotron h2 {
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
-  -webkit-font-smoothing: antialiased;
-  margin: 10px 0 20px;
-  font-weight: normal;
-  letter-spacing: 0.2em;
-}
-#home #homecontainer .intro .jumbotron .lead {
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
-  margin-bottom: 50px;
-  letter-spacing: 0.3em;
-}
-#home #homecontainer .stats {
-  min-height: 320px;
-  background: url("../images/node-bottom.png") no-repeat 40% 50%;
-  background-color: #27272b;
-  padding: 0 0 55px;
-  color: white;
-  position: relative;
-  background-size: 1600px 344px;
-  margin-top: -40px;
-}
-#home #homecontainer .stats .container {
-  position: relative;
-  top: 40px;
-}
-#home #homecontainer .stats a {
-  background-color: transparent;
-}
-#home #homecontainer .stats a:hover {
-  background: #de4f4f;
-}
-#home #homecontainer .stats a.stat {
-  cursor: pointer;
-}
-#home #homecontainer .stats .stat {
-  position: absolute;
-  width: 68px;
-  height: 68px;
-  background-color: #27272b;
-  -webkit-border-radius: 150px;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 150px;
-  -moz-background-clip: padding;
-  border-radius: 150px;
-  background-clip: padding-box;
-  border: 2px solid #de4f4f;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  color: white;
-  text-decoration: none;
-}
-#home #homecontainer .stats .events-stat {
-  left: 15%;
-  top: 55px;
-}
-#home #homecontainer .stats .packages-stat {
-  right: 35%;
-  top: 72px;
-}
-#home #homecontainer .stats .stackoverflow-stat {
-  left: 35%;
-  top: 135px;
-}
-#home #homecontainer .stats .installs-stat {
-  right: 15%;
-  top: 100px;
-}
-@media (max-width: 991px) {
-  #home #homecontainer .stats {
-    min-height: 250px;
-    margin-top: 0;
+@media (min-width: 768px) {
+  #home #homecontainer .intro .delay-04 {
+    padding: 60px 0px;
   }
-  #home #homecontainer .stats .events-stat {
-    left: 20%;
-    top: -20px;
+  #home #homecontainer .intro .title {
+    padding: 60px 10px;
   }
-  #home #homecontainer .stats .packages-stat {
-    right: 20%;
-    top: -20px;
-  }
-  #home #homecontainer .stats .stackoverflow-stat {
-    left: 20%;
-    top: 90px;
-  }
-  #home #homecontainer .stats .installs-stat {
-    right: 20%;
-    top: 90px;
+  #home #homecontainer .intro .title .delay-08 {
+    margin-top: 60px;
   }
 }
-#home #homecontainer .stats span.value {
-  display: block;
-  line-height: 68px;
-  text-align: center;
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
-  font-size: 16px;
+#home #homecontainer .intro .delay-04 {
+  padding: 20px 0px;
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
 }
-#home #homecontainer .stats span.stat-title {
-  display: block;
-  width: 100px;
-  text-align: center;
-  margin-left: -16px;
-  margin-top: 7px;
-  letter-spacing: 1px;
-  font-size: 12px;
+#home #homecontainer .intro .delay-04 img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
-#home #homecontainer .stats span.stat-title:hover {
-  color: #de4f4f;
+#home #homecontainer .intro .title {
+  padding: 20px 10px;
+}
+#home #homecontainer .intro .title h2 {
+  color: #fec20b;
+  font-weight: 700;
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
+}
+#home #homecontainer .intro .title .delay-08 {
+  text-align: left;
+  margin-top: 35px;
+}
+@media (max-width: 767px) {
+  #home #homecontainer .intro .title .delay-08 {
+    text-align: center;
+  }
+}
+#home #homecontainer .intro .title .more-info {
+  margin-top: 35px;
 }
 #home #homecontainer .about {
   padding: 0px 0 60px;
@@ -1096,7 +1006,7 @@ header #dropdown-wx-menu .wx_desc {
     margin-top: 5px;
   }
   #course .course_list .classitem .detail p {
-    margin-top: 5px;
+    margin: 5px 0 0;
   }
   #course .course_list .classitem .badge {
     display: block;

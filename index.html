@@ -138,7 +138,7 @@
     <!-- homecontainer star -->
     <section id="homecontainer">
         <!-- video star -->
-        <section class="video">
+        <section class="video hidden-xs">
             <video class="bg" poster="_/images/desk.jpg" autoplay loop>
                 <source src="bg.mp4" type="video/mp4">
                 <source src="bg.webm" type="video/webm">
@@ -168,71 +168,50 @@
         </section>
         <!-- swiper banner end-->
         <!-- intro star -->
-        <section class="intro">
+        <section class="intro  clearfix">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="jumbotron view-animate fadeInLeftSm delay-02">
-                            <h2>最精彩的直播课堂</h2>
-                            <p class="lead view-animate fadeInRightSm delay-04">时间省·效率高·互动多<span class="hidden-xs">·</span> 趣味强·数据真·名师广</p>
-                            <a href="/install" id="install-meteor-btn" class="btn btn-danger btn-lg btn-invert view-animate fadeInUpSmall delay-06" role="button">马上报名</a>
-                            <div class="social-buttons" id="homepage-social-buttons">
-                                <!-- to be replaced with #homepage-social-buttons-cache once it's ready -->
-                            </div>
-                        </div>
+                <div class="col-sm-7 view-animate fadeInRightSm delay-04 clearfix">
+                    <img src="_/images/fangtian_whatwedo.jpg" width="480" height="320" alt="">
+                </div>
+                <div class="col-sm-5 title">
+                    <h2 class="view-animate fadeInLeftSm ">我们做什么</h2>
+                    <div class="view-animate fadeInLeftSm delay-08">
+                        <p>方田致力于为6-18岁的孩子提供高品质的线下和在线课外辅导，在合肥成立7个月以来，已成为合肥45中、48中、50中、科大附中、寿春中学等学校家长和学生最信赖的中小学课外辅导品牌。
+                        </p>
+                    </div>
+                    <div class=" view-animate fadeInLeftSm delay-1 more-info">
+                        <a href="history.html" class="btn btn-ellipse btn-icon btn-icon-right btn-default">
+                            <span>更多信息</span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <!-- /.container -->
         </section>
         <!-- intro end -->
-        <!-- stats star -->
-        <section class="stats">
-            <div class="container stats-container">
-                <a href="savetime.html" class="stat events-stat view-animate fadeInRotate delay-1">
-                    <span class="value">100小时</span>
-                    <span class="stat-title view-animate fadeInUpSmall delay-2">全年节省</span>
-                </a>
-                <a href="teachers.html" class="stat stackoverflow-stat  view-animate fadeInRotate delay-1">
-                    <span class="value">3年</span>
-                    <span class="stat-title view-animate fadeInUpSmall delay-2">所有老师<br>三年教学经验</span>
-                </a>
-                <a href="course.html" class="stat packages-stat  view-animate fadeInRotate delay-1">
-                    <span class="value">9.9元</span>
-                    <span class="stat-title view-animate fadeInUpSmall delay-2">上完暑假课</span>
-                </a>
-                <a href="notebook.html" class="stat installs-stat  view-animate fadeInRotate delay-1 ">
-                    <span class="value">1个</span>
-                    <span class="stat-title view-animate fadeInUpSmall delay-2">个人专属错题本</span>
-                </a>
-            </div>
-        </section>
-        <!-- stats end-->
+       
         <!-- newsbanner star -->
         <section class="news">
             <div class="container">
                 <div class="swiper-news swiper-container" id="swiper">
-                <div class="swiper-wrapper">
-                    <div class="item swiper-slide" >
-                       <li><a href="">论坛新闻1</a></li> 
+                    <div class="swiper-wrapper">
+                        <div class="item swiper-slide">
+                            <li><a href="">论坛新闻1</a></li>
+                        </div>
+                        <!-- swiper-slide -->
+                        <div class="item swiper-slide">
+                            <li><a href="">论坛新闻2</a></li>
+                        </div>
+                        <!-- swiper-slide -->
+                        <div class="item swiper-slide">
+                            <li><a href="">论坛新闻3</a></li>
+                        </div>
+                        <!-- livecourse_item -->
                     </div>
-                    <!-- swiper-slide -->
-                    <div class="item swiper-slide" >
-                        <li><a href="">论坛新闻2</a></li> 
-                    </div>
-                    <!-- swiper-slide -->
-                    <div class="item swiper-slide" >
-                        <li><a href="">论坛新闻3</a></li> 
-                    </div>
-                    <!-- livecourse_item -->
+                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
                 </div>
-                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
-            </div>
-
             </div>
         </section>
         <!-- newsbanner end -->
-
         <!-- about star-->
         <section class="about">
             <div class="container">
@@ -478,7 +457,7 @@
         autoplay: 3000, //可选选项，自动滑动
         loop: true,
         direction: 'vertical',
-       
+
     })
 
 
