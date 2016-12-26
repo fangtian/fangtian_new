@@ -95,7 +95,6 @@ header {
 #home {
     #homecontainer {
         .video {
-            margin-top: 90px;
             height: 100vh;
             width: 100%;
             overflow: hidden;
@@ -103,6 +102,41 @@ header {
                 // background: url(../../images/slide.jpg);
                 min-width: 100%;
                 min-height: 100%;
+            }
+        }
+        .banner {
+            width: 100%;
+            height: 150px;
+            .swiper-banner {
+                width: 100%;
+                height: 100%;
+                .swiper-wrapper {
+                    text-align: center;
+                    a {
+                        display: inline-block;
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+        .news {
+            margin-top: 10px;
+            height: 24px;
+            overflow: hidden;
+            .swiper-news {
+                width: 100%;
+                height: 24px;
+                border-bottom: 1px solid #ccc;
+                .swiper-wrapper {
+                    li{
+                        line-height: 24px;
+                        font-size: 14px;
+                        margin-left: 10px;
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                }
             }
         }
         .intro {
@@ -233,9 +267,9 @@ header {
             }
         }
         .about {
-            padding: 54px 0 60px;
+            padding: 0px 0 60px;
             @media (max-width: @screen-xs-max) {
-                padding: 30px 0 30px;
+                padding: 0px 0 30px;
             }
             font-family: @font-family-fangtian;
             color: @gray;
@@ -305,14 +339,16 @@ header {
             }
         }
         @media (max-width: @screen-xs-max) {
+            margin-top: 50px;
             .video {
-                margin-top: 51px;
+                display: none;
+                /* margin-top: 51px;
                 background: url(../images/desk.jpg) no-repeat;
                 background-size: 100% 200px;
                 max-height: 200px;
                 video {
                     display: none;
-                }
+                }*/
             }
             .intro {
                 padding: 20px 0 0;
@@ -862,6 +898,10 @@ header {
         * {
             margin: 0;
             padding: 0;
+            .key>div {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
         }
         .container {
             padding: 0 5px;
@@ -893,6 +933,10 @@ header {
         }
         .btn {
             margin-bottom: 10px;
+            @media (max-width: @screen-xs-max) {
+                margin: 5px auto;
+                padding: 5px;
+            }
         }
     }
     .course_list {
@@ -903,14 +947,34 @@ header {
             margin-bottom: 10px;
             color: @gray;
             background-color: white;
-            h4 {
-                text-align: center;
-                font-size: 16px;
-                margin-bottom: 10px;
-                margin-top: 10px;
+            .detail {
+                h4 {
+                    text-align: center;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+                p {
+                    margin: 10px 0;
+                }
             }
-            img {
-                min-width: 100%;
+            .course_img {
+                img {
+                    min-width: 100%;
+                }
+            }
+            .course_title {
+                padding: 5px 5px 0;
+                text-align: center;
+                margin-top: 5px;
+                h5 {
+                    padding: 5px;
+                    margin-bottom: 0;
+                    margin: 0px 15px;
+                    @media (max-width: @screen-xs-max) {
+                        margin: 0px;
+                    }
+                }
             }
             .badge {
                 font-size: 20px;
@@ -927,7 +991,7 @@ header {
                 padding-right: 5px;
             }
             .btn {
-               margin: 5px 5px 0 0;
+                margin: 5px 5px 0 0;
             }
             .thumbnail {
                 margin-bottom: 0;
@@ -960,14 +1024,6 @@ header {
                     }
                 }
             }
-        }
-    }
-    .course_title {
-        padding: 5px 5px 0;
-        text-align: center;
-        h5 {
-            padding: 5px 0;
-            margin-bottom: 0;
         }
     }
     .teachers {

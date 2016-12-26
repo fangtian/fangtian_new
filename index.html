@@ -146,6 +146,28 @@
             </video>
         </section>
         <!-- video end -->
+        <!-- swiper banner star-->
+        <section class="banner visible-xs">
+            <div class="swiper-banner swiper-container" id="swiper">
+                <div class="swiper-wrapper">
+                    <div class="item swiper-slide" style="background-color: #F1C40F">
+                        <a href="">banner1</a>
+                    </div>
+                    <!-- swiper-slide -->
+                    <div class="item swiper-slide" style="background-color: #1CBDDD">
+                        <a href="">banner2</a>
+                    </div>
+                    <!-- swiper-slide -->
+                    <div class="item swiper-slide" style="background-color: #18A15F">
+                        <a href="">banner3</a>
+                    </div>
+                    <!-- livecourse_item -->
+                </div>
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+            </div>
+        </section>
+        <!-- swiper banner end-->
+        <!-- intro star -->
         <section class="intro">
             <div class="container">
                 <div class="row">
@@ -163,14 +185,14 @@
             </div>
             <!-- /.container -->
         </section>
-        <!-- intro -->
+        <!-- intro end -->
+        <!-- stats star -->
         <section class="stats">
             <div class="container stats-container">
                 <a href="savetime.html" class="stat events-stat view-animate fadeInRotate delay-1">
                     <span class="value">100小时</span>
                     <span class="stat-title view-animate fadeInUpSmall delay-2">全年节省</span>
                 </a>
-                
                 <a href="teachers.html" class="stat stackoverflow-stat  view-animate fadeInRotate delay-1">
                     <span class="value">3年</span>
                     <span class="stat-title view-animate fadeInUpSmall delay-2">所有老师<br>三年教学经验</span>
@@ -185,7 +207,33 @@
                 </a>
             </div>
         </section>
-        <!-- stats -->
+        <!-- stats end-->
+        <!-- newsbanner star -->
+        <section class="news">
+            <div class="container">
+                <div class="swiper-news swiper-container" id="swiper">
+                <div class="swiper-wrapper">
+                    <div class="item swiper-slide" >
+                       <li><a href="">论坛新闻1</a></li> 
+                    </div>
+                    <!-- swiper-slide -->
+                    <div class="item swiper-slide" >
+                        <li><a href="">论坛新闻2</a></li> 
+                    </div>
+                    <!-- swiper-slide -->
+                    <div class="item swiper-slide" >
+                        <li><a href="">论坛新闻3</a></li> 
+                    </div>
+                    <!-- livecourse_item -->
+                </div>
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+            </div>
+
+            </div>
+        </section>
+        <!-- newsbanner end -->
+
+        <!-- about star-->
         <section class="about">
             <div class="container">
                 <div class="row">
@@ -239,7 +287,7 @@
                 </div>
             </div>
         </section>
-        <!-- about -->
+        <!-- about end -->
         <section class="livecourse">
             <div class="container">
                 <div class="row">
@@ -250,7 +298,7 @@
                     </div>
                 </div>
                 <!-- row -->
-                <div class="swiper-container" id="swiper">
+                <div class="swiper-container swiper-class" id="swiper">
                     <div id="swiper-fangtian" class="swiper-wrapper">
                         <div class="item swiper-slide">
                             <a class="item_link" href="#" title="四升五暑期基础班">
@@ -399,7 +447,7 @@
     // swiper
     // ---------------------------------------------------------
 
-    var mySwiper = new Swiper('.swiper-container', {
+    var mySwiper = new Swiper('.swiper-class', {
         autoplay: 3000, //可选选项，自动滑动
         loop: true,
         slidesPerView: 4,
@@ -420,12 +468,33 @@
             }
         }
     })
+    var bannerSwiper = new Swiper('.swiper-banner', {
+        autoplay: 3000, //可选选项，自动滑动
+        loop: true,
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    })
+    var bannerSwiper = new Swiper('.swiper-news', {
+        autoplay: 3000, //可选选项，自动滑动
+        loop: true,
+        direction: 'vertical',
+       
+    })
+
+
+
+
+
+
 
     var plugins = {
 
         viewAnimate: $('.view-animate'),
 
     };
+
+
+
     $(document).ready(function() {
         function isScrolledIntoView(elem) {
             var $window = $(window);
