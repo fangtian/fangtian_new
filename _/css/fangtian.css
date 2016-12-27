@@ -229,13 +229,13 @@ header #dropdown-wx-menu .wx_desc {
   }
 }
 #home #homecontainer .our .container .range-content .content_l {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 @media (min-width: 992px) {
   #home #homecontainer .our .container .range-content .content_l {
-    padding-top: 114px;
-    padding-bottom: 114px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     padding-right: 70px;
   }
 }
@@ -264,8 +264,12 @@ header #dropdown-wx-menu .wx_desc {
   }
 }
 #home #homecontainer .our .container .range-content .content_l .tile .range {
-  margin-top: 65px;
+  margin-top: 30px;
   text-align: center;
+}
+#home #homecontainer .our .container .range-content .content_l .tile .singup {
+  text-align: center;
+  margin-top: 30px;
 }
 #home #homecontainer .about {
   background: #3eb2cf;
