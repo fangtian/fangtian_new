@@ -338,7 +338,7 @@ header #dropdown-wx-menu .wx_desc {
 #home #homecontainer .our .container .range-content .content_l .tile .range .stats .stats_l .glyphicon {
   color: #3eb2cf;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 61px;
 }
 #home #homecontainer .our .container .range-content .content_l .tile .range .stats .stats_r {
   padding: 0;
@@ -437,6 +437,27 @@ header #dropdown-wx-menu .wx_desc {
   #home #homecontainer .about .view-more {
     margin-top: 60px;
   }
+}
+#home #homecontainer .teacher {
+  background: #5BC0DE url(../images/main_bg.jpg);
+}
+#home #homecontainer .teacher .item {
+  padding: 40px 10px;
+}
+#home #homecontainer .teacher .item p {
+  margin-bottom: 10px;
+  color: #fff;
+}
+#home #homecontainer .teacher .item img {
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
+  float: left;
+}
+#home #homecontainer .teacher .item .teacher_n {
+  padding-top: 20px;
+  height: 70px;
+  color: #E3E3E2;
 }
 #home .forget-password {
   float: left;
@@ -2134,7 +2155,7 @@ footer .copyright i {
 }
 #back-top a {
   display: block;
-  width: 50px;
+  width: 44px;
   color: #bbb;
   text-align: center;
   text-decoration: none;
@@ -2152,8 +2173,8 @@ footer .copyright i {
   display: block;
   background-color: #e8be6c;
   margin-bottom: 7px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: #555555 url(../images/up-arrow.png) no-repeat center center;
   -webkit-transition: 1s;
   -moz-transition: 1s;

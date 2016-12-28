@@ -338,6 +338,61 @@
             </div>
         </section>
         <!-- our end -->
+        <!-- teacher star -->
+        <section class="teacher">
+            <div class="container">
+                <div class="swiper-teacher swiper-container" id="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="item swiper-slide">
+                            <p>授课特点：深入浅出，课堂节奏明朗。 </p>
+                            <p>教学宣言：有活力，有能力，有诗与书，有粉丝千百里</p>
+                            <div>
+                                <img src="_/images/yukun.png" alt="">
+                                <p class="teacher_n">
+                                    <span>俞堃</span><br>
+                                    <span>数学老师</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <p>授课特点：深入浅出，课堂节奏明朗。 </p>
+                            <p>教学宣言：有活力，有能力，有诗与书，有粉丝千百里</p>
+                            <div>
+                                <img src="_/images/yukun.png" alt="">
+                                <p class="teacher_n">
+                                    <span>俞堃</span><br>
+                                    <span>数学老师</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <p>授课特点：深入浅出，课堂节奏明朗。 </p>
+                            <p>教学宣言：有活力，有能力，有诗与书，有粉丝千百里</p>
+                            <div>
+                                <img src="_/images/yukun.png" alt="">
+                                <p class="teacher_n">
+                                    <span>俞堃</span><br>
+                                    <span>数学老师</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <p>授课特点：深入浅出，课堂节奏明朗。 </p>
+                            <p>教学宣言：有活力，有能力，有诗与书，有粉丝千百里</p>
+                            <div>
+                                <img src="_/images/yukun.png" alt="">
+                                <div class="teacher_n">
+                                    <span>俞堃</span><br>
+                                    <span>数学老师</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+                </div>
+            </div>
+        </section>
+        <!-- teacher end -->
     </section>
     <!-- homecontainer end -->
     <!-- footer star -->
@@ -372,12 +427,13 @@
     // swiper
     // ---------------------------------------------------------
 
-    var mySwiper = new Swiper('.swiper-class', {
+    var teacherSwiper = new Swiper('.swiper-teacher', {
         autoplay: 3000, //可选选项，自动滑动
         loop: true,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
         slidesPerView: 4,
         spaceBetween: 40,
-
         breakpoints: {
             1200: {
                 slidesPerView: 3,
@@ -404,30 +460,17 @@
         loop: true,
         direction: 'vertical',
 
-    })
+    });
 
-
-
-
-
-
-
-    var plugins = {
-
-        viewAnimate: $('.view-animate'),
-
-    };
-
-
-
+    var viewAnimate = $('.view-animate');
     $(document).ready(function() {
         function isScrolledIntoView(elem) {
             var $window = $(window);
             return elem.offset().top + elem.outerHeight() >= $window.scrollTop() && elem.offset().top <= $window.scrollTop() + $window.height();
         }
-        if (plugins.viewAnimate.length) {
-            for (i = 0; i < plugins.viewAnimate.length; i++) {
-                var view = $(plugins.viewAnimate[i]).not('.active');
+        if (viewAnimate.length) {
+            for (i = 0; i < viewAnimate.length; i++) {
+                var view = $(viewAnimate[i]).not('.active');
                 $(document).on("scroll", $.proxy(function() {
                     if (isScrolledIntoView(this)) {
                         this.addClass("active");
