@@ -1,5 +1,7 @@
 body {
   background: #fff;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 body .menu a {
   text-decoration: none;
@@ -104,7 +106,7 @@ header #dropdown-wx-menu .wx_desc {
     overflow: hidden;
   }
   #home #homecontainer .video .bg {
-    background: url(../../images/desk.jpg);
+    background: url(../images/desk.jpg);
     min-width: 100%;
     min-height: 100%;
   }
@@ -148,7 +150,29 @@ header #dropdown-wx-menu .wx_desc {
   background-repeat: repeat;
 }
 #home #homecontainer .intro .delay-04 {
-  padding: 20px 0px;
+  padding: 30px 0px;
+  position: relative;
+}
+#home #homecontainer .intro .delay-04 .glyphicon {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-left: -25px;
+  margin-top: -25px;
+  font-size: 50px;
+  color: white;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+}
+#home #homecontainer .intro .delay-04 .glyphicon:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 #home #homecontainer .intro .delay-04 img {
   display: inline-block;
@@ -161,21 +185,53 @@ header #dropdown-wx-menu .wx_desc {
 #home #homecontainer .intro .title h2 {
   color: #fec20b;
   font-weight: 700;
+  letter-spacing: 8px;
+  font-size: 44px;
+  font-family: KaiTi;
+}
+#home #homecontainer .intro .title h2 .first-word {
+  color: #3eb2cf;
 }
 #home #homecontainer .intro .title .delay-08 {
   text-align: center;
   margin-top: 35px;
+  color: #888888;
 }
 #home #homecontainer .intro .more-info {
   margin: 30px 0;
+  height: 50px;
+}
+#home #homecontainer .intro .more-info a {
+  display: block;
+  width: 170px;
+  height: 50px;
+  color: #3EB2CF;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-family: 微软雅黑;
+  border: 2px solid #3EB2CF;
+  line-height: 50px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#home #homecontainer .intro .more-info a span {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  #home #homecontainer .intro .more-info a {
+    margin: 0;
+  }
+}
+#home #homecontainer .intro .more-info a:hover {
+  color: white;
+  background-color: #3EB2CF;
 }
 @media (min-width: 768px) {
   #home #homecontainer .intro {
     padding-top: 70px;
     padding-bottom: 70px;
-  }
-  #home #homecontainer .intro .delay-04 {
-    padding: 60px 0px;
   }
   #home #homecontainer .intro .title {
     padding: 20px 10px;
@@ -243,6 +299,9 @@ header #dropdown-wx-menu .wx_desc {
 #home #homecontainer .our .container .range-content .content_l h2 {
   color: #fec20b;
   font-weight: 700;
+  letter-spacing: 8px;
+  font-size: 44px;
+  font-family: KaiTi;
 }
 #home #homecontainer .our .container .range-content .content_l h2 .first-word {
   color: #3eb2cf;
@@ -256,7 +315,6 @@ header #dropdown-wx-menu .wx_desc {
 }
 @media (min-width: 992px) {
   #home #homecontainer .our .container .range-content .content_l .title {
-    text-align: left;
     margin-top: 60px;
   }
 }
@@ -313,8 +371,14 @@ header #dropdown-wx-menu .wx_desc {
   padding: 20px 0;
 }
 #home #homecontainer .about h2 {
+  color: white;
   font-weight: 700;
-  color: #fff;
+  letter-spacing: 8px;
+  font-size: 44px;
+  font-family: KaiTi;
+}
+#home #homecontainer .about h2 .first-word {
+  color: #3eb2cf;
 }
 #home #homecontainer .about .aim {
   margin-top: 30px;
