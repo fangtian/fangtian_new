@@ -98,11 +98,12 @@ header {
         margin-bottom: 0px;
         font-family: @font-family-fangtian;
         border: none;
+        background: white;
         a {
             color: black;
         }
         @media (min-width: @screen-sm-min) {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0);
         }
     }
     #homecontainer {
@@ -204,7 +205,6 @@ header {
             background-image: url(../images/bg-index-body.jpg);
             background-repeat: repeat;
             overflow: hidden;
-
             .container {
                 @media (min-width: 480px) {
                     -webkit-justify-content: center;
@@ -249,6 +249,10 @@ header {
                         }
                         .title {
                             margin-top: 35px;
+                            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+                            font-size: 14px;
+                            line-height: 1.57143;
+                            color: #888888;
                             @media (min-width: @screen-md-min) {
                                 text-align: left;
                                 margin-top: 60px;
@@ -260,12 +264,40 @@ header {
                                 text-align: left;
                             }
                             .range {
-                                margin-top: 30px;
                                 text-align: center;
+                                .stats {
+                                    margin-top: 65px;
+                                    .stats_l {
+                                        padding: 0;
+                                        .glyphicon {
+                                            color: #3eb2cf;
+                                            font-size: 60px;
+                                            line-height: 60px;
+                                        }
+                                    }
+                                    .stats_r {
+                                        padding: 0;
+                                        text-align: center;
+                                        h3 {
+                                            margin-top: 0;
+                                            color: #fec20b;
+                                            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+                                        }
+                                        h6 {
+                                            width: auto;
+                                            margin: 0 auto;
+                                            font-size: 18px;
+                                            font-family: "Roboto Slab", "Times New Roman", Times, serif;
+                                            @media (min-width: @screen-sm-min) {
+                                                max-width: 140px;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                             .singup {
                                 text-align: center;
-                                margin-top: 30px;
+                                margin-top: 60px;
                             }
                         }
                     }
@@ -296,8 +328,28 @@ header {
                     .class-info {
                         max-width: 370px;
                         background: #fff;
-                        margin-left: auto;
-                        margin-right: auto;
+                        margin: 0 auto;
+                        .class-detail {
+                            padding: 10px;
+                            time {
+                                text-align: center;
+                                font-style: italic;
+                                font-size: 14px;
+                                line-height: 1.57143;
+                                color: #888888;
+                            }
+                            h4 {
+                                a {
+                                    color: #fec20b;
+                                    font-family:  "Times New Roman";
+                                }
+                            }
+                            .teacher_name{
+                                p{
+                                    font-family: Helvetica;
+                                }
+                            }
+                        }
                     }
                 }
                 @media (min-width: 480px) {
@@ -307,14 +359,17 @@ header {
                 }
             }
             .view-more {
-                margin-top: 35px;
+                margin-top: 40px;
             }
             @media (min-width: @screen-md-min) {
-                padding-top: 114px;
-                padding-bottom: 114px;
+                padding-top: 70px;
+                padding-bottom: 70px;
                 .aim {
                     margin-top: 60px;
                 }
+                .view-more {
+                margin-top: 60px;
+            }
             }
         }
     }
@@ -1799,7 +1854,7 @@ footer {
         padding: 60px 0px;
         text-align: center;
     }
-    background-color: #27272b;
+    background-color: #e1e1e1;
     color: white;
     padding: 80px 0px;
     // min-height: 364px;
