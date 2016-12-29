@@ -174,11 +174,11 @@ header #dropdown-wx-menu .wx_desc {
   background-image: url(../images/bg-index-body.jpg);
   background-repeat: repeat;
 }
-#home #homecontainer .intro .delay-04 {
+#home #homecontainer .intro .intro_img {
   padding: 30px 0px;
   position: relative;
 }
-#home #homecontainer .intro .delay-04 .glyphicon {
+#home #homecontainer .intro .intro_img .glyphicon {
   cursor: pointer;
   position: absolute;
   left: 50%;
@@ -194,12 +194,12 @@ header #dropdown-wx-menu .wx_desc {
   transition: transform 0.6s;
   transition: transform 0.6s, -webkit-transform 0.6s;
 }
-#home #homecontainer .intro .delay-04 .glyphicon:hover {
+#home #homecontainer .intro .intro_img .glyphicon:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
-#home #homecontainer .intro .delay-04 img {
+#home #homecontainer .intro .intro_img img {
   display: inline-block;
   max-width: 100%;
   height: auto;
@@ -217,7 +217,7 @@ header #dropdown-wx-menu .wx_desc {
 #home #homecontainer .intro .title h2 .first-word {
   color: #3eb2cf;
 }
-#home #homecontainer .intro .title .delay-08 {
+#home #homecontainer .intro .title .intro_detail {
   text-align: center;
   margin-top: 35px;
   color: #888888;
@@ -239,7 +239,7 @@ header #dropdown-wx-menu .wx_desc {
   #home #homecontainer .intro .title {
     padding: 20px 10px;
   }
-  #home #homecontainer .intro .title .delay-08 {
+  #home #homecontainer .intro .title .intro_detail {
     text-align: left;
   }
 }
