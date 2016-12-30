@@ -557,7 +557,6 @@ header {
             margin: 0;
             list-style: none;
             line-height: 40px;
-            padding-left: 20px;
             li {
                 padding: 0;
                 margin: 0;
@@ -566,8 +565,16 @@ header {
             }
         }
     }
-    section {
+    .item {
         margin-bottom: 10px;
+        @media (min-width: @screen-sm-min) {
+            p {
+                margin-bottom: 20px;
+            }
+            img {
+                float: right;
+            }
+        }
         button {
             text-align: left;
             display: block;
@@ -593,7 +600,6 @@ header {
             border: 1px solid #000;
             text-align: center;
             text-decoration: none;
-           
         }
         .current {
             color: #fff;
@@ -601,11 +607,12 @@ header {
             border: 1px solid #333;
         }
     }
-    #footer {
-        padding: 5px 0;
+    #chose {
+        padding: 5px 10px;
         width: 100%;
         position: fixed;
         bottom: 0;
+        left: 0;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -614,6 +621,33 @@ header {
             background-color: #fff;
             outline: none;
             border: none;
+        }
+    }
+    @media (min-width: @screen-sm-min) {
+        .content_exam {
+            margin-top: 90px;
+            .nav_exam {
+                margin-top: 15px;
+            }
+        }
+        .footer {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+        }
+        #chose {
+            position: absolute;
+            bottom: 15vh;
+        }
+        #page {
+            width: 98%;
+            position: absolute;
+            margin-bottom: 40px;
+            bottom: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

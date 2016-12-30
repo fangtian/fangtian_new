@@ -597,7 +597,6 @@ header #dropdown-wx-menu .wx_desc {
   margin: 0;
   list-style: none;
   line-height: 40px;
-  padding-left: 20px;
 }
 #exam_new .nav_exam ul li {
   padding: 0;
@@ -605,10 +604,18 @@ header #dropdown-wx-menu .wx_desc {
   list-style: none;
   float: left;
 }
-#exam_new section {
+#exam_new .item {
   margin-bottom: 10px;
 }
-#exam_new section button {
+@media (min-width: 768px) {
+  #exam_new .item p {
+    margin-bottom: 20px;
+  }
+  #exam_new .item img {
+    float: right;
+  }
+}
+#exam_new .item button {
   text-align: left;
   display: block;
   max-width: 100%;
@@ -643,11 +650,12 @@ header #dropdown-wx-menu .wx_desc {
   background-color: #333;
   border: 1px solid #333;
 }
-#exam_new #footer {
-  padding: 5px 0;
+#exam_new #chose {
+  padding: 5px 10px;
   width: 100%;
   position: fixed;
   bottom: 0;
+  left: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -659,10 +667,43 @@ header #dropdown-wx-menu .wx_desc {
   align-items: center;
   background-color: #fff;
 }
-#exam_new #footer button {
+#exam_new #chose button {
   background-color: #fff;
   outline: none;
   border: none;
+}
+@media (min-width: 768px) {
+  #exam_new .content_exam {
+    margin-top: 90px;
+  }
+  #exam_new .content_exam .nav_exam {
+    margin-top: 15px;
+  }
+  #exam_new .footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  #exam_new #chose {
+    position: absolute;
+    bottom: 15vh;
+  }
+  #exam_new #page {
+    width: 98%;
+    position: absolute;
+    margin-bottom: 40px;
+    bottom: 20vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 #teachers {
   margin-top: 90px;
