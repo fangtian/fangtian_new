@@ -34,7 +34,7 @@ body .more-info a {
   border: 2px solid #3EB2CF;
   font-size: 18px;
   letter-spacing: 4px;
-  font-family: 微软雅黑;
+  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
   text-decoration: none;
   color: #3EB2CF;
 }
@@ -138,7 +138,6 @@ header #dropdown-wx-menu .wx_desc {
   }
 }
 #home #homecontainer .banner {
-  margin-top: 50px;
   width: 100%;
   height: 200px;
 }
@@ -588,6 +587,82 @@ header #dropdown-wx-menu .wx_desc {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   color: #5bc0de;
+}
+#exam_new .nav_exam {
+  margin-top: 50px;
+  min-height: 40px;
+}
+#exam_new .nav_exam ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 40px;
+  padding-left: 20px;
+}
+#exam_new .nav_exam ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  float: left;
+}
+#exam_new section {
+  margin-bottom: 10px;
+}
+#exam_new section button {
+  text-align: left;
+  display: block;
+  max-width: 100%;
+  margin-top: 10px;
+  white-space: normal;
+}
+#exam_new .number {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#exam_new .number a {
+  color: #333;
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 30px;
+  line-height: 30px;
+  border: 1px solid #000;
+  text-align: center;
+  text-decoration: none;
+}
+#exam_new .number .current {
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #333;
+}
+#exam_new #footer {
+  padding: 5px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+}
+#exam_new #footer button {
+  background-color: #fff;
+  outline: none;
+  border: none;
 }
 #teachers {
   margin-top: 90px;
