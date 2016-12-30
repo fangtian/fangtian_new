@@ -131,7 +131,8 @@ header #dropdown-wx-menu .wx_desc {
     overflow: hidden;
   }
   #home #homecontainer .video .bg {
-    background: url(../images/desk.jpg);
+    background: url(../images/fangtian_about02.jpg) no-repeat;
+    background-size: 100% 100%;
     min-width: 100%;
     min-height: 100%;
   }
@@ -461,9 +462,22 @@ header #dropdown-wx-menu .wx_desc {
 }
 #home #homecontainer .teacher {
   background: #5BC0DE url(../images/main_bg.jpg);
+  height: 350px;
+  padding: 20px 0;
+}
+@media (min-width: 767px) {
+  #home #homecontainer .teacher {
+    height: 75vh;
+    padding: 100px 0;
+  }
+  #home #homecontainer .teacher .swiper-teacher {
+    height: 50vh;
+  }
 }
 #home #homecontainer .teacher .item {
-  padding: 40px 10px;
+  min-height: 280px;
+  margin-bottom: 30px;
+  padding: 20px 10px 0;
 }
 #home #homecontainer .teacher .item .teacher_intro {
   min-height: 150px;
@@ -2175,9 +2189,15 @@ footer .copyright i {
   }
 }
 .footer {
-  background-color: #e1e1e1;
   color: black;
+  height: 20vh;
   padding: 20px;
+  background-color: #e1e1e1;
+}
+@media (min-width: 991px) {
+  .footer {
+    height: 15vh;
+  }
 }
 .footer .logo {
   text-align: center;

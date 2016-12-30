@@ -65,7 +65,6 @@ header {
     a:focus {
         outline: none;
     }
-    
     .nav li>a {
         padding: 38px 0px 35px;
         margin: 0px 15px;
@@ -143,7 +142,8 @@ header {
                 width: 100%;
                 overflow: hidden;
                 .bg {
-                    background: url(../images/desk.jpg);
+                    background: url(../images/fangtian_about02.jpg) no-repeat;
+                    background-size: 100% 100%;
                     min-width: 100%;
                     min-height: 100%;
                 }
@@ -450,8 +450,19 @@ header {
         }
         .teacher {
             background: #5BC0DE url(../images/main_bg.jpg);
+            height: 350px;
+            padding: 20px 0;
+            @media (min-width: @screen-xs-max) {
+                height: 75vh;
+                padding: 100px 0;
+                .swiper-teacher {
+                    height: 50vh;
+                }
+            }
             .item {
-                padding: 40px 10px;
+                min-height: 280px;
+                margin-bottom: 30px;
+                padding: 20px 10px 0;
                 .teacher_intro {
                     min-height: 150px;
                     p {
@@ -2037,9 +2048,13 @@ footer {
 }
 
 .footer {
-    background-color: #e1e1e1;
     color: black;
+    height: 20vh;
     padding: 20px;
+    background-color: #e1e1e1;
+    @media (min-width: @screen-sm-max) {
+        height: 15vh;
+    }
     .logo {
         text-align: center;
         span {
