@@ -562,6 +562,12 @@ header {
                 margin: 0;
                 list-style: none;
                 float: left;
+                a{
+                    text-decoration: none;
+                    &:hover{
+                        color:orange;
+                    }
+                }
             }
         }
     }
@@ -583,11 +589,12 @@ header {
             white-space: normal;
         }
     }
-    .number {
+    #page {
         margin-top: 20px;
         margin-bottom: 60px;
         display: flex;
         flex-wrap: wrap;
+        text-align: center;
         a {
             color: #333;
             float: left;
@@ -633,7 +640,6 @@ header {
         .footer {
             position: fixed;
             width: 100%;
-            left: 0;
             bottom: 0;
         }
         #chose {
@@ -641,9 +647,10 @@ header {
             bottom: 15vh;
         }
         #page {
-            width: 98%;
             position: absolute;
             margin-bottom: 40px;
+            left: 50%;
+            transform:translate(-50%,0);
             bottom: 20vh;
             display: flex;
             justify-content: center;

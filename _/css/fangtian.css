@@ -604,6 +604,12 @@ header #dropdown-wx-menu .wx_desc {
   list-style: none;
   float: left;
 }
+#exam_new .nav_exam ul li a {
+  text-decoration: none;
+}
+#exam_new .nav_exam ul li a:hover {
+  color: orange;
+}
 #exam_new .item {
   margin-bottom: 10px;
 }
@@ -622,7 +628,7 @@ header #dropdown-wx-menu .wx_desc {
   margin-top: 10px;
   white-space: normal;
 }
-#exam_new .number {
+#exam_new #page {
   margin-top: 20px;
   margin-bottom: 60px;
   display: -webkit-flex;
@@ -631,8 +637,9 @@ header #dropdown-wx-menu .wx_desc {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  text-align: center;
 }
-#exam_new .number a {
+#exam_new #page a {
   color: #333;
   float: left;
   display: block;
@@ -645,7 +652,7 @@ header #dropdown-wx-menu .wx_desc {
   text-align: center;
   text-decoration: none;
 }
-#exam_new .number .current {
+#exam_new #page .current {
   color: #fff;
   background-color: #333;
   border: 1px solid #333;
@@ -682,7 +689,6 @@ header #dropdown-wx-menu .wx_desc {
   #exam_new .footer {
     position: fixed;
     width: 100%;
-    left: 0;
     bottom: 0;
   }
   #exam_new #chose {
@@ -690,9 +696,12 @@ header #dropdown-wx-menu .wx_desc {
     bottom: 15vh;
   }
   #exam_new #page {
-    width: 98%;
     position: absolute;
     margin-bottom: 40px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
     bottom: 20vh;
     display: -webkit-flex;
     display: -ms-flexbox;
