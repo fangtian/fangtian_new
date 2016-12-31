@@ -691,6 +691,17 @@ header #dropdown-wx-menu .wx_desc {
   #exam_new .content_exam .nav_exam {
     margin-top: 15px;
   }
+  #exam_new .content_exam #content {
+    min-height: 300px;
+  }
+  #exam_new .content_exam #content .opt {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
   #exam_new .footer {
     position: fixed;
     width: 100%;
@@ -702,6 +713,7 @@ header #dropdown-wx-menu .wx_desc {
     bottom: 15vh;
   }
   #exam_new #page {
+    min-width: 700px;
     position: absolute;
     margin-bottom: 40px;
     left: 50%;
