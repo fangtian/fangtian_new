@@ -562,10 +562,10 @@ header {
                 margin: 0;
                 list-style: none;
                 float: left;
-                a{
+                a {
                     text-decoration: none;
-                    &:hover{
-                        color:orange;
+                    &:hover {
+                        color: orange;
                     }
                 }
             }
@@ -594,7 +594,7 @@ header {
         margin-bottom: 60px;
         display: flex;
         flex-wrap: wrap;
-        text-align: center;
+        justify-content: center;
         a {
             color: #333;
             float: left;
@@ -614,12 +614,15 @@ header {
             border: 1px solid #333;
         }
     }
-    #chose {
-        padding: 5px 10px;
+    .container_chose {
         width: 100%;
         position: fixed;
         bottom: 0;
         left: 0;
+    }
+    #chose {
+        padding: 5px 10px;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -642,7 +645,8 @@ header {
             width: 100%;
             bottom: 0;
         }
-        #chose {
+        .container_chose {
+            width: 100%;
             position: absolute;
             bottom: 15vh;
         }
@@ -650,7 +654,7 @@ header {
             position: absolute;
             margin-bottom: 40px;
             left: 50%;
-            transform:translate(-50%,0);
+            transform: translate(-50%, 0);
             bottom: 20vh;
             display: flex;
             justify-content: center;
@@ -2156,7 +2160,7 @@ footer {
     height: 20vh;
     padding: 20px;
     background-color: #e1e1e1;
-    @media (min-width: @screen-sm-max) {
+    @media (min-width: @screen-xs-max) {
         height: 15vh;
     }
     .logo {
