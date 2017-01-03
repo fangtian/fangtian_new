@@ -75,6 +75,11 @@ header .navbar {
   font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
   border-bottom: 1px solid #f0f0f0;
 }
+@media (min-width: 480px) {
+  header .navbar {
+    height: 90px;
+  }
+}
 header .navbar .container .navbar-brand {
   background-image: url(../images/logo_b.png), none;
   background-repeat: no-repeat;
@@ -645,11 +650,11 @@ header #dropdown-wx-menu .wx_desc {
   color: #333;
   float: left;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin: 5px;
-  border-radius: 30px;
-  line-height: 30px;
+  border-radius: 40px;
+  line-height: 40px;
   border: 1px solid #000;
   text-align: center;
   text-decoration: none;
@@ -658,6 +663,11 @@ header #dropdown-wx-menu .wx_desc {
   color: #fff;
   background-color: #333;
   border: 1px solid #333;
+}
+#exam_new #page .checked {
+  color: #fff;
+  background-color: green;
+  border: 1px solid green;
 }
 #exam_new .container_chose {
   width: 100%;
@@ -686,41 +696,42 @@ header #dropdown-wx-menu .wx_desc {
 }
 @media (min-width: 768px) {
   #exam_new .content_exam {
+    position: relative;
     margin-top: 90px;
+    min-height: 60vh;
   }
   #exam_new .content_exam .nav_exam {
     margin-top: 15px;
   }
   #exam_new .content_exam #content {
     min-height: 300px;
+    margin-bottom: 25vh;
   }
-  #exam_new .content_exam #content .opt {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+  #exam_new .content_exam #content .opt img {
+    float: right;
+    max-width: 200px;
   }
-  #exam_new .footer {
-    position: fixed;
+  #exam_new .content_exam #content .opt .opt_detail {
+    float: left;
+  }
+  #exam_new .bottom {
     width: 100%;
-    bottom: 0;
   }
-  #exam_new .container_chose {
+  #exam_new .bottom .container_chose {
     width: 100%;
     position: absolute;
-    bottom: 15vh;
+    bottom: 0;
+    margin-bottom: 20px;
   }
-  #exam_new #page {
+  #exam_new .bottom #page {
     min-width: 700px;
     position: absolute;
     margin-bottom: 40px;
     left: 50%;
+    bottom: 40px;
     -webkit-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
-    bottom: 20vh;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1170,6 +1181,7 @@ header #dropdown-wx-menu .wx_desc {
 }
 #course {
   background-color: #eeeeee;
+  min-height: 80vh;
   margin-top: 90px;
 }
 @media (max-width: 767px) {
@@ -1223,6 +1235,7 @@ header #dropdown-wx-menu .wx_desc {
 #course .course_list {
   background-color: #eeeeee;
   margin: 10px 0px;
+  font-size: 12px;
 }
 #course .course_list .classitem {
   padding: 10px;
@@ -2334,19 +2347,20 @@ footer .copyright i {
 .footer {
   color: black;
   height: 20vh;
-  padding: 20px;
+  padding: 10px 20px;
   background-color: #e1e1e1;
 }
 @media (min-width: 767px) {
   .footer {
-    height: 15vh;
+    height: 17vh;
   }
 }
 .footer .logo {
   text-align: center;
+  margin-top: 15px;
 }
 .footer .logo span {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .footer p {
   font-size: 12px;
