@@ -78,7 +78,7 @@ header {
         margin-bottom: 0px;
         font-family: @font-family-fangtian;
         border-bottom: 1px solid #f0f0f0;
-        @media (min-width: @screen-xs-min) {
+        @media (min-width: @screen-xs-max) {
             height: 90px;
         }
     }
@@ -621,7 +621,6 @@ header {
             background-color: green;
             border: 1px solid green;
         }
-       
     }
     .container_chose {
         width: 100%;
@@ -1118,87 +1117,91 @@ header {
     .course_list {
         background-color: @gray-lighter;
         margin: 10px 0px;
-        font-size: 12px;
+        font-size: 14px;
         .classitem {
-            padding: 10px;
             margin-bottom: 10px;
             color: @gray;
             background-color: white;
-            .detail {
-                h4 {
-                    text-align: center;
-                    font-size: 16px;
-                    margin-bottom: 10px;
-                    margin-top: 10px;
-                }
-                p {
-                    margin: 10px 0;
-                }
-            }
-            .course_img {
-                img {
-                    min-width: 100%;
-                }
-            }
+            padding: 5px;
             .course_title {
                 padding: 5px 5px 0;
                 text-align: center;
                 margin-top: 5px;
                 h5 {
                     padding: 5px;
-                    margin-bottom: 0;
-                    margin: 0px 15px;
-                    @media (max-width: @screen-xs-max) {
-                        margin: 0px;
-                    }
+                    margin: 0px;
                 }
             }
-            .badge {
-                font-size: 20px;
-                margin: 10px 10px;
-                border-radius: 60px;
-                width: 60px;
-                line-height: 20px;
-                background-color: @brand-warning;
-                min-height: 60px;
-                padding-top: 10px;
-            }
-            .col-sm-2 {
-                padding-left: 5px;
-                padding-right: 5px;
-            }
-            .btn {
-                margin: 5px 5px 0 0;
-            }
-            .thumbnail {
-                margin-bottom: 0;
-            }
-            @media (max-width: @screen-xs-max) {
-                padding: 5px;
-                .detail {
+            .detail {
+                
+                h4 {
+                    text-align: center;
+                    color: #1CA21C;
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                }
+                p {
                     padding-left: 15px;
-                    h4 {
-                        margin-bottom: 5px;
-                        margin-top: 5px;
-                    }
-                    p {
-                        margin: 5px 0 0;
-                    }
+                    margin: 5px 0 0;
                 }
+            }
+            .course_sign {
+                padding-top: 10px;
                 .badge {
                     display: block;
-                    margin: 5px auto;
-                }
-                .btn-center {
+                    font-size: 20px;
+                    border-radius: 60px;
+                    width: 60px;
+                    float: left;
+                    padding-top: 10px;
+                    background-color: @brand-warning;
+                    min-height: 60px;
                     text-align: center;
+                    margin: 0px 25px 0;
+                    white-space: pre-wrap;
+                    span {
+                        margin-top: 10px;
+                    }
+                }
+                .btn {
+                    margin-top: 5px;
+                    margin-left: 10%;
+                    width: 120px;
+                    height: 50px;
+                }
+            }
+            @media(min-width: @screen-xs-max) {
+                padding: 10px;
+                .detail {
+                    h4 {
+                        text-align: center;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                    }
+                    p {
+                        margin: 10px 0;
+                    }
+                }
+                h5 {
+                    margin: 0px 15px;
+                }
+                .course_img {
+                    img {
+                        min-width: 100%;
+                    }
+                }
+                .course_sign {
+                    .badge {
+                        margin: 10px 10px;
+                    }
                     .btn {
-                        height: 60px;
-                        width: 60px;
-                        border-radius: 60px;
+                        width: 80px;
+                        margin-left: 0;
                     }
-                    :last-child {
-                        margin-left: 20px;
-                    }
+                }
+                .thumbnail {
+                    margin-bottom: 0;
                 }
             }
         }
@@ -2197,8 +2200,9 @@ footer {
         }
     }
     p {
+        margin-top: 10px;
         font-size: 12px;
-        line-height: 26px;
+        line-height: 24px;
     }
 }
 
