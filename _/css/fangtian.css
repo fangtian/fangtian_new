@@ -2076,6 +2076,19 @@ header #dropdown-wx-menu .wx_desc {
     margin-top: 50px;
     padding: 20px 0px;
   }
+  #detail .container {
+    padding: 10px;
+  }
+  #detail .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  #detail .choose_time .table > tbody > tr > td {
+    white-space: nowrap;
+  }
+  #detail .table > tbody > tr > th {
+    width: 30px;
+  }
 }
 @media (max-width: 991px) {
   #detail .affix {
@@ -2096,6 +2109,11 @@ header #dropdown-wx-menu .wx_desc {
 #detail .course_info_area .cash_back {
   color: #337ab7;
   font-size: 16px;
+}
+@media (max-width: 991px) {
+  #detail .course_info_area .cash_back {
+    line-height: 24px;
+  }
 }
 #detail .online_pub {
   list-style-type: none;
@@ -2128,7 +2146,7 @@ header #dropdown-wx-menu .wx_desc {
 }
 #detail .badge {
   font-size: 20px;
-  margin: 10px 10px;
+  margin: 30px 0px 10px -20px;
   padding: 20px 0;
   border-radius: 50px;
   min-height: 80px;
@@ -2186,7 +2204,7 @@ header #dropdown-wx-menu .wx_desc {
 }
 @media (max-width: 991px) {
   #detail .slider_menu .buy_lesson {
-    padding: 0;
+    padding: 5px;
     position: fixed;
     bottom: 0;
     width: 100%;

@@ -1133,7 +1133,6 @@ header {
                 }
             }
             .detail {
-                
                 h4 {
                     text-align: center;
                     color: #1CA21C;
@@ -1917,6 +1916,23 @@ header {
     @media (max-width: @screen-xs-max) {
         margin-top: 50px;
         padding: 20px 0px;
+        .container {
+            padding: 10px;
+        }
+        .row {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        .table > thead> tr > th,
+        .table > tbody > tr > td,
+        .table > tbody > tr > th {}
+        .choose_time .table > tbody > tr > td,
+        {
+            white-space: nowrap;
+        }
+        .table > tbody > tr > th {
+            width: 30px;
+        }
     }
     .affix {
         @media (max-width: @screen-sm-max) {
@@ -1938,6 +1954,9 @@ header {
         .cash_back {
             color: @brand-primary;
             font-size: 16px;
+            @media (max-width: @screen-sm-max) {
+                line-height: 24px;
+            }
         }
     }
     .online_pub {
@@ -1972,7 +1991,7 @@ header {
     }
     .badge {
         font-size: 20px;
-        margin: 10px 10px;
+        margin:30px 0px 10px -20px;
         padding: 20px 0;
         border-radius: 50px;
         min-height: 80px;
@@ -2029,13 +2048,15 @@ header {
         .buy_lesson {
             padding-left: 30px;
             @media (max-width: @screen-sm-max) {
-                padding: 0;
+                padding: 5px;
                 position: fixed;
                 bottom: 0;
                 width: 100%;
+
                 right: 0;
                 .btn {
                     width: 100%;
+
                     .border-radius(0);
                     .opacity(.9);
                 }
