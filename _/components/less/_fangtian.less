@@ -557,7 +557,7 @@ header {
 
 #exam_new {
     .nav_exam {
-        margin-top: 50px;
+        margin-top: 60px;
         min-height: 40px;
         ul {
             padding: 0;
@@ -1135,9 +1135,12 @@ header {
             background-color: white;
             padding: 5px;
             .course_title {
-                padding: 5px 5px 0;
+                padding: 5px 15px 0;
                 text-align: center;
                 margin-top: 5px;
+                @media (max-width: @screen-xs-max) {
+                    padding: 5px 0px 0;
+                }
                 h5 {
                     padding: 5px;
                     margin: 0px;
@@ -1190,6 +1193,7 @@ header {
                         margin-top: 10px;
                     }
                     p {
+                        padding-left: 0;
                         margin: 10px 0;
                     }
                 }
@@ -1930,6 +1934,21 @@ header {
         .container {
             padding: 10px;
         }
+        .course_title {
+            h3 {
+                margin-top: 0px;
+            }
+        }
+        .course_info_area {
+            margin-top: 8px;
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+        .course_img {
+            img {
+                max-width: 100%;
+            }
+        }
         .row {
             margin-left: -10px;
             margin-right: -10px;
@@ -2074,6 +2093,7 @@ header {
     }
     .choose_teacher {
         h5 {
+            margin-left: 10px;
             margin-right: 10px;
         }
     }
@@ -2250,9 +2270,6 @@ footer {
         text-transform: uppercase;
         font: 12px/100% Arial, Helvetica, sans-serif;
         transition: .5s;
-        &:hover {
-            background-color: #FEC20B;
-        }
     }
     span {
         line-height: 42px;

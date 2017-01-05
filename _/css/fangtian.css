@@ -598,7 +598,7 @@ header #dropdown-wx-menu .wx_desc {
   color: #5bc0de;
 }
 #exam_new .nav_exam {
-  margin-top: 50px;
+  margin-top: 60px;
   min-height: 40px;
 }
 #exam_new .nav_exam ul {
@@ -1255,9 +1255,14 @@ header #dropdown-wx-menu .wx_desc {
   padding: 5px;
 }
 #course .course_list .classitem .course_title {
-  padding: 5px 5px 0;
+  padding: 5px 15px 0;
   text-align: center;
   margin-top: 5px;
+}
+@media (max-width: 767px) {
+  #course .course_list .classitem .course_title {
+    padding: 5px 0px 0;
+  }
 }
 #course .course_list .classitem .course_title h5 {
   padding: 5px;
@@ -1309,6 +1314,7 @@ header #dropdown-wx-menu .wx_desc {
     margin-top: 10px;
   }
   #course .course_list .classitem .detail p {
+    padding-left: 0;
     margin: 10px 0;
   }
   #course .course_list .classitem h5 {
@@ -2090,6 +2096,17 @@ header #dropdown-wx-menu .wx_desc {
   #detail .container {
     padding: 10px;
   }
+  #detail .course_title h3 {
+    margin-top: 0px;
+  }
+  #detail .course_info_area {
+    margin-top: 8px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  #detail .course_img img {
+    max-width: 100%;
+  }
   #detail .row {
     margin-left: -10px;
     margin-right: -10px;
@@ -2237,6 +2254,7 @@ header #dropdown-wx-menu .wx_desc {
   }
 }
 #detail .choose_teacher h5 {
+  margin-left: 10px;
   margin-right: 10px;
 }
 #detail .progress {
@@ -2408,9 +2426,6 @@ footer .copyright i {
   text-transform: uppercase;
   font: 12px/100% Arial, Helvetica, sans-serif;
   transition: .5s;
-}
-#back-top a:hover {
-  background-color: #FEC20B;
 }
 #back-top span {
   line-height: 42px;
