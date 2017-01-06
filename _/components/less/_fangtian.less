@@ -1058,7 +1058,7 @@ header {
             .course_title {
                 padding: 5px 15px 0;
                 text-align: center;
-                margin-top: 5px;
+                margin-top: 10px;
                 @media (max-width: @screen-xs-max) {
                     padding: 5px 0px 0;
                 }
@@ -1104,6 +1104,9 @@ header {
                     width: 120px;
                     height: 50px;
                 }
+            }
+            .course_img {
+                margin-top: 5px;
             }
             @media(min-width: @screen-xs-max) {
                 padding: 10px;
@@ -2218,73 +2221,133 @@ footer {
     animation-fill-mode: forwards;
 }
 
+.fadeIn.active {
+    animation-name: fadeIn;
+}
+
 .fadeInLeft.active {
-    -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
 }
 
 .fadeInRight.active {
-    -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
 }
 
 .fadeInUp.active {
-    -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
 }
 
 .fadeInRotate.active {
-    -webkit-animation-name: fadeInRotate;
+    animation-name: fadeInRotate;
+}
+
+.fadeInDown.active {
     animation-name: fadeInRotate;
 }
 
 .zoomIn.active {
-    -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
+}
+
+.flip.active {
+    backface-visibility: visible;
+    animation-name: flip
 }
 
 
 /*some keyframes*/
 
-@keyframes fadeInLeft {
+@keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateX(-150px) scale(0.8);
+        transform: scale(.3)
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1)
     }
     70% {
-        transform: translateX(10px) scale(1.02);
+        transform: scale(.9)
     }
     100% {
         opacity: 1;
-        transform: translateX(0) scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-2000px)
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(30px)
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(-10px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
     }
 }
 
 @keyframes fadeInRight {
     0% {
         opacity: 0;
-        transform: translateX(150px) scale(0.8);
+        transform: translateX(2000px)
     }
-    70% {
-        transform: translateX(-10px) scale(1.02);
+    60% {
+        opacity: 1;
+        transform: translateX(-30px)
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(10px)
     }
     100% {
         opacity: 1;
-        transform: translateX(0) scale(1);
+        transform: translateX(0)
     }
 }
 
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(50px) scale(0.8);
+        transform: translateY(2000px)
     }
-    70% {
-        transform: translateY(10px) scale(1.02);
+    60% {
+        opacity: 1;
+        transform: translateY(-30px)
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(10px)
     }
     100% {
         opacity: 1;
-        transform: translateY(0) scale(1);
+        transform: translateY(0)
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-2000px)
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(30px)
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(-10px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
     }
 }
 
@@ -2294,6 +2357,7 @@ footer {
         transform: scale(0.6);
     }
     70% {
+        opacity: 1;
         transform: scale(1.02);
     }
     100% {
@@ -2312,6 +2376,34 @@ footer {
         opacity: 1;
         transform-origin: center center;
         transform: translateX(0px) rotate(0deg);
+    }
+}
+
+@keyframes flip {
+    0% {
+        opacity: 1;
+        transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
+        animation-timing-function: ease-out
+    }
+    40% {
+        opacity: 1;
+        transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
+        animation-timing-function: ease-out
+    }
+    50% {
+        opacity: 1;
+        transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+        animation-timing-function: ease-in
+    }
+    80% {
+        opacity: 1;
+        transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
+        animation-timing-function: ease-in
+    }
+    100% {
+        opacity: 1;
+        transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
+        animation-timing-function: ease-in
     }
 }
 
