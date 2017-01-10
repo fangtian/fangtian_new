@@ -1,7 +1,7 @@
 @import "variables.less";
 @import "lesshat.less";
 body {
-    background: #fff url(../images/bg-index-body.jpg);
+    background: #fff url(../images/bg-index-body.jpg) 60%;
     letter-spacing: 1px;
     font-size: 14px;
     .menu {
@@ -1714,9 +1714,8 @@ header {
     margin-top: 100px;
     @media (max-width: @screen-xs-max) {
         margin-top: 50px;
-        .row {
-            margin-left: -40px;
-            margin-right: -40px;
+        .container {
+            padding: 0;
         }
         .course_img {
             img {
@@ -1724,16 +1723,18 @@ header {
             }
         }
     }
+    .nav_exam {
+        margin-top: 15px;
+    }
     .divider {
         border-bottom: 2px solid @gray;
     }
     .myscore {
-        margin: 30px;
+        margin: 0;
         color: @gray;
         h4 {
             color: @gray-light;
             z-index: -1;
-            padding-left: 0;
         }
         h5 {
             color: @brand-info;
@@ -1759,7 +1760,7 @@ header {
             color: @brand-warning;
         }
     }
-    .mycourse {
+    .user_course {
         margin: 30px;
         color: @gray;
         .course_list {
@@ -1843,6 +1844,82 @@ header {
                 cursor: pointer;
                 letter-spacing: 2px;
             }
+        }
+    }
+}
+
+#mycourse_new {
+    margin-top: 50px;
+     @media (min-width: @screen-sm-min) {
+        margin-top: 90px;
+     }
+    .breadcrumb {
+        margin: 15px 0;
+    }
+    .menu {
+        min-height: 100%;
+        // background-color: #F5F5F5;
+        .user_photo {
+            padding-top: 20px;
+            max-width: 100px;
+            margin: 0 auto;
+        }
+        .user_info {
+            text-align: center;
+        }
+        ul {
+            li {
+                font-size: 14px;
+                line-height: 1;
+                padding-left: 15px;
+                margin: 15px 0;
+            }
+        }
+    }
+    .course_content {
+        min-height: 100%;
+        margin: 0;
+        color: @gray;
+        h4 {
+            padding-top: 80px;
+            color: @gray-light;
+            z-index: -1;
+            @media (min-width: @screen-sm-min) {
+                padding-top: 0;
+            }
+        }
+        h5 {
+            color: @brand-info;
+        }
+        a {
+            display: block;
+            &:hover {
+                text-decoration: none;
+                .badge {
+                    background-color: #eee;
+                    color: #333;
+                }
+            }
+        }
+        .badge {
+            display: block;
+            margin: 0 auto;
+            font-size: 16px;
+            border-radius: 65px;
+            height: 65px;
+            width: 65px;
+            background-color: @brand-warning;
+            @media (min-width: @screen-sm-min) {
+                margin-top: 30px;
+                margin-bottom: 20px;
+                padding-top: 10px;
+                border-radius: 80px;
+                min-height: 80px;
+                min-width: 80px;
+            }
+        }
+        .score_style {
+            color: @brand-warning;
         }
     }
 }
@@ -2278,15 +2355,7 @@ footer {
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-2000px)
-    }
-    60% {
-        opacity: 1;
-        transform: translateX(30px)
-    }
-    80% {
-        opacity: 1;
-        transform: translateX(-10px)
+        transform: translateX(-20px)
     }
     100% {
         opacity: 1;
@@ -2297,15 +2366,11 @@ footer {
 @keyframes fadeInRight {
     0% {
         opacity: 0;
-        transform: translateX(2000px)
+        transform: translateX(20px)
     }
-    60% {
+    50% {
         opacity: 1;
-        transform: translateX(-30px)
-    }
-    80% {
-        opacity: 1;
-        transform: translateX(10px)
+        transform: translateX(-20px)
     }
     100% {
         opacity: 1;
@@ -2316,15 +2381,11 @@ footer {
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(2000px)
+        transform: translateY(20px)
     }
-    60% {
+    50% {
         opacity: 1;
-        transform: translateY(-30px)
-    }
-    80% {
-        opacity: 1;
-        transform: translateY(10px)
+        transform: translateY(-20px)
     }
     100% {
         opacity: 1;
@@ -2335,15 +2396,7 @@ footer {
 @keyframes fadeInDown {
     0% {
         opacity: 0;
-        transform: translateY(-2000px)
-    }
-    60% {
-        opacity: 1;
-        transform: translateY(30px)
-    }
-    80% {
-        opacity: 1;
-        transform: translateY(-10px)
+        transform: translateY(-20px)
     }
     100% {
         opacity: 1;
@@ -2382,27 +2435,17 @@ footer {
 @keyframes flip {
     0% {
         opacity: 1;
-        transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
-        animation-timing-function: ease-out
-    }
-    40% {
-        opacity: 1;
-        transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
+        transform: perspective(800px)rotateY(0) scale(1);
         animation-timing-function: ease-out
     }
     50% {
         opacity: 1;
-        transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
-        animation-timing-function: ease-in
-    }
-    80% {
-        opacity: 1;
-        transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
+        transform: perspective(800px) rotateY(180deg) scale(1);
         animation-timing-function: ease-in
     }
     100% {
         opacity: 1;
-        transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
+        transform: perspective(800px) rotateY(360deg) scale(1);
         animation-timing-function: ease-in
     }
 }

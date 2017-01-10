@@ -1,5 +1,5 @@
 body {
-  background: #fff url(../images/bg-index-body.jpg);
+  background: #fff url(../images/bg-index-body.jpg) 60%;
   letter-spacing: 1px;
   font-size: 14px;
 }
@@ -1854,25 +1854,26 @@ header #dropdown-wx-menu .wx_desc {
   #mycourse {
     margin-top: 50px;
   }
-  #mycourse .row {
-    margin-left: -40px;
-    margin-right: -40px;
+  #mycourse .container {
+    padding: 0;
   }
   #mycourse .course_img img {
     width: 100%;
   }
 }
+#mycourse .nav_exam {
+  margin-top: 15px;
+}
 #mycourse .divider {
   border-bottom: 2px solid #555555;
 }
 #mycourse .myscore {
-  margin: 30px;
+  margin: 0;
   color: #555555;
 }
 #mycourse .myscore h4 {
   color: #777777;
   z-index: -1;
-  padding-left: 0;
 }
 #mycourse .myscore h5 {
   color: #5bc0de;
@@ -1898,37 +1899,37 @@ header #dropdown-wx-menu .wx_desc {
 #mycourse .myscore .score_style {
   color: #f0ad4e;
 }
-#mycourse .mycourse {
+#mycourse .user_course {
   margin: 30px;
   color: #555555;
 }
-#mycourse .mycourse .course_list {
+#mycourse .user_course .course_list {
   background-color: #eeeeee;
   padding: 20px 0;
   margin-bottom: 10px;
 }
-#mycourse .mycourse h4 {
+#mycourse .user_course h4 {
   color: #777777;
 }
-#mycourse .mycourse h5 {
+#mycourse .user_course h5 {
   padding: 5px 0;
   margin-bottom: 0;
 }
-#mycourse .mycourse .course_title {
+#mycourse .user_course .course_title {
   padding: 5px 5px 0;
   text-align: center;
 }
 @media (max-width: 767px) {
-  #mycourse .mycourse .course_title {
+  #mycourse .user_course .course_title {
     margin-bottom: 20px;
   }
 }
-#mycourse .mycourse .button_list {
+#mycourse .user_course .button_list {
   padding-top: 10px;
   text-align: center;
   color: #337ab7;
 }
-#mycourse .mycourse .note_exercise .badge {
+#mycourse .user_course .note_exercise .badge {
   font-size: 16px;
   margin: 10px 10px;
   padding: 10px 10px;
@@ -1938,32 +1939,32 @@ header #dropdown-wx-menu .wx_desc {
   height: 68px;
   background-color: #f0ad4e;
 }
-#mycourse .mycourse a {
+#mycourse .user_course a {
   color: #555555;
   text-decoration: none;
 }
-#mycourse .mycourse .exam_object {
+#mycourse .user_course .exam_object {
   background-color: white;
   margin: 10px;
   padding: 10px 0;
 }
-#mycourse .mycourse .exam_object .exam_option {
+#mycourse .user_course .exam_object .exam_option {
   margin-bottom: 5px;
 }
-#mycourse .mycourse .done_logo {
+#mycourse .user_course .done_logo {
   float: right;
   position: relative;
   top: -200px;
   right: 100px;
 }
 @media (max-width: 991px) {
-  #mycourse .mycourse .exam_area .affix {
+  #mycourse .user_course .exam_area .affix {
     position: static;
     width: auto;
     top: 0;
   }
 }
-#mycourse .mycourse .badge {
+#mycourse .user_course .badge {
   font-size: 20px;
   margin: 5px 10px;
   border-radius: 5px;
@@ -1971,12 +1972,90 @@ header #dropdown-wx-menu .wx_desc {
   min-width: 20px;
   background-color: #f0ad4e;
 }
-#mycourse .mycourse .chapter .show_chapter {
+#mycourse .user_course .chapter .show_chapter {
   text-align: right;
   margin: 20px 20px 0 0;
   color: #f0ad4e;
   cursor: pointer;
   letter-spacing: 2px;
+}
+#mycourse_new {
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  #mycourse_new {
+    margin-top: 90px;
+  }
+}
+#mycourse_new .breadcrumb {
+  margin: 15px 0;
+}
+#mycourse_new .menu {
+  min-height: 100%;
+}
+#mycourse_new .menu .user_photo {
+  padding-top: 20px;
+  max-width: 100px;
+  margin: 0 auto;
+}
+#mycourse_new .menu .user_info {
+  text-align: center;
+}
+#mycourse_new .menu ul li {
+  font-size: 14px;
+  line-height: 1;
+  padding-left: 15px;
+  margin: 15px 0;
+}
+#mycourse_new .course_content {
+  min-height: 100%;
+  margin: 0;
+  color: #555555;
+}
+#mycourse_new .course_content h4 {
+  padding-top: 80px;
+  color: #777777;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  #mycourse_new .course_content h4 {
+    padding-top: 0;
+  }
+}
+#mycourse_new .course_content h5 {
+  color: #5bc0de;
+}
+#mycourse_new .course_content a {
+  display: block;
+}
+#mycourse_new .course_content a:hover {
+  text-decoration: none;
+}
+#mycourse_new .course_content a:hover .badge {
+  background-color: #eee;
+  color: #333;
+}
+#mycourse_new .course_content .badge {
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  border-radius: 65px;
+  height: 65px;
+  width: 65px;
+  background-color: #f0ad4e;
+}
+@media (min-width: 768px) {
+  #mycourse_new .course_content .badge {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    border-radius: 80px;
+    min-height: 80px;
+    min-width: 80px;
+  }
+}
+#mycourse_new .course_content .score_style {
+  color: #f0ad4e;
 }
 #detail {
   color: #555555;
@@ -2426,18 +2505,8 @@ footer .copyright i {
 @-webkit-keyframes fadeInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-2000px);
-    transform: translateX(-2000px);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: translateX(30px);
-    transform: translateX(30px);
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
   }
   100% {
     opacity: 1;
@@ -2448,18 +2517,8 @@ footer .copyright i {
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-2000px);
-    transform: translateX(-2000px);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: translateX(30px);
-    transform: translateX(30px);
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
   }
   100% {
     opacity: 1;
@@ -2470,18 +2529,13 @@ footer .copyright i {
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(2000px);
-    transform: translateX(2000px);
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
   }
-  60% {
+  50% {
     opacity: 1;
-    -webkit-transform: translateX(-30px);
-    transform: translateX(-30px);
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
   }
   100% {
     opacity: 1;
@@ -2492,18 +2546,13 @@ footer .copyright i {
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(2000px);
-    transform: translateX(2000px);
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
   }
-  60% {
+  50% {
     opacity: 1;
-    -webkit-transform: translateX(-30px);
-    transform: translateX(-30px);
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
   }
   100% {
     opacity: 1;
@@ -2514,18 +2563,13 @@ footer .copyright i {
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(2000px);
-    transform: translateY(2000px);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
   }
-  60% {
+  50% {
     opacity: 1;
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;
@@ -2536,18 +2580,13 @@ footer .copyright i {
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(2000px);
-    transform: translateY(2000px);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
   }
-  60% {
+  50% {
     opacity: 1;
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;
@@ -2558,18 +2597,8 @@ footer .copyright i {
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;
@@ -2580,18 +2609,8 @@ footer .copyright i {
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;
@@ -2668,36 +2687,22 @@ footer .copyright i {
 @-webkit-keyframes flip {
   0% {
     opacity: 1;
-    -webkit-transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
-    transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  40% {
-    opacity: 1;
-    -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
-    transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
+    -webkit-transform: perspective(800px) rotateY(0) scale(1);
+    transform: perspective(800px) rotateY(0) scale(1);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   50% {
     opacity: 1;
-    -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
-    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(0.95);
-    transform: perspective(400px) translateZ(0) rotateY(360deg) scale(0.95);
+    -webkit-transform: perspective(800px) rotateY(180deg) scale(1);
+    transform: perspective(800px) rotateY(180deg) scale(1);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   100% {
     opacity: 1;
-    -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
-    transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
+    -webkit-transform: perspective(800px) rotateY(360deg) scale(1);
+    transform: perspective(800px) rotateY(360deg) scale(1);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
@@ -2705,36 +2710,22 @@ footer .copyright i {
 @keyframes flip {
   0% {
     opacity: 1;
-    -webkit-transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
-    transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  40% {
-    opacity: 1;
-    -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
-    transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
+    -webkit-transform: perspective(800px) rotateY(0) scale(1);
+    transform: perspective(800px) rotateY(0) scale(1);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   50% {
     opacity: 1;
-    -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
-    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(0.95);
-    transform: perspective(400px) translateZ(0) rotateY(360deg) scale(0.95);
+    -webkit-transform: perspective(800px) rotateY(180deg) scale(1);
+    transform: perspective(800px) rotateY(180deg) scale(1);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   100% {
     opacity: 1;
-    -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
-    transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
+    -webkit-transform: perspective(800px) rotateY(360deg) scale(1);
+    transform: perspective(800px) rotateY(360deg) scale(1);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
