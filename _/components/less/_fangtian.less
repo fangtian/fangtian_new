@@ -1877,6 +1877,9 @@ header {
             }
         }
     }
+    .score {
+        padding: 0;
+    }
     .course_content {
         min-height: 100%;
         margin: 0;
@@ -1921,6 +1924,81 @@ header {
         }
         .score_style {
             color: @brand-warning;
+        }
+    }
+    .nopay {
+        .classitem {
+            .content {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            margin-bottom: 10px;
+            color: @gray;
+            padding: 0px;
+            .course_left {
+                padding: 0;
+                .course_img {
+                    margin-top: 5px;
+                    padding: 0;
+                    a {
+                        max-width: 120px;
+                        margin: 10px auto;
+                    }
+                    @media (min-width: @screen-sm-min) {
+                        margin-top: 0;
+                    }
+                }
+                .course_title {
+                    padding: 0;
+                    text-align: center;
+                    margin: 15px 0;
+                    h5 {
+                        padding: 5px;
+                        margin: 0 auto;
+                        max-width: 120px;
+                    }
+                     @media (min-width: @screen-sm-min) {
+                         margin: 5px 0;
+                     }
+                }
+            }
+            .detail {
+                h4 {
+                    text-align: center;
+                    color: #1CA21C;
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                }
+                p {
+                    padding-left: 15px;
+                    margin: 2px 0 0;
+                }
+                @media (min-width: @screen-sm-min) {
+                    p {
+                        margin: 15px 0;
+                    }
+                }
+            }
+            .topay {
+                margin-top: 5px;
+                text-align: center;
+                span {
+                    padding: 0;
+                    margin-top: 5px;
+                    font-size: 12px;
+                    text-align: center;
+                }
+                @media (min-width: @screen-sm-min) {
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        margin-top: 20px;
+                    }
+
+                }
+            }
         }
     }
 }

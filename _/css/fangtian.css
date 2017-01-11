@@ -2008,6 +2008,9 @@ header #dropdown-wx-menu .wx_desc {
   padding-left: 15px;
   margin: 15px 0;
 }
+#mycourse_new .score {
+  padding: 0;
+}
 #mycourse_new .course_content {
   min-height: 100%;
   margin: 0;
@@ -2057,6 +2060,86 @@ header #dropdown-wx-menu .wx_desc {
 }
 #mycourse_new .course_content .score_style {
   color: #f0ad4e;
+}
+#mycourse_new .nopay .classitem {
+  margin-bottom: 10px;
+  color: #555555;
+  padding: 0px;
+}
+#mycourse_new .nopay .classitem .content {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#mycourse_new .nopay .classitem .course_left {
+  padding: 0;
+}
+#mycourse_new .nopay .classitem .course_left .course_img {
+  margin-top: 5px;
+  padding: 0;
+}
+#mycourse_new .nopay .classitem .course_left .course_img a {
+  max-width: 120px;
+  margin: 10px auto;
+}
+@media (min-width: 768px) {
+  #mycourse_new .nopay .classitem .course_left .course_img {
+    margin-top: 0;
+  }
+}
+#mycourse_new .nopay .classitem .course_left .course_title {
+  padding: 0;
+  text-align: center;
+  margin: 15px 0;
+}
+#mycourse_new .nopay .classitem .course_left .course_title h5 {
+  padding: 5px;
+  margin: 0 auto;
+  max-width: 120px;
+}
+@media (min-width: 768px) {
+  #mycourse_new .nopay .classitem .course_left .course_title {
+    margin: 5px 0;
+  }
+}
+#mycourse_new .nopay .classitem .detail h4 {
+  text-align: center;
+  color: #1CA21C;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+#mycourse_new .nopay .classitem .detail p {
+  padding-left: 15px;
+  margin: 2px 0 0;
+}
+@media (min-width: 768px) {
+  #mycourse_new .nopay .classitem .detail p {
+    margin: 15px 0;
+  }
+}
+#mycourse_new .nopay .classitem .topay {
+  margin-top: 5px;
+  text-align: center;
+}
+#mycourse_new .nopay .classitem .topay span {
+  padding: 0;
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #mycourse_new .nopay .classitem .topay {
+    height: 200px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #mycourse_new .nopay .classitem .topay span {
+    margin-top: 20px;
+  }
 }
 #detail {
   color: #555555;
