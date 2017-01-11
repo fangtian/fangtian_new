@@ -2,6 +2,7 @@ body {
   background: #fff url(../images/bg-index-body.jpg) 60%;
   letter-spacing: 1px;
   font-size: 14px;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 body .menu a {
   text-decoration: none;
@@ -34,7 +35,7 @@ body .more-info a {
   border: 2px solid #3EB2CF;
   font-size: 18px;
   letter-spacing: 4px;
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   text-decoration: none;
   color: #3EB2CF;
 }
@@ -73,7 +74,7 @@ header .nav li > a.selected {
 header .navbar {
   background: white;
   margin-bottom: 0px;
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   border-bottom: 1px solid #f0f0f0;
 }
 @media (min-width: 768px) {
@@ -114,7 +115,7 @@ header #dropdown-wx-menu .wx_desc {
 #home .navbar {
   color: black;
   margin-bottom: 0px;
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   border: none;
   background: white;
 }
@@ -756,7 +757,7 @@ header #dropdown-wx-menu .wx_desc {
   margin-top: 90px;
   background: black url(../images/desk.jpg) no-repeat top center;
   color: white;
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 #notebook .title {
   margin-top: 40px;
@@ -842,7 +843,7 @@ header #dropdown-wx-menu .wx_desc {
 }
 #about {
   margin-top: 50px;
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 @media (min-width: 768px) {
   #about {
@@ -945,7 +946,7 @@ header #dropdown-wx-menu .wx_desc {
   margin-top: 90px;
   color: #555555;
   background: #eeeeee;
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 #interaction .title {
   margin-top: 40px;
@@ -981,7 +982,7 @@ header #dropdown-wx-menu .wx_desc {
   margin-top: 90px;
   background: black url(../images/desk.jpg) no-repeat top center;
   color: white;
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 #savetime .title {
   margin-top: 60px;
@@ -1177,12 +1178,12 @@ header #dropdown-wx-menu .wx_desc {
 #course .course_list .classitem .course_sign .badge {
   display: block;
   font-size: 20px;
-  border-radius: 60px;
-  width: 60px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
   float: left;
   padding-top: 10px;
   background-color: #f0ad4e;
-  min-height: 60px;
   text-align: center;
   margin: 0px 25px 0;
   white-space: pre-wrap;
@@ -1338,7 +1339,7 @@ header #dropdown-wx-menu .wx_desc {
   margin: 10px 10px 40px 10px;
 }
 #pay .wxpay_detial .head {
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   margin: 10px 0 10px 20px;
 }
 #pay .wxpay_detial .qrcode {
@@ -1357,7 +1358,7 @@ header #dropdown-wx-menu .wx_desc {
 }
 #pay .wxpay_detial .return {
   margin: 10px 10px 20px 20px;
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   font-size: 16px;
   color: #5bc0de;
 }
@@ -1420,7 +1421,7 @@ header #dropdown-wx-menu .wx_desc {
   margin: 10px 10px 40px 10px;
 }
 #pay_private .wxpay_detial .head {
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   margin: 10px 0 10px 20px;
 }
 #pay_private .wxpay_detial .qrcode {
@@ -1439,7 +1440,7 @@ header #dropdown-wx-menu .wx_desc {
 }
 #pay_private .wxpay_detial .return {
   margin: 10px 10px 20px 20px;
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   font-size: 16px;
   color: #5bc0de;
 }
@@ -1512,7 +1513,7 @@ header #dropdown-wx-menu .wx_desc {
 #exam-result .result-area .result-display .subject label {
   padding: 15px 0 0 0;
   letter-spacing: 5px;
-  font-style: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-style: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 #exam-result .result-area .result-display fieldset {
   padding: 20px;
@@ -1563,7 +1564,7 @@ header #dropdown-wx-menu .wx_desc {
 #exam-search .search-area .search_form .subject label {
   padding: 15px 0 0 0;
   letter-spacing: 5px;
-  font-style: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-style: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 #exam-search .search-area .search_form fieldset {
   padding: 20px;
@@ -1614,7 +1615,7 @@ header #dropdown-wx-menu .wx_desc {
 #login .login-area .login_form .subject label {
   padding: 15px 0 0 0;
   letter-spacing: 5px;
-  font-style: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-style: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 #login .login-area .login_form fieldset {
   padding: 20px;
@@ -1684,7 +1685,7 @@ header #dropdown-wx-menu .wx_desc {
 #forget-password .login-area .login_form .subject label {
   padding: 15px 0 0 0;
   letter-spacing: 5px;
-  font-style: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-style: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 #forget-password .login-area .login_form fieldset {
   padding: 20px;
@@ -1738,7 +1739,7 @@ header #dropdown-wx-menu .wx_desc {
 #register .login-area .login_form .subject label {
   padding: 15px 0 0 0;
   letter-spacing: 5px;
-  font-style: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-style: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 #register .login-area .login_form fieldset {
   padding: 20px;
@@ -2163,7 +2164,7 @@ header #dropdown-wx-menu .wx_desc {
   font-size: 18px;
 }
 #detail .teacher_info {
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   margin-bottom: 20px;
 }
 #detail .teacher_info .teacher_special {
@@ -2174,7 +2175,7 @@ header #dropdown-wx-menu .wx_desc {
 }
 #detail .teacher_info h4 {
   border-bottom: none;
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   font-weight: bold;
   letter-spacing: 0.1em;
 }
