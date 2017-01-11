@@ -227,7 +227,6 @@ header #dropdown-wx-menu .wx_desc {
   font-weight: 700;
   letter-spacing: 8px;
   font-size: 44px;
-  font-family: KaiTi;
 }
 #home #homecontainer .intro .title h2 .first-word {
   color: #3eb2cf;
@@ -304,14 +303,12 @@ header #dropdown-wx-menu .wx_desc {
   font-weight: 700;
   letter-spacing: 7px;
   font-size: 44px;
-  font-family: KaiTi;
 }
 #home #homecontainer .our .range-content .content_l h2 .first-word {
   color: #3eb2cf;
 }
 #home #homecontainer .our .range-content .content_l .title {
   margin-top: 35px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.57143;
   color: #888888;
@@ -343,13 +340,11 @@ header #dropdown-wx-menu .wx_desc {
 #home #homecontainer .our .range-content .content_l .stats .stats_r h3 {
   margin-top: 0;
   color: #fec20b;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 #home #homecontainer .our .range-content .content_l .stats .stats_r h6 {
   width: auto;
   margin: 0 auto;
   font-size: 18px;
-  font-family: "Roboto Slab", "Times New Roman", Times, serif;
 }
 @media (min-width: 768px) {
   #home #homecontainer .our .range-content .content_l .stats .stats_r h6 {
@@ -371,7 +366,6 @@ header #dropdown-wx-menu .wx_desc {
   font-weight: 700;
   letter-spacing: 8px;
   font-size: 44px;
-  font-family: KaiTi;
 }
 #home #homecontainer .about h2 .first-word {
   color: #3eb2cf;
@@ -406,10 +400,6 @@ header #dropdown-wx-menu .wx_desc {
 }
 #home #homecontainer .about .item .class-info .class-detail h4 a {
   color: #fec20b;
-  font-family: "Times New Roman";
-}
-#home #homecontainer .about .item .class-info .class-detail .teacher_name p {
-  font-family: Helvetica;
 }
 #home #homecontainer .about .more-info {
   width: auto;
@@ -757,7 +747,6 @@ header #dropdown-wx-menu .wx_desc {
   margin-top: 90px;
   background: black url(../images/desk.jpg) no-repeat top center;
   color: white;
-  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 #notebook .title {
   margin-top: 40px;
@@ -843,7 +832,6 @@ header #dropdown-wx-menu .wx_desc {
 }
 #about {
   margin-top: 50px;
-  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 @media (min-width: 768px) {
   #about {
@@ -946,7 +934,6 @@ header #dropdown-wx-menu .wx_desc {
   margin-top: 90px;
   color: #555555;
   background: #eeeeee;
-  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 #interaction .title {
   margin-top: 40px;
@@ -982,7 +969,6 @@ header #dropdown-wx-menu .wx_desc {
   margin-top: 90px;
   background: black url(../images/desk.jpg) no-repeat top center;
   color: white;
-  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 #savetime .title {
   margin-top: 60px;
@@ -1339,7 +1325,6 @@ header #dropdown-wx-menu .wx_desc {
   margin: 10px 10px 40px 10px;
 }
 #pay .wxpay_detial .head {
-  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   margin: 10px 0 10px 20px;
 }
 #pay .wxpay_detial .qrcode {
@@ -1358,7 +1343,6 @@ header #dropdown-wx-menu .wx_desc {
 }
 #pay .wxpay_detial .return {
   margin: 10px 10px 20px 20px;
-  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   font-size: 16px;
   color: #5bc0de;
 }
@@ -1421,7 +1405,6 @@ header #dropdown-wx-menu .wx_desc {
   margin: 10px 10px 40px 10px;
 }
 #pay_private .wxpay_detial .head {
-  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   margin: 10px 0 10px 20px;
 }
 #pay_private .wxpay_detial .qrcode {
@@ -1440,7 +1423,6 @@ header #dropdown-wx-menu .wx_desc {
 }
 #pay_private .wxpay_detial .return {
   margin: 10px 10px 20px 20px;
-  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   font-size: 16px;
   color: #5bc0de;
 }
@@ -1513,7 +1495,6 @@ header #dropdown-wx-menu .wx_desc {
 #exam-result .result-area .result-display .subject label {
   padding: 15px 0 0 0;
   letter-spacing: 5px;
-  font-style: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 #exam-result .result-area .result-display fieldset {
   padding: 20px;
@@ -2389,7 +2370,7 @@ footer img {
   }
 }
 footer h5 {
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   color: #6e6e72;
   font-size: 16px;
   line-height: 16px;
@@ -2430,7 +2411,7 @@ footer ul li a:focus {
 }
 footer .copyright {
   margin-top: 10px;
-  font-family: "Microsoft YaHei", "微软雅黑", "黑体", Arial;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   color: #6e6e72;
   font-size: 13px;
   line-height: 16px;
