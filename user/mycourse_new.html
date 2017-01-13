@@ -175,7 +175,12 @@
                     </div>
                     <div class="exam">
                         <h4>我的天天练</h4>
-                        <div class="exam_area"></div>
+                        <div class="exam_area clearfix">
+
+                            <div class="col-sm-6" id="chartContainer" style="height: 300px;margin-left:-15px;"></div>
+                            <div class="col-sm-6"  id="chartContaine" style="height: 300px"></div>
+
+                        </div>
                     </div>
                     <div class="nopay">
                         <h4>待付款班级</h4>
@@ -257,6 +262,78 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../_/js/bootstrap.js"></script>
     <script src="../_/js/fangtian.js"></script>
+
+
+
+    <script type="text/javascript" src="../canvasjs/canvasjs.min.js"></script>
+    <script>
+        window.onload = function() {
+            var data;
+            var dataPoints = [];
+            $.ajax({
+                type: "POST",
+                url: "score.php",
+                async: false,
+                success: function(d) {
+                    obj = JSON.parse(d);
+                    data = obj;
+                }
+            });
+
+            for (var i = 0; i < data.ID_0.length; i++) {
+                dataPoints.push(data.ID_0[i])
+            }
+            var chart = new CanvasJS.Chart("chartContainer", {
+                title: {
+                    text: "成绩概况"
+                },
+                axisY: {
+
+                    labelFontColor: '#47316B',
+                    titleFontColor: "#47316B",
+                    suffix: "分"
+                },
+                animationEnabled: true,
+                axisX: {
+                    title: "时间",
+                    titleFontColor: "#369EAD",
+                    labelFontColor: "#369EAD",
+                    suffix: ""
+                },
+                data: [{
+                    type: "spline",
+                    dataPoints: dataPoints
+                }]
+            });
+            var dataPoints1 = [];
+            for (var i = 0; i < data.ID_1.length; i++) {
+                dataPoints1.push(data.ID_1[i])
+            }
+            console.log(dataPoints1)
+            var chart1 = new CanvasJS.Chart("chartContaine", {
+                title: {
+                    text: "学习情况"
+                },
+                legend: {
+                    maxWidth: 350,
+                    itemWidth: 120
+                },
+                  animationEnabled: true,
+                data: [{
+                    type: "pie",
+                    showInLegend: true,
+                    toolTipContent: " #percent %",
+                    legendText: "{indexLabel}",
+                    dataPoints: dataPoints1
+                }]
+            });
+
+            chart.render();
+            chart1.render();
+
+        }
+    </script>
+
 </body>
 
 </html>
