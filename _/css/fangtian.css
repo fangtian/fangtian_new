@@ -492,9 +492,6 @@ header #dropdown-wx-menu .wx_desc {
 #exam_new .nav_exam ul li a:hover {
   color: orange;
 }
-#exam_new .item {
-  margin-bottom: 10px;
-}
 @media (min-width: 768px) {
   #exam_new .item p {
     margin-bottom: 20px;
@@ -511,7 +508,7 @@ header #dropdown-wx-menu .wx_desc {
   white-space: normal;
 }
 #exam_new #page {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 60px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -551,6 +548,7 @@ header #dropdown-wx-menu .wx_desc {
   position: fixed;
   bottom: 0;
   left: 0;
+  background: #fff url(../images/bg-index-body.jpg) 80%;
 }
 #exam_new #chose {
   padding: 5px 10px;
@@ -564,12 +562,14 @@ header #dropdown-wx-menu .wx_desc {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #fff;
 }
 #exam_new #chose button {
-  background-color: #fff;
+  background-color: transparent;
   outline: none;
   border: none;
+}
+#exam_new #chose .submit {
+  color: green;
 }
 @media (min-width: 768px) {
   #exam_new .content_exam {
@@ -580,10 +580,6 @@ header #dropdown-wx-menu .wx_desc {
   #exam_new .content_exam .nav_exam {
     margin-top: 15px;
   }
-  #exam_new .content_exam #content {
-    min-height: 300px;
-    margin-bottom: 25vh;
-  }
   #exam_new .content_exam #content .opt img {
     float: right;
     max-width: 200px;
@@ -591,33 +587,12 @@ header #dropdown-wx-menu .wx_desc {
   #exam_new .content_exam #content .opt .opt_detail {
     float: left;
   }
-  #exam_new .bottom {
-    width: 100%;
+  #exam_new .container_chose {
+    position: inherit;
+    margin-bottom: 60px;
   }
-  #exam_new .bottom .container_chose {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 20px;
-  }
-  #exam_new .bottom #page {
-    min-width: 700px;
-    position: absolute;
-    margin-bottom: 40px;
-    left: 50%;
-    bottom: 40px;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+  #exam_new #page {
+    margin-top: 60px;
   }
 }
 #teachers {
