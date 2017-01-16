@@ -487,14 +487,19 @@ header {
         }
     }
     .item {
-
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
         @media (min-width: @screen-sm-min) {
             p {
                 margin-bottom: 20px;
             }
-            img {
-                float: right;
+            .picture{
+              float: right;
             }
+
         }
         button {
             text-align: left;
@@ -567,12 +572,10 @@ header {
                 margin-top: 15px;
             }
             #content {
-
-
                 .opt {
                     img {
-                        float: right;
-                        max-width: 200px;
+                        max-width: 100%;
+                        margin:0 auto;
                     }
                     .opt_detail {
                         float: left;
@@ -585,11 +588,9 @@ header {
           margin-bottom: 60px;
 
         }
-
-            #page {
-                margin-top: 60px;
-            }
-
+        #page {
+          margin-top: 60px;
+        }
     }
 }
 
@@ -1841,6 +1842,7 @@ header {
 }
 
 #mycourse_new {
+  background-color: #fff;
     margin-top: 50px;
     @media (min-width: @screen-sm-min) {
         margin-top: 90px;

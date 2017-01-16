@@ -492,11 +492,16 @@ header #dropdown-wx-menu .wx_desc {
 #exam_new .nav_exam ul li a:hover {
   color: orange;
 }
+#exam_new .item img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
 @media (min-width: 768px) {
   #exam_new .item p {
     margin-bottom: 20px;
   }
-  #exam_new .item img {
+  #exam_new .item .picture {
     float: right;
   }
 }
@@ -581,8 +586,8 @@ header #dropdown-wx-menu .wx_desc {
     margin-top: 15px;
   }
   #exam_new .content_exam #content .opt img {
-    float: right;
-    max-width: 200px;
+    max-width: 100%;
+    margin: 0 auto;
   }
   #exam_new .content_exam #content .opt .opt_detail {
     float: left;
@@ -1937,6 +1942,7 @@ header #dropdown-wx-menu .wx_desc {
   letter-spacing: 2px;
 }
 #mycourse_new {
+  background-color: #fff;
   margin-top: 50px;
 }
 @media (min-width: 768px) {
