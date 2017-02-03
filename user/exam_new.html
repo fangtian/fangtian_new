@@ -50,7 +50,7 @@
                       <li><a href="course.html">选课中心</a></li>
                       <li><a href="interaction.html">交流中心</a></li>
                       <li><a href="about.html">关于我们</a></li>
-                      <li><a href="user/mycourse_new.html">学生主页</a></li>
+                  
                       <li><a href="http://bbs.fangtian.me/forum.php">方田论坛</a></li>
                       <li class="hidden-sm hidden-xs">
                           <a id="dropdown_wx" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">关注官方微信
@@ -195,7 +195,6 @@
                 </div>
             </div>
         </div>
-
         <div class="item">
             <p class="title">1.如图所示是奥运福娃在进行蹦床，对他在上升和下落过程中机械能的变化，下列分析正确的是（　）</p>
             <div class="row opt">
@@ -211,7 +210,6 @@
             </div>
         </div>
         </div>
-
         <div id="page" class="number">
         </div>
 
@@ -262,13 +260,11 @@
     <script src="../_/js/fangtian.js"></script>
     <script>
         var Page = function(config) {
-
             this.containbox = $(config.containbox);
             this.dataclass = config.dataclass || "item";
             this.pagebox = $(config.pagebox);
             this.linum = $(this.dataclass, this.containbox).length;
             this.init.apply(this, arguments);
-
         }
         Page.prototype = {
             init: function() {
@@ -294,9 +290,7 @@
                 this.goPage(1);
                 this.pagenums.each(function(i, npage) {
                     $(npage).click(function() {
-
                         _this.goPage(this.innerHTML);
-
                     });
                 });
 
@@ -313,18 +307,14 @@
                     } else {
                         _this.nocheck(_this.current);
                     }
-
                 });
 
             },
             goPage: function(num) {
-
                 this.current = num;
-
                 this.pagenums.removeClass("current");
                 this.pagenums.eq(num - 1).addClass("current");
                 var dataobjs = $(this.dataclass, this.containbox);
-
                 dataobjs.each(function(i, itemdata) {
                     $(itemdata).css("display", "none");
                 });
@@ -348,11 +338,9 @@
             },
             checked: function(num) {
                 this.pagenums.eq(num - 1).removeClass('current').addClass('checked');
-
             },
             nocheck: function(num) {
                 this.pagenums.eq(num - 1).removeClass('checked').addClass('current');
-
             }
         };
         (function() {
@@ -362,7 +350,6 @@
                 dataclass: ".item",
                 pagebox: "#page"
             });
-
         })();
     </script>
 </body>

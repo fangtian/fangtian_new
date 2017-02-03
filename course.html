@@ -40,7 +40,7 @@
                         <li><a href="course.html">选课中心</a></li>
                         <li><a href="interaction.html">交流中心</a></li>
                         <li><a href="about.html">关于我们</a></li>
-                        <li><a href="user/mycourse_new.html">学生主页</a></li>
+                        
                         <li><a href="http://bbs.fangtian.me/forum.php">方田论坛</a></li>
                         <li class="hidden-sm hidden-xs">
                             <a id="dropdown_wx" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">关注官方微信
@@ -139,71 +139,65 @@
                     <!-- query_zone star-->
                     <div class="query_zone clearfix">
                         <div class="key clearfix">
-                            <div class="col-sm-3 col-xs-6">
-                                <span data-toggle="collapse" data-target="#location" class="btn btn-info" id="key-location">所在地</span>
-                                <button id="location-close" type="button" class="close hidden" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                            <div class="col-sm-3 col-xs-6"><span data-toggle="collapse" data-target="#city" class="btn btn-info" id="key-city" key="all">所在地</span>
+                                <button id="city-close" type="button" class="close hidden" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             </div>
-                            <div class="col-sm-3 col-xs-6">
-                                <span data-toggle="collapse" data-target="#level" class="btn btn-info">年级</span>
+                            <div class="col-sm-3 col-xs-6"><span data-toggle="collapse" data-target="#area" class="btn btn-info" id="key-area" key="all">校区</span>
+                                <button id="area-close" type="button" class="close hidden" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             </div>
-                            <div class="col-sm-3 col-xs-6">
-                                <span data-toggle="collapse" data-target="#method" class="btn btn-info">授课方式</span>
+                            <div class="col-sm-3 col-xs-6"><span data-toggle="collapse" data-target="#grade" class="btn btn-info" id="key-grade" key="all">年级</span>
+                                <button id="grade-close" type="button" class="close hidden" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             </div>
-                            <div class="col-sm-3 col-xs-6">
-                                <span data-toggle="collapse" data-target="#subject" class="btn btn-info">科目</span>
+                            <div class="col-sm-3 col-xs-6"><span data-toggle="collapse" data-target="#onlineoroffline" class="btn btn-info" id="key-onlineoroffline" key="all">授课方式</span>
+                                <button id="onlineoroffline-close" type="button" class="close hidden" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><span data-toggle="collapse" data-target="#subject" class="btn btn-info" id="key-subject" key="all">学科</span>
+                                <button id="subject-close" type="button" class="close hidden" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             </div>
                         </div>
-                        <div class="result-indicator">
-                            <span>共有</span>
-                            <span class="result-sum">
-                              <strong>32</strong>
-                            </span>
-                            <span>条记录</span>
-                            <span>&nbsp</span>
-                            <span class="current-page">
-                              <strong>1</strong>
-                            </span>
-                            <span>/</span>
-                            <span class="total-pages">2</span>
-                            <span>&nbsp</span>
-                            <span class="btn-group" role="group">
-                            <button class="btn btn-default btn-sm" disabled="true">
-                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            </button>
-                            <button class="btn btn-default btn-sm">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            </button>
-                            </span>
-                        </div>
-                        <div class="collapse clearfix" id="location">
+                        <div class="collapse clearfix" id="city">
                             <div class="location well clearfix">
-                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default">合肥</span></div>
-                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default">长沙</span></div>
-                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default">深圳</span></div>
-                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default">其他城市</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default hidd" id="city深圳市" key="深圳市">深圳市</span></div>
+
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default hidd" id="city合肥市" key="合肥市">合肥市</span></div>
+
                             </div>
                         </div>
-                        <div class="collapse clearfix" id="level">
+                        <div class="collapse clearfix" id="area">
                             <div class="location well clearfix">
-                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default">五年级</span></div>
-                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default">六年级</span></div>
-                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default">初一</span></div>
-                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default">初二</span></div>
-                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default">初三</span></div>
+                                <!--foreach name='allArea' item='c'-->
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default hidd" id="area0" key="校区0">校区0</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default hidd" id="area1" key="校区1">校区1</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default hidd" id="area2" key="校区1">校区1</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default hidd" id="area3" key="校区1">校区1</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default hidd" id="area4" key="校区1">校区1</span></div>
+                                <!--/foreach-->
                             </div>
                         </div>
-                        <div class="collapse clearfix" id="method">
+                        <div class="collapse clearfix" id="grade">
                             <div class="location well clearfix">
-                                <div class="col-xs-6"><span class="btn-block btn btn-default">面授</span></div>
-                                <div class="col-xs-6"><span class="btn-block btn btn-default">网络直播</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default" key="1-1">小学一年级</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default" key="1-2">小学二年级</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default" key="1-3">小学三年级</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default" key="1-4">小学四年级</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default" key="1-5">小学五年级</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default" key="1-6">小学六年级</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default" key="2-1">初中一年级</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default" key="2-2">初中二年级</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default" key="2-3">初中三年级</span></div>
+
+                        </div>
+                        <div class="collapse clearfix" id="onlineoroffline">
+                            <div class="location well clearfix">
+                                <div class="col-xs-6"><span class="btn-block btn btn-default" key="0">网络直播</span></div>
+                                <div class="col-xs-6"><span class="btn-block btn btn-default" key="1">实体面授</span></div>
                             </div>
                         </div>
                         <div class="collapse clearfix" id="subject">
                             <div class="location well clearfix">
-                                <div class="col-xs-6"><span class="btn-block btn btn-default">数学</span></div>
-                                <div class="col-xs-6"><span class="btn-block btn btn-default">物理</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default" key="1">数学</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default" key="3">物理</span></div>
+                                <div class="col-sm-3 col-xs-6"><span class="btn-block btn btn-default" key="4">化学</span></div>
                             </div>
                         </div>
                     </div>
@@ -405,29 +399,230 @@
     <script src="_/js/bootstrap.js"></script>
     <script src="_/js/fangtian.js"></script>
     <script type="text/javascript">
-    jQuery(document).ready(function() {
-        $('#location').on('click', 'span', function(e) {
-            $('#location-close').removeClass('hidden');
-            $('#key-location').text(this.innerText);
-            $('#location').collapse('hide');
+        var city = "";
+        var gid = "";
+        var gidname = "";
+        var clicked = "";
+        var p = 0;
+        var f_refresh = true; //重新查询标记
+        var more = true;
+
+        function url(s) {
+            location.href = s;
+        }
+
+        jQuery(document).ready(function() {
+
+        setLabel("city");
+        setLabel("area");
+        setLabel("grade");
+        setLabel("onlineoroffline");
+        setLabel("subject");
+
+        clickClose("city", "所在地");
+        clickClose("area", "校区");
+        clickClose("grade", "年级");
+        clickClose("onlineoroffline", "授课方式");
+        clickClose("subject", "学科");
+
+        //如果登录，带城市和年级
+        if (city == '') {
+            city1 = "all";
+        } else {
+            city1 = city;
+            $("#city-close").removeClass('hidden');
+            $("#key-city").text(city);
+            $("#key-city").attr("key", city);
+            //$("#city").collapse('hide');
+        }
+
+        if (gid == '') {
+            gid1 = "all";
+        } else {
+            gid1 = gid;
+            $("#grade-close").removeClass('hidden');
+            $("#key-grade").text(gidname);
+            $("#key-grade").attr("key", gid);
+            //$("#grade").collapse('hide');
+        }
+      console.log("getCourseNew");
+        getCourseNew(city1,"all",gid1,"all","all",'');
 
         });
-        $('#level').on('click', 'span', function() {
-            $('#level').collapse('hide');
-        });
-        $('#method').on('click', 'span', function() {
-            $('#method').collapse('hide');
-        });
-        $('#subject').on('click', 'span', function() {
-            $('#subject').collapse('hide');
-        });
-        $('#location-close').click(function() {
-            // $('#location-close').remove('button');
-            $('#location-close').addClass('hidden');
-            $('#key-location').text('所在地');
-        });
 
-    });
+
+        function setLabel(name) {
+            var a = "#" + name + "-close"; //关闭按钮
+            var b = "#key-" + name; //按钮标题
+            var c = "#" + name; //实际内容层
+            //点击事件
+            $(c).on('click', 'span', function(e) {
+                f_refresh = true;
+                p = 0;
+                //$('#course_end_info').html("");
+                //alert(f_refresh);
+                clicked = name; //点了谁
+                $(a).removeClass('hidden'); //打开关闭按钮
+                $(b).text(this.innerText); //
+                console.log(this.innerText);
+                $(b).attr("key", $(this).attr("key"));
+                $(c).collapse('hide'); //隐藏折叠层
+                getCourseNew($("#key-city").attr("key"), $("#key-area").attr("key"), $("#key-grade").attr("key"), $("#key-onlineoroffline").attr("key"), $("#key-subject").attr("key"), ''); //重新搜索
+            });
+        }
+
+        function clickClose(name, text) {
+            var a = "#" + name + "-close"; //关闭按钮
+            var b = "#key-" + name; //按钮
+
+            //关闭按钮点击事件
+            $(a).click(function() {
+
+                f_refresh = true;
+                p = 0;
+                //$('#course_end_info').html("");
+                //alert(f_refresh);
+
+                //如果关闭了所在地，也需要关闭校区
+                if (name == "city") {
+                    $("#area-close").addClass('hidden'); //隐藏关闭按钮
+                    $("#key-area").text("校区"); //按钮标题还原
+                    $("#key-area").attr("key", "all"); //按钮值还原
+                }
+                clicked = "close";
+                $(a).addClass('hidden'); //隐藏关闭按钮
+                $(b).text(text); //按钮标题还原
+                $(b).attr("key", "all"); //按钮值还原
+
+                /*
+                alert($("#key-city").attr("key"));
+                alert($("#key-area").attr("key"));
+                alert($("#key-grade").attr("key"));
+                alert($("#key-onlineoroffline").attr("key"));
+                alert($("#key-subject").attr("key"));
+                */
+
+                getCourseNew($("#key-city").attr("key"), $("#key-area").attr("key"), $("#key-grade").attr("key"), $("#key-onlineoroffline").attr("key"), $("#key-subject").attr("key"), '');
+            });
+        }
+
+        //按老师查的时候初始化所有其他条件
+        function clearLabel() {
+            closeNotSearch("city", "所在地");
+            closeNotSearch("area", "校区");
+            closeNotSearch("grade", "年级");
+            closeNotSearch("onlineoroffline", "授课方式");
+            closeNotSearch("subject", "学科");
+        }
+
+        //不查询
+        function closeNotSearch(name, text) {
+            var a = "#" + name + "-close";
+            var b = "#key-" + name;
+            $(a).addClass('hidden');
+            $(b).text(text);
+            $(b).attr("key", "all");
+        }
+
+        function resetCity() {
+            $("#city div div span").each(function() {
+                $(this.parentNode).hide();　　　
+                for (var i = 0; i < nowCity.length; i++) {
+                    // alert(nowCity[i]+"-"+$(this).attr("key"));
+                    if (nowCity[i] == $(this).attr("key")) {
+                        $(this.parentNode).show()
+                    }
+                }
+            });
+        }
+
+        function resetArea() {
+            $("#area div div span").each(function() {
+                $(this.parentNode).hide();
+            });
+
+            //alert("resetArea nowArea="+JSON.stringify(nowArea));
+            for (var i = 0; i < nowArea.length; i++) {
+                $("#area" + i).attr("key", nowArea[i]);
+                $("#area" + i).html(nowArea[i]);
+                $("#area" + i).parent().show();
+            }
+        }
+
+        function resetGrade() {
+            $("#grade div div span").each(function() {
+                $(this.parentNode).hide();　　　　
+                for (var key in nowGrade) {
+                    if (key == $(this).attr("key")) {
+                        $(this.parentNode).show()
+                    }
+                }
+            });
+        }
+
+        function resetOnlineoroffline() {
+            $("#onlineoroffline div div span").each(function() {
+                $(this.parentNode).hide();　　　　
+                for (var key in nowOnlineoroffline) {
+                    //alert(key+"-"+$(this).attr("key"));
+                    if (key == $(this).attr("key")) {
+                        $(this.parentNode).show()
+                    }
+                }
+            });
+        }
+
+        function resetSubject() {
+            $("#subject div div span").each(function() {
+                $(this.parentNode).hide();　　　　
+                for (var key in nowSubject) {
+                    if (key == $(this).attr("key")) {
+                        $(this.parentNode).show()
+                    }
+                }
+            });
+        }
+
+        function getCourseNew(c_city, c_area, c_grade, c_onlineoroffline, c_subject, tid) {
+       $.getJSON("/fangtian_ol/index.php/Course/getCourseNew.html", {
+           city: c_city,
+           area: c_area,
+           gid: c_grade,
+           onlineoroffline: c_onlineoroffline,
+           sid: c_subject,
+           tid: tid,
+           p: p
+       }, function(data) {
+           if (data.status == 1) {
+               str_course = data.info;
+
+               if (f_refresh) {
+                   $("#course_list").html(str_course);
+               } else {
+                   $("#course_list").append(str_course);
+               }
+
+               //alert("show");
+               //alert(str_course);
+               nowCity = data.data['nowCity'];
+               nowArea = data.data['nowArea'];
+               nowGrade = data.data['nowGrade'];
+               nowSubject = data.data['nowSubject'];
+               nowOnlineoroffline = data.data['nowOnlineoroffline'];
+               // alert("count subject="+nowSubject[3]+"count city"+nowCity.length);
+
+               resetCondition();
+               finished = true;
+
+               $('#p').val(data.data['p']);
+               $('#total_page').val(data.data['total_page']);
+               showCourseEndInfo();
+
+           } else {
+               alert("获取数据失败，请重试");
+           }
+       });
+   }
     </script>
 </body>
 
