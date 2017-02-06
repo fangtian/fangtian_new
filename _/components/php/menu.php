@@ -13,10 +13,10 @@
   <div class="row">
     <div class="divider"></div>
   </div>
-  
+
    <h5><a href="userinfo.php"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> 评论：5条</a></h5>
    <h5><a href="userinfo.php"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 收藏：5条</a></h5>
-  
+
   <div class="row">
     <div class="divider"></div>
   </div>
