@@ -138,7 +138,7 @@
         </div>
     </header>
     <!-- header end -->
-    <section id="about">
+    <section id="about" >
         <div class="parallax-window" data-parallax="scroll" data-image-src="_/images/fangtian_about01.jpg"></div>
         <div class=" caption">
             <div class="container title">
@@ -347,6 +347,28 @@
                 }
             }
         })
+
+
+        // viewAnimate
+        var viewAnimate = $('.view-animate');
+        $(document).ready(function() {
+            function isScrolledIntoView(elem) {
+                var $window = $(window);
+                return elem.offset().top + elem.outerHeight() >= $window.scrollTop() && elem.offset().top <= $window.scrollTop() + $window.height();
+            }
+            if (viewAnimate.length) {
+                for (i = 0; i < viewAnimate.length; i++) {
+                    var view = $(viewAnimate[i]).not('.active');
+                    $(document).on("scroll", $.proxy(function() {
+                        if (isScrolledIntoView(this)) {
+                            this.addClass("active");
+                        }
+                    }, view)).trigger("scroll");
+                }
+            }
+        })
+
+        // ---------------------------------------------------------
     </script>
 </body>
 

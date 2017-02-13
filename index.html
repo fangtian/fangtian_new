@@ -27,6 +27,8 @@
 <div style="clear:both;height:59px;padding:0 0 0 15px;position:relative;">
     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0027_Simplified Chinese.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a></div>
 <![endif]-->
+
+
 </head>
 
 <body id="home">
@@ -53,18 +55,7 @@
                         <li><a href="about.html">关于我们</a></li>
                         <li><a href="user/mycourse_new.html">学生主页</a></li>
                         <li><a href="http://bbs.fangtian.me/forum.php">方田论坛</a></li>
-                        <li class="hidden-sm hidden-xs">
-                            <a id="dropdown_wx" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">关注官方微信
-                                <span class="caret"></span>
-                            </a>
-                            <ul id="dropdown-wx-menu" class="dropdown-menu" role="menu">
-                                <div class="wxqr thumbnail">
-                                    <img src="_/images/wx_qrcode.jpg" alt="">
-                                </div>
-                                <div class="wx_desc">扫码二维码关注</div>
-                            </ul>
-                        </li>
-                        <!-- 关注官方微信 -->
+                        
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#" data-toggle="modal" data-target="#registerModal">注册</a></li>
@@ -440,6 +431,47 @@
         </p>
     </div>
     <!-- back-top end -->
+
+<div class="service">
+  <div id="rightArrow">
+      <a href="javascript:;" title="在线客户"></a>
+  </div>
+  <div id="floatDivBoxs">
+      <div class="floatDtt">在线客服</div>
+      <div class="floatShadow">
+          <ul class="floatDqq">
+              <li style="padding-left:0px;">
+                  <a target="_blank" href="tencent://message/?uin=470666250&Site=sc.chinaz.com&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
+              </li>
+              <li style="padding-left:0px;">
+                  <a target="_blank" href="tencent://message/?uin=470666250&Site=sc.chinaz.com&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
+              </li>
+              <li style="padding-left:0px;">
+                  <a target="_blank" href="tencent://message/?uin=470666250&Site=sc.chinaz.com&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
+              </li>
+              <li style="padding-left:0px;">
+                  <a target="_blank" href="tencent://message/?uin=470666250&Site=sc.chinaz.com&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
+              </li>
+              <li style="padding-left:0px;">
+                  <a target="_blank" href="tencent://message/?uin=470666250&Site=sc.chinaz.com&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
+              </li>
+
+          </ul>
+          <div class="floatDtxt">热线电话</div>
+          <div class="floatDtel">安庆路校区 <br>
+            0551-65103992 <br>
+          北一环校区 <br> 0551-65103070 <br>
+        五里墩校区 <br> 0551-65103821</div>
+          <div style="text-align:center;padding:10PX 0 5px 0;background:#EBEBEB;">
+            <img src="_/images/erweima.png" style="width:106px;height106px">
+              <br>微信公众账号
+          </div>
+      </div>
+      <div class="floatDbg"></div>
+  </div>
+</div>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="_/components/js/jQuery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -448,89 +480,88 @@
     <!-- Include js plugin -->
     <script src="swiper/swiper.min.js"></script>
     <script type="text/javascript">
-    // ---------------------------------------------------------
-    // swiper
-    // ---------------------------------------------------------
+        // ---------------------------------------------------------
+        // swiper
+        // ---------------------------------------------------------
+        var teacherSwiper = new Swiper('.swiper-teacher', {
+            // autoplay: 3000, //可选选项，自动滑动
+            loop: true,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            slidesPerView: 4,
+            spaceBetween: 40,
+            breakpoints: {
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                767: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
+            }
+        })
+        var bannerSwiper = new Swiper('.swiper-banner', {
+            autoplay: 3000, //可选选项，自动滑动
+            loop: true,
+            pagination: '.swiper-pagination',
+            paginationClickable: true
+        })
+        var bannerSwiper = new Swiper('.swiper-news', {
+            autoplay: 3000, //可选选项，自动滑动
+            loop: true,
+            direction: 'vertical',
 
-    var teacherSwiper = new Swiper('.swiper-teacher', {
-        // autoplay: 3000, //可选选项，自动滑动
-        loop: true,
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        slidesPerView: 4,
-        spaceBetween: 40,
-        breakpoints: {
-            1200: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            },
-            992: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            767: {
-                slidesPerView: 1,
-                spaceBetween: 10
+        });
+        // ---------------------------------------------------------
+        // setHeader
+        window.onload = function() {
+            setHeader();
+        }
+
+        function setHeader() {
+            var opacity = 0;
+            var navbar = document.querySelector('.navbar');
+            var banner = document.querySelector('.video');
+            var H = banner.offsetHeight;
+            window.onscroll = function() {
+                var top = document.body.scrollTop;
+
+                if (top < H) {
+                    opacity = top / H;
+                } else {
+                    opacity = 1;
+                }
+                navbar.style.background = "rgba(250,250,250," + opacity + ")";
             }
         }
-    })
-    var bannerSwiper = new Swiper('.swiper-banner', {
-        autoplay: 3000, //可选选项，自动滑动
-        loop: true,
-        pagination: '.swiper-pagination',
-        paginationClickable: true
-    })
-    var bannerSwiper = new Swiper('.swiper-news', {
-        autoplay: 3000, //可选选项，自动滑动
-        loop: true,
-        direction: 'vertical',
-
-    });
-    // ---------------------------------------------------------
-
-    // viewAnimate
-    var viewAnimate = $('.view-animate');
-    $(document).ready(function() {
-        function isScrolledIntoView(elem) {
-            var $window = $(window);
-            return elem.offset().top + elem.outerHeight() >= $window.scrollTop() && elem.offset().top <= $window.scrollTop() + $window.height();
-        }
-        if (viewAnimate.length) {
-            for (i = 0; i < viewAnimate.length; i++) {
-                var view = $(viewAnimate[i]).not('.active');
-                $(document).on("scroll", $.proxy(function() {
-                    if (isScrolledIntoView(this)) {
-                        this.addClass("active");
-                    }
-                }, view)).trigger("scroll");
-            }
-        }
-    })
-
-    // ---------------------------------------------------------
-
-    // setHeader
-    window.onload = function() {
-        setHeader();
-    }
-
-    function setHeader() {
-        var opacity = 0;
-        var navbar = document.querySelector('.navbar');
-        var banner = document.querySelector('.video');
-        var H = banner.offsetHeight;
-        window.onscroll = function() {
-            var top = document.body.scrollTop;
-
-            if (top < H) {
-                opacity = top / H;
+        // ---------------------------------------------------------
+        var flag = 1;
+        $('#rightArrow').click(function() {
+            if (flag == 1) {
+                $("#floatDivBoxs").animate({
+                    right: '-175px'
+                }, 300);
+                $(this).animate({
+                    right: '-5px'
+                }, 300);
+                $(this).css('background-position', '-50px 0');
+                flag = 0;
             } else {
-                opacity = 1;
+                $("#floatDivBoxs").animate({
+                    right: '0'
+                }, 300);
+                $(this).animate({
+                    right: '170px'
+                }, 300);
+                $(this).css('background-position', '0px 0');
+                flag = 1;
             }
-            navbar.style.background = "rgba(250,250,250," + opacity + ")";
-        }
-    }
-    // ---------------------------------------------------------
+        });
     </script>
 </body>
 
