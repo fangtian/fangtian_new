@@ -55,7 +55,7 @@
                         <li><a href="about.html">关于我们</a></li>
                         <li><a href="user/mycourse_new.html">学生主页</a></li>
                         <li><a href="http://bbs.fangtian.me/forum.php">方田论坛</a></li>
-                        
+
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#" data-toggle="modal" data-target="#registerModal">注册</a></li>
@@ -432,44 +432,41 @@
     </div>
     <!-- back-top end -->
 
-<div class="service">
-  <div id="rightArrow">
-      <a href="javascript:;" title="在线客户"></a>
-  </div>
-  <div id="floatDivBoxs">
-      <div class="floatDtt">在线客服</div>
-      <div class="floatShadow">
-          <ul class="floatDqq">
-              <li style="padding-left:0px;">
-                  <a target="_blank" href="tencent://message/?uin=470666250&Site=sc.chinaz.com&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
-              </li>
-              <li style="padding-left:0px;">
-                  <a target="_blank" href="tencent://message/?uin=470666250&Site=sc.chinaz.com&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
-              </li>
-              <li style="padding-left:0px;">
-                  <a target="_blank" href="tencent://message/?uin=470666250&Site=sc.chinaz.com&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
-              </li>
-              <li style="padding-left:0px;">
-                  <a target="_blank" href="tencent://message/?uin=470666250&Site=sc.chinaz.com&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
-              </li>
-              <li style="padding-left:0px;">
-                  <a target="_blank" href="tencent://message/?uin=470666250&Site=sc.chinaz.com&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
-              </li>
+    <div class="service">
+        <div id="rightArrow">
+            <a href="javascript:;" title="在线客户"></a>
+        </div>
+        <div id="floatDivBoxs">
+            <div class="floatDtt">在线客服</div>
+            <div class="floatShadow">
+                <ul class="floatDqq">
+                    <li style="padding-left:0px;">
+                        <a target="_blank" href="tencent://message/?uin=470666250&Site=www.fangtian.me&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
+                    </li>
+                    <li style="padding-left:0px;">
+                        <a target="_blank" href="tencent://message/?uin=470666250&Site=www.fangtian.me&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
+                    </li>
+                    <li style="padding-left:0px;">
+                        <a target="_blank" href="tencent://message/?uin=470666250&Site=www.fangtian.me&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
+                    </li>
+                    <li style="padding-left:0px;">
+                        <a target="_blank" href="tencent://message/?uin=470666250&Site=www.fangtian.me&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
+                    </li>
+                    <li style="padding-left:0px;">
+                        <a target="_blank" href="tencent://message/?uin=470666250&Site=www.fangtian.me&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
+                    </li>
 
-          </ul>
-          <div class="floatDtxt">热线电话</div>
-          <div class="floatDtel">安庆路校区 <br>
-            0551-65103992 <br>
-          北一环校区 <br> 0551-65103070 <br>
-        五里墩校区 <br> 0551-65103821</div>
-          <div style="text-align:center;padding:10PX 0 5px 0;background:#EBEBEB;">
-            <img src="_/images/erweima.png" style="width:106px;height106px">
-              <br>微信公众账号
-          </div>
-      </div>
-      <div class="floatDbg"></div>
-  </div>
-</div>
+                </ul>
+                <div class="floatDtxt">热线电话</div>
+                <div class="floatDtel">安庆路校区 <br> 0551-65103992 <br> 北一环校区 <br> 0551-65103070 <br> 五里墩校区 <br> 0551-65103821</div>
+                <div style="text-align:center;padding:10PX 0 5px 0;background:#EBEBEB;">
+                    <img src="_/images/erweima.png" style="width:106px;height106px">
+                    <br>微信公众账号
+                </div>
+            </div>
+            <div class="floatDbg"></div>
+        </div>
+    </div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -521,6 +518,7 @@
         // setHeader
         window.onload = function() {
             setHeader();
+             timedMsg();
         }
 
         function setHeader() {
@@ -562,6 +560,10 @@
                 flag = 1;
             }
         });
+
+        function timedMsg() {
+            setTimeout("$('#floatDivBoxs').animate({right: '-175px'}, 300);   $('#rightArrow').animate({right: '-5px'}, 300); $('#rightArrow').css('background-position', '-50px 0');flag = 0;", 3000)
+        }
     </script>
 </body>
 
