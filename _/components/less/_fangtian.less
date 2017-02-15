@@ -785,140 +785,40 @@ header {
         margin-top: 90px;
     }
 
-    #teacher_from_bbs {
-        background-color: @gray-lighter;
-        padding-top: 40px;
-    }
-
-    #teacher_profile {
-        background: white url("../images/teachers_hero.jpg") no-repeat top center;
-
-        .title {
-            margin: 90px 0 60px;
-            text-align: center;
-            letter-spacing: 20px;
-        }
-
-        .teacher_description {
-            margin-top: 80px;
-            background-color: white;
-        }
-
-        .teacher_image {
-            padding: 20px;
-        }
-
-        .teacher_video {
-            padding: 10px 20px 20px;
-            letter-spacing: 0.2em;
-
-            .btn {
-                line-height: 30px;
-                font-size: 24px;
-            }
-        }
-
-        .teacher_name {
-            color: @gray;
-
-            h1 {
-                font-size: 48px;
-                letter-spacing: 0.4em;
-            }
-        }
-
-        .teacher_title {
-            color: @gray-custom;
-            font-size: 18px;
-            letter-spacing: 0.1em;
-        }
-
-        .teacher_resume {
-            color: @gray-custom;
-
-            h2 {
-                font-size: 24px;
-                color: @gray;
-                letter-spacing: 0.2em;
-            }
-
-            p {
-                font-size: 18px;
-                line-height: 30px;
-            }
-        }
-    }
-
     #teacher_desc {
         background: @gray-lighter url(../images/teachers_hero.jpg) no-repeat top center;
 
         .title {
-            margin: 90px 0 60px;
+            margin: 100px 0;
             text-align: center;
             letter-spacing: 20px;
         }
 
-        .teacher_list {
-            margin-top: 70px;
+        .teacher-nav {
+            height: 40px;
+            margin: 10px 0;
+
+            li {
+                float: left;
+                list-style: none;
+                color: black;
+                cursor: pointer;
+                margin-right: 10px;
+                font-size: 14px;
+            }
         }
 
         .teacher_item {
             color: @gray;
             background-color: white;
+            text-align: center;
             .border-radius(10px);
             margin-bottom: 20px;
-            // margin-top: 20px;
-            .teacher_pic {
-                text-align: center;
-            }
-
             .thumbnail {
                 border: 0;
             }
-
             .teacher_name {
                 font-size: 16px;
-                // position: absolute;
-                // bottom: 30px;
-                // text-align: center;
-            }
-
-            .teacher_cv {
-                margin: 40px 0 20px;
-
-                .edu_bg {
-                    font-size: 16px;
-                    color: darken(@gray, 10%);
-                }
-
-                .cv {
-                    font-size: 16px;
-                    color: lighten(@gray, 10%);
-                }
-
-                .special {
-                    font-size: 16px;
-                    color: lighten(@gray, 20%);
-                }
-            }
-
-            .teacher_video {
-                margin-bottom: 20px;
-
-                .btn-warning {
-                    width: auto;
-                    display: block;
-                    margin: 0 auto;
-                }
-
-                .btn:focus {
-                    outline: none;
-                }
-                @media (min-width: @screen-sm-min) {
-                    .btn-warning {
-                        margin: 0;
-                    }
-                }
             }
         }
     }
@@ -2443,7 +2343,6 @@ header {
             margin-left: -10px;
             margin-right: -10px;
         }
-
 
         .choose_time .table > tbody > tr > td {
             white-space: nowrap;
