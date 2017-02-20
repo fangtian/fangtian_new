@@ -707,6 +707,11 @@ header #dropdown-wx-menu .wx_desc {
   margin-right: 10px;
   font-size: 14px;
 }
+@media (max-width: 767px) {
+  #teachers #teacher_desc .teacher-nav li {
+    margin-right: 0;
+  }
+}
 #teachers #teacher_desc .teacher_item {
   color: #555555;
   background-color: white;
