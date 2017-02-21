@@ -25,6 +25,7 @@ body .more-info {
   height: 50px;
 }
 body .more-info a {
+  text-align: center;
   display: block;
   width: 170px;
   height: 50px;
@@ -224,6 +225,7 @@ header #dropdown-wx-menu .wx_desc {
 #home #homecontainer .banner {
   width: 100%;
   height: 200px;
+  margin-top: 50px;
 }
 #home #homecontainer .banner .swiper-banner {
   width: 100%;
@@ -233,8 +235,7 @@ header #dropdown-wx-menu .wx_desc {
   text-align: center;
 }
 #home #homecontainer .banner .swiper-banner .swiper-wrapper a {
-  display: inline-block;
-  margin-top: 50px;
+  display: block;
 }
 #home #homecontainer .news {
   height: 30px;
@@ -248,6 +249,12 @@ header #dropdown-wx-menu .wx_desc {
   line-height: 30px;
   font-size: 14px;
   margin-left: 10px;
+  overflow: hidden;
+  /*溢出隐藏*/
+  text-overflow: ellipsis;
+  /*以省略号...显示*/
+  white-space: nowrap;
+  /*强制不换行*/
 }
 #home #homecontainer .news .swiper-news .swiper-wrapper li a {
   text-decoration: none;
@@ -505,7 +512,6 @@ header #dropdown-wx-menu .wx_desc {
 }
 #home #homecontainer .teacher {
   background: #5BC0DE url("../images/main_bg.jpg");
-  height: 350px;
   padding: 20px 0;
 }
 @media (min-width: 767px) {
@@ -528,6 +534,11 @@ header #dropdown-wx-menu .wx_desc {
 #home #homecontainer .teacher .item .teacher_intro p {
   margin-bottom: 10px;
   color: #fff;
+}
+@media (min-width: 767px) {
+  #home #homecontainer .teacher .item .teacher_intro {
+    min-height: 250px;
+  }
 }
 #home #homecontainer .teacher .item img {
   width: 70px;
@@ -687,19 +698,19 @@ header #dropdown-wx-menu .wx_desc {
     margin-top: 90px;
   }
 }
-#teachers #teacher_desc {
+#teachers #teacher_list {
   background: #eeeeee url(../images/teachers_hero.jpg) no-repeat top center;
 }
-#teachers #teacher_desc .title {
+#teachers #teacher_list .title {
   margin: 100px 0;
   text-align: center;
   letter-spacing: 20px;
 }
-#teachers #teacher_desc .teacher-nav {
+#teachers #teacher_list .teacher-nav {
   height: 40px;
   margin: 10px 0;
 }
-#teachers #teacher_desc .teacher-nav li {
+#teachers #teacher_list .teacher-nav li {
   float: left;
   list-style: none;
   color: black;
@@ -708,11 +719,11 @@ header #dropdown-wx-menu .wx_desc {
   font-size: 14px;
 }
 @media (max-width: 767px) {
-  #teachers #teacher_desc .teacher-nav li {
+  #teachers #teacher_list .teacher-nav li {
     margin-right: 0;
   }
 }
-#teachers #teacher_desc .teacher_item {
+#teachers #teacher_list .teacher_item {
   color: #555555;
   background-color: white;
   text-align: center;
@@ -724,11 +735,61 @@ header #dropdown-wx-menu .wx_desc {
   background-clip: padding-box;
   margin-bottom: 20px;
 }
-#teachers #teacher_desc .teacher_item .thumbnail {
+#teachers #teacher_list .teacher_item .img-thumbnail {
   border: 0;
 }
-#teachers #teacher_desc .teacher_item .teacher_name {
+#teachers #teacher_list .teacher_item .teacher_name {
   font-size: 16px;
+}
+#teachers #teacher_list .teacher_item .btn {
+  margin-bottom: 10px;
+}
+#teachers #teacher_profile {
+  background: white url("../images/teachers_hero.jpg") no-repeat top center;
+}
+#teachers #teacher_profile .title {
+  margin: 90px 0 60px;
+  text-align: center;
+  letter-spacing: 20px;
+}
+#teachers #teacher_profile .teacher_description {
+  margin-top: 80px;
+  background-color: white;
+}
+#teachers #teacher_profile .teacher_image {
+  padding: 20px;
+}
+#teachers #teacher_profile .teacher_video {
+  padding: 10px 20px 20px;
+  letter-spacing: 0.2em;
+}
+#teachers #teacher_profile .teacher_video .btn {
+  line-height: 30px;
+  font-size: 24px;
+}
+#teachers #teacher_profile .teacher_name {
+  color: #555555;
+}
+#teachers #teacher_profile .teacher_name h1 {
+  font-size: 48px;
+  letter-spacing: 0.4em;
+}
+#teachers #teacher_profile .teacher_title {
+  color: #9b9b9b;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+#teachers #teacher_profile .teacher_resume {
+  color: #9b9b9b;
+}
+#teachers #teacher_profile .teacher_resume h2 {
+  font-size: 24px;
+  color: #555555;
+  letter-spacing: 0.2em;
+}
+#teachers #teacher_profile .teacher_resume p {
+  font-size: 18px;
+  line-height: 30px;
 }
 #notebook {
   margin-top: 90px;

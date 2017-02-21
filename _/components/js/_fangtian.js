@@ -6,9 +6,8 @@ function goToByScroll(id) {
     id = id.replace("navbar_", "");
     // Scroll
     $('html,body').animate({
-            scrollTop: $("#" + id).offset().top - 100
-        },
-        'slow');
+          scrollTop: $("#" + id).offset().top - 100
+        },'slow');
 };
 
 

@@ -35,6 +35,7 @@ body {
         height: 50px;
 
         a {
+            text-align: center;
             display: block;
             width: 170px;
             height: 50px;
@@ -267,7 +268,7 @@ header {
         .banner {
             width: 100%;
             height: 200px;
-
+            margin-top: 50px;
             .swiper-banner {
                 width: 100%;
                 height: 100%;
@@ -276,8 +277,8 @@ header {
                     text-align: center;
 
                     a {
-                        display: inline-block;
-                        margin-top: 50px;
+                        display: block;
+
                     }
                 }
             }
@@ -296,7 +297,10 @@ header {
                         line-height: 30px;
                         font-size: 14px;
                         margin-left: 10px;
-
+                      
+                        overflow: hidden;  /*溢出隐藏*/
+                        text-overflow: ellipsis; /*以省略号...显示*/
+                        white-space: nowrap;  /*强制不换行*/
                         a {
                             text-decoration: none;
                         }
@@ -579,7 +583,7 @@ header {
 
         .teacher {
             background: #5BC0DE url("../images/main_bg.jpg");
-            height: 350px;
+
             padding: 20px 0;
             @media (min-width: @screen-xs-max) {
                 height: 75vh;
@@ -597,11 +601,13 @@ header {
 
                 .teacher_intro {
                     min-height: 150px;
-
                     p {
                         margin-bottom: 10px;
                         color: #fff;
                     }
+                      @media (min-width: @screen-xs-max) {
+                        min-height: 250px;
+                      }
                 }
 
                 img {
@@ -785,7 +791,7 @@ header {
         margin-top: 90px;
     }
 
-    #teacher_desc {
+    #teacher_list {
         background: @gray-lighter url(../images/teachers_hero.jpg) no-repeat top center;
 
         .title {
@@ -808,7 +814,6 @@ header {
                 @media (max-width: @screen-xs-max) {
                     margin-right: 0;
                 }
-
             }
         }
 
@@ -818,11 +823,76 @@ header {
             text-align: center;
             .border-radius(10px);
             margin-bottom: 20px;
-            .thumbnail {
+
+            .img-thumbnail {
                 border: 0;
             }
+
             .teacher_name {
                 font-size: 16px;
+            }
+            .btn{
+              margin-bottom: 10px;
+
+            }
+        }
+    }
+
+    #teacher_profile {
+        background: white url("../images/teachers_hero.jpg") no-repeat top center;
+
+        .title {
+            margin: 90px 0 60px;
+            text-align: center;
+            letter-spacing: 20px;
+        }
+
+        .teacher_description {
+            margin-top: 80px;
+            background-color: white;
+        }
+
+        .teacher_image {
+            padding: 20px;
+        }
+
+        .teacher_video {
+            padding: 10px 20px 20px;
+            letter-spacing: 0.2em;
+
+            .btn {
+                line-height: 30px;
+                font-size: 24px;
+            }
+        }
+
+        .teacher_name {
+            color: @gray;
+
+            h1 {
+                font-size: 48px;
+                letter-spacing: 0.4em;
+            }
+        }
+
+        .teacher_title {
+            color: @gray-custom;
+            font-size: 18px;
+            letter-spacing: 0.1em;
+        }
+
+        .teacher_resume {
+            color: @gray-custom;
+
+            h2 {
+                font-size: 24px;
+                color: @gray;
+                letter-spacing: 0.2em;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 30px;
             }
         }
     }
