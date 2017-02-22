@@ -30,48 +30,48 @@
 </head>
 
 <body id="exam_new">
-  <!-- header star -->
-  <header>
-      <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    <!-- header star -->
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                       <span class="sr-only">Toggle navigation</span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="index.html"><h1>方田教育</h1></a>
-              </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                      <li><a href="../index.html">首页</a></li>
-                      <li><a href="../course.html">选课中心</a></li>
-                      <li><a href="../interaction.html">交流中心</a></li>
-                      <li><a href="../about.html">关于我们</a></li>
+                    <a class="navbar-brand" href="index.html"><h1>方田教育</h1></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="../course.html">选课中心</a></li>
+                        <li><a href="../interaction.html">交流中心</a></li>
+                        <li><a href="../about.html">关于我们</a></li>
 
-                      <li><a href="http://bbs.fangtian.me/forum.php">方田论坛</a></li>
-                      <li class="hidden-sm hidden-xs">
-                          <a id="dropdown_wx" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">关注官方微信
+                        <li><a href="http://bbs.fangtian.me/forum.php">方田论坛</a></li>
+                        <li class="hidden-sm hidden-xs">
+                            <a id="dropdown_wx" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">关注官方微信
                               <span class="caret"></span>
                           </a>
-                          <ul id="dropdown-wx-menu" class="dropdown-menu" role="menu">
-                              <div class="wxqr thumbnail">
-                                  <img src="_/images/wx_qrcode.jpg" alt="">
-                              </div>
-                              <div class="wx_desc">扫码二维码关注</div>
-                          </ul>
-                      </li>
-                      <!-- 关注官方微信 -->
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#" data-toggle="modal" data-target="#registerModal">注册</a></li>
-                      <li><a href="#" data-toggle="modal" data-target="#loginModal">登陆</a></li>
-                  </ul>
-                  <!-- 未登录 -->
-                  <!-- <ul class="nav navbar-nav navbar-right">
+                            <ul id="dropdown-wx-menu" class="dropdown-menu" role="menu">
+                                <div class="wxqr thumbnail">
+                                    <img src="../_/images/wx_qrcode.jpg" alt="">
+                                </div>
+                                <div class="wx_desc">扫码二维码关注</div>
+                            </ul>
+                        </li>
+                        <!-- 关注官方微信 -->
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" data-toggle="modal" data-target="#registerModal">注册</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#loginModal">登陆</a></li>
+                    </ul>
+                    <!-- 未登录 -->
+                    <!-- <ul class="nav navbar-nav navbar-right">
                       <li role="presentation" class="dropdown">
                       <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
                         李晓彤 <span class="caret"></span>
@@ -84,64 +84,64 @@
                       </ul>
                   </li>
                     </ul> <!-- 已登录 -->
-              </div>
-              <!-- /.navbar-collapse -->
-          </div>
-          <!-- /.container-fluid -->
-      </nav>
-      <!-- login Modal -->
-      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- login Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                       </button>
-                      <h4 class="modal-title" id="loginModalLabel">登录</h4>
-                  </div>
-                  <div class="modal-body">
-                      <div class="form-group">
-                          <input type="phonenumber" class="form-control" placeholder="手机号码">
-                      </div>
-                      <div class="form-group">
-                          <input type="password" class="form-control" placeholder="密码">
-                      </div>
-                  </div>
-                  <div class="modal-footer">
-                      <a href="">忘记密码？</a>
-                      <!-- <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button> -->
-                      <button type="button" class="btn btn-primary">登录</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!-- register Modal -->
-      <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <h4 class="modal-title" id="loginModalLabel">登录</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input type="phonenumber" class="form-control" placeholder="手机号码">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="密码">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="">忘记密码？</a>
+                        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button> -->
+                        <button type="button" class="btn btn-primary">登录</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- register Modal -->
+        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                       </button>
-                      <h4 class="modal-title" id="registerModalLabel">注册</h4>
-                  </div>
-                  <div class="modal-body">
-                      <div class="form-group">
-                          <input type="phonenumber" class="form-control" placeholder="手机号码">
-                      </div>
-                      <div class="form-group">
-                          <input type="password" class="form-control" placeholder="密码">
-                      </div>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                      <button type="button" class="btn btn-primary">注册</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </header>
-  <!-- header end -->
+                        <h4 class="modal-title" id="registerModalLabel">注册</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input type="phonenumber" class="form-control" placeholder="手机号码">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="密码">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary">注册</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
     <section class="content_exam container">
         <div class="nav_exam">
             <ol class="breadcrumb">
@@ -151,65 +151,80 @@
             </ol>
         </div>
         <div id="content">
-          <div class="item">
-            <p class="title">1.如图所示是奥运福娃在进行蹦床，对他在上升和下落过程中机械能的变化，下列分析正确的是（　）</p>
-            <div class="row opt">
-              <div class="col-sm-4 picture">
-                  <img class="img-rounded " src="../_/images/portrait.jpg" alt="">
-              </div>
-                <div class="col-sm-8 opt_detail">
-                    <button class="btn btn-default btn-sm">A. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点最高点时的动能最大的动能最大</button>
-                    <button class="btn btn-default btn-sm">A. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点最高点时的动能最大的动能最大</button>
-                    <button class="btn btn-default btn-sm">A. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点最高点时的动能最大的动能最大</button>
-                    <button class="btn btn-default btn-sm">A. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点最高点时的动能最大的动能最大</button>
-                    <button class="btn btn-default btn-sm ">B. 福娃上升到最高点时的动能最大</button>
-                    <button class="btn btn-default btn-sm">C. 福娃上升到最高点时的动能最大</button>
-                    <button class="btn btn-default btn-sm ">D. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点时的动能最大 </button>
+            <div class="item">
+                <p class="title">1.如图所示是奥运福娃在进行蹦床，对他在上升和下落过程中机械能的变化，下列分析正确的是（　）</p>
+                <div class="row opt">
+                    <div class="col-sm-4 picture">
+                        <img class="img-rounded " src="../_/images/portrait.jpg" alt="">
+                    </div>
+                    <div class="col-sm-8 opt_detail">
+                        <button class="btn btn-default btn-sm">A. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点最高点时的动能最大的动能最大</button>
+                        <button class="btn btn-default btn-sm">A. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点最高点时的动能最大的动能最大</button>
+                        <button class="btn btn-default btn-sm">A. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点最高点时的动能最大的动能最大</button>
+                        <button class="btn btn-default btn-sm">A. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点最高点时的动能最大的动能最大</button>
+                        <button class="btn btn-default btn-sm ">B. 福娃上升到最高点时的动能最大</button>
+                        <button class="btn btn-default btn-sm">C. 福娃上升到最高点时的动能最大</button>
+                        <button class="btn btn-default btn-sm ">D. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点时的动能最大 </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <p class="title">1.如图所示是奥运福娃在进行蹦床，对他在上升和下落过程中机械能的变化，下列分析正确的是（　）</p>
-            <div class="row opt">
-              <div class="col-sm-4 picture">
-              <img class="img-rounded " src="../_/images/portrait.jpg" alt="">
-            </div>
-                <div class="col-sm-8 opt_detail">
-                    <button class="btn btn-default btn-sm">A. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点最高点时的动能最大的动能最大</button>
-                    <button class="btn btn-default btn-sm ">B. 福娃上升到最高点时的动能最大</button>
-                    <button class="btn btn-default btn-sm">C. 福娃上升到最高点时的动能最大</button>
-                    <button class="btn btn-default btn-sm ">D. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点时的动能最大 </button>
+            <div class="item">
+                <p class="title">1.如图所示是奥运福娃在进行蹦床，对他在上升和下落过程中机械能的变化，下列分析正确的是（　）</p>
+                <div class="row opt">
+                    <div class="col-sm-4 picture">
+                        <img class="img-rounded " src="../_/images/portrait.jpg" alt="">
+                    </div>
+                    <div class="col-sm-8 opt_detail">
+                        <button class="btn btn-default btn-sm">A. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点最高点时的动能最大的动能最大</button>
+                        <button class="btn btn-default btn-sm ">B. 福娃上升到最高点时的动能最大</button>
+                        <button class="btn btn-default btn-sm">C. 福娃上升到最高点时的动能最大</button>
+                        <button class="btn btn-default btn-sm ">D. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点时的动能最大 </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <p class="title">1.如图所示是奥运福娃在进行蹦床，对他在上升和下落过程中机械能的变化，下列分析正确的是（　）</p>
-            <div class="row opt">
-                <div class="col-sm-4 picture">
-                  <img class="img-rounded " src="../_/images/portrait.jpg" alt="">
-                </div>
-                <div class="col-sm-8 opt_detail">
-                    <button class="btn btn-default btn-sm">A. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点最高点时的动能最大的动能最大</button>
-                    <button class="btn btn-default btn-sm ">B. 福娃上升到最高点时的动能最大</button>
-                    <button class="btn btn-default btn-sm">C. 福娃上升到最高点时的动能最大</button>
-                    <button class="btn btn-default btn-sm ">D. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点时的动能最大 </button>
+            <div class="item">
+                <p class="title">1.如图所示是奥运福娃在进行蹦床，对他在上升和下落过程中机械能的变化，下列分析正确的是（　）</p>
+                <div class="row opt">
+                    <div class="col-sm-4 picture">
+                        <img class="img-rounded " src="../_/images/portrait.jpg" alt="">
+                    </div>
+                    <div class="col-sm-8 opt_detail">
+                        <button class="btn btn-default btn-sm">A. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点最高点时的动能最大的动能最大</button>
+                        <button class="btn btn-default btn-sm ">B. 福娃上升到最高点时的动能最大</button>
+                        <button class="btn btn-default btn-sm">C. 福娃上升到最高点时的动能最大</button>
+                        <button class="btn btn-default btn-sm ">D. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点时的动能最大 </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <p class="title">1.如图所示是奥运福娃在进行蹦床，对他在上升和下落过程中机械能的变化，下列分析正确的是（　）</p>
-            <div class="row opt">
-              <div class="col-sm-4 picture">
-                <img class="img-rounded " src="../_/images/portrait.jpg" alt="">
-              </div>
-              <div class="col-sm-8 opt_detail">
-                    <button class="btn btn-default btn-sm">A. 福娃上升到最高点时的动能最高点时的动能最高点时的动能最高点时的动能最高点时的动能最高点时的动能最高点时的动能最高点时的动能最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点最高点时的动能最大的动能最大</button>
-                    <button class="btn btn-default btn-sm ">B. 福娃上升到最高点时的动能最大</button>
-                    <button class="btn btn-default btn-sm">C. 福娃上升到最高点时的动能最大</button>
-                    <button class="btn btn-default btn-sm ">D. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点时的动能最大 </button>
-              </div>
+            <div class="item">
+                <p class="title">1.如图所示是奥运福娃在进行蹦床，对他在上升和下落过程中机械能的变化，下列分析正确的是（　）</p>
+                <div class="row opt">
+                    <div class="col-sm-4 picture">
+                        <img class="img-rounded " src="../_/images/portrait.jpg" alt="">
+                    </div>
+                    <div class="col-sm-8 opt_detail">
+                        <button class="btn btn-default btn-sm">A. 福娃上升到最高点时的动能最高点时的动能最高点时的动能最高点时的动能最高点时的动能最高点时的动能最高点时的动能最高点时的动能最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点最高点时的动能最大的动能最大</button>
+                        <button class="btn btn-default btn-sm ">B. 福娃上升到最高点时的动能最大</button>
+                        <button class="btn btn-default btn-sm">C. 福娃上升到最高点时的动能最大</button>
+                        <button class="btn btn-default btn-sm ">D. 福娃上升到最高点时的动能最大 福娃上升到最高点时的动能最大.福娃上升到最高点时的动能最大 </button>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="item">
+                <p class="title">1.如图所示是奥运福娃在进行蹦床，对他在上升和下落过程中机械能的变化，做出分析</p>
+                <div class="row opt">
+                    <div class="col-sm-4 picture">
+                        <img class="img-rounded " src="../_/images/portrait.jpg" alt="">
+                    </div>
+                    <div class="col-sm-8 opt_detail">
+                        <img id="preview" />
+                        <br />
+                        <input type="file" name="file" onchange="imgPreview(this)" />
+                        <button class="cancel">取消</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div id="page" class="number">
         </div>
@@ -352,7 +367,39 @@
                 pagebox: "#page"
             });
         })();
+
+
+        $('.cancel').click(function() {
+            $("#preview").removeAttr("src");
+        })
+        function imgPreview(fileDom) {
+            //判断是否支持FileReader
+            if (window.FileReader) {
+                var reader = new FileReader();
+            } else {
+                alert("您的设备不支持图片预览功能，如需该功能请升级您的设备！");
+            }
+
+            //获取文件
+            var file = fileDom.files[0];
+            var imageType = /^image\//;
+            //是否是图片
+            if (!imageType.test(file.type)) {
+                alert("请选择图片！");
+                return;
+            }
+            //读取完成
+            reader.onload = function(e) {
+                //获取图片dom
+                var img = document.getElementById("preview");
+                //图片路径设置为读取的图片
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        };
+
     </script>
+
 </body>
 
 </html>
