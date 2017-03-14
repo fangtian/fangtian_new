@@ -150,7 +150,6 @@ header .nav li > a.selected {
   }
 }
 header .navbar {
-  background: white;
   margin-bottom: 0;
   font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   border-bottom: 1px solid #f0f0f0;
@@ -160,22 +159,31 @@ header .navbar {
     height: 90px;
   }
 }
+header .navbar .navbar-header {
+  background: #ccc;
+}
+@media (min-width: 768px) {
+  header .navbar .navbar-header {
+    background-color: transparent;
+  }
+}
 header .navbar .container .navbar-brand {
   background-image: url(../images/logo_b.png), none;
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 42px;
-  width: 150px;
+  background-position: center;
+  height: 50px;
+  width: 120px;
   padding: 0;
   text-indent: -9999px;
-  margin-top: 5px;
   margin-left: 15px;
-  margin-right: 50px;
 }
 @media (min-width: 768px) {
   header .navbar .container .navbar-brand {
-    margin-top: 25px;
+    height: 90px;
     margin-left: 0;
+    width: 140px;
+    margin-right: 20px;
   }
 }
 header .dropdown ul li a {
@@ -516,15 +524,14 @@ header #dropdown-wx-menu .wx_desc {
 }
 @media (min-width: 767px) {
   #home #homecontainer .teacher {
-    height: 75vh;
-    padding: 100px 0;
+    padding: 70px 0;
   }
-  #home #homecontainer .teacher .swiper-teacher {
-    height: 50vh;
+  #home #homecontainer .teacher .swiper-wrapper {
+    height: 400px;
   }
 }
 #home #homecontainer .teacher .item {
-  min-height: 280px;
+  min-height: 250px;
   margin-bottom: 30px;
   padding: 20px 10px 0;
 }
@@ -537,7 +544,7 @@ header #dropdown-wx-menu .wx_desc {
 }
 @media (min-width: 767px) {
   #home #homecontainer .teacher .item .teacher_intro {
-    min-height: 250px;
+    min-height: 220px;
   }
 }
 #home #homecontainer .teacher .item img {

@@ -1,39 +1,31 @@
 @import "variables.less";
 @import "lesshat.less";
-
 body {
     background: #fff url("../images/bg-index-body.jpg") 60%;
     letter-spacing: 1px;
     font-size: 14px;
     font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
-
     .menu {
         a {
             text-decoration: none;
             color: @brand-info;
         }
-
         a.selected {
             color: @brand-warning;
             border-bottom: 2px solid @brand-warning;
         }
-
         a:hover {
             color: @brand-warning;
         }
-
         .user_level {
             color: @brand-warning;
         }
-
         .badge {
             background-color: @brand-warning;
         }
     }
-
     .more-info {
         height: 50px;
-
         a {
             text-align: center;
             display: block;
@@ -48,11 +40,9 @@ body {
             letter-spacing: 4px;
             text-decoration: none;
             color: #3EB2CF;
-
             span {
                 font-size: 14px;
             }
-
             &:hover {
                 color: white;
                 background-color: #3EB2CF;
@@ -66,22 +56,18 @@ body {
     ul {
         list-style: none;
     }
-
     img {
         border: none;
         outline: none;
     }
-
     a {
         color: #666;
         text-decoration: none;
         outline: none;
     }
-
     a:hover {
         color: #e8431f;
     }
-
     #floatDivBoxs {
         width: 170px;
         background: #fff;
@@ -89,7 +75,6 @@ body {
         top: 90px;
         right: 0;
         z-index: 999;
-
         .floatDtt {
             width: 100%;
             height: 45px;
@@ -100,14 +85,11 @@ body {
             text-indent: 22px;
             position: relative;
         }
-
         .floatShadow {
             background: #fff;
             box-shadow: -2px 0 3px rgba(0, 0, 0, 0.25);
-
             .floatDqq {
                 padding: 0 14px;
-
                 li {
                     height: 45px;
                     line-height: 45px;
@@ -116,21 +98,17 @@ body {
                     padding: 0 0 0 50px;
                 }
             }
-
             .floatDtxt {
                 font-size: 18px;
                 color: #333;
                 padding: 5px 14px;
             }
-
             .floatDtel {
                 padding: 0 0 15px 10px;
-
                 img {
                     display: block;
                 }
             }
-
             .floatDbg {
                 width: 100%;
                 height: 20px;
@@ -139,7 +117,6 @@ body {
             }
         }
     }
-
     #rightArrow {
         width: 50px;
         height: 45px;
@@ -148,7 +125,6 @@ body {
         top: 90px;
         right: 170px;
         z-index: 999;
-
         a {
             display: block;
             height: 45px;
@@ -157,23 +133,21 @@ body {
 }
 
 header {
+
     .navbar-default .navbar-nav > li > a:focus,
     .navbar-default .navbar-nav > li > a:hover {
         color: @brand-danger;
         border-bottom: 2px solid @brand-danger;
     }
-
     a:focus {
         outline: none;
     }
-
     .nav li > a {
         padding: 15px;
         margin: 0 15px;
         line-height: 14px;
         letter-spacing: 1.5px;
         color: #27272b;
-
         &.selected {
             color: @brand-danger;
             border-bottom: 2px solid @brand-danger;
@@ -183,47 +157,49 @@ header {
             margin: 0 10px;
         }
     }
-
     .navbar {
-        background: white;
+        
         margin-bottom: 0;
         font-family: @font-family-fangtian;
         border-bottom: 1px solid #f0f0f0;
         @media (min-width: @screen-sm-min) {
             height: 90px;
         }
+        .navbar-header{
+            background: #ccc;
+            @media (min-width: @screen-sm-min) {
+                background-color: transparent;
+            }
+        }
     }
-
     .navbar .container .navbar-brand {
         background-image: url(../images/logo_b.png), none;
         background-repeat: no-repeat;
         background-size: 100%;
-        height: 42px;
-        width: 150px;
+        background-position: center;
+        height: 50px;
+        width: 120px;
         padding: 0;
         text-indent: -9999px;
-        margin-top: 5px;
         margin-left: 15px;
-        margin-right: 50px;
         @media (min-width: @screen-sm-min) {
-            margin-top: 25px;
+            height: 90px;
             margin-left: 0;
+            width: 140px;
+            margin-right: 20px;
         }
     }
-
     .dropdown {
         ul li a {
             padding: 3px 20px;
             margin: 10px 0;
         }
     }
-
     #dropdown-wx-menu {
         .wxqr {
             border: none;
             margin-bottom: 0;
         }
-
         .wx_desc {
             text-align: center;
             color: @brand-danger;
@@ -238,7 +214,6 @@ header {
         font-family: @font-family-fangtian;
         border: none;
         background: white;
-
         a {
             color: black;
         }
@@ -246,7 +221,6 @@ header {
             background: rgba(255, 255, 255, 0);
         }
     }
-
     #homecontainer {
         .video {
             display: none;
@@ -255,7 +229,6 @@ header {
                 height: 100vh;
                 width: 100%;
                 overflow: hidden;
-
                 .bg {
                     background: url("../images/fangtian_about02.jpg") no-repeat;
                     background-size: 100% 100%;
@@ -264,34 +237,27 @@ header {
                 }
             }
         }
-
         .banner {
             width: 100%;
             height: 200px;
             margin-top: 50px;
-
             .swiper-banner {
                 width: 100%;
                 height: 100%;
-
                 .swiper-wrapper {
                     text-align: center;
-
                     a {
                         display: block;
                     }
                 }
             }
         }
-
         .news {
             height: 30px;
             overflow: hidden;
-
             .swiper-news {
                 width: 100%;
                 height: 30px;
-
                 .swiper-wrapper {
                     li {
                         line-height: 30px;
@@ -310,20 +276,17 @@ header {
                 }
             }
         }
-
         .intro {
             padding: 20px 0 0;
             text-align: center;
             background-image: url("../images/bg-index-body.jpg");
             background-repeat: repeat;
-
             .intro_img {
                 padding: 30px 0;
                 position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
                 .glyphicon {
                     cursor: pointer;
                     position: absolute;
@@ -337,43 +300,35 @@ header {
                     font-size: 50px;
                     color: white;
                     transition: transform 0.6s;
-
                     &:hover {
                         transform: scale(1.2);
                     }
                 }
-
                 img {
                     max-width: 100%;
                     height: auto;
                 }
             }
-
             .title {
                 padding: 0 10px;
-
                 h2 {
                     color: #fec20b;
                     font-weight: 700;
                     letter-spacing: 8px;
                     font-size: 44px;
-
                     .first-word {
                         color: #3eb2cf;
                     }
                 }
-
                 .intro_detail {
                     text-align: center;
                     margin-top: 35px;
                     color: #888888;
                 }
             }
-
             .more-info {
                 margin: 40px 0;
                 height: 50px;
-
                 a {
                     @media (min-width: @screen-sm-min) {
                         margin: 0;
@@ -383,10 +338,8 @@ header {
             @media (min-width: @screen-sm-min) {
                 padding-top: 70px;
                 padding-bottom: 70px;
-
                 .title {
                     padding: 20px 10px;
-
                     .intro_detail {
                         text-align: left;
                     }
@@ -397,16 +350,13 @@ header {
                 padding-bottom: 114px;
             }
         }
-
         .our {
             text-align: center;
             background-image: url("../images/bg-index-body.jpg");
             background-repeat: repeat;
             overflow: hidden;
-
             .range-content {
                 position: relative;
-
                 .content_r {
                     display: none;
                     @media (min-width: @screen-sm-min) {
@@ -421,7 +371,6 @@ header {
                         background-size: cover;
                     }
                 }
-
                 .content_l {
                     padding-top: 50px;
                     padding-bottom: 50px;
@@ -429,18 +378,15 @@ header {
                         padding-top: 100px;
                         padding-bottom: 100px;
                     }
-
                     h2 {
                         color: #fec20b;
                         font-weight: 700;
                         letter-spacing: 7px;
                         font-size: 44px;
-
                         .first-word {
                             color: #3eb2cf;
                         }
                     }
-
                     .title {
                         margin-top: 35px;
                         font-size: 14px;
@@ -450,34 +396,27 @@ header {
                             margin-top: 60px;
                         }
                     }
-
                     .stats {
                         display: block;
                         margin-top: 65px;
-
                         &:hover {
                             text-decoration: none;
                         }
-
                         .stats_l {
                             padding: 0;
-
                             .glyphicon {
                                 color: #3eb2cf;
                                 font-size: 60px;
                                 line-height: 61px;
                             }
                         }
-
                         .stats_r {
                             padding: 0;
                             text-align: center;
-
                             h3 {
                                 margin-top: 0;
                                 color: #fec20b;
                             }
-
                             h6 {
                                 width: auto;
                                 margin: 0 auto;
@@ -488,7 +427,6 @@ header {
                             }
                         }
                     }
-
                     .singup {
                         text-align: center;
                         margin-top: 60px;
@@ -496,55 +434,45 @@ header {
                 }
             }
         }
-
         .about {
             background: #3eb2cf;
             fill: #3eb2cf;
             text-align: center;
             padding: 20px 0;
-
             h2 {
                 color: white;
                 font-weight: 700;
                 letter-spacing: 8px;
                 font-size: 44px;
-
                 .first-word {
                     color: #3eb2cf;
                 }
             }
-
             .aim {
                 margin-top: 30px;
                 margin-bottom: 30px;
                 color: #fff;
                 font-size: 16px;
             }
-
             .range {
                 margin-left: -10px;
                 margin-right: -10px;
                 margin-top: 30px;
             }
-
             .item {
                 margin-top: 20px;
-
                 .class-info {
                     max-width: 370px;
                     background: #fff;
                     margin: 0 auto;
-
                     .class-detail {
                         padding: 10px;
-
                         time {
                             font-style: italic;
                             font-size: 14px;
                             line-height: 1.57143;
                             color: #888888;
                         }
-
                         h4 {
                             a {
                                 color: #fec20b;
@@ -553,16 +481,13 @@ header {
                     }
                 }
             }
-
             .more-info {
                 width: auto;
                 margin-top: 40px;
-
                 a {
                     padding: 0;
                     color: #fec20b;
                     background-color: #fff;
-
                     &:hover {
                         color: #fff;
                         background-color: #fec20b;
@@ -572,53 +497,45 @@ header {
             @media (min-width: @screen-md-min) {
                 padding-top: 70px;
                 padding-bottom: 70px;
-
                 .aim {
                     margin-top: 60px;
                 }
-
                 .more-info {
                     margin-top: 60px;
                 }
             }
         }
-
         .teacher {
             background: #5BC0DE url("../images/main_bg.jpg");
             padding: 20px 0;
             @media (min-width: @screen-xs-max) {
-                height: 75vh;
-                padding: 100px 0;
-
-                .swiper-teacher {
-                    height: 50vh;
+            
+                padding: 70px 0;
+                .swiper-wrapper{
+                    height: 400px;
                 }
-            }
 
+            }
             .item {
-                min-height: 280px;
+                min-height: 250px;
                 margin-bottom: 30px;
                 padding: 20px 10px 0;
-
                 .teacher_intro {
                     min-height: 150px;
-
                     p {
                         margin-bottom: 10px;
                         color: #fff;
                     }
                     @media (min-width: @screen-xs-max) {
-                        min-height: 250px;
+                        min-height: 220px;
                     }
                 }
-
                 img {
                     width: 70px;
                     height: 70px;
                     vertical-align: middle;
                     float: left;
                 }
-
                 .teacher_n {
                     padding-top: 20px;
                     height: 70px;
@@ -627,11 +544,9 @@ header {
             }
         }
     }
-
     .forget-password {
         float: left;
         margin-top: 12px;
-
         a {
             text-decoration: none;
         }
@@ -642,22 +557,18 @@ header {
     .nav_exam {
         margin-top: 60px;
         min-height: 40px;
-
         ul {
             padding: 0;
             margin: 0;
             list-style: none;
             line-height: 40px;
-
             li {
                 padding: 0;
                 margin: 0;
                 list-style: none;
                 float: left;
-
                 a {
                     text-decoration: none;
-
                     &:hover {
                         color: orange;
                     }
@@ -665,7 +576,6 @@ header {
             }
         }
     }
-
     .item {
         img {
             display: block;
@@ -676,12 +586,10 @@ header {
             p {
                 margin-bottom: 20px;
             }
-
             .picture {
                 float: right;
             }
         }
-
         button {
             text-align: left;
             display: block;
@@ -690,14 +598,12 @@ header {
             white-space: normal;
         }
     }
-
     #page {
         margin-top: 30px;
         margin-bottom: 60px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
         a {
             color: #333;
             float: left;
@@ -711,20 +617,17 @@ header {
             text-align: center;
             text-decoration: none;
         }
-
         .current {
             color: #fff;
             background-color: #333;
             border: 1px solid #333;
         }
-
         .checked {
             color: #fff;
             background-color: green;
             border: 1px solid green;
         }
     }
-
     .container_chose {
         width: 100%;
         position: fixed;
@@ -732,20 +635,17 @@ header {
         left: 0;
         background: #fff url("../images/bg-index-body.jpg") 80%;
     }
-
     #chose {
         padding: 5px 10px;
         width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-
         button {
             background-color: transparent;
             outline: none;
             border: none;
         }
-
         .submit {
             color: green;
         }
@@ -755,30 +655,25 @@ header {
             position: relative;
             margin-top: 90px;
             min-height: 60vh;
-
             .nav_exam {
                 margin-top: 15px;
             }
-
             #content {
                 .opt {
                     img {
                         max-width: 100%;
                         margin: 0 auto;
                     }
-
                     .opt_detail {
                         float: left;
                     }
                 }
             }
         }
-
         .container_chose {
             position: inherit;
             margin-bottom: 60px;
         }
-
         #page {
             margin-top: 60px;
         }
@@ -792,20 +687,16 @@ header {
     @media (min-width: @screen-xs-min) {
         margin-top: 90px;
     }
-
     #teacher_list {
         background: @gray-lighter url(../images/teachers_hero.jpg) no-repeat top center;
-
         .title {
             margin: 100px 0;
             text-align: center;
             letter-spacing: 20px;
         }
-
         .teacher-nav {
             height: 40px;
             margin: 10px 0;
-
             li {
                 float: left;
                 list-style: none;
@@ -818,82 +709,66 @@ header {
                 }
             }
         }
-
         .teacher_item {
             color: @gray;
             background-color: white;
             text-align: center;
             .border-radius(10px);
             margin-bottom: 20px;
-
             img {
-              display:block;
-              margin:0 auto;
+                display: block;
+                margin: 0 auto;
                 border: 0;
             }
-
             .teacher_name {
                 font-size: 16px;
             }
-
             .btn {
                 margin-bottom: 10px;
             }
         }
     }
-
     #teacher_profile {
         background: white url("../images/teachers_hero.jpg") no-repeat top center;
-
         .title {
             margin: 90px 0 60px;
             text-align: center;
             letter-spacing: 20px;
         }
-
         .teacher_description {
             margin-top: 80px;
             background-color: white;
         }
-
         .teacher_image {
             padding: 20px;
         }
-
         .teacher_video {
             padding: 10px 20px 20px;
             letter-spacing: 0.2em;
-
             .btn {
                 line-height: 30px;
                 font-size: 24px;
             }
         }
-
         .teacher_name {
             color: @gray;
-
             h1 {
                 font-size: 48px;
                 letter-spacing: 0.4em;
             }
         }
-
         .teacher_title {
             color: @gray-custom;
             font-size: 18px;
             letter-spacing: 0.1em;
         }
-
         .teacher_resume {
             color: @gray-custom;
-
             h2 {
                 font-size: 24px;
                 color: @gray;
                 letter-spacing: 0.2em;
             }
-
             p {
                 font-size: 18px;
                 line-height: 30px;
@@ -906,20 +781,17 @@ header {
     margin-top: 90px;
     background: black url("../images/desk.jpg") no-repeat top center;
     color: white;
-
     .title {
         margin-top: 40px;
         margin-bottom: 30px;
         text-align: center;
     }
-
     h5 {
         font-size: 20px;
         // border-bottom: 2px solid @brand-danger;
         padding-bottom: 10px;
         letter-spacing: 4px;
     }
-
     .curve_content {
         background-color: @brand-primary;
         .border-radius(20px);
@@ -927,7 +799,6 @@ header {
         .opacity(.8);
         margin-bottom: 20px;
     }
-
     p {
         font-size: 16px;
         line-height: 30px;
@@ -935,32 +806,26 @@ header {
         // margin-top: 20px;
         // background-color: @brand-primary;
     }
-
     .correct_book {
         background-color: @brand-warning;
         .border-radius(20px);
         padding: 20px;
         .opacity (.8);
         text-align: center;
-
         .sub_title {
             margin: 20px 0;
         }
-
         h5 {
             font-size: 40px;
         }
-
         .glyphicon {
             margin: 30px;
             font-size: 120px;
-
             &:hover {
                 .rotateY(360);
                 .transition(0.8s);
             }
         }
-
         p {
             font-size: 24px;
             margin: 20px 0;
@@ -981,16 +846,13 @@ header {
     @media (min-width: @screen-sm-min) {
         margin-top: 90px;
     }
-
     .container {
         padding: 0;
     }
-
     .parallax-window {
         min-height: 350px;
         background: transparent;
     }
-
     .caption {
         width: 100%;
         position: absolute;
@@ -1000,23 +862,19 @@ header {
             top: 200px;
         }
     }
-
     .title {
         margin: 10px auto;
         color: @gray-light;
-
         h3 {
             letter-spacing: 10px;
             margin-bottom: 20px;
         }
-
         p {
             letter-spacing: 5px;
             font-size: 24px;
             color: lighten(@gray, 20%);
         }
     }
-
     .box-whatwedo {
         background-color: @brand-primary;
         padding: 30px 50px 60px;
@@ -1024,23 +882,19 @@ header {
         margin-bottom: 30px;
         color: white;
         text-align: center;
-
         h2 {
             letter-spacing: 10px;
             margin-bottom: 30px;
         }
-
         h3 {
             font-size: 16px;
             line-height: 24px;
             letter-spacing: 1px;
         }
-
         p {
             line-height: 24px;
         }
     }
-
     .box-workteam {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -1050,11 +904,9 @@ header {
             margin: 0;
             text-align: center;
         }
-
         h2 {
             letter-spacing: 10px;
         }
-
         h3 {
             font-size: 20px;
             padding-left: 20px;
@@ -1062,18 +914,15 @@ header {
             letter-spacing: 5px;
             color: @brand-info;
         }
-
         p {
             padding: 0 20px;
             color: @gray;
             line-height: 24px;
         }
-
         .team_list_cv {
             color: lighten(@gray, 20%);
         }
     }
-
     .box-contact {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -1089,7 +938,6 @@ header {
             margin-bottom: 30px;
             margin-top: 30px;
         }
-
         .openinghousrs {
             margin-bottom: 30px;
             margin-top: 30px;
@@ -1103,25 +951,35 @@ header {
     // background: white url(../images/desk.jpg) no-repeat top center;
     color: @gray;
     background: @gray-lighter;
-
     .title {
         margin-top: 40px;
         margin-bottom: 30px;
     }
-
     .thumbnail {
         .border-radius(0);
         background-color: #f0f0f0;
         padding: 0;
         border: 0;
-        .box-shadow(5px, 5px, 5px, 2px, rgba(0, 0, 0, 0.5));
-
+        .box-shadow(5px,
+        5px,
+        5px,
+        2px,
+        rgba(0,
+        0,
+        0,
+        0.5));
         &:hover {
             .transition(0.4s);
-            .box-shadow(5px, 10px, 10px, 10px, rgba(0, 0, 0, 0.5));
+            .box-shadow(5px,
+            10px,
+            10px,
+            10px,
+            rgba(0,
+            0,
+            0,
+            0.5));
         }
     }
-
     .item_show {
         margin-bottom: 50px;
     }
@@ -1132,16 +990,13 @@ header {
     // margin-bottom: 20px;
     background: black url("../images/desk.jpg") no-repeat top center;
     color: white;
-
     .title {
         margin-top: 60px;
         margin-bottom: 60px;
     }
-
     .item_show {
         margin-bottom: 60px;
     }
-
     .item {
         width: 100%;
         height: 200px;
@@ -1149,19 +1004,16 @@ header {
         cursor: pointer;
         .perspective (1000);
         margin-bottom: 20px;
-
         &:hover {
             .front {
                 .rotateY(180);
                 .transition(0.8s);
             }
-
             .back {
                 .rotateY(0);
                 .transition(0.8s);
             }
         }
-
         .back,
         .front {
             width: 100%;
@@ -1171,7 +1023,6 @@ header {
             .backface-visibility(hidden);
             text-align: center;
         }
-
         .front {
             .rotateY(0);
             .transition(0.8s);
@@ -1182,7 +1033,6 @@ header {
                 font-size: 60px;
             }
         }
-
         .back {
             position: absolute;
             bottom: 0;
@@ -1192,21 +1042,18 @@ header {
             padding: 20px;
         }
     }
-
     .item_2 {
         .back,
         .front {
             background-color: @brand-info;
         }
     }
-
     .item_3 {
         .back,
         .front {
             background-color: @brand-warning;
         }
     }
-
     .item_4 {
         .back,
         .front {
@@ -1223,48 +1070,39 @@ header {
         * {
             margin: 0;
             padding: 0;
-
             .key > div {
                 padding-left: 15px;
                 padding-right: 15px;
             }
         }
-
         .container {
             padding: 0;
         }
         margin-top: 50px;
     }
-
     .query_zone {
         margin-top: 20px;
         // font-size: 12px;
         label {
             text-align: left;
         }
-
         .result-indicator {
             color: @gray-light;
             text-align: right;
-
             .result-sum {
                 color: @brand-info;
             }
-
             .current-page {
                 color: @brand-danger;
             }
         }
-
         .well {
             margin-top: 10px;
             margin-bottom: 0;
         }
-
         .btn-info {
             width: 85%;
         }
-
         .btn {
             margin-bottom: 10px;
             @media (max-width: @screen-xs-max) {
@@ -1273,18 +1111,15 @@ header {
             }
         }
     }
-
     .course_list {
         background-color: @gray-lighter;
         margin: 10px 0;
         font-size: 14px;
-
         .classitem {
             margin-bottom: 10px;
             color: @gray;
             background-color: white;
             padding: 5px;
-
             .course_title {
                 padding: 5px 15px 0;
                 text-align: center;
@@ -1292,13 +1127,11 @@ header {
                 @media (max-width: @screen-xs-max) {
                     padding: 5px 0 0;
                 }
-
                 h5 {
                     padding: 5px;
                     margin: 0;
                 }
             }
-
             .detail {
                 h4 {
                     text-align: center;
@@ -1307,16 +1140,13 @@ header {
                     margin-bottom: 5px;
                     margin-top: 5px;
                 }
-
                 p {
                     padding-left: 15px;
                     margin: 5px 0 0;
                 }
             }
-
             .course_sign {
                 padding-top: 10px;
-
                 .badge {
                     display: block;
                     font-size: 20px;
@@ -1329,12 +1159,10 @@ header {
                     text-align: center;
                     margin: 0 25px;
                     white-space: pre-wrap;
-
                     span {
                         margin-top: 10px;
                     }
                 }
-
                 .btn {
                     margin-top: 5px;
                     margin-left: 10%;
@@ -1342,60 +1170,50 @@ header {
                     height: 50px;
                 }
             }
-
             .course_img {
                 margin-top: 5px;
             }
             @media(min-width: @screen-xs-max) {
                 padding: 10px;
-
                 .detail {
                     h4 {
                         text-align: center;
                         margin-bottom: 10px;
                         margin-top: 10px;
                     }
-
                     p {
                         padding-left: 0;
                         margin: 10px 0;
                     }
                 }
-
                 h5 {
                     margin: 0 15px;
                 }
-
                 .course_img {
                     img {
                         min-width: 100%;
                     }
                 }
-
                 .course_sign {
                     .badge {
                         margin: 10px;
                     }
-
                     .btn {
                         width: 80px;
                         margin-left: 0;
                     }
                 }
-
                 .thumbnail {
                     margin-bottom: 0;
                 }
             }
         }
     }
-
     .teachers {
         ul {
             list-style: none;
             padding: 0;
         }
-
         h4 {
             color: @brand-primary;
             font-size: 16px;
@@ -1409,16 +1227,13 @@ header {
     @media (max-width: @screen-xs-max) {
         margin-top: 50px;
     }
-
     #fileupload {
         width: 100%;
         margin-bottom: 10px;
     }
-
     .divider {
         border-bottom: 2px solid @gray;
     }
-
     .portrait {
         background-color: white;
         margin: 20px;
@@ -1431,21 +1246,17 @@ header {
         //  margin-top: 20px;
         // }
     }
-
     .upload_img {
         margin-bottom: 20px;
-
         img {
             width: 100%;
             max-width: 400px;
         }
     }
-
     .browser {
         h5 {
             color: @gray;
         }
-
         p {
             color: @gray;
         }
@@ -1458,25 +1269,20 @@ header {
     @media (max-width: @screen-xs-max) {
         margin-top: 50px;
     }
-
     .order_info {
         margin: 10px;
         line-height: 20px;
-
         .sum {
             color: @brand-danger;
             font-size: 24px;
         }
-
         .order_name {
             margin-left: 45px;
             font-size: 16px;
         }
-
         .order_price {
             margin-left: 10px;
         }
-
         .order_detail {
             color: @gray-light;
             margin: 0 20px 20px;
@@ -1485,15 +1291,12 @@ header {
             padding-top: 10px;
         }
     }
-
     .order_notice {
         margin-left: 20px;
     }
-
     .choose_method {
         text-align: center;
         margin: 10px;
-
         .icon {
             background-color: white;
             margin: 10px;
@@ -1501,30 +1304,24 @@ header {
             min-height: 200px;
             padding: 50px 0;
         }
-
         .title {
             margin: 20px 0 30px;
         }
     }
-
     .wxpay_detial {
         background-color: white;
         border-top: 4px solid @brand-info;
         margin: 10px 10px 40px;
-
         .head {
             margin: 10px 0 10px 20px;
         }
-
         .qrcode {
             margin: 50px;
             text-align: center;
-
             img {
                 border: 1px solid @gray-lighter;
             }
         }
-
         .qrcode_desc {
             background-color: @brand-info;
             text-align: center;
@@ -1532,12 +1329,10 @@ header {
             margin: 0 100px;
             padding: 10px 0;
         }
-
         .return {
             margin: 10px 10px 20px 20px;
             font-size: 16px;
             color: @brand-info;
-
             a {
                 text-decoration: none;
             }
@@ -1551,41 +1346,33 @@ header {
     @media (max-width: @screen-xs-max) {
         margin-top: 50px;
     }
-
     .order_info {
         margin: 10px;
         line-height: 20px;
-
         .sum {
             color: @brand-danger;
             font-size: 24px;
         }
-
         .order_name {
             margin-left: 20px;
             // margin: 20px;
             // line-height: 24px;
             font-size: 16px;
         }
-
         .order_price {
             margin-left: 10px;
         }
-
         .order_detail {
             color: @gray-light;
             margin: 20px;
         }
     }
-
     .order_notice {
         margin-left: 20px;
     }
-
     .choose_method {
         text-align: center;
         margin: 10px;
-
         .icon {
             background-color: white;
             margin: 10px;
@@ -1593,30 +1380,24 @@ header {
             min-height: 200px;
             padding: 50px 0;
         }
-
         .title {
             margin: 20px 0 30px;
         }
     }
-
     .wxpay_detial {
         background-color: white;
         border-top: 4px solid @brand-info;
         margin: 10px 10px 40px;
-
         .head {
             margin: 10px 0 10px 20px;
         }
-
         .qrcode {
             margin: 50px;
             text-align: center;
-
             img {
                 border: 1px solid @gray-lighter;
             }
         }
-
         .qrcode_desc {
             background-color: @brand-info;
             text-align: center;
@@ -1624,12 +1405,10 @@ header {
             margin: 0 100px;
             padding: 10px 0;
         }
-
         .return {
             margin: 10px 10px 20px 20px;
             font-size: 16px;
             color: @brand-info;
-
             a {
                 text-decoration: none;
             }
@@ -1643,11 +1422,9 @@ header {
     @media (max-width: @screen-xs-max) {
         margin-top: 50px;
     }
-
     .divider {
         border-bottom: 2px solid @gray;
     }
-
     .userinfo {
         background-color: white;
         margin: 20px;
@@ -1665,37 +1442,34 @@ header {
     @media (max-width: @screen-xs-max) {
         margin-top: 50px;
     }
-
     .result-area {
         margin: 30px;
         @media (max-width: @screen-xs-max) {
             margin: 30px 0;
         }
         color: @gray-light;
-
         .title {
             font-size: 18px;
             margin-bottom: 20px;
         }
-
         .result-display {
             .border-radius(20px);
             border: 2px solid @gray-lighter;
             padding: 0;
-
             .subject {
                 background-color: #fff4c0;
-                .border-radius(20px, 20px, 0, 0);
+                .border-radius(20px,
+                20px,
+                0,
+                0);
                 border-bottom: 2px solid @gray-lighter;
                 text-align: center;
-
                 label {
                     padding: 15px 0 0;
                     letter-spacing: 5px;
                     // color: @gray-dark;
                 }
             }
-
             fieldset {
                 padding: 20px;
                 // background-color: @gray-lighter;
@@ -1710,30 +1484,28 @@ header {
     @media (max-width: @screen-xs-max) {
         margin-top: 50px;
     }
-
     .search-area {
         margin: 30px;
         @media (max-width: @screen-xs-max) {
             margin: 30px 0;
         }
         color: @gray-light;
-
         .title {
             font-size: 18px;
             margin-bottom: 20px;
         }
-
         .search_form {
             .border-radius(20px);
             border: 2px solid @gray-lighter;
             padding: 0;
-
             .subject {
                 background-color: #fff4c0;
-                .border-radius(20px, 20px, 0, 0);
+                .border-radius(20px,
+                20px,
+                0,
+                0);
                 border-bottom: 2px solid @gray-lighter;
                 text-align: center;
-
                 label {
                     padding: 15px 0 0;
                     letter-spacing: 5px;
@@ -1741,7 +1513,6 @@ header {
                     // color: @gray-dark;
                 }
             }
-
             fieldset {
                 padding: 20px;
                 // background-color: @gray-lighter;
@@ -1756,31 +1527,29 @@ header {
     @media (max-width: @screen-xs-max) {
         margin-top: 50px;
     }
-
     .login-area {
         margin: 30px;
         @media (max-width: @screen-xs-max) {
             margin: 30px 0;
         }
         color: @gray-light;
-
         .title {
             font-size: 18px;
             margin-bottom: 20px;
         }
-
         .login_form {
             // background-color: @brand-warning;
             .border-radius(20px);
             border: 2px solid @gray-lighter;
             padding: 0;
-
             .subject {
                 background-color: #fff4c0;
-                .border-radius(20px, 20px, 0, 0);
+                .border-radius(20px,
+                20px,
+                0,
+                0);
                 border-bottom: 2px solid @gray-lighter;
                 text-align: center;
-
                 label {
                     padding: 15px 0 0;
                     letter-spacing: 5px;
@@ -1788,34 +1557,28 @@ header {
                     // color: @gray-dark;
                 }
             }
-
             fieldset {
                 padding: 20px;
                 // background-color: @gray-lighter;
             }
         }
     }
-
     .imin {
         float: right;
         margin-top: 5px;
-
         a {
             text-decoration: none;
             color: @brand-info;
         }
     }
-
     .forget-password {
         float: right;
         font-size: 13px;
-
         a {
             text-decoration: none;
             color: @brand-info;
         }
     }
-
     .cover {
         margin-top: 10px;
     }
@@ -1827,31 +1590,29 @@ header {
     @media (max-width: @screen-xs-max) {
         margin-top: 50px;
     }
-
     .login-area {
         margin: 30px;
         @media (max-width: @screen-xs-max) {
             margin: 30px 0;
         }
         color: @gray-light;
-
         .title {
             font-size: 18px;
             margin-bottom: 20px;
         }
-
         .login_form {
             // background-color: @brand-warning;
             .border-radius(20px);
             border: 2px solid @gray-lighter;
             padding: 0;
-
             .subject {
                 background-color: #fff4c0;
-                .border-radius(20px, 20px, 0, 0);
+                .border-radius(20px,
+                20px,
+                0,
+                0);
                 border-bottom: 2px solid @gray-lighter;
                 text-align: center;
-
                 label {
                     padding: 15px 0 0;
                     letter-spacing: 5px;
@@ -1859,14 +1620,12 @@ header {
                     // color: @gray-dark;
                 }
             }
-
             fieldset {
                 padding: 20px;
                 // background-color: @gray-lighter;
             }
         }
     }
-
     .cover {
         margin-top: 100px;
     }
@@ -1878,31 +1637,29 @@ header {
     @media (min-width: @screen-xs-min) {
         margin-top: 90px;
     }
-
     .login-area {
         margin: 30px 0;
         @media (min-width: @screen-xs-min) {
             margin: 30px;
         }
         color: @gray-light;
-
         .title {
             font-size: 18px;
             margin-bottom: 20px;
         }
-
         .login_form {
             // background-color: @brand-warning;
             .border-radius(20px);
             border: 2px solid @gray-lighter;
             padding: 0;
-
             .subject {
                 background-color: #fff4c0;
-                .border-radius(20px, 20px, 0, 0);
+                .border-radius(20px,
+                20px,
+                0,
+                0);
                 border-bottom: 2px solid @gray-lighter;
                 text-align: center;
-
                 label {
                     padding: 15px 0 0;
                     letter-spacing: 5px;
@@ -1910,24 +1667,20 @@ header {
                     // color: @gray-dark;
                 }
             }
-
             fieldset {
                 padding: 20px;
                 // background-color: @gray-lighter;
             }
         }
     }
-
     .imin {
         float: right;
         margin-top: 5px;
-
         a {
             text-decoration: none;
             color: @brand-info;
         }
     }
-
     .cover {
         margin-top: 100px;
     }
@@ -1939,11 +1692,9 @@ header {
     @media (min-width: @screen-xs-min) {
         margin-top: 100px;
     }
-
     .divider {
         border-bottom: 2px solid @gray;
     }
-
     .complement {
         background-color: white;
         margin: 20px;
@@ -1957,24 +1708,19 @@ header {
 
 #exam {
     background-color: @gray-lighter;
-
     .bookmark {
         font-size: 30px;
         margin-left: 6px;
-
         a {
             color: @brand-info;
         }
     }
-
     button {
         outline: none;
     }
-
     .marked {
         font-size: 30px;
         margin-left: 6px;
-
         a {
             color: @gray-lighter;
         }
@@ -1989,44 +1735,36 @@ header {
         margin-top: 90px;
         padding: 20px;
     }
-
     .key-subject {
         padding-left: 10px;
     }
-
     .marker {
         p {
             margin: 10px;
             letter-spacing: 1px;
         }
     }
-
     .well {
         margin: 10px;
-
         span {
             margin-bottom: 10px;
         }
     }
-
     .exam_object {
         background-color: white;
         // min-height: 230px;
         margin: 10px;
         padding: 10px 0;
-
         .exam_option {
             margin-bottom: 5px;
         }
     }
-
     .done_logo {
         float: right;
         position: relative;
         top: -200px;
         right: 100px;
     }
-
     .exam_area {
         .affix {
             @media (max-width: @screen-sm-max) {
@@ -2036,7 +1774,6 @@ header {
             }
         }
     }
-
     .badge {
         font-size: 20px;
         margin: 5px 10px;
@@ -2052,39 +1789,31 @@ header {
     margin-top: 100px;
     @media (max-width: @screen-xs-max) {
         margin-top: 50px;
-
         .container {
             padding: 0;
         }
-
         .course_img {
             img {
                 width: 100%;
             }
         }
     }
-
     .nav_exam {
         margin-top: 15px;
     }
-
     .divider {
         border-bottom: 2px solid @gray;
     }
-
     .myscore {
         margin: 0;
         color: @gray;
-
         h4 {
             color: @gray-light;
             z-index: -1;
         }
-
         h5 {
             color: @brand-info;
         }
-
         .badge {
             margin-top: 40px;
             @media (max-width: @screen-sm-max) {
@@ -2102,31 +1831,25 @@ header {
             min-width: 30px;
             background-color: @brand-warning;
         }
-
         .score_style {
             color: @brand-warning;
         }
     }
-
     .user_course {
         margin: 30px;
         color: @gray;
-
         .course_list {
             background-color: @gray-lighter;
             padding: 20px 0;
             margin-bottom: 10px;
         }
-
         h4 {
             color: @gray-light;
         }
-
         h5 {
             padding: 5px 0;
             margin-bottom: 0;
         }
-
         .course_title {
             padding: 5px 5px 0;
             text-align: center;
@@ -2134,13 +1857,11 @@ header {
                 margin-bottom: 20px;
             }
         }
-
         .button_list {
             padding-top: 10px;
             text-align: center;
             color: @brand-primary;
         }
-
         .note_exercise {
             .badge {
                 font-size: 16px;
@@ -2158,25 +1879,21 @@ header {
             color: @gray;
             text-decoration: none;
         }
-
         .exam_object {
             background-color: white;
             // min-height: 230px;
             margin: 10px;
             padding: 10px 0;
-
             .exam_option {
                 margin-bottom: 5px;
             }
         }
-
         .done_logo {
             float: right;
             position: relative;
             top: -200px;
             right: 100px;
         }
-
         .exam_area {
             .affix {
                 @media (max-width: @screen-sm-max) {
@@ -2186,7 +1903,6 @@ header {
                 }
             }
         }
-
         .badge {
             font-size: 20px;
             margin: 5px 10px;
@@ -2195,7 +1911,6 @@ header {
             min-width: 20px;
             background-color: @brand-warning;
         }
-
         .chapter {
             .show_chapter {
                 text-align: right;
@@ -2214,11 +1929,9 @@ header {
     @media (min-width: @screen-sm-min) {
         margin-top: 90px;
     }
-
     .breadcrumb {
         margin: 15px 0;
     }
-
     .menu {
         min-height: 100%;
         // background-color: #F5F5F5;
@@ -2227,11 +1940,9 @@ header {
             max-width: 100px;
             margin: 0 auto;
         }
-
         .user_info {
             text-align: center;
         }
-
         ul {
             li {
                 font-size: 14px;
@@ -2241,16 +1952,13 @@ header {
             }
         }
     }
-
     .score {
         padding: 0;
     }
-
     .course_content {
         min-height: 100%;
         margin: 0;
         color: @gray;
-
         h4 {
             padding-top: 80px;
             color: @gray-light;
@@ -2259,24 +1967,19 @@ header {
                 padding-top: 0;
             }
         }
-
         h5 {
             color: @brand-info;
         }
-
         a {
             display: block;
-
             &:hover {
                 text-decoration: none;
-
                 .badge {
                     background-color: #eee;
                     color: #333;
                 }
             }
         }
-
         .badge {
             display: block;
             margin: 0 auto;
@@ -2294,12 +1997,10 @@ header {
                 min-width: 80px;
             }
         }
-
         .score_style {
             color: @brand-warning;
         }
     }
-
     .nopay {
         .classitem {
             .content {
@@ -2309,14 +2010,11 @@ header {
             margin-bottom: 10px;
             color: @gray;
             padding: 0;
-
             .course_left {
                 padding: 0;
-
                 .course_img {
                     margin-top: 5px;
                     padding: 0;
-
                     a {
                         max-width: 120px;
                         margin: 10px auto;
@@ -2325,12 +2023,10 @@ header {
                         margin-top: 0;
                     }
                 }
-
                 .course_title {
                     padding: 0;
                     text-align: center;
                     margin: 15px 0;
-
                     h5 {
                         padding: 5px;
                         margin: 0 auto;
@@ -2341,7 +2037,6 @@ header {
                     }
                 }
             }
-
             .detail {
                 h4 {
                     text-align: center;
@@ -2350,7 +2045,6 @@ header {
                     margin-bottom: 5px;
                     margin-top: 5px;
                 }
-
                 p {
                     padding-left: 15px;
                     margin: 2px 0 0;
@@ -2361,11 +2055,9 @@ header {
                     }
                 }
             }
-
             .topay {
                 margin-top: 5px;
                 text-align: center;
-
                 span {
                     padding: 0;
                     margin-top: 5px;
@@ -2376,7 +2068,6 @@ header {
                     height: 200px;
                     display: flex;
                     align-items: center;
-
                     span {
                         margin-top: 20px;
                     }
@@ -2394,43 +2085,35 @@ header {
     @media (max-width: @screen-xs-max) {
         margin-top: 50px;
         padding: 20px 0;
-
         .container {
             padding: 10px;
         }
-
         .course_title {
             h3 {
                 margin-top: 0;
             }
         }
-
         .course_info_area {
             margin-top: 8px;
             margin-left: -20px;
             margin-right: -20px;
         }
-
         .course_img {
             img {
                 max-width: 100%;
             }
         }
-
         .row {
             margin-left: -10px;
             margin-right: -10px;
         }
-
         .choose_time .table > tbody > tr > td {
             white-space: nowrap;
         }
-
         .table > tbody > tr > th {
             width: 30px;
         }
     }
-
     .affix {
         @media (max-width: @screen-sm-max) {
             position: static;
@@ -2438,20 +2121,16 @@ header {
             top: 0;
         }
     }
-
     .course_title {
         h5 {
             color: @brand-primary;
         }
     }
-
     .course_info_area {
         background-color: @gray-lighter;
-
         .price_real {
             color: @brand-danger;
         }
-
         .cash_back {
             color: @brand-primary;
             font-size: 16px;
@@ -2460,35 +2139,29 @@ header {
             }
         }
     }
-
     .online_pub {
         list-style-type: none;
         margin-top: 15px;
         color: @brand-primary;
     }
-
     .marked {
         color: @brand-warning;
     }
-
     .unmarked {
         color: @gray-light;
     }
-
     .hot {
         background-color: @gray-lighter;
         cursor: pointer;
         text-align: center;
         color: @brand-danger;
     }
-
     .complet {
         // color: @gray-lighter;
         color: @brand-warning;
         text-align: center;
         padding: 6px;
     }
-
     .available {
         border: 3px solid @brand-danger;
         color: @brand-danger;
@@ -2496,7 +2169,6 @@ header {
         cursor: pointer;
         text-align: center;
     }
-
     .badge {
         font-size: 20px;
         margin: 30px 0 10px -20px;
@@ -2506,67 +2178,53 @@ header {
         min-width: 80px;
         background-color: @brand-warning;
     }
-
     h4 {
         color: @gray;
         border-bottom: 2px solid @gray;
     }
-
     #btn_join_price {
         font-size: 18px;
     }
-
     .teacher_info {
         font-family: @font-family-fangtian;
         margin-bottom: 20px;
-
         .teacher_special {
             color: @brand-warning;
         }
-
         .teacher_special1 {
             color: @brand-info;
         }
-
         h4 {
             border-bottom: none;
             font-family: @font-family-fangtian;
             font-weight: bold;
             letter-spacing: 0.1em;
         }
-
         h5 {
             letter-spacing: 0.05em;
             line-height: 20px;
         }
     }
-
     .slider_menu {
         .row {
             margin-bottom: 20px;
         }
-
         ul {
             list-style: none;
-
             li {
                 margin-bottom: 10px;
-
                 a {
                     text-decoration: none;
                     color: @gray-light;
-
                     &:hover {
                         border-bottom: 2px solid @brand-danger;
                     }
                 }
             }
         }
-
         .try_lesson {
             padding-left: 30px;
         }
-
         .buy_lesson {
             padding-left: 30px;
             @media (max-width: @screen-sm-max) {
@@ -2575,7 +2233,6 @@ header {
                 bottom: 0;
                 width: 100%;
                 right: 0;
-
                 .btn {
                     width: 100%;
                     .border-radius(0);
@@ -2584,18 +2241,15 @@ header {
             }
         }
     }
-
     .choose_teacher {
         h5 {
             margin-left: 10px;
             margin-right: 10px;
         }
     }
-
     .progress {
         margin-top: 8px;
     }
-
     .student_commends {
         h6 {
             color: @brand-info;
@@ -2612,39 +2266,31 @@ header {
         margin-top: 50px;
         padding: 20px 0;
     }
-
     .query-date {
         margin: 20px 30px;
     }
-
     #progress {
         padding-left: 0;
         padding-right: 0;
     }
-
     #browserPlayer,
     #montageMsgZone {
         margin-left: 15px;
     }
-
     #browserForm {
         option {
             // text-align: center;
         }
-
         div {
             margin-bottom: 20px;
         }
     }
-
     #player {
         margin: 20px;
     }
-
     #mongtageForm {
         margin-bottom: 20px;
     }
-
     .browserfield {
         // margin: 20px 0;
         // background-color: white;
@@ -2659,16 +2305,13 @@ header {
     @media (min-width: @screen-xs-max) {
         height: 17vh;
     }
-
     .logo {
         text-align: center;
         margin-top: 15px;
-
         span {
             margin-top: 20px;
         }
     }
-
     p {
         margin-top: 10px;
         font-size: 12px;
@@ -2678,7 +2321,6 @@ header {
 
 #back-top {
     display: none;
-
     a {
         display: block;
         width: 44px;
@@ -2692,7 +2334,6 @@ header {
         font: 12px/100% Arial, Helvetica, sans-serif;
         transition: 0.5s;
     }
-
     span {
         line-height: 42px;
         padding-left: 2px;
@@ -2751,130 +2392,129 @@ header {
     backface-visibility: visible;
     animation-name: flip;
 }
+
+
 /*some keyframes*/
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
         transform: scale(.3);
     }
-
     50% {
         opacity: 1;
         transform: scale(1.1);
     }
-
     70% {
         transform: scale(.9);
     }
-
     100% {
         opacity: 1;
         transform: scale(1);
     }
 }
+
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
         transform: translateX(-20px);
     }
-
     100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
+
 @keyframes fadeInRight {
     0% {
         opacity: 0;
         transform: translateX(20px);
     }
-
     50% {
         opacity: 1;
         transform: translateX(-20px);
     }
-
     100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
         transform: translateY(20px);
     }
-
     50% {
         opacity: 1;
         transform: translateY(-20px);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
 @keyframes fadeInDown {
     0% {
         opacity: 0;
         transform: translateY(-20px);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
 @keyframes zoomIn {
     0% {
         opacity: 0;
         transform: scale(0.6);
     }
-
     70% {
         opacity: 1;
         transform: scale(1.02);
     }
-
     100% {
         opacity: 1;
         transform: scale(1);
     }
 }
+
 @keyframes fadeInRotate {
     0% {
         opacity: 1;
         transform-origin: center center;
         transform: translateX(-150px) rotate(-360deg);
     }
-
     100% {
         opacity: 1;
         transform-origin: center center;
         transform: translateX(0px) rotate(0deg);
     }
 }
+
 @keyframes flip {
     0% {
         opacity: 1;
         transform: perspective(800px)rotateY(0) scale(1);
         animation-timing-function: ease-out;
     }
-
     50% {
         opacity: 1;
         transform: perspective(800px) rotateY(180deg) scale(1);
         animation-timing-function: ease-in;
     }
-
     100% {
         opacity: 1;
         transform: perspective(800px) rotateY(360deg) scale(1);
         animation-timing-function: ease-in;
     }
 }
+
+
 /*animation-delay*/
+
 .delay-02 {
     animation-delay: 0.2s;
 }

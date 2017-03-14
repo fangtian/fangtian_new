@@ -27,7 +27,6 @@
 <div style="clear:both;height:59px;padding:0 0 0 15px;position:relative;">
     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0027_Simplified Chinese.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a></div>
 <![endif]-->
-
 </head>
 
 <body id="home">
@@ -54,7 +53,6 @@
                         <li><a href="about.html">关于我们</a></li>
                         <li><a href="user/mycourse_new.html">学生主页</a></li>
                         <li><a href="http://bbs.fangtian.me/forum.php">方田论坛</a></li>
-
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#" data-toggle="modal" data-target="#registerModal">注册</a></li>
@@ -154,7 +152,7 @@
                     </div>
                     <!-- swiper-slide -->
                     <div class="item swiper-slide">
-                        <a href="http://www.fangtian.me/fangtian_ol/index.php/Course/listing.html" >
+                        <a href="http://www.fangtian.me/fangtian_ol/index.php/Course/listing.html">
                             <h2 style="height:200px;line-height:150px;">暑假班火热报名中</h2>
                         </a>
                     </div>
@@ -403,7 +401,6 @@
                         </div>
                     </div>
                     <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
-
                 </div>
                 <div class="view-animate fadeIn more-info delay-06 active " style="margin-top:15px">
                     <a href="teacher-list.html">所有老师</a>
@@ -439,7 +436,6 @@
         </p>
     </div>
     <!-- back-top end -->
-
     <div class="service hidden-xs">
         <div id="rightArrow">
             <a href="javascript:;" title="在线客户"></a>
@@ -463,10 +459,14 @@
                     <li style="padding-left:0px;">
                         <a target="_blank" href="tencent://message/?uin=470666250&Site=www.fangtian.me&Menu=yes"><img src="_/images/qq.png" align="absmiddle">&nbsp;&nbsp;老师</a>
                     </li>
-
                 </ul>
                 <div class="floatDtxt">热线电话</div>
-                <div class="floatDtel">安庆路校区 <br> 0551-65103992 <br> 北一环校区 <br> 0551-65103070 <br> 五里墩校区 <br> 0551-65103821</div>
+                <div class="floatDtel">安庆路校区
+                    <br> 0551-65103992
+                    <br> 北一环校区
+                    <br> 0551-65103070
+                    <br> 五里墩校区
+                    <br> 0551-65103821</div>
                 <div style="text-align:center;padding:10PX 0 5px 0;background:#EBEBEB;">
                     <img src="_/images/erweima.png" style="width:106px;height106px">
                     <br>微信公众账号
@@ -475,8 +475,6 @@
             <div class="floatDbg"></div>
         </div>
     </div>
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="_/components/js/jQuery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -485,67 +483,89 @@
     <!-- Include js plugin -->
     <script src="swiper/swiper.min.js"></script>
     <script type="text/javascript">
-        // ---------------------------------------------------------
-        // swiper
-        // ---------------------------------------------------------
-        var teacherSwiper = new Swiper('.swiper-teacher', {
-            // autoplay: 3000, //可选选项，自动滑动
-            loop: true,
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-            slidesPerView: 4,
-            spaceBetween: 40,
-            breakpoints: {
-                1200: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                },
-                992: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                767: {
-                    slidesPerView: 1,
-                    spaceBetween: 10
-                }
-            }
-        })
-        var bannerSwiper = new Swiper('.swiper-banner', {
-            autoplay: 3000, //可选选项，自动滑动
-            loop: true,
-            pagination: '.swiper-pagination',
-            paginationClickable: true
-        })
-        var bannerSwiper = new Swiper('.swiper-news', {
-            autoplay: 3000, //可选选项，自动滑动
-            loop: true,
-            direction: 'vertical',
-
-        });
-        // ---------------------------------------------------------
-        // setHeader
-        window.onload = function() {
-            setHeader();
-            timedMsg();
-        }
-
-        function setHeader() {
-            var opacity = 0;
-            var navbar = document.querySelector('.navbar');
-            var banner = document.querySelector('.video');
-            var H = banner.offsetHeight;
-            window.onscroll = function() {
-                var top = document.body.scrollTop;
-
-                if (top < H) {
-                    opacity = top / H;
-                } else {
-                    opacity = 1;
-                }
-                navbar.style.background = "rgba(250,250,250," + opacity + ")";
+    // ---------------------------------------------------------
+    // swiper
+    // ---------------------------------------------------------
+    var teacherSwiper = new Swiper('.swiper-teacher', {
+        // autoplay: 3000, //可选选项，自动滑动
+        loop: true,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        slidesPerView: 4,
+        spaceBetween: 40,
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            992: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            767: {
+                slidesPerView: 1,
+                spaceBetween: 10
             }
         }
-        // ---------------------------------------------------------
+    })
+    var bannerSwiper = new Swiper('.swiper-banner', {
+        autoplay: 3000, //可选选项，自动滑动
+        loop: true,
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    })
+    var bannerSwiper = new Swiper('.swiper-news', {
+        autoplay: 3000, //可选选项，自动滑动
+        loop: true,
+        direction: 'vertical',
+
+    });
+    // ---------------------------------------------------------
+    // setHeader
+    window.onload = function() {
+        setHeader();
+        timedMsg();
+    }
+
+    function setHeader() {
+        var opacity = 0;
+        var navbar = document.querySelector('.navbar');
+        var banner = document.querySelector('.video');
+        var H = banner.offsetHeight;
+        window.onscroll = function() {
+            var top = document.body.scrollTop;
+
+            if (top < H) {
+                opacity = top / H;
+            } else {
+                opacity = 1;
+            }
+            navbar.style.background = "rgba(250,250,250," + opacity + ")";
+        }
+    }
+    // ---------------------------------------------------------
+
+
+    // viewAnimate
+    var viewAnimate = $('.view-animate');
+    $(document).ready(function() {
+        function isScrolledIntoView(elem) {
+
+            var $window = $(window);
+            return elem.offset().top + elem.outerHeight() >= $window.scrollTop() && elem.offset().top <= $window.scrollTop() + $window.height();
+        }
+        if (viewAnimate.length) {
+            for (i = 0; i < viewAnimate.length; i++) {
+                var view = $(viewAnimate[i]).not('.active');
+                $(document).on("scroll", $.proxy(function() {
+
+                    if (isScrolledIntoView(this)) {
+                        this.addClass("active");
+                    }
+                }, view)).trigger("scroll");
+            }
+        }
+    })
     </script>
 </body>
 

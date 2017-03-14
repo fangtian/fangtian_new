@@ -63,24 +63,7 @@ jQuery(document).ready(function() {
         $('#dropdown-wx-menu').fadeOut('fast');
     });
 });
-// viewAnimate
-var viewAnimate = $('.view-animate');
-$(document).ready(function() {
-    function isScrolledIntoView(elem) {
-        var $window = $(window);
-        return elem.offset().top + elem.outerHeight() >= $window.scrollTop() && elem.offset().top <= $window.scrollTop() + $window.height();
-    }
-    if (viewAnimate.length) {
-        for (i = 0; i < viewAnimate.length; i++) {
-            var view = $(viewAnimate[i]).not('.active');
-            $(document).on("scroll", $.proxy(function() {
-                if (isScrolledIntoView(this)) {
-                    this.addClass("active");
-                }
-            }, view)).trigger("scroll");
-        }
-    }
-})
+
 // ---------------------------------------------------------
 //service-----------------------------------------
 var flag = 1;
