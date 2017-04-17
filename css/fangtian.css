@@ -42,6 +42,12 @@ table {
 html {
   overflow-y: scroll;
 }
+header {
+  border: 1px solid transparent;
+}
+.navbar {
+  margin-bottom: 0;
+}
 .navbar .navbar-brand img {
   margin-top: -6px;
 }
@@ -60,4 +66,24 @@ html {
   margin-top: 8px;
   color: white;
   font-size: 30px;
+}
+#home {
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+  -webkit-transition: 1s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+#home section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#home .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+#home .swiper-container .swiper-slide {
+  background-position: center;
+  background-size: cover;
 }

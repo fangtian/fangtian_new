@@ -12,6 +12,8 @@
     <title>方田教育</title>
     <!-- Bootstrap -->
     <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/fullpage/fullPage.css">
+    <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
     <!-- fangtian css -->
     <link href="css/fangtian.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -21,14 +23,39 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!--[if lt IE 8]>
-		<div style="clear:both;height:59px;padding:0 0 0 15px;position:relative;">
-   	 	<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0027_Simplified Chinese.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a></div>
-	<![endif]-->
+        <div style="clear:both;height:59px;padding:0 0 0 15px;position:relative;">
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0027_Simplified Chinese.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a></div>
+    <![endif]-->
+    <style>
+    html,
+    body {
+        overflow: hidden;
+        height: 100%;
+    }
+    
+    .section-group {
+        height: calc( 100% - 50px);
+    }
+    
+    
+    
+    .area-02 {
+        background: #79AAC8
+    }
+    
+    .area-03 {
+        background: #C779C8
+    }
+    
+    .area-04 {
+        background: #D9AC83
+    }
+    </style>
 </head>
 
 <body>
     <header id="top">
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -53,7 +80,7 @@
                             <a id="dropdown_wx" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
                         关注官方微信
                          <span class="caret"></span>
-                		</a>
+                        </a>
                             <ul id="dropdown-wx-menu" class="dropdown-menu" role="menu">
                                 <div class="wxqr thumbnail">
                                     <img src="images/uploads/wx_qrcode.jpg" alt="">
@@ -71,22 +98,22 @@
                     </ul>
                     <!-- 未登录 -->
                     <!--
-          		<ul class="nav navbar-nav navbar-right">
-	        		<li role="presentation" class="dropdown">
-			    		<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-			      			李晓彤 <span class="caret"></span>
-			   			 </a>
-			    		<ul class="dropdown-menu" role="menu">
-					    	<li><a href="#"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 我的课程</a></li>
-							<li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> 账号设置</a></li>
-							<li class="divider"></li>
-							<li>
-								<a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> 退出登录</a>
-							</li>
-			    		</ul>
-					</li>
-	      		</ul> 
-	      		-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            李晓彤 <span class="caret"></span>
+                         </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 我的课程</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> 账号设置</a></li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> 退出登录</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul> 
+                -->
                     <!-- 已登录 -->
                 </div>
                 <!-- /.navbar-collapse -->
@@ -94,63 +121,163 @@
             <!-- /.container-fluid -->
         </nav>
         <!-- login Modal -->
-        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="loginModalLabel">登录</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <input type="phonenumber" class="form-control" placeholder="手机号码">
+        <form id="frmlogin" name="frmlogin" action="/fangtian_ol/index.php/User/loginOk.html" method="post">
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="loginModalLabel">登录</h4>
                         </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="密码">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <input name="phone1" id="phone1" type="phonenumber" class="form-control" placeholder="手机号码">
+                            </div>
+                            <div class="form-group">
+                                <input name="pwd1" id="pwd1" type="password" class="form-control" placeholder="密码(8-12位)">
+                            </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="">忘记密码？</a>
-                        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button> -->
-                        <button type="button" class="btn btn-primary">登录</button>
+                        <div class="modal-footer">
+                            <span class="forget-password"><a href="/fangtian_ol/index.php/User/forgetPwdWx.html">忘记登录密码？</a></span>
+                            <button type="button" class="btn btn-warning" onclick="goreg();">注册</button>
+                            <!--button type="button" class="btn btn-default" data-dismiss="modal">关闭</button-->
+                            <button type="submit" class="btn btn-primary">登录</button>
+                        </div>
+                        <!--div id="resultlogin" class="resultlogin" style="display:none;"></div-->
+                        <div id="logindiv" class="alert alert-warning" style="display:none;">
+                            <a href="#" class="close" onclick="$('#logindiv').hide();">&times;</a>
+                            <span id="resultlogin"></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
         <!-- register Modal -->
-        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="registerModalLabel">注册</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <input type="phonenumber" class="form-control" placeholder="手机号码">
+        <form id="frmreg" name="frmreg" action="/fangtian_ol/index.php/User/regOk.html" method="post">
+            <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="registerModalLabel">注册</h4>
                         </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="密码">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <input type="phonenumber" name="phone" id="phone" class="form-control" placeholder="手机号码">
+                            </div>
+                            <div class="form-group">
+                                <input class="btn btn-warning" id="zphone" type="text" value=" 获取手机验证码 " onClick="get_mobile_code('/fangtian_ol/index.php/User/sendVerify.html','927491');">
+                            </div>
+                            <div class="form-group">
+                                <input type="phonenumber" name="verify" id="verify" class="form-control" placeholder="验证码">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="pwd" id="pwd" class="form-control" placeholder="密码(8-12位)">
+                            </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <button type="button" class="btn btn-primary">注册</button>
+                        <div class="modal-footer">
+                            <!--button type="button" class="btn btn-default" data-dismiss="modal">关闭</button-->
+                            <button type="submit" class="btn btn-primary">注册</button>
+                        </div>
+                        <!--div id="resultreg" class="resultreg" style="display:none;"></div-->
+                        <div id="regdiv" class="alert alert-warning" style="display:none;">
+                            <a href="#" class="close" onclick="$('#regdiv').hide();">&times;</a>
+                            <span id="resultreg"></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </header>
-    <section id="home" style="height: 800px;">
-    </section>
+    <div id="home" class="section-group">
+        <section class="area-01 swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('images/uploads/fade1.jpg');width: 100%;"></div>
+                <div class="swiper-slide" style="background-image: url('images/uploads/banner02.jpg');width: 100%;"></div>
+                <div class="swiper-slide" style="background-image: url('images/uploads/banner03.jpg');width: 100%;"></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </section>
+        <section class="area-02"></section>
+        <section class="area-03"></section>
+        <section class="area-04"></section>
+    </div>
     <footer>
     </footer>
     <a id="back-top" href="#top"><span class="glyphicon glyphicon-menu-up"></span></a> </p>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="plugins/jquery/jquery-min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/fullpage/fullPage.js"></script>
+    <script src="plugins/swiper/swiper.jquery.min.js"></script>
+    <script src="js/fangtian.js"></script>
+    <script type="text/javascript" src="http://cdn.gbtags.com/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
+    <!-- <script src="js/user.js"></script> -->
+    <script>
+    $(function() {
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 5000, //可选选项，自动滑动
+            loop: true,
+            // 如果需要分页器
+            pagination: '.swiper-pagination'
+
+        })
+
+
+        $(function() {
+            var animateTime = 1000,
+                $group = $('.section-group'),
+                $sections = $group.find('>section'),
+                $sectionCount = $sections.length,
+                html = ['<ul>'],
+                mFlag = false;
+            /*当前所在页标*/
+            $group.data('index_flag', 0);
+            /*初始化页码*/
+            for (var i = 0; i < $sectionCount; i++) {
+                html.push('<li><span></span></li>');
+            }
+            html.push('</ul>');
+            var $pagination = $(html.join('')),
+                $paginations = $pagination.find('>li');
+
+            $pagination.appendTo($group);
+            $paginations.click(function() {
+                if (mFlag) return; //如果此时正在动画中，则不再继续
+                var $this = $(this),
+                    index = $this.index(),
+                    translateY = index * 100;
+                mFlag = true;
+                $group.data('index_flag', index) //储存当前页标
+                    .css({
+                        '-webkit-transform': 'translateY(-' + translateY + '%)',
+                        'transform': 'translateY(-' + translateY + '%)'
+                    });
+                setTimeout(function() {
+                    mFlag = false;
+                }, animateTime);
+            });
+
+            /*滚轮事件入口,也可以是上一页，写一页的入口*/
+            function wheelevent(delta) {
+                if (mFlag) return;
+                delta = delta > 0 ? 1 : -1;
+                var index = $group.data('index_flag');
+                index -= delta;
+                index = index < 0 ? 0 : index = index > ($sectionCount - 1) ? ($sectionCount - 1) : index;
+                /*触发页码点击事件*/
+                $paginations.eq(index).click();
+            }
+
+            /*绑定滚轮事件*/
+            $(document).bind('mousewheel', function(event, delta) {
+                wheelevent(delta);
+            });
+        })
+    })
+    </script>
 </body>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="plugins/jquery/jquery-min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-<script src="js/fangtian.js"></script>
 
 </html>
