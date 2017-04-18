@@ -2,7 +2,7 @@
  * @Author: fangtian
  * @Date:   2017-04-17 10:08:36
  * @Last Modified by:   fangtian
- * @Last Modified time: 2017-04-18 09:16:50
+ * @Last Modified time: 2017-04-18 16:33:56
  */
 
 // ---------------------------------------------------------
@@ -62,11 +62,30 @@ $(document).ready(function() {
     });
 
     // ---------------------------------------------------------
-    // 关注微信
+    // 关于我们
     // ---------------------------------------------------------
-    $('#dropdown_wx').hover(function() {
-        $('#dropdown-wx-menu').fadeIn();
-    }, function() {
-        $('#dropdown-wx-menu').fadeOut('fast');
+    $('#aboutme').hover(function() {
+        $('#aboutme-menu').fadeIn();
+    });
+
+
+    // tab
+    
+    $(".navbar-toggle").click(function (e) {
+        if (!$("#sidr").is(":visible")) {
+            $("#sidr").show();
+        } else {
+            $("#sidr").hide();
+        }
+
+        e.stopPropagation();
+    });
+
+    $(document).click(function () {
+        $("#sidr").hide();
+    });
+
+    $("#sidr").click(function (e) {
+        e.stopPropagation();
     });
 });

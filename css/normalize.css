@@ -58,11 +58,22 @@ body header .navbar-default .navbar-nav li .selected {
   color: #d9534f;
   border-bottom: 2px solid #d9534f;
 }
+body footer {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #1CBCDC;
+}
+body footer .pull-right span {
+  font-size: 20px;
+  top: 5px;
+}
 body #back-top {
+  z-index: 99;
   display: none;
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 50px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
