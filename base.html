@@ -2,57 +2,35 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" Content="数理化,培优,奥数,数学,物理,化学,迎春杯,华杯赛,">
-<meta name="description" Content="网页描述文字">
-<link rel="shortcut icon" href="images/uploads/favicon.ico" />
-<link rel="bookmark" href="images/uploads/favicon.ico" type="image/x-icon" 　/>
-<title>方田教育</title>
-<!-- Bootstrap -->
-<link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="plugins/swiper/swiper.min.css">
-<!-- fangtian css -->
-<link href="css/fangtian.css" rel="stylesheet">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" Content="数理化,培优,奥数,数学,物理,化学,迎春杯,华杯赛,">
+    <meta name="description" Content="网页描述文字">
+    <link rel="shortcut icon" href="images/uploads/favicon.ico" />
+    <link rel="bookmark" href="images/uploads/favicon.ico" type="image/x-icon" 　/>
+    <title>方田教育</title>
+    <!-- Bootstrap -->
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
+    <!-- fangtian css -->
+    <link href="css/fangtian.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
         <div style="clear:both;height:59px;padding:0 0 0 15px;position:relative;">
         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0027_Simplified Chinese.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a></div>
     <![endif]-->
-<style>
-html,
-body {
-    overflow: hidden;
-    height: 100%;
-}
-
-.section-group {
-    height: calc( 100% - 50px);
-}
-
-.area-02 {
-    background: #79AAC8
-}
-
-.area-03 {
-    background: #C779C8
-}
-
-.area-04 {
-    background: #D9AC83
-}
-</style>
+   
+    
 </head>
 
-<body id="home">
-    <header>
+<body>
+    <header id="top">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -187,94 +165,26 @@ body {
             </div>
         </form>
     </header>
-    <div id="homepage" class="section-group">
-        <section class="area-01 swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url('images/uploads/fade1.jpg');width: 100%;"></div>
-                <div class="swiper-slide" style="background-image: url('images/uploads/banner02.jpg');width: 100%;"></div>
-                <div class="swiper-slide" style="background-image: url('images/uploads/banner03.jpg');width: 100%;"></div>
-            </div>
-            <!-- 如果需要分页器 -->
-            <div class="swiper-pagination"></div>
+    <div id="about" class="section-group">
+        
+        <section style="height:900px">
+        	
         </section>
-        <section class="area-02"></section>
-        <section class="area-03"></section>
-        <section class="area-04"></section>
+        <section class="swiper-container">
+            2222
+        </section>
     </div>
     <footer>
     </footer>
-    <a id="back-top"><span class="glyphicon glyphicon-menu-up"></span></a> </p>
+    <a id="back-top" href="#"><span class="glyphicon glyphicon-menu-up"></span></a> </p>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="plugins/jquery/jquery-min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-  
-    <script src="plugins/swiper/swiper.jquery.min.js"></script>
     <script src="js/fangtian.js"></script>
-    <script type="text/javascript" src="http://cdn.gbtags.com/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
     <!-- <script src="js/user.js"></script> -->
     <script>
-    $(function() {
-        var mySwiper = new Swiper('.swiper-container', {
-            autoplay: 3000, //可选选项，自动滑动
-            loop: true,
-            // 如果需要分页器
-            pagination: '.swiper-pagination'
-
-        })
-
-
-        $(function() {
-            var animateTime = 1000,
-                $group = $('.section-group'),
-                $sections = $group.find('>section'),
-                $sectionCount = $sections.length,
-                html = ['<ul>'],
-                mFlag = false;
-            /*当前所在页标*/
-            $group.data('index_flag', 0);
-            /*初始化页码*/
-            for (var i = 0; i < $sectionCount; i++) {
-                html.push('<li><span></span></li>');
-            }
-            html.push('</ul>');
-            var $pagination = $(html.join('')),
-                $paginations = $pagination.find('>li');
-
-            $pagination.appendTo($group);
-            $paginations.click(function() {
-                if (mFlag) return; //如果此时正在动画中，则不再继续
-                var $this = $(this),
-                    index = $this.index(),
-                    translateY = index * 100;
-                mFlag = true;
-                $group.data('index_flag', index) //储存当前页标
-                    .css({
-                        '-webkit-transform': 'translateY(-' + translateY + '%)',
-                        'transform': 'translateY(-' + translateY + '%)'
-                    });
-                setTimeout(function() {
-                    mFlag = false;
-                }, animateTime);
-            });
-
-            /*滚轮事件入口,*/
-            function wheelevent(delta) {
-                if (mFlag) return;
-                delta = delta > 0 ? 1 : -1;
-                var index = $group.data('index_flag');
-                index -= delta;
-                index = index < 0 ? 0 : index = index > ($sectionCount - 1) ? ($sectionCount - 1) : index;
-                /*触发页码点击事件*/
-                $paginations.eq(index).click();
-            }
-
-            /*绑定滚轮事件*/
-            $(document).bind('mousewheel', function(event, delta) {
-                wheelevent(delta);
-            });
-        })
-    })
+    
     </script>
 </body>
 

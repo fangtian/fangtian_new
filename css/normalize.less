@@ -9,13 +9,6 @@ li {
     padding: 0;
 }
 
-body {
-    background: #fff;
-    color: #555;
-    font-size: 14px;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-}
-
 a {
     color: #555;
     text-decoration: none;
@@ -35,18 +28,62 @@ li {
     list-style: none;
 }
 
-input,
-textarea,
-select,
-button {
-    font-size: 14px;
-    font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
-}
-
 table {
     border-collapse: collapse;
 }
 
 html {
     overflow-y: scroll;
+}
+
+body {
+    background: #fff;
+    color: #555;
+    font-size: 14px;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+    header {
+        border: 1px solid transparent;
+        .navbar-default {
+            margin-bottom: 0;
+            .navbar-brand {
+                img {
+                    margin-top: -6px;
+                }
+            }
+            .navbar-nav {
+                li {
+                    a {
+                        font-size: 16px;
+                        margin: 0 15px;
+                        padding: 15px 0;
+                        &:hover,
+                        &:focus {
+                            color: #d9534f;
+                            border-bottom: 2px solid #d9534f;
+                        }
+                    }
+                    .selected {
+                        color: #d9534f;
+                        border-bottom: 2px solid #d9534f;
+                    }
+                }
+            }
+        }
+    }
+    #back-top {
+        display: none;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: #333;
+        text-align: center;
+        span {
+            margin-top: 8px;
+            color: white;
+            font-size: 30px;
+        }
+    }
 }
