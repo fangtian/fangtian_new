@@ -2,7 +2,7 @@
  * @Author: fangtian
  * @Date:   2017-04-17 10:08:36
  * @Last Modified by:   fangtian
- * @Last Modified time: 2017-04-18 16:33:56
+ * @Last Modified time: 2017-04-20 16:36:51
  */
 
 // ---------------------------------------------------------
@@ -49,11 +49,9 @@ $(document).ready(function() {
     $("#userinfo a:contains('基础资料')").addClass('selected');
     $("#complement a:contains('完善资料')").addClass('selected');
     $("#portrait a:contains('上传头像')").addClass('selected');
-
     // ---------------------------------------------------------
     // scrollTop
     // ---------------------------------------------------------
-
     jQuery(".slider a").click(function(e) {
         // Prevent a page reload when a link is pressed
         e.preventDefault();
@@ -68,24 +66,44 @@ $(document).ready(function() {
         $('#aboutme-menu').fadeIn();
     });
 
+    // 移动端导航
 
-    // tab
-    
-    $(".navbar-toggle").click(function (e) {
-        if (!$("#sidr").is(":visible")) {
-            $("#sidr").show();
-        } else {
-            $("#sidr").hide();
-        }
 
-        e.stopPropagation();
-    });
 
-    $(document).click(function () {
-        $("#sidr").hide();
-    });
+    function nav_show() {
+        $(".navbar-content").show().animate({ right: "0" }, 300);
+    }
 
-    $("#sidr").click(function (e) {
-        e.stopPropagation();
-    });
+    function nav_hide() {
+        $(".navbar-content").animate({ right: "-60%" }, 300, function() {
+            $(".navbar-content").hide()
+        });
+    }
+    console.log($(window).width());
+    if ($(window).width() < 768) {
+        $(".reg").click(function() {
+            $("#registerModal").modal('show');
+            nav_hide()
+
+        });
+        $(".login").click(function() {
+            $("#loginModal").modal('show');
+            nav_hide()
+
+        });
+        $(".navbar-toggle").click(function(e) {
+            if (!$(".navbar-content").is(":visible")) {
+                nav_show()
+            } else {
+                nav_hide()
+            }
+            e.stopPropagation();
+        });
+        $(document).click(function() {
+            nav_hide()
+        });
+        $(".navbar-content").click(function(e) {
+            e.stopPropagation();
+        });
+    }
 });
