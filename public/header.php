@@ -1,75 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Keywords" Content="数理化,培优,奥数,数学,物理,化学,迎春杯,华杯赛,">
-    <meta name="description" Content="网页描述文字">
-    <link rel="shortcut icon" href="images/uploads/favicon.ico" />
-    <link rel="bookmark" href="images/uploads/favicon.ico" type="image/x-icon" 　/>
-    <title>方田教育</title>
-    <!-- Bootstrap -->
-    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
-    <!-- fangtian css -->
-    <link href="css/fangtian.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-        <div style="clear:both;height:59px;padding:0 0 0 15px;position:relative;">
-        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0027_Simplified Chinese.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a></div>
-    <![endif]-->
-</head>
-
-<body>
-    <header id="top">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle">
-                        <span class="sr-only"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img alt="Brand" src="images/uploads/logo.png">
-                    </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="navbar-content">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="icon"> <span class="glyphicon glyphicon-user"></span></li>
-                        <li class="login"><a href="#" data-toggle="modal" data-target="#registerModal">注册</a></li>
-                        <li class="login"><a href="#" data-toggle="modal" data-target="#loginModal">登陆</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.php">首页</a></li>
-                        <li><a href="course.php">选课中心</a></li>
-                        <li><a href="interaction.php">交流中心</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+ <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div type="button" class="reglogin glyphicon glyphicon-menu-hamburger visible-xs"></div>
+                <a class="navbar-brand" href="#"><img alt="Brand" src="images/uploads/logo.png"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-content collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="icon visible-xs"> <span class="glyphicon glyphicon-user"></span></li>
+                    <li class="reg"><a href="#" data-toggle="modal" data-target="#registerModal">注册</a></li>
+                    <li class="login"><a href="#" data-toggle="modal" data-target="#loginModal">登陆</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.php" class="active">首页</a></li>
+                    <li><a href="course.php">选课中心</a></li>
+                    <li><a href="interaction.php">交流中心</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         关于我们
                          <span class="caret"></span>
                         </a>
-                            <ul id="dropdown-wx-menu" class="dropdown-menu" aria-labelledby="dropdownMenu1" role="menu">
-                                <li><a href="#">教师列表</a></li>
-                                <li><a href="#">教学体系</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">关于我们</a></li>
-                            </ul>
-                        </li>
-                        <!-- 关注官方微信 -->
-                    </ul>
-                </div>
-                <!-- 未登录 -->
+                        <ul id="dropdown-wx-menu" class="dropdown-menu" aria-labelledby="dropdownMenu1" role="menu">
+                            <li><a href="#">教师列表</a></li>
+                            <li><a href="#">教学体系</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">关于我们</a></li>
+                        </ul>
+                    </li>
+                    <!-- 关注官方微信 -->
+                </ul>
+            </div>
+             <!-- 未登录 -->
                 <!--
                 <ul class="nav navbar-nav navbar-right">
                     <li role="presentation" class="dropdown">
@@ -88,11 +51,11 @@
                 </ul> 
                 -->
                 <!-- 已登录 -->
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
-        <!-- login Modal -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+     <!-- login Modal -->
         <form id="frmlogin" name="frmlogin" action="/fangtian_ol/index.php/User/loginOk.html" method="post">
             <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-sm">
@@ -160,33 +123,4 @@
                 </div>
             </div>
         </form>
-    </header>
-    <div id="about" class="section-group">
-        <section style="height:900px">
-        </section>
-        <section class="swiper-container">
-            <div>
-            </div>
-        </section>
-    </div>
-    <footer>
-        <div class="container">
-            <div class="pull-left">©2015皖ICP备14012341号-1 | 每天进步一点点</div>
-            <div class="pull-right">
-                <a href="mailto:ft@fangtian.me">
-                    <span class="glyphicon glyphicon-envelope"></span>&nbsp; 校长信箱
-                </a>
-            </div>
-    </footer>
-    <a id="back-top" href="#"><span class="glyphicon glyphicon-menu-up"></span></a>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="plugins/jquery/jquery-min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/fangtian.js"></script>
-    <!-- <script src="js/user.js"></script> -->
-    <script>
-    </script>
-</body>
-
-</html>
+ <header>

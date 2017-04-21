@@ -2,7 +2,7 @@
  * @Author: fangtian
  * @Date:   2017-04-17 10:08:36
  * @Last Modified by:   fangtian
- * @Last Modified time: 2017-04-20 16:36:51
+ * @Last Modified time: 2017-04-21 17:06:16
  */
 
 // ---------------------------------------------------------
@@ -68,42 +68,11 @@ $(document).ready(function() {
 
     // 移动端导航
 
+    $(".reglogin").click(function(e) {
+
+        $(".navbar-content").toggleClass("show")
+    });
 
 
-    function nav_show() {
-        $(".navbar-content").show().animate({ right: "0" }, 300);
-    }
 
-    function nav_hide() {
-        $(".navbar-content").animate({ right: "-60%" }, 300, function() {
-            $(".navbar-content").hide()
-        });
-    }
-    console.log($(window).width());
-    if ($(window).width() < 768) {
-        $(".reg").click(function() {
-            $("#registerModal").modal('show');
-            nav_hide()
-
-        });
-        $(".login").click(function() {
-            $("#loginModal").modal('show');
-            nav_hide()
-
-        });
-        $(".navbar-toggle").click(function(e) {
-            if (!$(".navbar-content").is(":visible")) {
-                nav_show()
-            } else {
-                nav_hide()
-            }
-            e.stopPropagation();
-        });
-        $(document).click(function() {
-            nav_hide()
-        });
-        $(".navbar-content").click(function(e) {
-            e.stopPropagation();
-        });
-    }
 });
