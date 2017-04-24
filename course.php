@@ -396,23 +396,27 @@
             	 <div class="yx">
                     <span class="fl">已选：</span>
                     <ul class="fl">
-                        
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+              
                     </ul>
                 </div>
-                <div class="style">
+                <div class="style wx">
                     <span class="fl">校区：</span>
                     <ul class="fl">
-                        <li class="current">不限</li>
+                  
                         <li>安庆路</li>
                         <li>五里墩</li>
                         <li>北一环</li>
                     </ul>
                 </div>
-                <div class="area">
+                <div class="area wx">
                     <span class="fl">年级：</span>
                     <ul class="fl">
-                        <li class="current">不限</li>
-                        <li>小学一年级</li>
+                 
+                        <li class="current">小学一年级</li>
                         <li>小学二年级</li>
                         <li>小学三年级</li>
                         <li>小学四年级</li>
@@ -420,17 +424,16 @@
                         <li>小学六年级</li>
                     </ul>
                 </div>
-                <div class="subject">
+                <div class="subject wx">
                     <span class="fl">科目：</span>
-                    <ul class="fl">
-                        <li class="current">全部</li>
+                    <ul class="fl">                 
                         <li>数学</li>
                         <li>物理</li>
                         <li>化学</li>
                     </ul>
                 </div>
-                <div class="sort">
-                    <span class="fl">班型：</span>
+                <div class="sort wx">
+                    <span class="fl">类型：</span>
                     <ul class="fl">
                         <li class="current">基础班</li>
                         <li>提高班</li>
@@ -452,162 +455,19 @@
     <script src="js/picker.js"></script>
     <!-- <script src="js/user.js"></script> -->
     <script>
-    $(function() {
+    $(function() {  
         $(".tab_nav li").click(function() {
             $(this).addClass('current').siblings().removeClass("current");
-           $(".current").each(function(index,element){
-           		$('.yx ul').replaceWith($(element).clone());
-           		
-           })
-          
+          	$('.wx .current').each(function(index,element){  
+          		var text=$(this).html()  	
+          		console.log($(".yx ul>li").eq(index).html())
+          		$(".yx ul>li").eq(index).html(text).addClass('current')
+          	})     
         })
         $(".area li").click(function() {
             var index = $(this).index();
             $(".detail .main").eq(index).addClass("selected").siblings().removeClass("selected");
-           
-
-        })
-        
-    });
-
-    /**  
-     * 简单的Tab组件  
-     * @param tabnav 导航元素数组  
-     * @param tabcon  内容元素数组  
-     */
-    var Tabs = function(tabnav, tabcon) {
-        this.tabnav = tabnav;
-        this.tabcon = tabcon;
-        this.init.apply(this, arguments);
-    };
-    Tabs.prototype = {
-        init: function() {
-            var _this = this;
-            this.tabnav.each(function(i, oli) {
-                $(oli).click(function() {
-                    _this.tabnav.removeClass("current");
-                    $(this).addClass("current");
-                    _this.tabcon.css("display", "none");
-                    _this.tabcon.eq(i).css("display", "block");
-                })
-            })
-        }
-    };
-    var Page = function(config) {
-        this.maxpage = config.maxpage || 5;
-        this.containbox = $(config.containbox);
-        this.dataclass = config.dataclass || "item";
-        this.pagebox = $(config.pagebox);
-        this.linum = $(this.dataclass, this.containbox).length;
-        this.init.apply(this, arguments);
-    }
-    Page.prototype = {
-        init: function() {
-
-            this.pagebox.html("");
-            var totalpage = this.linum / this.maxpage;
-            //向上舍入，比如有8条数据，8除6是1点几，Math.ceil的作用是让它变成2  
-            totalpage = Math.ceil(totalpage);
-            //如果只有一页，那么没必要有这个分页的内容  
-            if (totalpage <= 1) {
-                return;
-            }
-            this.current = 1; //存储当前页  
-            this.totalpage = totalpage; //存储总页数  
-            var str = "";
-            for (var i = 0; i < this.totalpage; i++) {
-                var c = "";
-                if (i == 0) {
-                    c = " current";
-                }
-                str += '<a href="javascript:;" class="pagenum' + c + '">' + (i + 1) + '</a>';
-            }
-            str = '<a class="prebtn" href="javascript:;"><< 上一页</a>' + str + '<a class="nextbtn" href="javascript:;">下一页 >></a>';
-            this.pagebox.html(str);
-            this.pagenums = $(".pagenum", this.containbox);
-            var _this = this;
-            this.goPage(1);
-            this.pagenums.each(function(i, npage) {
-                $(npage).click(function() {
-                    _this.goPage(this.innerHTML);
-                });
-            })
-            $(".prebtn", this.containbox).click(function() {
-                _this.goPrev(_this.current);
-            });
-            $(".nextbtn", this.containbox).click(function() {
-                _this.goNext(_this.current);
-            });
-        },
-        goPage: function(num) {
-            this.current = num;
-            this.pagenums.removeClass("current");
-            this.pagenums.eq(num - 1).addClass("current");
-            var dataobjs = $(this.dataclass, this.containbox);
-            dataobjs.each(function(i, itemdata) {
-                $(itemdata).css("display", "none");
-            });
-            for (var i = (num - 1) * this.maxpage; i < num * this.maxpage; i++) {
-                if (i < this.linum) {
-                    dataobjs.eq(i).css("display", "block");
-                }
-            }
-        },
-        goPrev: function(num) {
-            if (num == 1) {
-                return;
-            }
-            this.current--;
-            this.goPage(this.current);
-        },
-        goNext: function(num) {
-            if (num == this.totalpage) {
-                return;
-            }
-            this.current++;
-            this.goPage(this.current);
-        }
-    };
-    (function() {
-        //tab切换的代码  
-        var tab = new Tabs($(".area li"), $(".shop_list"));
-        //分页的代码  
-        var page1 = new Page({
-            containbox: "#content1",
-            maxpage: "4",
-            dataclass: ".item",
-            pagebox: "#page1"
-        });
-        var page2 = new Page({
-            containbox: "#content2",
-            maxpage: "4",
-            dataclass: ".item",
-            pagebox: "#page2"
-        });
-        var page3 = new Page({
-            containbox: "#content3",
-            maxpage: "4",
-            dataclass: ".item",
-            pagebox: "#page3"
-        });
-        var page4 = new Page({
-            containbox: "#content4",
-            maxpage: "4",
-            dataclass: ".item",
-            pagebox: "#page4"
-        });
-        var page5 = new Page({
-            containbox: "#content5",
-            maxpage: "4",
-            dataclass: ".item",
-            pagebox: "#page5"
-        });
-        var page6 = new Page({
-            containbox: "#content6",
-            maxpage: "4",
-            dataclass: ".item",
-            pagebox: "#page6"
-        });
+        }) 
     })();
     </script>
 </body>
