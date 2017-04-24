@@ -37,7 +37,7 @@ body {
   padding-right: 0!important;
   font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
-.show {
+.showbar {
   transform: translateX(-100%);
 }
 header .navbar-header .reglogin {

@@ -28,17 +28,16 @@
 </head>
 
 <body>
-     <!-- include header.php -->
-  <?php include "public/header.php" ?>
+    <!-- include header.php -->
+    <?php include "public/header.php" ?>
     <div id="about" class="section-group">
         <section style="height:1000px">
         </section>
         <section class="swiper-container">
-            <div>
-            </div>
+            <div> </div>
         </section>
     </div>
-     <!-- include footer.php -->
+    <!-- include footer.php -->
     <?php include "public/footer.php" ?>
     <a id="back-top" href="#"><span class="glyphicon glyphicon-menu-up"></span></a>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

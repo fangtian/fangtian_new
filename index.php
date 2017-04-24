@@ -69,8 +69,7 @@
         <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="plugins/swiper/swiper.jquery.min.js"></script>
         <script src="plugins/fullpage/fullpage.js"></script>
-        <script src="js/fangtian.js"></script>
-        <script type="text/javascript" src="http://cdn.gbtags.com/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
+        <script src="js/fangtian.js"></script>        
         <!-- <script src="js/user.js"></script> -->
         <script>
         $(function() {

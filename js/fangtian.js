@@ -2,7 +2,7 @@
  * @Author: fangtian
  * @Date:   2017-04-17 10:08:36
  * @Last Modified by:   fangtian
- * @Last Modified time: 2017-04-21 17:06:16
+ * @Last Modified time: 2017-04-24 08:46:57
  */
 
 // ---------------------------------------------------------
@@ -65,14 +65,11 @@ $(document).ready(function() {
     $('#aboutme').hover(function() {
         $('#aboutme-menu').fadeIn();
     });
-
-    // 移动端导航
-
+    //----------------------------------------------------------
+    // 移动端导航切换
+    //----------------------------------------------------------
     $(".reglogin").click(function(e) {
 
-        $(".navbar-content").toggleClass("show")
+        $(".navbar-content").toggleClass("showbar")
     });
-
-
-
 });
