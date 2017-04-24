@@ -200,23 +200,12 @@
     }
     
     .tab_nav>div {
-        height: 30px;
-        padding: 10px 0;
+        height: 40px;
+        padding: 5px 0;
         border-bottom: 1px solid #EEE;
     }
     
-    .tab_nav .detail .main {
-        display: none;
-        margin-left: 49px;
-    }
-    
-    .tab_nav .detail .main li {
-        border: 1px solid #fff;
-    }
-    
-    .tab_nav .detail .main.selected {
-        display: block;
-    }
+   
     
     .tab_nav .detail>ul .current {
         background-color: #fff;
@@ -252,138 +241,15 @@
         background: #D11E37;
     }
     
-    .shop {}
+ 
+
+ 
     
-    .shop_list {
-        overflow: hidden;
-        margin-bottom: 50px;
-    }
+  
     
-    .shop_list .item {
-        float: left;
-        width: 283px;
-        height: 400px;
-        border: 1px solid #DDDDDD;
-        margin: 20px 20px 0 0;
-    }
-    
-    .shop_list .item:nth-child(4n) {
-        margin-right: 0;
-    }
-    
-    .item .item_name {
-        text-indent: 5px;
-        margin-top: 8px;
-        height: 25px;
-        line-height: 25px;
-        font-size: 14px;
-    }
-    
-    .item .item_num {
-        color: #A1A1A1;
-        height: 34px;
-        line-height: 34px;
-        text-indent: 5px;
-    }
-    
-    .item .item_prc {
-        height: 34px;
-        line-height: 34px;
-        text-indent: 5px;
-    }
-    
-    .return {
-        position: fixed;
-        color: white;
-        right: 6%;
-        display: none;
-        bottom: 70px;
-        width: 50px;
-        height: 50px;
-        border-radius: 25px;
-        background-color: #C30003;
-        text-align: center;
-        cursor: pointer;
-        z-index: 2;
-    }
-    
-    .return>span {
-        display: block;
-        margin-top: 5px;
-    }
-    
-    .page {
-        width: 1200px;
-        margin: 50px auto;
-        text-align: center;
-    }
-    
-    .page a {
-        margin: 0 10px;
-    }
-    
-    .pagenum {
-        display: inline-block;
-        width: 22px;
-        height: 22px;
-    }
-    
-    .page .current {
-        color: white;
-        line-height: 22px;
-        background-color: #D11E37;
-    }
-    
-    .footer {
-        width: 100%;
-        height: 270px;
-        background: #19242C;
-        color: white;
-        padding-bottom: 10px;
-    }
-    
-    .footer .content {
-        position: relative;
-        background: #19242C;
-    }
-    
-    .footer dl {
-        float: left;
-        margin-top: 50px;
-        margin-right: 100px;
-    }
-    
-    .footer dl dd {
-        font-size: 20px;
-        height: 30px;
-        line-height: 30px;
-        margin-bottom: 20px;
-    }
-    
-    .footer dl dt {
-        border-top: 1px solid #02131F;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: #888888;
-        line-height: 30px;
-    }
-    
-    .footer .down {
-        position: absolute;
-        right: 0;
-        top: 30px;
-    }
-    
-    .footbar {
-        background-color: #171E23;
-        height: 35px;
-        color: #888888;
-        padding-top: 20px;
-    }
-    
-    .footbar .content {
-        text-align: center;
-    }
+ 
+   
+
     </style>
 </head>
 
@@ -400,7 +266,6 @@
                         <li></li>
                         <li></li>
                         <li></li>
-              
                     </ul>
                 </div>
                 <div class="style wx">
@@ -416,7 +281,7 @@
                     <span class="fl">年级：</span>
                     <ul class="fl">
                  
-                        <li class="current">小学一年级</li>
+                        <li>小学一年级</li>
                         <li>小学二年级</li>
                         <li>小学三年级</li>
                         <li>小学四年级</li>
@@ -435,7 +300,7 @@
                 <div class="sort wx">
                     <span class="fl">类型：</span>
                     <ul class="fl">
-                        <li class="current">基础班</li>
+                        <li>基础班</li>
                         <li>提高班</li>
                         <li>尖端班</li>
                     </ul>
@@ -452,23 +317,19 @@
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/swiper/swiper.jquery.min.js"></script>
     <script src="js/fangtian.js"></script>
-    <script src="js/picker.js"></script>
+   
     <!-- <script src="js/user.js"></script> -->
     <script>
     $(function() {  
         $(".tab_nav li").click(function() {
             $(this).addClass('current').siblings().removeClass("current");
           	$('.wx .current').each(function(index,element){  
-          		var text=$(this).html()  	
-          		console.log($(".yx ul>li").eq(index).html())
+          		var text=$(this).html()  	         		
           		$(".yx ul>li").eq(index).html(text).addClass('current')
           	})     
         })
-        $(".area li").click(function() {
-            var index = $(this).index();
-            $(".detail .main").eq(index).addClass("selected").siblings().removeClass("selected");
-        }) 
-    })();
+       
+    });
     </script>
 </body>
 
