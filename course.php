@@ -26,187 +26,20 @@
         <div style="clear:both;height:59px;padding:0 0 0 15px;position:relative;">
         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0027_Simplified Chinese.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a></div>
     <![endif]-->
-    <style>
-    body {
-        font-size: 14px;
-       
-    }
-    
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    p,
-    ul,
-    ol,
-    dl,
-    dd {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .clearfloat:after {
-        display: block;
-        clear: both;
-        content: "";
-        visibility: hidden;
-        height: 0
-    }
-    
-    .clearfloat {
-        zoom: 1
-    }
-    
-    ul,
-    ol {
-        padding-left: 0;
-        list-style: none;
-    }
-    
-    a {
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
+    <style>   
     .fl {
         float: left;
     }
     
     .fr {
         float: right;
-    }
-    
-    .top {
-        width: 100%;
-        height: 80px;
-        border-top: 4px solid #BA0002;
-        border-bottom: 1px solid #eee;
-        box-shadow: 0px 2px 15px #C1C1C1;
-    }
-    
-    .red {
-        color: red;
-    }
-    
-    .content {
-        width: 1200px;
-        margin: 0 auto;
-    }
-    
-    .body {
-        position: relative;
-    }
-    
-    .top .content {
-        height: 80px;
-        background-color: #fff;
-        position: relative;
-    }
-    
-    .top .content .login {
-        width: 220px;
-        background: url(../img/login.fw.png) no-repeat;
-        position: absolute;
-        right: 0;
-        top: 0;
-        text-align: center;
-        color: #FFC5BB;
-    }
-    
-    .top .content .login a {
-        text-decoration: none;
-        color: #FFC5BB;
-        font-size: 12px;
-    }
-    
-    .top .content img {
-        margin-top: 10px;
-    }
-    
-    .top .content .check {
-        font-size: 12px;
-        margin: 38px 0 0 10px;
-    }
-    
-    .top .top_nav {
-        margin-top: 40px;
-    }
-    
-    .top .top_nav li {
-        float: left;
-        font-size: 16px;
-        color: black;
-        padding-left: 20px;
-    }
-    
-    .top .top_nav li a {
-        font-size: 16px;
-        color: black;
-    }
-    
-    .top .top_nav li a:hover {
-        color: #BB0002;
-    }
-    
-    .tab_title {
-        margin-top: 15px;
-        margin-bottom: 30px;
-    }
-    
-    .tab_title a {
-        color: #999999;
-    }
-    
-    .tab_search {
-        height: 50px;
-        font-size: 22px;
-        margin-bottom: 15px;
-    }
-    
-    .tab_search .fr {
-        position: relative;
-    }
-    
-    .tab_search .fr .button {
-        outline: none;
-        border: 0;
-        width: 23px;
-        height: 23px;
-        background: url(../img/search.fw.png) no-repeat;
-        position: absolute;
-        right: 15px;
-        top: 10px;
-        cursor: pointer;
-    }
-    
-    .tab_search input {
-        outline: none;
-        height: 40px;
-        width: 400px;
-        border: 1px solid #DEDEDE;
-        border-radius: 30px;
-        text-indent: 20px;
-    }
-    
-    .tab_nav ul {
-        zoom: 1;
-        font-size: 14px;
-    }
-    
-    .tab_nav .style {
-        border-top: 1px solid #D0D0D0;
-    }
-    
+    }  
     .tab_nav>div {
         height: 40px;
         padding: 5px 0;
         border-bottom: 1px solid #EEE;
     }
-    
-   
-    
+        
     .tab_nav .detail>ul .current {
         background-color: #fff;
         color: black;
@@ -240,16 +73,6 @@
         color: white;
         background: #D11E37;
     }
-    
- 
-
- 
-    
-  
-    
- 
-   
-
     </style>
 </head>
 
@@ -327,8 +150,7 @@
           		var text=$(this).html()  	         		
           		$(".yx ul>li").eq(index).html(text).addClass('current')
           	})     
-        })
-       
+        })       
     });
     </script>
 </body>

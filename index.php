@@ -31,14 +31,11 @@
     body {
         overflow: hidden;
         height: 100%;
-    }
-    
-    .section-group {
+    }   
+    .section{
         height: calc( 100% - 50px);
     }  
-    .area-04 {
-        background: #D9AC83
-    }
+   
     </style>
 </head>
 
@@ -50,18 +47,126 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image: url('images/uploads/fade1.jpg');width: 100%;"></div>
                 <div class="swiper-slide" style="background-image: url('images/uploads/banner02.jpg');width: 100%;"></div>
-                <div class="swiper-slide" style="background-image: url('images/uploads/banner03.jpg');width: 100%;"></div>
             </div>
             <!-- 分页器 -->
             <div class="swiper-pagination"></div>
         </section>
-        <section class="section"></section>
-        <section class="section"></section>
-        <section class="section">
-             <!-- include footer.php -->
-             <?php include "public/footer.php" ?>
+        <section class="section course">
+            <div class="container">
+                <div class="head clearfix">
+                    <div class="pull-left">
+                        <h2>我们的课程</h2>
+                        <p>专业的中小学数理化课程</p>
+                    </div>
+                    <div class="pull-right">
+                        <h3>更多课程 >>></h3>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="list col-xs-6 col-sm-3">
+                        <div class="head">
+                            <span>名额已满</span>
+                            <h4>数学春季班</h4>
+                            <p>2017暑假课六年级数学</p>
+                        </div>
+                        <div class="message">
+                            <time>2017年2月18日-2017年6月17日</time>
+                            <div class="serve">
+                                <span>课堂测评</span>
+                                <span>课堂测评</span>
+                                <span>课堂测评</span>
+                                <span>课堂测评</span>
+                            </div>
+                        </div>
+                        <p>已报<span class="num">213</span>人</p>
+                       <a class="btn_ft">立即报名</a>
+
+                    </div>
+                     <div class="list col-xs-6 col-sm-3">
+                        <div class="head">
+                            <span>名额已满</span>
+                            <h4>数学春季班</h4>
+                            <p>2017暑假课六年级数学</p>
+                        </div>
+                        <div class="message">
+                            <time>2017年2月18日-2017年6月17日</time>
+                            <div class="serve">
+                                <span>课堂测评</span>
+                                <span>课堂测评</span>
+                                <span>课堂测评</span>
+                                <span>课堂测评</span>
+                            </div>
+                        </div>
+                        <p>已报<span class="num">213</span>人</p>
+                       <a class="btn_ft">立即报名</a>
+
+                    </div>
+                     <div class="list col-xs-6 col-sm-3">
+                        <div class="head">
+                            <span>名额已满</span>
+                            <h4>数学春季班</h4>
+                            <p>2017暑假课六年级数学</p>
+                        </div>
+                        <div class="message">
+                            <time>2017年2月18日-2017年6月17日</time>
+                            <div class="serve">
+                                <span>课堂测评</span>
+                                <span>课堂测评</span>
+                                <span>课堂测评</span>
+                                <span>课堂测评</span>
+                            </div>
+                        </div>
+                        <p>已报<span class="num">213</span>人</p>
+                       <a class="btn_ft">立即报名</a>
+
+                    </div>
+                     <div class="list col-xs-6 col-sm-3">
+                        <div class="head">
+                            <span>名额已满</span>
+                            <h4>数学春季班</h4>
+                            <p>2017暑假课六年级数学</p>
+                        </div>
+                        <div class="message">
+                            <time>2017年2月18日-2017年6月17日</time>
+                            <div class="serve">
+                                <span>课堂测评</span>
+                                <span>课堂测评</span>
+                                <span>课堂测评</span>
+                                <span>课堂测评</span>
+                            </div>
+                        </div>
+                        <p>已报<span class="num">213</span>人</p>
+                       <a class="btn_ft">立即报名</a>
+
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
         </section>
-        </div>
+        <section class="section">
+            
+        </section>
+        <section class="section aboutme">
+            <div class="location">
+                <div class="col-sm-3">
+                    <img src="images/uploads/logo.png" alt="">
+                </div>
+                <div class="col-sm-6">
+                    <dl>
+                        <dt><span class="glyphicon glyphicon-map-marker"></span>联系我们</dt>
+                        <dd>安庆路校区：庐阳区安庆路205号金子楼6楼</dd>
+                        <dd>北一环校区：庐阳区亳州路201号金地大厦8楼</dd>
+                        <dd>五里墩校区：蜀山区长江西路与西一环交口金域国际15楼</dd>
+                    </dl>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <!-- include footer.php -->
+            <?php include "public/footer.php" ?>
+        </section>
+    </div>
         <a id="back-top"><span class="glyphicon glyphicon-menu-up"></span></a>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="plugins/jquery/jquery-min.js"></script>

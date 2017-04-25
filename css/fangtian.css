@@ -4,6 +4,7 @@ dl,
 dt,
 dd,
 ol,
+p,
 li {
   margin: 0;
   padding: 0;
@@ -37,8 +38,25 @@ body {
   padding-right: 0!important;
   font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
+@font-face {
+  font-family: ftFont;
+  src: url('../images/font/num.ttf');
+}
 .showbar {
   transform: translateX(-100%);
+}
+.showsuggest {
+  opacity: 1;
+}
+.btn_ft {
+  height: 30px;
+  border-radius: 15px;
+  background-color: #29C2E1;
+  color: white;
+}
+header nav {
+  height: 80px;
+  margin-bottom: 0;
 }
 header .navbar-header .reglogin {
   position: absolute;
@@ -49,12 +67,36 @@ header .navbar-header .reglogin {
 }
 header .navbar-header .navbar-brand {
   padding: 0 15px;
+  margin-right: 30px;
 }
 header .navbar-header .navbar-brand img {
-  margin-top: 8px;
+  margin-top: 25px;
+}
+header .navbar-content {
+  height: 80px;
+}
+header .navbar-content li {
+  height: 80px;
+  line-height: 80px;
+  margin: 0 0  0 15px;
+}
+header .navbar-content li #dropdown-wx-menu li {
+  height: 30px;
+  line-height: 30px;
+}
+header .navbar-content .navbar-nav > .login span {
+  width: 75px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  line-height: 2;
+  display: inline-block;
+  cursor: pointer;
 }
 header .navbar-content .navbar-nav > li > a {
-  padding: 15px 0 13px 0;
+  font-size: 14px;
+  padding: 30px 0 28px 0;
   margin: 0 15px;
 }
 header .navbar-content .navbar-nav > li > a.active,
@@ -112,9 +154,23 @@ footer {
   background-color: #1CBCDC;
   z-index: 9999;
 }
+footer .pull-right {
+  position: relative;
+}
 footer .pull-right span {
   font-size: 20px;
   top: 5px;
+}
+footer .pull-right .suggest_area {
+  opacity: 0;
+  transition: 0.3s all ease;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+}
+footer .pull-right .suggest_area input {
+  width: 231px;
+  height: 30px;
 }
 #back-top {
   z-index: 99;
@@ -145,13 +201,16 @@ footer .pull-right span {
   height: 100%;
 }
 #homepage section:nth-child(2) {
-  background: #79AAC8;
+  background: #E7EEF1;
 }
 #homepage section:nth-child(3) {
   background: #C779C8;
 }
-#homepage section:nth-child(4) {
-  background: #79AAC8;
+#homepage section .aboutme .location {
+  margin-top: 20%;
+}
+#homepage section .aboutme .location img {
+  margin: 0 auto;
 }
 #homepage section footer {
   position: absolute;
@@ -175,104 +234,54 @@ footer .pull-right span {
 #homepage .swiper-container .swiper-pagination span {
   margin: 15px;
 }
+#homepage .course .header {
+  width: 100%;
+}
+#homepage .course .num {
+  margin: 0 10px;
+  font-size: 50px;
+  font-family: ftFont;
+  color: #F7941D;
+}
+#homepage .course .content .list {
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+}
+#homepage .course .content .list .head {
+  position: relative;
+}
+#homepage .course .content .list .head span {
+  position: absolute;
+  height: 30px;
+  line-height: 30px;
+  top: -16px;
+  left: -47px;
+  width: 120px;
+  transform: rotate(-45deg);
+  background-color: red;
+  color: white;
+}
+#homepage .course .content .list .head h4 {
+  width: 100px;
+  margin: 30px auto;
+  border-bottom: 1px solid #FCD09D;
+}
+#homepage .course .content .list a {
+  padding: 10px;
+  display: block;
+  width: 120px;
+  line-height: 1;
+  margin: 15px auto;
+  cursor: pointer;
+}
 #course {
   margin-top: 50px;
 }
-#course .container .search {
-  /* siftbox */
-  /* sortbox */
-}
-#course .container .search .clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-#course .container .search .clearfix {
-  display: inline-table;
-}
-#course .container .search .siftbox {
-  padding: 10px 0 10px 36px;
-  background: #F2F2F2;
-  border-bottom: solid 1px #CCCCCC;
-}
-#course .container .search .siftbox .label {
-  float: left;
-  margin-top: 2px;
+#course .container .tab_nav ul {
+  zoom: 1;
   font-size: 14px;
-  font-weight: 800;
 }
-#course .container .search .siftbox #condition {
-  float: left;
-}
-#course .container .search .siftbox .inbtn,
-#course .container .search .siftbox .inbtn span {
-  background: url(images/closelabel.png) no-repeat;
-  cursor: pointer;
-}
-#course .container .search .siftbox .inbtn {
-  display: inline-block;
-  height: 17px;
-  line-height: 17px;
-  overflow: hidden;
-  margin: 4px 8px 0 0;
-  float: left;
-  background-position: 0 0;
-  padding: 0 0 0 20px;
-}
-#course .container .search .siftbox .inbtn span {
-  background-position: 100% 0;
-  display: block;
-  float: left;
-  padding: 0 5px 0 0;
-}
-#course .container .search .siftbox .inbtn:hover {
-  background-position: 0 -17px;
-  text-decoration: none;
-}
-#course .container .search .siftbox .inbtn:hover span {
-  background-position: 100% -17px;
-  color: #5e5e5e;
-  text-decoration: none;
-}
-#course .container .search .sortbox {
-  border-width: 2px 1px 0px 1px;
-  border-color: #ff5500 #cccccc #cccccc #cccccc;
-  border-style: solid;
-  width: 720px;
-  margin: 20px auto 0 auto;
-}
-#course .container .search .sortbox dl {
-  padding: 0 0 15px 110px;
-  border-bottom: solid 1px #cccccc;
-  vertical-align: bottom;
-}
-#course .container .search .sortbox dl dt {
-  float: left;
-  width: 110px;
-  margin: 15px 0 0 -110px;
-  text-align: right;
-  line-height: 16px;
-  display: inline;
-  font-weight: 800;
-  font-size: 14px;
-  color: #404040;
-}
-#course .container .search .sortbox dl dd {
-  float: left;
-  margin: 12px 18px 0 0;
-  display: inline;
-}
-#course .container .search .sortbox dl dd a {
-  cursor: pointer;
-  white-space: nowrap;
-}
-#course .container .search .sortbox dl dd a.seling {
-  background-color: #005AA0;
-  color: #FFFFFF;
-}
-#course .container .search .sortbox dl dd a.seled {
-  background-color: #005AA0;
-  color: #FFFFFF;
+#course .container .tab_nav .style {
+  border-top: 1px solid #D0D0D0;
 }

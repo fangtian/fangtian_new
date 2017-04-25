@@ -11,9 +11,16 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="icon visible-xs"> <span class="glyphicon glyphicon-user"></span></li>
                     <li class="reg"><a href="#" data-toggle="modal" data-target="#registerModal">注册</a></li>
-                    <li class="login"><a href="#" data-toggle="modal" data-target="#loginModal">登陆</a></li>
+                    <li class="login"><span class="btn_ft" data-toggle="modal" data-target="#loginModal">登录</span></li>
                 </ul>
                 <ul class="nav navbar-nav">
+                    <li class="visible-lg">
+                        <span class="glyphicon glyphicon-map-marker"></span> &nbsp;&nbsp;
+                        <select >
+                        <option  value = "合肥市" >合肥市</option>
+                        <option  value = "1" >其他地区</option>
+                        </select>
+                    </li>
                     <li><a href="index.php" class="active">首页</a></li>
                     <li><a href="course.php">选课中心</a></li>
                     <li><a href="interaction.php">交流中心</a></li>
@@ -25,7 +32,7 @@
                         <ul id="dropdown-wx-menu" class="dropdown-menu" aria-labelledby="dropdownMenu1" role="menu">
                             <li><a href="#">教师列表</a></li>
                             <li><a href="#">教学体系</a></li>
-                            <li role="separator" class="divider"></li>
+                           
                             <li><a href="#">关于我们</a></li>
                         </ul>
                     </li>
