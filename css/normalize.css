@@ -9,6 +9,9 @@ li {
   margin: 0;
   padding: 0;
 }
+.container {
+  padding: 0;
+}
 a {
   color: #555;
   text-decoration: none;
@@ -58,6 +61,11 @@ header nav {
   height: 80px;
   margin-bottom: 0;
 }
+@media (max-width: 768px) {
+  header nav {
+    height: 50px;
+  }
+}
 header .navbar-header .reglogin {
   position: absolute;
   right: 10px;
@@ -72,13 +80,18 @@ header .navbar-header .navbar-brand {
 header .navbar-header .navbar-brand img {
   margin-top: 25px;
 }
+@media (max-width: 768px) {
+  header .navbar-header .navbar-brand img {
+    margin-top: 11px;
+  }
+}
 header .navbar-content {
   height: 80px;
 }
 header .navbar-content li {
   height: 80px;
   line-height: 80px;
-  margin: 0 0  0 15px;
+  margin: 0 0 0 15px;
 }
 header .navbar-content li #dropdown-wx-menu li {
   height: 30px;
@@ -100,8 +113,9 @@ header .navbar-content .navbar-nav > li > a {
   margin: 0 15px;
 }
 header .navbar-content .navbar-nav > li > a.active,
-header .navbar-content .navbar-nav > li > a:hover {
-  border-bottom: 2px solid red;
+header .navbar-content .navbar-nav > li > a:hover,
+header .navbar-content .navbar-nav > li > a.selected {
+  font-size: 18px;
   color: red;
   outline: none;
 }
@@ -121,21 +135,52 @@ header .navbar-content .navbar-nav > li > a:focus {
     padding: 0 15px;
     transition: 0.3s all ease;
   }
+  header .navbar-content .navbar-right {
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
   header .navbar-content .navbar-right li {
-    display: inline-block;
+    display: inline-block !important;
+    height: 50px;
+    margin: 0;
+  }
+  header .navbar-content .navbar-right li a {
+    padding: 0;
+    margin: 0;
   }
   header .navbar-content .navbar-right .icon {
-    float: left;
-    text-align: right;
-    width: 25%;
+    text-align: center;
+    width: 20%;
     font-size: 24px;
-    line-height: 1;
-    top: 15px;
+    position: relative;
+  }
+  header .navbar-content .navbar-right .icon span {
+    display: inline-block;
+    position: relative;
+    left: 20%;
+    top: -15px;
   }
   header .navbar-content .navbar-right .reg,
   header .navbar-content .navbar-right .login {
     text-align: center;
-    width: 35%;
+    width: 30%;
+    position: relative;
+  }
+  header .navbar-content .navbar-right .reg a,
+  header .navbar-content .navbar-right .login a {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 16px;
+  }
+  header .navbar-content .navbar-right .reg span,
+  header .navbar-content .navbar-right .login span {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    padding: 10px;
     line-height: 1;
   }
   header .navbar-content .dropdown-menu {

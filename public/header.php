@@ -21,7 +21,7 @@
                         <option  value = "1" >其他地区</option>
                         </select>
                     </li>
-                    <li><a href="index.php" class="active">首页</a></li>
+                    <li><a href="index.php">首页</a></li>
                     <li><a href="course.php">选课中心</a></li>
                     <li><a href="interaction.php">交流中心</a></li>
                     <li class="dropdown">
@@ -130,4 +130,4 @@
                 </div>
             </div>
         </form>
- <header>
+ </header>

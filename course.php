@@ -76,10 +76,10 @@
     </style>
 </head>
 
-<body id="home">
+<body id="course">
     <!-- include header.php -->
     <?php include "public/header.php" ?>
-    <div id="course">
+    <div class="content">
         <div class="container">
             <div class="tab_nav">
             	 <div class="yx">

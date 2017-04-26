@@ -9,6 +9,9 @@ li {
   margin: 0;
   padding: 0;
 }
+.container {
+  padding: 0;
+}
 a {
   color: #555;
   text-decoration: none;
@@ -58,6 +61,11 @@ header nav {
   height: 80px;
   margin-bottom: 0;
 }
+@media (max-width: 768px) {
+  header nav {
+    height: 50px;
+  }
+}
 header .navbar-header .reglogin {
   position: absolute;
   right: 10px;
@@ -72,13 +80,18 @@ header .navbar-header .navbar-brand {
 header .navbar-header .navbar-brand img {
   margin-top: 25px;
 }
+@media (max-width: 768px) {
+  header .navbar-header .navbar-brand img {
+    margin-top: 11px;
+  }
+}
 header .navbar-content {
   height: 80px;
 }
 header .navbar-content li {
   height: 80px;
   line-height: 80px;
-  margin: 0 0  0 15px;
+  margin: 0 0 0 15px;
 }
 header .navbar-content li #dropdown-wx-menu li {
   height: 30px;
@@ -100,8 +113,9 @@ header .navbar-content .navbar-nav > li > a {
   margin: 0 15px;
 }
 header .navbar-content .navbar-nav > li > a.active,
-header .navbar-content .navbar-nav > li > a:hover {
-  border-bottom: 2px solid red;
+header .navbar-content .navbar-nav > li > a:hover,
+header .navbar-content .navbar-nav > li > a.selected {
+  font-size: 18px;
   color: red;
   outline: none;
 }
@@ -121,21 +135,52 @@ header .navbar-content .navbar-nav > li > a:focus {
     padding: 0 15px;
     transition: 0.3s all ease;
   }
+  header .navbar-content .navbar-right {
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
   header .navbar-content .navbar-right li {
-    display: inline-block;
+    display: inline-block !important;
+    height: 50px;
+    margin: 0;
+  }
+  header .navbar-content .navbar-right li a {
+    padding: 0;
+    margin: 0;
   }
   header .navbar-content .navbar-right .icon {
-    float: left;
-    text-align: right;
-    width: 25%;
+    text-align: center;
+    width: 20%;
     font-size: 24px;
-    line-height: 1;
-    top: 15px;
+    position: relative;
+  }
+  header .navbar-content .navbar-right .icon span {
+    display: inline-block;
+    position: relative;
+    left: 20%;
+    top: -15px;
   }
   header .navbar-content .navbar-right .reg,
   header .navbar-content .navbar-right .login {
     text-align: center;
-    width: 35%;
+    width: 30%;
+    position: relative;
+  }
+  header .navbar-content .navbar-right .reg a,
+  header .navbar-content .navbar-right .login a {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 16px;
+  }
+  header .navbar-content .navbar-right .reg span,
+  header .navbar-content .navbar-right .login span {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    padding: 10px;
     line-height: 1;
   }
   header .navbar-content .dropdown-menu {
@@ -203,14 +248,14 @@ footer .pull-right .suggest_area input {
 #homepage section:nth-child(2) {
   background: #E7EEF1;
 }
-#homepage section:nth-child(3) {
-  background: #C779C8;
-}
 #homepage section .aboutme .location {
   margin-top: 20%;
 }
 #homepage section .aboutme .location img {
   margin: 0 auto;
+}
+#homepage section .fp-tableCell {
+  height: 100%;
 }
 #homepage section footer {
   position: absolute;
@@ -234,8 +279,9 @@ footer .pull-right .suggest_area input {
 #homepage .swiper-container .swiper-pagination span {
   margin: 15px;
 }
-#homepage .course .header {
+#homepage .course .course_head {
   width: 100%;
+  margin-bottom: 50px;
 }
 #homepage .course .num {
   margin: 0 10px;
@@ -243,29 +289,106 @@ footer .pull-right .suggest_area input {
   font-family: ftFont;
   color: #F7941D;
 }
+#homepage .course .content {
+  display: flex;
+  justify-content: space-around;
+}
 #homepage .course .content .list {
   text-align: center;
   background-color: white;
   overflow: hidden;
+  margin: 0 20px;
 }
 #homepage .course .content .list .head {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 120px;
+  border-bottom: 1px solid #EEF3F4;
 }
 #homepage .course .content .list .head span {
   position: absolute;
   height: 30px;
   line-height: 30px;
-  top: -16px;
-  left: -47px;
+  top: 12px;
+  left: -35px;
   width: 120px;
   transform: rotate(-45deg);
-  background-color: red;
+  background-color: #E20000;
   color: white;
 }
 #homepage .course .content .list .head h4 {
-  width: 100px;
-  margin: 30px auto;
-  border-bottom: 1px solid #FCD09D;
+  width: 100%;
+  height: 65px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+  border-bottom: 1px solid #EEF3F4;
+  margin: 0;
+  padding: 30px 0;
+}
+#homepage .course .content .list .head .line {
+  width: 110px;
+  position: absolute;
+  left: 50%;
+  top: 64px;
+  margin-left: -55px;
+  height: 1px;
+  background-color: red;
+}
+#homepage .course .content .list .head p {
+  text-align: center;
+  font-size: 24px;
+  font-family: Tahoma;
+  letter-spacing: 2px;
+  color: black;
+  margin: 10px 0 0 0;
+}
+#homepage .course .content .list .message {
+  margin-top: 140px;
+}
+#homepage .course .content .list .message .time {
+  margin-bottom: 26px;
+  font-size: 12px;
+}
+#homepage .course .content .list .message .video {
+  width: 90%;
+  height: 110px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 1px #888888;
+  position: relative;
+}
+#homepage .course .content .list .message .video .blue {
+  margin-top: 35px;
+  color: #005896;
+  font-weight: 700;
+}
+#homepage .course .content .list .message .video .black {
+  color: black;
+  font-weight: 700;
+  margin-top: 5px;
+}
+#homepage .course .content .list .message .video span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #29C2E1;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-top: 8px;
+  padding-left: 6px;
+  border: 1px solid #eee;
+  background-color: rgba(250, 250, 250, 0.2);
+  box-shadow: 0px 0px 20px #B9B9B9;
+}
+#homepage .course .content .list .message .video span:before {
+  opacity: 0.6;
 }
 #homepage .course .content .list a {
   padding: 10px;
@@ -275,13 +398,21 @@ footer .pull-right .suggest_area input {
   margin: 15px auto;
   cursor: pointer;
 }
-#course {
-  margin-top: 50px;
+#homepage .course .swiper-teacher {
+  width: 100%;
+  padding: 0 20px;
+  overflow: hidden;
 }
-#course .container .tab_nav ul {
+#homepage .course .swiper-teacher .swiper-slide {
+  width: 80%;
+}
+#course .content {
+  margin-top: 80px;
+}
+#course .content .container .tab_nav ul {
   zoom: 1;
   font-size: 14px;
 }
-#course .container .tab_nav .style {
+#course .content .container .tab_nav .style {
   border-top: 1px solid #D0D0D0;
 }

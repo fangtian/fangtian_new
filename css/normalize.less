@@ -5,8 +5,13 @@ dt,
 dd,
 ol,
 p,
-li {
+li,
+{
     margin: 0;
+    padding: 0;
+}
+
+.container {
     padding: 0;
 }
 
@@ -45,28 +50,36 @@ body {
     padding-right: 0!important;
     font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
+
 @font-face {
-  font-family: ftFont;
-  src: url('../images/font/num.ttf');
+    font-family: ftFont;
+    src: url('../images/font/num.ttf');
 }
+
+
+
 .showbar {
     transform: translateX(-100%);
 }
-.showsuggest{
+
+.showsuggest {
     opacity: 1;
 }
-.btn_ft{
-   
+
+.btn_ft {
     height: 30px;
     border-radius: 15px;
     background-color: #29C2E1;
     color: white;
 }
+
 header {
-   
-    nav{
+    nav {
         height: 80px;
-        margin-bottom: 0; 
+        margin-bottom: 0;
+        @media (max-width: 768px) {
+            height: 50px;
+        }
     }
     .navbar-header {
         .reglogin {
@@ -81,33 +94,35 @@ header {
             margin-right: 30px;
             img {
                 margin-top: 25px;
+                @media (max-width: 768px) {
+                    margin-top: 11px;
+                }
             }
         }
     }
     .navbar-content {
         height: 80px;
-        li{
+        li {
             height: 80px;
             line-height: 80px;
-            margin: 0 0  0 15px;
-            #dropdown-wx-menu{
-                li{
+            margin: 0 0 0 15px;
+            #dropdown-wx-menu {
+                li {
                     height: 30px;
                     line-height: 30px;
                 }
             }
-
         }
-        .navbar-nav>.login{
-            span{
-                 width: 75px;
+        .navbar-nav>.login {
+            span {
+                width: 75px;
                 margin: 0;
                 padding: 0;
                 color: white;
                 text-align: center;
                 line-height: 2;
                 display: inline-block;
-                cursor:pointer;
+                cursor: pointer;
             }
         }
         .navbar-nav>li>a {
@@ -115,14 +130,16 @@ header {
             padding: 30px 0 28px 0;
             margin: 0 15px;
             &.active,
-            &:hover {
-                border-bottom: 2px solid red;
+            &:hover,
+            &.selected {
+                font-size: 18px;
                 color: red;
                 outline: none;
             }
             &:focus {
                 outline: none;
             }
+
         }
         @media (max-width: 768px) {
             width: 60%;
@@ -136,22 +153,49 @@ header {
             padding: 0 15px;
             transition: 0.3s all ease;
             .navbar-right {
+                height: 50px;
+                line-height: 50px;
+                margin-bottom: 20px;
                 li {
-                    display: inline-block;
+                    display: inline-block!important;
+                    height: 50px;
+                    margin: 0;
+                    a {
+                        padding: 0;
+                        margin: 0;
+                    }
                 }
                 .icon {
-                    float: left;
-                    text-align: right;
-                    width: 25%;
+                    text-align: center;
+                    width: 20%;
                     font-size: 24px;
-                    line-height: 1;
-                    top: 15px;
+                    position: relative;
+                    span {
+                        display: inline-block;
+                        position: relative;
+                        left: 20%;
+                        top: -15px;
+                    }
                 }
                 .reg,
                 .login {
                     text-align: center;
-                    width: 35%;
-                    line-height: 1;
+                    width: 30%;
+                    position: relative;
+                    a {
+                        display: inline-block;
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                        font-size: 16px;
+                    }
+                    span {
+                        position: absolute;
+                        left: 0;
+                        top: 10px;
+                        padding: 10px;
+                        line-height: 1;
+                    }
                 }
             }
             .dropdown-menu {
@@ -178,22 +222,17 @@ footer {
             font-size: 20px;
             top: 5px;
         }
-        .suggest_area{
+        .suggest_area {
             opacity: 0;
             transition: 0.3s all ease;
             position: absolute;
-            
             bottom: 60px;
             right: 0;
-            input{
+            input {
                 width: 231px;
                 height: 30px;
             }
-            button{
-
-            }
-
-
+            button {}
         }
     }
 }
