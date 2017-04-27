@@ -15,9 +15,9 @@
                 </ul>
                 <ul class="nav navbar-nav">
                     <li class="visible-lg">
-                        <span class="glyphicon glyphicon-map-marker"></span> &nbsp;&nbsp;
+                        <span class="glyphicon glyphicon-map-marker "></span> &nbsp;&nbsp;
                         <select >
-                        <option  value = "合肥市" >合肥市</option>
+                        <option class="selectorCity" value = "合肥市" >合肥市</option>
                         <option  value = "1" >其他地区</option>
                         </select>
                     </li>

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="plugins/fullpage/fullpage.css">
     <!-- fangtian css -->
     <link href="css/fangtian.css" rel="stylesheet">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=grGxazfIT4GsTEonVGizbLgROwNs446n"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -35,6 +36,10 @@
     
     .fp-tableCell {
         height: calc( 100vh - 50px)!important;
+    }
+    
+    label {
+        max-width: none;
     }
     </style>
 </head>
@@ -189,12 +194,27 @@
                 </div>
             </div>
         </section>
-        <section class="section aboutme">
-            <div class="activity"></div>
-            <div class="location">
-                <div class="col-sm-3">
-                    <img src="images/uploads/logo.png" alt="">
+        <section class="section">
+            <div class="container">
+                <div class="aboutme">
+                    <h2>关于我们</h2>
+                    <p>方田教育是一家成立于2014年7月，立志用科技改变学习，面向全国招生的中小学教育机构</p>
                 </div>
+                <div class="wedo">
+                    <h2>我们做什么</h2>
+                    <p>方田教育致力于为6-18岁的孩子提供高品质的线下和在线课外辅导，在合肥成立4年以来，已成为合肥45中、48中、科大附中、寿春中学等学校家长和学生最信赖的中小学课外辅导品牌</p>
+                </div>
+            </div>
+        </section>
+        <section class="section location">
+            <div class="container">
+                <div class="course_head  clearfix">
+                    <div class="pull-left">
+                        <h2>我们在哪儿</h2>
+                        <p>三大校区任你选</p>
+                    </div>
+                </div>
+                <div class="col-sm-6" id="allmap" style="height:400px"></div>
                 <div class="col-sm-6">
                     <dl>
                         <dt><span class="glyphicon glyphicon-map-marker"></span>联系我们</dt>
@@ -203,7 +223,6 @@
                         <dd>五里墩校区：蜀山区长江西路与西一环交口金域国际15楼</dd>
                     </dl>
                 </div>
-                <div class="col-sm-3"></div>
             </div>
             <!-- include footer.php -->
             <?php include "public/footer.php" ?>
@@ -220,12 +239,22 @@
     <!-- <script src="js/user.js"></script> -->
     <script>
     $(function() {
+        if (navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)) {
+            alert('移动端')
+        }
         var mySwiper = new Swiper('.swiper-container', {
+            speed: 800,
             autoplay: 3000, //可选选项，自动滑动
             loop: true,
             pagination: '.swiper-pagination', // 分页器
             paginationClickable: true,
+        });
+        $('.swiper-pagination-bullet').click(function() {
+            mySwiper.stopAutoplay();
         })
+        $('.swiper-pagination').mouseleave(function() {
+            mySwiper.startAutoplay();
+        });
         var teacherSwiper = new Swiper('.swiper-teacher', {
             autoplay: 3000, //可选选项，自动滑动
             loop: true,
@@ -254,7 +283,71 @@
             $('#registerModal').modal('show');
             $('#loginModal').modal('hide');
         }
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");
+
+        var navigationControl = new BMap.NavigationControl({
+            // 靠左上角位置
+            anchor: BMAP_ANCHOR_TOP_LEFT,
+            // LARGE类型
+            type: BMAP_NAVIGATION_CONTROL_LARGE,
+            // 启用显示定位
+            enableGeolocation: true
+        });
+        map.addControl(navigationControl);
+        // 添加定位控件
+        var geolocationControl = new BMap.GeolocationControl();
+
+        var point = new BMap.Point(117.2563281597, 31.8579923217);
+        var point2 = new BMap.Point(117.2646182614, 31.8880301682);
+        var point3 = new BMap.Point(117.2832999944, 31.8686998402);
+        var centerpoint = new BMap.Point(117.2666037109, 31.8739466940)
+        map.centerAndZoom(centerpoint, 14);
+        var marker = new BMap.Marker(point); // 创建标注
+        var marker2 = new BMap.Marker(point2); // 创建标注
+        var marker3 = new BMap.Marker(point3); // 创建标注
+        map.addOverlay(marker); // 将标注添加到地图中
+        map.addOverlay(marker2); // 将标注添加到地图中
+        map.addOverlay(marker3); // 将标注添加到地图中
+        // map.setMapStyle({style:'googlelite'});
+        var label = new BMap.Label("五里墩校区", {
+            offset: new BMap.Size(-65, -10)
+        });
+        var label2 = new BMap.Label("北一环校区", {
+            offset: new BMap.Size(-65, -10)
+        });
+        var label3 = new BMap.Label("安庆路校区", {
+            offset: new BMap.Size(-65, -10)
+        });
+        marker.setLabel(label);
+        marker2.setLabel(label2);
+        marker3.setLabel(label3);
     })
+
+
+    // var geolocation = new BMap.Geolocation();
+    // geolocation.getCurrentPosition(function(r) {
+    //     if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+    //         var myGeo = new BMap.Geocoder();
+    //         myGeo.getLocation(new BMap.Point(r.point.lng, r.point.lat), function(result) {
+    //             if (result) {
+    //                 console.log(result.addressComponents)
+    //                 var city = result.addressComponents.city
+    //                 if (city=="合肥市") {
+    //                     $(".selectorCity").val(city).html(city);
+    //                     console.log($(".selectorCity").val())
+    //                 }else{
+    //                     return;
+    //                 }   
+    //             }
+    //         });
+    //         // 根据坐标得到地址描述    
+    //     } else {
+    //         alert('failed' + this.getStatus());
+    //     }
+    // }, {
+    //     enableHighAccuracy: true
+    // })
     </script>
 </body>
 

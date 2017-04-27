@@ -1,3 +1,31 @@
+html {
+  font-size: 20px;
+}
+@media only screen and (min-width: 401px) {
+  html {
+    font-size: 25px !important;
+  }
+}
+@media only screen and (min-width: 428px) {
+  html {
+    font-size: 26.75px !important;
+  }
+}
+@media only screen and (min-width: 481px) {
+  html {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (min-width: 569px) {
+  html {
+    font-size: 35px !important;
+  }
+}
+@media only screen and (min-width: 641px) {
+  html {
+    font-size: 40px !important;
+  }
+}
 body,
 ul,
 dl,
@@ -7,9 +35,6 @@ ol,
 p,
 li {
   margin: 0;
-  padding: 0;
-}
-.container {
   padding: 0;
 }
 a {
@@ -245,14 +270,9 @@ footer .pull-right .suggest_area input {
   width: 100%;
   height: 100%;
 }
-#homepage section:nth-child(2) {
+#homepage section:nth-child(2),
+#homepage section:nth-child(4) {
   background: #E7EEF1;
-}
-#homepage section .aboutme .location {
-  margin-top: 20%;
-}
-#homepage section .aboutme .location img {
-  margin: 0 auto;
 }
 #homepage section .fp-tableCell {
   height: 100%;

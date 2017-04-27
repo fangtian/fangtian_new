@@ -1,3 +1,4 @@
+@import "rem.less";
 body,
 ul,
 dl,
@@ -8,10 +9,6 @@ p,
 li,
 {
     margin: 0;
-    padding: 0;
-}
-
-.container {
     padding: 0;
 }
 
@@ -41,7 +38,6 @@ table {
 html {
     overflow-y: scroll;
 }
-
 body {
     background: #fff;
     color: #555;
@@ -55,8 +51,6 @@ body {
     font-family: ftFont;
     src: url('../images/font/num.ttf');
 }
-
-
 
 .showbar {
     transform: translateX(-100%);
@@ -139,7 +133,6 @@ header {
             &:focus {
                 outline: none;
             }
-
         }
         @media (max-width: 768px) {
             width: 60%;
