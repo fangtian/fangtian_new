@@ -26,20 +26,21 @@
         <div style="clear:both;height:59px;padding:0 0 0 15px;position:relative;">
         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0027_Simplified Chinese.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a></div>
     <![endif]-->
-    <style>   
+    <style>
     .fl {
         float: left;
     }
     
     .fr {
         float: right;
-    }  
+    }
+    
     .tab_nav>div {
         height: 40px;
         padding: 5px 0;
         border-bottom: 1px solid #EEE;
     }
-        
+    
     .tab_nav .detail>ul .current {
         background-color: #fff;
         color: black;
@@ -68,11 +69,6 @@
         text-align: center;
         padding: 0 10px;
     }
-    
-    .tab_nav .current {
-        color: white;
-        background: #D11E37;
-    }
     </style>
 </head>
 
@@ -81,47 +77,51 @@
     <?php include "public/header.php" ?>
     <div class="content">
         <div class="container">
+            <div class="yx hidden-xs">
+                <span class="pull-left">已选：</span>
+                <ul class="pull-left">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
             <div class="tab_nav">
-            	 <div class="yx">
-                    <span class="fl">已选：</span>
+                <div class="area list col-xs-3 col-sm-12">
+                    <span class="fl">校区</span>
                     <ul class="fl">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="style wx">
-                    <span class="fl">校区：</span>
-                    <ul class="fl">
-                  
                         <li>安庆路</li>
                         <li>五里墩</li>
                         <li>北一环</li>
                     </ul>
                 </div>
-                <div class="area wx">
-                    <span class="fl">年级：</span>
+                <div class="grad list col-xs-3 col-sm-12">
+                    <span class="fl">年级</span>
                     <ul class="fl">
-                 
-                        <li>小学一年级</li>
-                        <li>小学二年级</li>
-                        <li>小学三年级</li>
-                        <li>小学四年级</li>
-                        <li>小学五年级</li>
-                        <li>小学六年级</li>
+                        <li>一年级</li>
+                        <li>二年级</li>
+                        <li>三年级</li>
+                        <li>四年级</li>
+                        <li>五年级</li>
+                        <li>六年级</li>
+                        <li>初一</li>
+                        <li>初二</li>
+                        <li>初三</li>
+                        <li>高一</li>
+                        <li>高二</li>
+                        <li>高三</li>
                     </ul>
                 </div>
-                <div class="subject wx">
-                    <span class="fl">科目：</span>
-                    <ul class="fl">                 
+                <div class="subject list col-xs-3 col-sm-12">
+                    <span class="fl">科目</span>
+                    <ul class="fl">
                         <li>数学</li>
                         <li>物理</li>
                         <li>化学</li>
                     </ul>
                 </div>
-                <div class="sort wx">
-                    <span class="fl">类型：</span>
+                <div class="sort list col-xs-3 col-sm-12">
+                    <span class="fl">类型</span>
                     <ul class="fl">
                         <li>基础班</li>
                         <li>提高班</li>
@@ -132,7 +132,6 @@
         </div>
     </div>
     <!-- include footer.php -->
-    <?php include "public/footer.php" ?>
     <a id="back-top"><span class="glyphicon glyphicon-menu-up"></span></a>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="plugins/jquery/jquery-min.js"></script>
@@ -140,17 +139,32 @@
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/swiper/swiper.jquery.min.js"></script>
     <script src="js/fangtian.js"></script>
-   
     <!-- <script src="js/user.js"></script> -->
     <script>
-    $(function() {  
+    $(function() {
         $(".tab_nav li").click(function() {
             $(this).addClass('current').siblings().removeClass("current");
-          	$('.wx .current').each(function(index,element){  
-          		var text=$(this).html()  	         		
-          		$(".yx ul>li").eq(index).html(text).addClass('current')
-          	})     
-        })       
+            if ($(".list>ul").is(":hidden")) {
+                $(this).parent().parent().children('span').html($(this).html())
+                $(this).parent().toggleClass('show')
+            } else {
+                $('.list .current').each(function(index, element) {
+                    var text = $(this).html()
+                    $(".yx ul>li").eq(index).html(text).addClass('current')
+                })
+            }
+
+        })
+
+        $(".list span").click(function() {
+
+            if ($(".list>ul").is(":hidden")) {
+                $(".list>ul").each(function() {
+                    $(this).removeClass("show");
+                });
+                $(this).parent().children('ul').toggleClass('show')
+            }
+        })
     });
     </script>
 </body>

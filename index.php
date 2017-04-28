@@ -64,7 +64,7 @@
                         <p>专业的中小学数理化课程</p>
                     </div>
                     <div class="pull-right">
-                        <h3>更多课程 >>></h3>
+                        <a href=""><h3>更多课程 >>></h3></a>
                     </div>
                 </div>
                 <div class="content swiper-course">
@@ -133,7 +133,7 @@
                         <p>专业的中小学数理化课程</p>
                     </div>
                     <div class="pull-right">
-                        <h3>更多老师 >>></h3>
+                        <a href=""><h3>更多老师 >>></h3></a>
                     </div>
                 </div>
                 <div class="swiper-teacher">
@@ -197,12 +197,29 @@
         <section class="section">
             <div class="container">
                 <div class="aboutme">
-                    <h2>关于我们</h2>
+                    <div class="col-sm-7">
+                         <h2>关于我们</h2>
                     <p>方田教育是一家成立于2014年7月，立志用科技改变学习，面向全国招生的中小学教育机构</p>
+                    </div>
+                    <div class="col-sm-5">
+                        <img src="images/teachers/fk.jpg" alt="">
+                        <img src="images/teachers/fk.jpg" alt="">
+                        <img src="images/teachers/fk.jpg" alt="">
+                    </div>
+                   
                 </div>
                 <div class="wedo">
-                    <h2>我们做什么</h2>
+                    <img src="images/uploads/active.jpg" alt="" class="col-sm-5">
+                    <div class="col-sm-7 "><h2>我们做什么</h2>
                     <p>方田教育致力于为6-18岁的孩子提供高品质的线下和在线课外辅导，在合肥成立4年以来，已成为合肥45中、48中、科大附中、寿春中学等学校家长和学生最信赖的中小学课外辅导品牌</p>
+                         <div class="more">
+                        <a class="btn_ft">马上报名</a>
+                      <a class="btn_ft">了解更多</a>
+                    </div>
+                    </div>
+                   
+                     
+                    
                 </div>
             </div>
         </section>
@@ -214,13 +231,25 @@
                         <p>三大校区任你选</p>
                     </div>
                 </div>
-                <div class="col-sm-6" id="allmap" style="height:400px"></div>
+                <div class="col-sm-6 hidden-xs" id="allmap" style="height:400px"></div>
                 <div class="col-sm-6">
                     <dl>
                         <dt><span class="glyphicon glyphicon-map-marker"></span>联系我们</dt>
-                        <dd>安庆路校区：庐阳区安庆路205号金子楼6楼</dd>
-                        <dd>北一环校区：庐阳区亳州路201号金地大厦8楼</dd>
-                        <dd>五里墩校区：蜀山区长江西路与西一环交口金域国际15楼</dd>
+                        <dd>安庆路校区：<a href="tel:0551-65103992"> 0551-65103992</a>
+                            <p>庐阳区安庆路205号金子楼6楼</p>
+                        </dd>
+                        <dd>北一环校区：<a href="0551-65103070"> 0551-65103070</a>
+                            <p>庐阳区亳州路301号金地大厦8楼</p>
+                        </dd>
+                        <dd>安庆路校区：<a href="tel:0551-65103821"> 0551-65103821</a>
+                            <p>蜀山区长江西路与合作化南路交口金域国际15楼</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><span class="glyphicon glyphicon-map-marker"></span>工作时间</dt>
+                        <dd>周二至周五 13:30-21:00</dd>
+                        <dd>周六、周日 08:00-21:00</dd>
+                        <dd>周一前台不上班</dd>
                     </dl>
                 </div>
             </div>
@@ -309,6 +338,9 @@
         map.addOverlay(marker); // 将标注添加到地图中
         map.addOverlay(marker2); // 将标注添加到地图中
         map.addOverlay(marker3); // 将标注添加到地图中
+        marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+        marker2.setAnimation(BMAP_ANIMATION_BOUNCE);
+        marker3.setAnimation(BMAP_ANIMATION_BOUNCE);
         // map.setMapStyle({style:'googlelite'});
         var label = new BMap.Label("五里墩校区", {
             offset: new BMap.Size(-65, -10)

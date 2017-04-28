@@ -57,8 +57,10 @@ table {
 }
 html {
   overflow-y: scroll;
+  height: 100%;
 }
 body {
+  height: 100%;
   background: #fff;
   color: #555;
   font-size: 14px;
@@ -81,6 +83,13 @@ body {
   border-radius: 15px;
   background-color: #29C2E1;
   color: white;
+}
+.current {
+  color: white;
+  background: #D11E37;
+}
+.show {
+  display: block;
 }
 header nav {
   height: 80px;
@@ -232,7 +241,7 @@ footer .pull-right span {
   top: 5px;
 }
 footer .pull-right .suggest_area {
-  opacity: 0;
+  display: none;
   transition: 0.3s all ease;
   position: absolute;
   bottom: 60px;

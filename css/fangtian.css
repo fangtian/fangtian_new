@@ -57,8 +57,10 @@ table {
 }
 html {
   overflow-y: scroll;
+  height: 100%;
 }
 body {
+  height: 100%;
   background: #fff;
   color: #555;
   font-size: 14px;
@@ -81,6 +83,13 @@ body {
   border-radius: 15px;
   background-color: #29C2E1;
   color: white;
+}
+.current {
+  color: white;
+  background: #D11E37;
+}
+.show {
+  display: block;
 }
 header nav {
   height: 80px;
@@ -232,7 +241,7 @@ footer .pull-right span {
   top: 5px;
 }
 footer .pull-right .suggest_area {
-  opacity: 0;
+  display: none;
   transition: 0.3s all ease;
   position: absolute;
   bottom: 60px;
@@ -281,6 +290,27 @@ footer .pull-right .suggest_area input {
   position: absolute;
   bottom: 0;
 }
+#homepage section .course_head {
+  width: 100%;
+  margin-bottom: 50px;
+}
+#homepage section .pull-left h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+#homepage section .pull-left p {
+  font-size: 22px;
+}
+#homepage section .aboutme h2,
+#homepage section .wedo h2 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+#homepage section .aboutme p,
+#homepage section .wedo p {
+  margin-bottom: 25px;
+}
 #homepage .swiper-container {
   width: 100%;
   height: 100%;
@@ -298,10 +328,6 @@ footer .pull-right .suggest_area input {
 }
 #homepage .swiper-container .swiper-pagination span {
   margin: 15px;
-}
-#homepage .course .course_head {
-  width: 100%;
-  margin-bottom: 50px;
 }
 #homepage .course .num {
   margin: 0 10px;
@@ -426,6 +452,47 @@ footer .pull-right .suggest_area input {
 #homepage .course .swiper-teacher .swiper-slide {
   width: 80%;
 }
+#homepage .aboutme {
+  height: 200px;
+}
+#homepage .aboutme h2 {
+  padding-bottom: 30px;
+}
+#homepage .aboutme p {
+  padding-left: 50px;
+}
+#homepage .aboutme .col-sm-5 {
+  display: flex;
+  justify-content: space-around;
+}
+#homepage .aboutme .col-sm-5 img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+#homepage .wedo .btn_ft {
+  padding: 6px;
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+}
+#homepage .location dl {
+  padding-left: 30px;
+}
+#homepage .location dl dt {
+  font-size: 26px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #333;
+}
+#homepage .location dl dd {
+  margin-top: 12px;
+}
+#homepage .location dl dd p {
+  margin-bottom: 20px;
+}
 #course .content {
   margin-top: 80px;
 }
@@ -433,6 +500,60 @@ footer .pull-right .suggest_area input {
   zoom: 1;
   font-size: 14px;
 }
+@media (max-width: 768px) {
+  #course .content .container .tab_nav ul {
+    display: none;
+  }
+}
 #course .content .container .tab_nav .style {
   border-top: 1px solid #D0D0D0;
+}
+@media (max-width: 768px) {
+  #course .content {
+    margin-top: 50px;
+  }
+  #course .content .container .tab_nav {
+    margin-top: 20px;
+    height: 44px;
+    border: 2px solid #29c2e1;
+    border-radius: 4px;
+  }
+  #course .content .container .tab_nav > div {
+    border: none;
+  }
+  #course .content .container .tab_nav .list {
+    padding: 0;
+    border: none;
+    border-right: 2px solid #29c2e1;
+  }
+  #course .content .container .tab_nav .list ul {
+    display: none;
+    position: fixed;
+    top: 130px;
+    left: 5%;
+    width: 90%;
+    border: 2px solid #29c2e1;
+    background-color: #29c2e1;
+    color: white;
+  }
+  #course .content .container .tab_nav .list span {
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    color: #29c2e1;
+    font-size: 16px;
+  }
+  #course .content .container .tab_nav .area ul li {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+  #course .content .container .tab_nav .grad li {
+    width: 33%;
+    margin-left: 0;
+  }
+  #course .content .container .tab_nav .sort {
+    border: none;
+  }
 }
