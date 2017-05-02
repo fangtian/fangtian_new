@@ -27,47 +27,12 @@
         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0027_Simplified Chinese.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a></div>
     <![endif]-->
     <style>
-    .fl {
-        float: left;
-    }
-    
-    .fr {
-        float: right;
-    }
-    
-    .tab_nav>div {
-        height: 40px;
-        padding: 5px 0;
-        border-bottom: 1px solid #EEE;
-    }
-    
-    .tab_nav .detail>ul .current {
-        background-color: #fff;
-        color: black;
-        border: 1px solid #D11E37;
-    }
-    
-    .tab_nav ul:after {
-        clear: both;
-        display: block;
-        content: '';
-        font-size: 0;
-        visibility: hidden;
-    }
-    
-    .tab_nav span {
-        height: 28px;
-        line-height: 28px;
-    }
-    
-    .tab_nav li {
-        float: left;
-        height: 28px;
-        margin-left: 10px;
-        line-height: 28px;
-        cursor: pointer;
-        text-align: center;
-        padding: 0 10px;
+    .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
     }
     </style>
 </head>
@@ -77,57 +42,86 @@
     <?php include "public/header.php" ?>
     <div class="content">
         <div class="container">
-            <div class="yx hidden-xs">
-                <span class="pull-left">已选：</span>
-                <ul class="pull-left">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+            <div class="tab_head">
+                <div class="yx hidden-xs ">
+                    <div class="container">
+                        <span class=" ">已选</span>
+                        <ul class=" clearfix">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="tab_nav">
+                    <div class="area list col-xs-3 col-sm-12">
+                        <span class=" ">校区</span>
+                        <ul class="">
+                            <li>不限</li>
+                            <li>安庆路</li>
+                            <li>五里墩</li>
+                            <li>北一环</li>
+                        </ul>
+                    </div>
+                    <div class="grad list col-xs-3 col-sm-12">
+                        <span class="">年级</span>
+                        <ul class="">
+                            <li>一年级</li>
+                            <li>二年级</li>
+                            <li>三年级</li>
+                            <li>四年级</li>
+                            <li>五年级</li>
+                            <li>六年级</li>
+                            <li>初一</li>
+                            <li>初二</li>
+                            <li>初三</li>
+                            <li>高一</li>
+                            <li>高二</li>
+                            <li>高三</li>
+                        </ul>
+                    </div>
+                    <div class="subject list col-xs-3 col-sm-12">
+                        <span class="">科目</span>
+                        <ul class="">
+                            <li>数学</li>
+                            <li>物理</li>
+                            <li>化学</li>
+                        </ul>
+                    </div>
+                    <div class="sort list col-xs-3 col-sm-12">
+                        <span class="">类型</span>
+                        <ul class="">
+                            <li>不限</li>
+                            <li>基础班</li>
+                            <li>提高班</li>
+                            <li>尖端班</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="tab_nav">
-                <div class="area list col-xs-3 col-sm-12">
-                    <span class="fl">校区</span>
-                    <ul class="fl">
-                        <li>安庆路</li>
-                        <li>五里墩</li>
-                        <li>北一环</li>
-                    </ul>
-                </div>
-                <div class="grad list col-xs-3 col-sm-12">
-                    <span class="fl">年级</span>
-                    <ul class="fl">
-                        <li>一年级</li>
-                        <li>二年级</li>
-                        <li>三年级</li>
-                        <li>四年级</li>
-                        <li>五年级</li>
-                        <li>六年级</li>
-                        <li>初一</li>
-                        <li>初二</li>
-                        <li>初三</li>
-                        <li>高一</li>
-                        <li>高二</li>
-                        <li>高三</li>
-                    </ul>
-                </div>
-                <div class="subject list col-xs-3 col-sm-12">
-                    <span class="fl">科目</span>
-                    <ul class="fl">
-                        <li>数学</li>
-                        <li>物理</li>
-                        <li>化学</li>
-                    </ul>
-                </div>
-                <div class="sort list col-xs-3 col-sm-12">
-                    <span class="fl">类型</span>
-                    <ul class="fl">
-                        <li>基础班</li>
-                        <li>提高班</li>
-                        <li>尖端班</li>
-                    </ul>
-                </div>
+            <div class="course_center">
+                <a href="" class="list">
+                    <div class="list_left col-xs-4">
+                        <span class="season">寒</span>
+                        <span class="glyphicon glyphicon-book"></span>
+                        <h3>七年级物理</h3>
+                    </div>
+                    <div class="list_right col-xs-8">
+                        <h4>2017寒假课六年级数学课程</h4>
+                        <ul class="clearfix">
+                            <li><i></i>课堂测评</li>
+                            <li><i></i>天天练</li>
+                            <li><i></i>全程答疑</li>
+                        </ul>
+                        <p class="time">2017-12-12~2017-12-31</p>
+                        <div class="pullright">
+                            <span>￥2250.00</span>
+                            <span class="statu">名额紧张</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -144,16 +138,15 @@
     $(function() {
         $(".tab_nav li").click(function() {
             $(this).addClass('current').siblings().removeClass("current");
-            if ($(".list>ul").is(":hidden")) {
+            if ($(".yx").is(":hidden")) {
+                $(this).parent().toggleClass('show');
                 $(this).parent().parent().children('span').html($(this).html())
-                $(this).parent().toggleClass('show')
             } else {
                 $('.list .current').each(function(index, element) {
                     var text = $(this).html()
                     $(".yx ul>li").eq(index).html(text).addClass('current')
                 })
             }
-
         })
 
         $(".list span").click(function() {
@@ -165,6 +158,7 @@
                 $(this).parent().children('ul').toggleClass('show')
             }
         })
+
     });
     </script>
 </body>

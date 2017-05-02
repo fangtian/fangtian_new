@@ -64,7 +64,6 @@ body {
   background: #fff;
   color: #555;
   font-size: 14px;
-  overflow: hidden;
   padding-right: 0!important;
   font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
@@ -85,8 +84,7 @@ body {
   color: white;
 }
 .current {
-  color: white;
-  background: #D11E37;
+  background: #056C83;
 }
 .show {
   display: block;
@@ -225,6 +223,18 @@ header .navbar-content .navbar-nav > li > a:focus {
     padding-left: 20px;
     box-shadow: none;
   }
+}
+header #frmlogin .modal-footer .btn-reg {
+  background-color: #fff;
+  color: black;
+}
+header #frmlogin .modal-footer .btn_ft {
+  display: inline-block;
+  width: 60px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
 }
 footer {
   width: 100%;

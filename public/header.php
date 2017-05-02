@@ -81,9 +81,9 @@
                         </div>
                         <div class="modal-footer">
                             <span class="forget-password"><a href="/fangtian_ol/index.php/User/forgetPwdWx.html">忘记登录密码？</a></span>
-                            <button type="button" class="btn btn-warning" onclick="goreg();">注册</button>
+                            <button type="button" class="btn btn-reg" onclick="goreg();">注册</button>
                             <!--button type="button" class="btn btn-default" data-dismiss="modal">关闭</button-->
-                            <button type="submit" class="btn btn-primary">登录</button>
+                            <button type="submit" class="btn_ft">登录</button>
                         </div>
                         <!--div id="resultlogin" class="resultlogin" style="display:none;"></div-->
                         <div id="logindiv" class="alert alert-warning" style="display:none;">
