@@ -582,6 +582,12 @@ footer .pull-right .suggest_area input {
 #course .content .container .course_center .list .list_right .status.hot {
   color: #F7941D;
 }
+#course .content .container #course_end {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
 @media (min-width: 769px) {
   #course .content {
     margin-top: 140px;
@@ -655,6 +661,7 @@ footer .pull-right .suggest_area input {
   }
   #course .content .container .course_center {
     margin-top: 30px;
+    margin-bottom: 15px;
   }
   #course .content .container .course_center .list {
     height: 150px;
@@ -675,17 +682,33 @@ footer .pull-right .suggest_area input {
     font-size: 18px;
   }
   #course .content .container .course_center .list .list_right {
-    padding-left: 90px;
+    padding-left: 50px;
   }
   #course .content .container .course_center .list .list_right h2 {
-    font-size: 30px;
+    font-size: 26px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  #course .content .container .course_center .list .list_right ul {
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   #course .content .container .course_center .list .list_right ul li {
     display: inline-block;
     float: none;
+    margin-bottom: 5px;
   }
   #course .content .container .course_center .list .list_right p {
     margin: 10px 0;
+  }
+  #course .content .container .course_center .list .list_right .pullright .status {
+    float: none;
+    margin-left: 180px;
+    font-size: 24px;
   }
   #course .content .container .course_center .list .col-sm-3 {
     height: 120px;
@@ -698,7 +721,7 @@ footer .pull-right .suggest_area input {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    border: 1px solid #000;
+    border: 1px solid #D5D5D5;
     margin: 0 auto;
     text-align: center;
     padding-top: 5px;
@@ -716,6 +739,7 @@ footer .pull-right .suggest_area input {
     margin-top: 10px;
     text-align: center;
     line-height: 30px;
+    font-size: 16px;
   }
 }
 @media (max-width: 768px) {
@@ -798,4 +822,7 @@ footer .pull-right .suggest_area input {
   #course .content .container .course_center {
     margin-top: 65px;
   }
+}
+#course_detail {
+  margin-top: 80px;
 }

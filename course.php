@@ -53,7 +53,6 @@
                             <li></li>
                         </ul>
                     </div>
-                    
                 </div>
                 <div class="tab_nav">
                     <div class="area list col-xs-3 col-sm-12">
@@ -125,19 +124,19 @@
                         </div>
                     </div>
                     <div class="col-sm-3 hidden-xs">
-                        <div class="num">已报<br><span>213</span></div>
+                        <div class="num">已报
+                            <br><span>213</span></div>
                         <div class="btn_ft">报名</div>
-
                     </div>
                 </a>
-                  <a href="" class="list">
+                <a href="" class="list">
                     <div class="list_left col-xs-4 col-sm-2">
                         <span class="season">寒</span>
                         <span class="glyphicon glyphicon-book"></span>
-                        <h3>七年级物理</h3>
+                        <h3>小升初讲座</h3>
                     </div>
                     <div class="list_right col-xs-8 col-sm-7">
-                        <h2>数学课程</h2>
+                        <h2>2017五一小升初联考成绩分析讲座</h2>
                         <ul class="clearfix">
                             <li><i></i>课堂测评</li>
                             <li><i></i>天天练</li>
@@ -153,11 +152,12 @@
                         </div>
                     </div>
                     <div class="col-sm-3 hidden-xs">
-                        <div class="num">已报<br><span>213</span></div>
+                        <div class="num">已报
+                            <br><span>213</span></div>
                         <div class="btn_ft">报名</div>
                     </div>
                 </a>
-                  <a href="" class="list">
+                <a href="" class="list">
                     <div class="list_left col-xs-4 col-sm-2">
                         <span class="season">寒</span>
                         <span class="glyphicon glyphicon-book"></span>
@@ -180,14 +180,18 @@
                         </div>
                     </div>
                     <div class="col-sm-3 hidden-xs">
-                        <div class="num">已报<br><span>213</span></div>
+                        <div class="num">已报
+                            <br><span>213</span></div>
                         <div class="btn_ft">报名</div>
                     </div>
                 </a>
             </div>
+            <div id="course_end">点击加载更多<br><span class="glyphicon glyphicon-arrow-down"></span></div>
         </div>
     </div>
     <!-- include footer.php -->
+
+            <?php include "public/footer.php" ?>
     <a id="back-top"><span class="glyphicon glyphicon-menu-up"></span></a>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="plugins/jquery/jquery-min.js"></script>
