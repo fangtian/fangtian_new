@@ -1,31 +1,3 @@
-html {
-  font-size: 20px;
-}
-@media only screen and (min-width: 401px) {
-  html {
-    font-size: 25px !important;
-  }
-}
-@media only screen and (min-width: 428px) {
-  html {
-    font-size: 26.75px !important;
-  }
-}
-@media only screen and (min-width: 481px) {
-  html {
-    font-size: 30px !important;
-  }
-}
-@media only screen and (min-width: 569px) {
-  html {
-    font-size: 35px !important;
-  }
-}
-@media only screen and (min-width: 641px) {
-  html {
-    font-size: 40px !important;
-  }
-}
 body,
 ul,
 dl,
@@ -43,6 +15,7 @@ a {
 }
 a:hover {
   text-decoration: none;
+  color: inherit;
 }
 img {
   border: none;
@@ -524,6 +497,91 @@ footer .pull-right .suggest_area input {
 #course .content .container .tab_head .tab_nav .style {
   border-top: 1px solid #D0D0D0;
 }
+#course .content .container .course_center .list {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  height: 110px;
+  border-bottom: 1px solid #ddd;
+}
+#course .content .container .course_center .list .list_left {
+  padding: 0;
+  background-color: #CFCDED;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  height: 90px;
+  text-align: center;
+}
+#course .content .container .course_center .list .list_left .season {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  display: block;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  background-color: #fff;
+}
+#course .content .container .course_center .list .list_left .glyphicon {
+  font-size: 40px;
+  margin-top: 10px;
+}
+#course .content .container .course_center .list .list_left h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  text-shadow: 0px 0px 6px #fff;
+}
+#course .content .container .course_center .list .list_right {
+  padding: 0;
+  padding-left: 10px;
+}
+#course .content .container .course_center .list .list_right h2 {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
+#course .content .container .course_center .list .list_right ul li {
+  float: left;
+  margin-right: 5px;
+  line-height: 20px;
+  font-size: 12px;
+}
+#course .content .container .course_center .list .list_right ul li i {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  line-height: 1;
+  border-radius: 50%;
+  background-color: #000;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#course .content .container .course_center .list .list_right p {
+  font-size: 12px;
+  margin: 5px;
+}
+#course .content .container .course_center .list .list_right .price {
+  font-size: 12px;
+}
+#course .content .container .course_center .list .list_right .status {
+  float: right;
+  margin-right: 15px;
+}
+#course .content .container .course_center .list .list_right .status.full {
+  color: #bebebe;
+}
+#course .content .container .course_center .list .list_right .status.danger {
+  color: #EF0602;
+}
+#course .content .container .course_center .list .list_right .status.hot {
+  color: #F7941D;
+}
 @media (min-width: 769px) {
   #course .content {
     margin-top: 140px;
@@ -555,6 +613,7 @@ footer .pull-right .suggest_area input {
     line-height: 50px;
   }
   #course .content .container .tab_head .yx .container ul li.current {
+    width: 100px;
     height: 28px;
     margin-top: 11px;
     line-height: 28px;
@@ -588,11 +647,75 @@ footer .pull-right .suggest_area input {
     background-color: #fff;
     color: black;
     margin-left: 15px;
-    padding: 0 ;
+    padding: 0;
   }
   #course .content .container .tab_head .tab_nav .list ul li.current {
     background-color: #29C2E1;
     color: white;
+  }
+  #course .content .container .course_center {
+    margin-top: 30px;
+  }
+  #course .content .container .course_center .list {
+    height: 150px;
+  }
+  #course .content .container .course_center .list .list_left {
+    height: 120px;
+    background-color: #B2E8F4;
+  }
+  #course .content .container .course_center .list .list_left h3 {
+    margin-top: 30px;
+  }
+  #course .content .container .course_center .list .list_left .season {
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    left: -10px;
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  #course .content .container .course_center .list .list_right {
+    padding-left: 90px;
+  }
+  #course .content .container .course_center .list .list_right h2 {
+    font-size: 30px;
+  }
+  #course .content .container .course_center .list .list_right ul li {
+    display: inline-block;
+    float: none;
+  }
+  #course .content .container .course_center .list .list_right p {
+    margin: 10px 0;
+  }
+  #course .content .container .course_center .list .col-sm-3 {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #course .content .container .course_center .list .col-sm-3 .num {
+    display: block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 12px;
+  }
+  #course .content .container .course_center .list .col-sm-3 .num span {
+    font-family: ftFont;
+    font-size: 40px;
+  }
+  #course .content .container .course_center .list .col-sm-3 .btn_ft {
+    display: block;
+    width: 80px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -638,6 +761,7 @@ footer .pull-right .suggest_area input {
     margin-left: 0;
   }
   #course .content .container .tab_nav .list span {
+    display: inline-block;
     width: 100%;
     height: 100%;
     line-height: 32px;
@@ -673,78 +797,5 @@ footer .pull-right .suggest_area input {
   }
   #course .content .container .course_center {
     margin-top: 65px;
-  }
-  #course .content .container .course_center .list {
-    display: block;
-    width: 100%;
-    margin-top: 15px;
-    height: 110px;
-    border-bottom: 1px solid #ddd;
-  }
-  #course .content .container .course_center .list .list_left {
-    padding: 0;
-    background-color: #CFCDED;
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-    height: 90px;
-    text-align: center;
-  }
-  #course .content .container .course_center .list .list_left .season {
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    display: block;
-    font-size: 18px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 30px;
-    background-color: #fff;
-  }
-  #course .content .container .course_center .list .list_left .glyphicon {
-    font-size: 40px;
-    margin-top: 10px;
-  }
-  #course .content .container .course_center .list .list_left h3 {
-    text-align: center;
-    font-size: 18px;
-    margin-top: 10px;
-    text-shadow: 0px 0px 6px #fff;
-  }
-  #course .content .container .course_center .list .list_right {
-    padding: 0;
-    padding-left: 10px;
-  }
-  #course .content .container .course_center .list .list_right h4 {
-    margin-top: 0;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-  }
-  #course .content .container .course_center .list .list_right ul li {
-    float: left;
-    margin-left: 5px;
-    line-height: 20px;
-    font-size: 12px;
-  }
-  #course .content .container .course_center .list .list_right ul li i {
-    display: inline-block;
-    width: 2px;
-    height: 2px;
-    line-height: 1;
-    border-radius: 50%;
-    background-color: #000;
-    vertical-align: middle;
-    margin-right: 5px;
-  }
-  #course .content .container .course_center .list .list_right p {
-    font-size: 12px;
-    margin: 5px;
-  }
-  #course .content .container .course_center .list .list_right .statu {
-    float: right;
-    margin-right: 15px;
   }
 }

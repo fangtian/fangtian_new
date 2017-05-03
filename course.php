@@ -42,7 +42,7 @@
     <?php include "public/header.php" ?>
     <div class="content">
         <div class="container">
-            <div class="tab_head">
+            <div class="tab_head clearfix">
                 <div class="yx hidden-xs ">
                     <div class="container">
                         <span class=" ">已选</span>
@@ -101,25 +101,87 @@
                     </div>
                 </div>
             </div>
-            <div class="course_center">
+            <div class="course_center clearfix">
                 <a href="" class="list">
-                    <div class="list_left col-xs-4">
+                    <div class="list_left col-xs-4 col-sm-2">
                         <span class="season">寒</span>
                         <span class="glyphicon glyphicon-book"></span>
                         <h3>七年级物理</h3>
                     </div>
-                    <div class="list_right col-xs-8">
-                        <h4>2017寒假课六年级数学课程</h4>
+                    <div class="list_right col-xs-8 col-sm-7">
+                        <h2>2017寒假课六年级数学课程</h2>
                         <ul class="clearfix">
                             <li><i></i>课堂测评</li>
                             <li><i></i>天天练</li>
                             <li><i></i>全程答疑</li>
+                            <li class="hidden-xs"><i></i>作业批改</li>
+                            <li class="hidden-xs"><i></i>未出勤提醒</li>
+                            <li class="hidden-xs"><i></i>全程答疑</li>
                         </ul>
                         <p class="time">2017-12-12~2017-12-31</p>
                         <div class="pullright">
-                            <span>￥2250.00</span>
-                            <span class="statu">名额紧张</span>
+                            <span class="price">￥2250.00</span>
+                            <span class="status danger">名额紧张</span>
                         </div>
+                    </div>
+                    <div class="col-sm-3 hidden-xs">
+                        <div class="num">已报<br><span>213</span></div>
+                        <div class="btn_ft">报名</div>
+
+                    </div>
+                </a>
+                  <a href="" class="list">
+                    <div class="list_left col-xs-4 col-sm-2">
+                        <span class="season">寒</span>
+                        <span class="glyphicon glyphicon-book"></span>
+                        <h3>七年级物理</h3>
+                    </div>
+                    <div class="list_right col-xs-8 col-sm-7">
+                        <h2>数学课程</h2>
+                        <ul class="clearfix">
+                            <li><i></i>课堂测评</li>
+                            <li><i></i>天天练</li>
+                            <li><i></i>全程答疑</li>
+                            <li class="hidden-xs"><i></i>作业批改</li>
+                            <li class="hidden-xs"><i></i>未出勤提醒</li>
+                            <li class="hidden-xs"><i></i>全程答疑</li>
+                        </ul>
+                        <p class="time">2017-12-12~2017-12-31</p>
+                        <div class="pullright">
+                            <span class="price">￥2250.00</span>
+                            <span class="status hot">热报中</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 hidden-xs">
+                        <div class="num">已报<br><span>213</span></div>
+                        <div class="btn_ft">报名</div>
+                    </div>
+                </a>
+                  <a href="" class="list">
+                    <div class="list_left col-xs-4 col-sm-2">
+                        <span class="season">寒</span>
+                        <span class="glyphicon glyphicon-book"></span>
+                        <h3>七年级物理</h3>
+                    </div>
+                    <div class="list_right col-xs-8 col-sm-7">
+                        <h2>2017寒假课六年级数学课程</h2>
+                        <ul class="clearfix">
+                            <li><i></i>课堂测评</li>
+                            <li><i></i>天天练</li>
+                            <li><i></i>全程答疑</li>
+                            <li class="hidden-xs"><i></i>作业批改</li>
+                            <li class="hidden-xs"><i></i>未出勤提醒</li>
+                            <li class="hidden-xs"><i></i>全程答疑</li>
+                        </ul>
+                        <p class="time">2017-12-12~2017-12-31</p>
+                        <div class="pullright">
+                            <span class="price">￥2250.00</span>
+                            <span class="status full">名额已满</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 hidden-xs">
+                        <div class="num">已报<br><span>213</span></div>
+                        <div class="btn_ft">报名</div>
                     </div>
                 </a>
             </div>

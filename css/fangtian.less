@@ -262,6 +262,96 @@
                     }
                 }
             }
+            .course_center {
+                .list {
+                    display: block;
+                    width: 100%;
+                    margin-top: 15px;
+                    height: 110px;
+                    border-bottom: 1px solid #ddd;
+                    .list_left {
+                        padding: 0;
+                        background-color: #CFCDED;
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 5px;
+                        height: 90px;
+                        text-align: center;
+                        .season {
+                            position: absolute;
+                            top: -5px;
+                            left: -5px;
+                            display: block;
+                            font-size: 18px;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 30px;
+                            background-color: #fff;
+                        }
+                        .glyphicon {
+                            font-size: 40px;
+                            margin-top: 10px;
+                        }
+                        h3 {
+                            text-align: center;
+                            font-size: 18px;
+                            margin-top: 10px;
+                            text-shadow: 0px 0px 6px #fff;
+                        }
+                    }
+                    .list_right {
+                        padding: 0;
+                        padding-left: 10px;
+                        h2 {
+                            margin-top: 0;
+                            font-size: 14px;
+                            font-weight: 600;
+                            text-align: left;
+                        }
+                        ul {
+                            li {
+                                float: left;
+                                float: left;
+                                margin-right: 5px;
+                                line-height: 20px;
+                                font-size: 12px;
+                                i {
+                                    display: inline-block;
+                                    width: 2px;
+                                    height: 2px;
+                                    line-height: 1;
+                                    border-radius: 50%;
+                                    background-color: #000;
+                                    vertical-align: middle;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                        p {
+                            font-size: 12px;
+                            margin: 5px;
+                        }
+                        .price {
+                            font-size: 12px;
+                        }
+                        .status {
+                            float: right;
+                            margin-right: 15px;
+                        }
+                        .status.full {
+                            color: #bebebe;
+                        }
+                        .status.danger {
+                            color: #EF0602;
+                        }
+                        .status.hot {
+                            color: #F7941D;
+                        }
+                    }
+                }
+            }
         }
     }
     @media (min-width: 769px) {
@@ -293,10 +383,11 @@
                                 height: 50px;
                                 line-height: 50px;
                                 li.current {
+                                    width: 100px;
                                     height: 28px;
                                     margin-top: 11px;
                                     line-height: 28px;
-                                   background-color: #29C2E1;
+                                    background-color: #29C2E1;
                                     color: white;
                                     margin-left: 15px;
                                     padding: 0 20px;
@@ -328,13 +419,83 @@
                                     background-color: #fff;
                                     color: black;
                                     margin-left: 15px;
-                                    padding: 0 ;
+                                    padding: 0;
                                     // border: 1px solid #DEDEDE;
                                 }
                                 li.current {
                                     background-color: #29C2E1;
                                     color: white;
                                 }
+                            }
+                        }
+                    }
+                }
+                .course_center {
+                    margin-top: 30px;
+                    .list {
+                        height: 150px;
+                        .list_left {
+                            height: 120px;
+                            background-color: #B2E8F4;
+                            h3{
+                                margin-top: 30px;
+                            }
+                            .season {
+                                width: 50px;
+                                height: 50px;
+                                top: -10px;
+                                left: -10px;
+                                padding-top: 10px;
+                                font-size: 18px;
+
+                            }
+                        }
+                        .list_right {
+                            padding-left: 90px;
+                            h2 {
+                                font-size: 30px;
+                            }
+                            ul {
+                               
+                                li {
+                                    display: inline-block;
+                                    float: none;
+                                }
+                            }
+                            p {
+                                margin: 10px 0;
+                            }
+                            .pullright {}
+                        }
+                        .col-sm-3 {
+                            height: 120px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            .num {
+                                display: block;
+                                width: 75px;
+                                height: 75px;
+                                border-radius: 50%;
+                                border: 1px solid #000;
+                                margin: 0 auto;
+                                text-align: center;
+                                padding-top: 5px;
+                                font-size: 12px;
+                                span{
+                                    font-family: ftFont;
+                                    font-size: 40px;
+
+                                }
+                            }
+                            .btn_ft {
+                                display: block;
+                                width: 80px;
+                                height: 30px;
+                                margin: 0 auto;
+                                margin-top: 10px;
+                                text-align: center;
+                                line-height: 30px;
                             }
                         }
                     }
@@ -383,6 +544,7 @@
                             }
                         }
                         span {
+                            display: inline-block;
                             width: 100%;
                             height: 100%;
                             line-height: 32px;
@@ -424,81 +586,6 @@
                 }
                 .course_center {
                     margin-top: 65px;
-                    .list {
-                        display: block;
-                        width: 100%;
-                        margin-top: 15px;
-                        height: 110px;
-                        border-bottom: 1px solid #ddd;
-                        .list_left {
-                            padding: 0;
-                            background-color: #CFCDED;
-                            position: relative;
-                            overflow: hidden;
-                            border-radius: 5px;
-                            height: 90px;
-                            text-align: center;
-                            .season {
-                                position: absolute;
-                                top: -5px;
-                                left: -5px;
-                                display: block;
-                                font-size: 18px;
-                                width: 30px;
-                                height: 30px;
-                                border-radius: 50%;
-                                text-align: center;
-                                line-height: 30px;
-                                background-color: #fff;
-                            }
-                            .glyphicon {
-                                font-size: 40px;
-                                margin-top: 10px;
-                            }
-                            h3 {
-                                text-align: center;
-                                font-size: 18px;
-                                margin-top: 10px;
-                                text-shadow: 0px 0px 6px #fff;
-                            }
-                        }
-                        .list_right {
-                            padding: 0;
-                            padding-left: 10px;
-                            h4 {
-                                margin-top: 0;
-                                font-size: 14px;
-                                font-weight: 600;
-                                text-align: center;
-                            }
-                            ul {
-                                li {
-                                    float: left;
-                                    margin-left: 5px;
-                                    line-height: 20px;
-                                    font-size: 12px;
-                                    i {
-                                        display: inline-block;
-                                        width: 2px;
-                                        height: 2px;
-                                        line-height: 1;
-                                        border-radius: 50%;
-                                        background-color: #000;
-                                        vertical-align: middle;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                            p {
-                                font-size: 12px;
-                                margin: 5px;
-                            }
-                            .statu {
-                                float: right;
-                                margin-right: 15px;
-                            }
-                        }
-                    }
                 }
             }
         }
