@@ -12,7 +12,7 @@
     <title>方田教育</title>
     <!-- Bootstrap -->
     <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
+   
     <link rel="stylesheet" href="plugins/fullpage/fullpage.css">
     <!-- fangtian css -->
     <link href="css/fangtian.css" rel="stylesheet">
@@ -26,27 +26,19 @@
         <div style="clear:both;height:59px;padding:0 0 0 15px;position:relative;">
         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0027_Simplified Chinese.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a></div>
     <![endif]-->
-    <style>
-    .icon {
-        width: 1em;
-        height: 1em;
-        vertical-align: -0.15em;
-        fill: currentColor;
-        overflow: hidden;
-    }
-    </style>
+   
 </head>
 
-<body id="course">
+<body id="ft_course">
     <!-- include header.php -->
     <?php include "public/header.php" ?>
     <div class="content">
         <div class="container">
             <div class="tab_head clearfix">
-                <div class="yx hidden-xs ">
+                <div class="yx hidden-xs">
                     <div class="container">
-                        <span class=" ">已选</span>
-                        <ul class=" clearfix">
+                        <span class="">已选</span>
+                        <ul class="clearfix">
                             <li></li>
                             <li></li>
                             <li></li>
@@ -101,9 +93,9 @@
                 </div>
             </div>
             <div class="course_center clearfix">
-                <a href="" class="list">
-                    <div class="list_left col-xs-4 col-sm-2">
-                        <span class="season">寒</span>
+                <a href="course_detail.php" class="list">
+                    <div class="list_left col-xs-4 col-sm-2 spring">
+                        <span class="season">春</span>
                         <span class="glyphicon glyphicon-book"></span>
                         <h3>七年级物理</h3>
                     </div>
@@ -130,8 +122,8 @@
                     </div>
                 </a>
                 <a href="" class="list">
-                    <div class="list_left col-xs-4 col-sm-2">
-                        <span class="season">寒</span>
+                    <div class="list_left col-xs-4 col-sm-2 autumn">
+                        <span class="season ">秋</span>
                         <span class="glyphicon glyphicon-book"></span>
                         <h3>小升初讲座</h3>
                     </div>
@@ -158,8 +150,36 @@
                     </div>
                 </a>
                 <a href="" class="list">
-                    <div class="list_left col-xs-4 col-sm-2">
+                    <div class="list_left col-xs-4 col-sm-2 winter">
                         <span class="season">寒</span>
+                        <span class="glyphicon glyphicon-book"></span>
+                        <h3>七年级物理</h3>
+                    </div>
+                    <div class="list_right col-xs-8 col-sm-7">
+                        <h2>2017寒假课六年级数学课程</h2>
+                        <ul class="clearfix">
+                            <li><i></i>课堂测评</li>
+                            <li><i></i>天天练</li>
+                            <li><i></i>全程答疑</li>
+                            <li class="hidden-xs"><i></i>作业批改</li>
+                            <li class="hidden-xs"><i></i>未出勤提醒</li>
+                            <li class="hidden-xs"><i></i>全程答疑</li>
+                        </ul>
+                        <p class="time">2017-12-12~2017-12-31</p>
+                        <div class="pullright">
+                            <span class="price">￥2250.00</span>
+                            <span class="status full">名额已满</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 hidden-xs">
+                        <div class="num">已报
+                            <br><span>213</span></div>
+                        <div class="btn_ft">报名</div>
+                    </div>
+                </a>
+                <a href="" class="list">
+                    <div class="list_left col-xs-4 col-sm-2 summer">
+                        <span class="season">暑</span>
                         <span class="glyphicon glyphicon-book"></span>
                         <h3>七年级物理</h3>
                     </div>
@@ -191,13 +211,13 @@
     </div>
     <!-- include footer.php -->
 
-            <?php include "public/footer.php" ?>
+    <?php include "public/footer.php" ?>
     <a id="back-top"><span class="glyphicon glyphicon-menu-up"></span></a>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="plugins/jquery/jquery-min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="plugins/swiper/swiper.jquery.min.js"></script>
+   
     <script src="js/fangtian.js"></script>
     <!-- <script src="js/user.js"></script> -->
     <script>
