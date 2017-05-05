@@ -51,6 +51,7 @@
                 </div>
             </div>
         </section>
+       
         <section class="course_choose">
             <div class="container">
                 <h2>课程选择</h2>
@@ -58,9 +59,9 @@
                     <div class="tab_result clearfix">
                         <span>已选：</span>
                         <ul class="result">
-                            <li>北一环</li>
-                            <li>曹柯南老师</li>
-                            <li>周六晚上</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ul>
                     </div>
                     <div class="tab_list clearfix">
@@ -72,29 +73,40 @@
                     </div>
                     <div class="tab_content">
                         <div class="area">
+                        		<div class="detail">
+                        			<div class="col-sm-4"><span>庐阳区亳州路301号金地大厦8楼</span></div>
+                        			<div class="col-sm-4"><span>庐阳区安庆路205号金字楼6楼</span></div>
+                        			<div class="col-sm-4"><span>蜀山区长江西路与合作化南路交口金域国际15楼</span></div>                 			
+                        		</div>
                         	<ul>
-                        		<div  class="col-sm-4"><span>庐阳区亳州路301号金地大厦8楼</span><li>北一环</li></div>
-                        		<div class="col-sm-4"><span>庐阳区安庆路205号金字楼6楼</span><li>安庆路</li></div>
-                        		<div class="col-sm-4"><span>蜀山区长江西路与合作化南路交口金域国际15楼</span><li >五里墩</li></div>
-	                        	
-	                        	
+                        		<li class="col-sm-4">北一环</li>
+                        		<li class="col-sm-4">安庆路</li>
+                        		<li class="col-sm-4">五里墩</li>
+	
                         	</ul>
                         </div>
                         <div class="teachers">
                         	<ul>
-                        		<li class="col-sm-3">曹柯南老师</li>
-	                        	<li class="col-sm-3">曹柯南老师</li>
-	                        	<li class="col-sm-3">曹柯南老师</li>
-	                        	<li class="col-sm-3">曹柯南老师</li>
-	                        	<li class="col-sm-3">曹柯南老师</li>
+                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师1</span></li>
+                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师2</span></li>
+                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师3</span></li>
+                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师4</span></li>
+                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师5</span></li>
+                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师6</span></li>
+                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师6</span></li>
+                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师6</span></li>
+                        		
+                        		
+                        		
+	                        	
                         	</ul>       	                       	
                         </div>
                         <div class="times">
-                        	<table class="table table-bordered">
+                        	<table class="">
                         		<thead>
                         			<tr>
                         				<th></th>
-                        				<th>周一</th>
+                        				<th>周一33</th>
                         				<th>周二</th>
                         				<th>周三</th>
                         				<th>周四</th>
@@ -102,7 +114,6 @@
                         				<th>周六</th>
                         				<th>周日</th>
                         			</tr>
-
                         		</thead>
                         		<tbody>
                         			<tr>
@@ -117,14 +128,17 @@
                         				
                         			</tr>
                         			<tr>
+
                         				<td>中午</td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
+                        				
+                        				<td><span class="time">17:00~19:30</span>名额：2</td>
+                        				<td>名额：2</td>
+                        				<td>名额：2</td>
+                        				<td>名额：2</td>
+                        				<td>名额：2</td>
+                        				<td>名额：2</td>
+                        				<td>名额：2</td>
+                        			
                         				
                         			</tr>
                         			<tr>
@@ -181,20 +195,22 @@
     	$(".area li").each(function(i){
     		$(this).click(function(){
     			$(this).addClass('current').siblings().removeClass('current');
-    			$(this).parent().parent().hide().next().show()
-    			$("#teachers").addClass('current').siblings().removeClass('current');
     			console.log($(this).html())
+    			$('.area').hide().next().show()
+    			$("#teachers").addClass('current').siblings().removeClass('current');
+    			$('.result li').eq(0).html($(this).html())
 
     		})
     	})
-    	$(".teachers li").each(function(i){
+    	$(".teachers .name").each(function(i){
     		$(this).click(function(){
-    			$(this).addClass('current').siblings().removeClass('current');
-    			$(this).parent().parent().hide().next().show()
+    			$(this).addClass('current').parent().siblings().children('.name').removeClass('current');
+    			$('.teachers').hide().next().show()
     			$("#times").addClass('current').siblings().removeClass('current');
+    			$('.result li').eq(1).html($(this).text())
     		})
     	})
-
+    	
 
 
     })

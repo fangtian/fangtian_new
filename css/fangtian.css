@@ -959,8 +959,12 @@ footer .pull-right .suggest_area input {
   text-align: center;
   font-size: 28px;
   position: relative;
-  min-height: 300px;
+  height: 450px;
   margin: 20px 0;
+}
+#ft_course_detail .course_choose .content .tab_content li.current {
+  color: white;
+  background-color: #29C2E1;
 }
 #ft_course_detail .course_choose .content .tab_content .area {
   width: 100%;
@@ -969,29 +973,25 @@ footer .pull-right .suggest_area input {
   left: 0;
 }
 #ft_course_detail .course_choose .content .tab_content .area li {
-  margin-top: 80px;
+  margin-top: 30px;
+}
+#ft_course_detail .course_choose .content .tab_content .area .detail {
+  width: 100%;
+}
+#ft_course_detail .course_choose .content .tab_content .area .detail .col-sm-4 {
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #ft_course_detail .course_choose .content .tab_content .area span {
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  min-height: 120px;
-  vertical-align: middle;
-  font-size: 24px;
-  padding: 10px;
-  color: black;
-  background-color: #ECFAFD;
-}
-#ft_course_detail .course_choose .content .tab_content .area span:after {
   display: inline-block;
-  width: 0;
-  height: 100%;
-  vertical-align: middle;
-  content: "";
-}
-#ft_course_detail .course_choose .content .tab_content .area li.current {
-  color: white;
-  background-color: #29C2E1;
+  border-radius: 10px;
+  width: 80%;
+  font-size: 24px;
+  padding: 20px;
+  color: black;
+  background-color: #CEF0F7;
 }
 #ft_course_detail .course_choose .content .tab_content .teachers {
   position: absolute;
@@ -999,6 +999,19 @@ footer .pull-right .suggest_area input {
   left: 0;
   display: none;
   width: 100%;
+}
+#ft_course_detail .course_choose .content .tab_content .teachers li {
+  padding: 0 3%;
+}
+#ft_course_detail .course_choose .content .tab_content .teachers .name {
+  display: block;
+  border-radius: 30px;
+  margin: 20px 0;
+  font-size: 18px;
+}
+#ft_course_detail .course_choose .content .tab_content .teachers .name.current {
+  color: white;
+  background-color: #29C2E1;
 }
 #ft_course_detail .course_choose .content .tab_content .times {
   position: absolute;
@@ -1010,4 +1023,13 @@ footer .pull-right .suggest_area input {
 }
 #ft_course_detail .course_choose .content .tab_content .times th {
   text-align: center;
+}
+#ft_course_detail .course_choose .content .tab_content .times table {
+  max-height: 300px;
+  width: 100%;
+  border-collapse: collapse;
+}
+#ft_course_detail .course_choose .content .tab_content .times table td,
+#ft_course_detail .course_choose .content .tab_content .times table th {
+  border: 1px solid #d1d1d1;
 }
