@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
     <link rel="stylesheet" href="plugins/fullpage/fullpage.css">
     <!-- fangtian css -->
-    <link href="css/fangtian.css" rel="stylesheet">
+    <link href="css/css/fangtian.css" rel="stylesheet">
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=grGxazfIT4GsTEonVGizbLgROwNs446n"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

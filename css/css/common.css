@@ -42,9 +42,11 @@ body {
 }
 @font-face {
   font-family: ftFont;
-  src: url('../images/font/num.ttf');
+  src: url('../../images/font/num.ttf');
 }
 .showbar {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 .showsuggest {

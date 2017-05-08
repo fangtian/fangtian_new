@@ -14,7 +14,7 @@
     <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
     <!-- fangtian css -->
-    <link href="css/fangtian.css" rel="stylesheet">
+    <link href="css/css/fangtian.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,194 +27,133 @@
     <![endif]-->
 </head>
 
-<body>
+<body >
     <!-- include header.php -->
     <?php include "public/header.php" ?>
     <div id="ft_course_detail">
+        <section class="course_nav visible-xs">
+            <ul>
+                <li>班级选择</li>
+                <li class="active">课程介绍</li>
+                <li>热报课程</li>
+            </ul>
+        </section>
         <section class="banner">
             <div class="container">
                 <div class="video col-sm-5">
                     <img src="images/uploads/course.jpg" class="img-responsive" alt="Responsive image">
-                    <video class="" src=""></video>
+                    <div class="introduce">
+                        <video controls autoplay width="100%">
+                            <source src="video/test1.webm" type="video/webm" />
+                            <source src="video/test1.mp4" type="video/mp4" />
+                        </video>
+                        <span class="close glyphicon glyphicon-remove"></span>
+                    </div>
                 </div>
                 <div class="course col-sm-7">
                     <h2>2017暑假课六年级数学课程</h2>
                     <div class="content">
                         <ul>
-                            <li><span class="title">价格:</span><span class="price">￥2250.00</span> <span class="title">课时:</span><span class="num">15课时</span></li>
-                            <li><span class="title">上课时间:</span><span class="time">2017年2月18日-2017年6月17日</span></li>
-                            <li><span class="title">上课频率:</span><span class="time">一周一次</span></li>
-                            <li><span class="title">课程服务:</span><span class="list">家长旁听，随时退费</span> <span class="list">中途报名，比例收费</span> <span class="list">课堂测评</span></li>
+                            <li class="course_price">
+                                <span class="title hidden-xs">价格:</span><span class="price">￥2250.00</span>
+                            </li>
+                            <li class="course_time">
+                                <span class="title">课时: </span><span class="num">15课时</span>
+                            </li>
+                            <li class="course_rate">
+                                <span class="title">上课频率: </span><span class="time">一周一次</span>
+                            </li>
+                            <li class="course_day">
+                                <span class="title">上课时间: </span><span class="time">2017年2月18日-2017年6月17日</span>
+                            </li>
+                            <li class="course_serve">
+                                <span class="title hidden-xs">课程服务:</span>
+                                <span class="list "><i class="glyphicon glyphicon-ok-circle hiden-sm"></i>家长旁听</span>
+                                <span class="list "><i class="glyphicon glyphicon-ok-circle hiden-sm"></i>随时退费</span>
+                                <span class="list "><i class="glyphicon glyphicon-ok-circle hiden-sm"></i>中途报名</span>
+                                <span class="list "><i class="glyphicon glyphicon-ok-circle hiden-sm"></i>比例收费</span>
+                                <span class="list "><i class="glyphicon glyphicon-ok-circle hiden-sm"></i>课堂测评</span>
+                                <span class="list "><i class="glyphicon glyphicon-ok-circle hiden-sm"></i>家长旁听</span>
+                            </li>
                         </ul>
                         <span class="status">名额紧张</span>
                     </div>
                 </div>
             </div>
         </section>
-       
         <section class="course_choose">
             <div class="container">
-                <h2>课程选择</h2>
                 <div class="content">
-                    <div class="tab_result clearfix">
-                        <span>已选：</span>
-                        <ul class="result">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="tab_list clearfix">
-                        <ul>
-                            <li id="area" class="col-sm-4 current">1 选校区</li>
-                            <li id="teachers" class="col-sm-4">2 选老师</li>
-                            <li id="times" class="col-sm-4">3 选时间</li>
-                        </ul>
-                    </div>
-                    <div class="tab_content">
+                    <div class="tab_nav">
                         <div class="area">
-                        		<div class="detail">
-                        			<div class="col-sm-4"><span>庐阳区亳州路301号金地大厦8楼</span></div>
-                        			<div class="col-sm-4"><span>庐阳区安庆路205号金字楼6楼</span></div>
-                        			<div class="col-sm-4"><span>蜀山区长江西路与合作化南路交口金域国际15楼</span></div>                 			
-                        		</div>
-                        	<ul>
-                        		<li class="col-sm-4">北一环</li>
-                        		<li class="col-sm-4">安庆路</li>
-                        		<li class="col-sm-4">五里墩</li>
-	
-                        	</ul>
+                            <span class="">选校区</span>
+                            <ul class="">
+                               
+                                <li>安庆路</li>
+                                <li>五里墩</li>
+                                <li>北一环</li>
+                            </ul>
                         </div>
-                        <div class="teachers">
-                        	<ul>
-                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师1</span></li>
-                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师2</span></li>
-                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师3</span></li>
-                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师4</span></li>
-                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师5</span></li>
-                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师6</span></li>
-                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师6</span></li>
-                        		<li class="col-sm-2"><img src="images/teachers/ckn.png" class="img-responsive" alt=""><span class="name">曹柯南老师6</span></li>
-                        		
-                        		
-                        		
-	                        	
-                        	</ul>       	                       	
+                        <div class="teacher">
+                            <span class="">选老师</span>
+                            <ul class="">
+                                <li class="col-sm-2"><span class="name">曹柯南老师</span></li>
+                                <li class="col-sm-2"><span class="name">曹柯南老师</span></li>
+                                <li class="col-sm-2"><span class="name">曹柯南老师</span></li>
+                                <li class="col-sm-2"><span class="name">曹柯南老师</span></li>
+                                <li class="col-sm-2"><span class="name">杨禾兆昆老师</span></li>
+                                <li class="col-sm-2"><span class="name">曹柯南老师</span></li>
+                                <li class="col-sm-2"><span class="name">曹柯南老师</span></li>
+                                <li class="col-sm-2"><span class="name">曹柯南老师</span></li>
+                            </ul>
                         </div>
                         <div class="times">
-                        	<table class="">
-                        		<thead>
-                        			<tr>
-                        				<th></th>
-                        				<th>周一33</th>
-                        				<th>周二</th>
-                        				<th>周三</th>
-                        				<th>周四</th>
-                        				<th>周五</th>
-                        				<th>周六</th>
-                        				<th>周日</th>
-                        			</tr>
-                        		</thead>
-                        		<tbody>
-                        			<tr>
-                        				<td>上午</td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				
-                        			</tr>
-                        			<tr>
-
-                        				<td>中午</td>
-                        				
-                        				<td><span class="time">17:00~19:30</span>名额：2</td>
-                        				<td>名额：2</td>
-                        				<td>名额：2</td>
-                        				<td>名额：2</td>
-                        				<td>名额：2</td>
-                        				<td>名额：2</td>
-                        				<td>名额：2</td>
-                        			
-                        				
-                        			</tr>
-                        			<tr>
-                        				<td>下午</td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				
-                        			</tr>
-                        			<tr>
-                        				<td>晚上</td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				<td></td>
-                        				
-                        			</tr>
-
-                        		</tbody>
-                        	</table>
+                            <span class="">选时间</span>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
-    <!-- include footer.php -->
-    <?php include "public/footer.php" ?>
-    <a id="back-top" href="#"><span class="glyphicon glyphicon-menu-up"></span></a>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="plugins/jquery/jquery-min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/fangtian.js"></script>
-    <!-- <script src="js/user.js"></script> -->
-    <script>
-    $(function() {
-    	var list=$(".tab_list>ul>li")
-    	target=$('.tab_content>div')
-
-    	list.each(function(i){
-    		$(this).click(function(){
-    			target.eq(i).show().siblings().hide();
-    			list.eq(i).addClass('current').siblings().removeClass('current')
-    		})
-    	})
-    	$(".area li").each(function(i){
-    		$(this).click(function(){
-    			$(this).addClass('current').siblings().removeClass('current');
-    			console.log($(this).html())
-    			$('.area').hide().next().show()
-    			$("#teachers").addClass('current').siblings().removeClass('current');
-    			$('.result li').eq(0).html($(this).html())
-
-    		})
-    	})
-    	$(".teachers .name").each(function(i){
-    		$(this).click(function(){
-    			$(this).addClass('current').parent().siblings().children('.name').removeClass('current');
-    			$('.teachers').hide().next().show()
-    			$("#times").addClass('current').siblings().removeClass('current');
-    			$('.result li').eq(1).html($(this).text())
-    		})
-    	})
-    	
-
-
-    })
-    </script>
+         <div class="bottom">
+            <div class="tab_result">
+                <div class="amount">
+                    已报: <span class="num">257人</span>
+                </div>
+                <div class="chose">
+                    <span>已选：</span>
+                    <ul class="result">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="course_enter">
+                立即报名
+            </div>
+        </div>
+        </div>
+       
+        <!-- include footer.php -->
+        <!-- <php include "public/footer.php" ? >-->
+        <a id="back-top" href="#"><span class="glyphicon glyphicon-menu-up"></span></a>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="plugins/jquery/jquery-min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/fangtian.js"></script>
+        <!-- <script src="js/user.js"></script> -->
+        <script>
+        $(function() {
+            $(".video img").click(function() {
+                $(".introduce").show()
+            })
+            $(".close").click(function() {
+                $(".introduce").hide()
+            })
+        })
+        </script>
 </body>
 
 </html>
