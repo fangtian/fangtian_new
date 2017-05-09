@@ -42,7 +42,10 @@ body {
 }
 @font-face {
   font-family: ftFont;
-  src: url('../../images/font/num.ttf');
+  src: url('../../font/num.ttf');
+}
+.show {
+  display: block;
 }
 .showbar {
   -webkit-transform: translateX(-100%);
@@ -57,12 +60,6 @@ body {
   border-radius: 15px;
   background-color: #29C2E1;
   color: white;
-}
-.current {
-  background: #056C83;
-}
-.show {
-  display: block;
 }
 header nav {
   height: 80px;

@@ -45,14 +45,17 @@ body {
     background: #fff;
     color: black;
     font-size: 14px;
-
     padding-right: 0!important;
     font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
 }
 
 @font-face {
     font-family: ftFont;
-    src: url('../../images/font/num.ttf');
+    src: url('../../font/num.ttf');
+}
+
+.show {
+    display: block;
 }
 
 .showbar {
@@ -68,14 +71,6 @@ body {
     border-radius: 15px;
     background-color: #29C2E1;
     color: white;
-}
-
-.current {
-    background: #056C83;
-}
-
-.show {
-    display: block;
 }
 
 header {
@@ -212,22 +207,19 @@ header {
             }
         }
     }
-    #frmlogin{
-        .modal-footer{
-            .btn-reg{
+    #frmlogin {
+        .modal-footer {
+            .btn-reg {
                 background-color: #fff;
                 color: black;
             }
-            .btn_ft{
+            .btn_ft {
                 display: inline-block;
                 width: 60px;
                 line-height: 30px;
                 text-align: center;
-                
-                cursor:pointer;
-                border:none;
-      
-
+                cursor: pointer;
+                border: none;
             }
         }
     }
@@ -277,6 +269,3 @@ footer {
         font-size: 30px;
     }
 }
-
-
-

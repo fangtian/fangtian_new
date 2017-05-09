@@ -27,15 +27,15 @@
     <![endif]-->
 </head>
 
-<body >
+<body>
     <!-- include header.php -->
     <?php include "public/header.php" ?>
     <div id="ft_course_detail">
         <section class="course_nav visible-xs">
             <ul>
-                <li>班级选择</li>
-                <li class="active">课程介绍</li>
-                <li>热报课程</li>
+                <li><a href="#">班级选择</a></li>
+                <li><a class="active" href="#" title="">课程介绍</a></li>
+                <li><a href="#" title="">热报课程</a></li>
             </ul>
         </section>
         <section class="banner">
@@ -86,74 +86,199 @@
                 <div class="content">
                     <div class="tab_nav">
                         <div class="area">
-                            <span class="">选校区</span>
+                            <span class="title">选校区</span>
                             <ul class="">
-                               
-                                <li>安庆路</li>
+                                <li class="current">安庆路</li>
                                 <li>五里墩</li>
                                 <li>北一环</li>
                             </ul>
                         </div>
                         <div class="teacher">
-                            <span class="">选老师</span>
+                            <span class="title">选老师</span>
                             <ul class="">
-                                <li class="col-sm-2"><span class="name">曹柯南老师</span></li>
-                                <li class="col-sm-2"><span class="name">曹柯南老师</span></li>
-                                <li class="col-sm-2"><span class="name">曹柯南老师</span></li>
-                                <li class="col-sm-2"><span class="name">曹柯南老师</span></li>
-                                <li class="col-sm-2"><span class="name">杨禾兆昆老师</span></li>
-                                <li class="col-sm-2"><span class="name">曹柯南老师</span></li>
-                                <li class="col-sm-2"><span class="name">曹柯南老师</span></li>
-                                <li class="col-sm-2"><span class="name">曹柯南老师</span></li>
+                                <li><span class="name current">曹柯南老师</span></li>
+                                <li><span class="name">曹媛老师</span></li>
+                                <li><span class="name">曹柯南老师</span></li>
+                                <li><span class="name">曹柯南老师</span></li>
+                                <li><span class="name">杨禾兆昆老师</span></li>
+                                <li><span class="name">曹柯南老师</span></li>
+                                <li><span class="name">曹柯南老师</span></li>
+                                <li><span class="name">曹柯南老师</span></li>
                             </ul>
                         </div>
                         <div class="times">
-                            <span class="">选时间</span>
-                            
+                            <span class="title">选时间</span>
+                            <table class="table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>周二</th>
+                                        <th>周三</th>
+                                        <th>周四</th>
+                                        <th>周五</th>
+                                        <th>周六</th>
+                                        <th>周日</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>上午</th>
+                                        <td><span class="hot">名额：3</span></td>
+                                        <td><span class="hot">名额：3</span></td>
+                                        <td><span class="hot">名额：3</span></td>
+                                        <td><span class="hot">名额：3</span></td>
+                                        <td><span class="hot">名额：3</span></td>
+                                        <td><span class="hot">名额：3</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>中午</th>
+                                        <td><span class="hot">名额：3</span></td>
+                                        <td><span class="hot">名额：3</span></td>
+                                        <td><span class="hot">名额：3</span></td>
+                                        <td><span class="hot">名额：3</span></td>
+                                        <td><span class="hot">名额：3</span></td>
+                                        <td><span class="hot">名额：3</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>下午</th>
+                                        <td><span class="full">已满</span></td>
+                                        <td><span class="full">已满</span></td>
+                                        <td><span class="full">已满</span></td>
+                                        <td><span class="full">已满</span></td>
+                                        <td><span class="full">已满</span></td>
+                                        <td><span class="full">已满</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>晚上</th>
+                                        <td><span class="hot">热报中</span></td>
+                                        <td><span class="hot">热报中</span></td>
+                                        <td><span class="hot current">热报中</span></td>
+                                        <td><span class="hot">热报中</span></td>
+                                        <td><span class="hot">热报中</span></td>
+                                        <td><span class="hot">热报中</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="bottom">
+                <div class="container">
+                    <div class="tab_result">
+                        <div class="amount visible-lg visible-xs">
+                            已报: <span class="num">257</span> 人
+                        </div>
+                        <div class="chose">
+                            <span class="">已选：</span>
+                            <ul class="result">
+                                <li> 安庆路</li>
+                                <li>曹柯南老师</li>
+                                <li>周六上午提高班</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="course_enter">
+                        <a class="ft_btn">立即报名</a>
+                    </div>
+                </div>
+            </div>
         </section>
-         <div class="bottom">
-            <div class="tab_result">
-                <div class="amount">
-                    已报: <span class="num">257人</span>
+        <section class="course_hot">
+            <div class="container">
+                <div class="course_head">
+                    <h2>热报课程</h2>
                 </div>
-                <div class="chose">
-                    <span>已选：</span>
-                    <ul class="result">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                <div class="content swiper-course">
+                    <div class="list col-xs-12">
+                        <div class="head clearfix">
+                            <span>名额已满</span>
+                            <h4>2017春季班</h4>
+                            <div class="line"></div>
+                            <p>三年级数学</p>
+                        </div>
+                        <div class="message">
+                            <div class="time">2017年2月18日-2017年6月17日</div>
+                            <div class="video">
+                                <span class="glyphicon glyphicon-play"></span>
+                                <p class="blue">方田教育</p>
+                                <p class="black">2017三年级数学大纲解读</p>
+                            </div>
+                        </div>
+                        <p>已报<span class="num">213</span>人</p>
+                        <a class="btn_ft">课程详情</a>
+                    </div>
+                    <div class="list col-xs-12">
+                        <div class="head clearfix">
+                            <span>名额已满</span>
+                            <h4>2017春季班</h4>
+                            <div class="line"></div>
+                            <p>三年级数学</p>
+                        </div>
+                        <div class="message">
+                            <div class="time">2017年2月18日-2017年6月17日</div>
+                            <div class="video">
+                                <span class="glyphicon glyphicon-play"></span>
+                                <p class="blue">方田教育</p>
+                                <p class="black">2017三年级数学大纲解读</p>
+                            </div>
+                        </div>
+                        <p>已报<span class="num">213</span>人</p>
+                        <a class="btn_ft">课程详情</a>
+                    </div>
+                    <div class="list col-xs-12">
+                        <div class="head clearfix">
+                            <span>名额已满</span>
+                            <h4>2017春季班</h4>
+                            <div class="line"></div>
+                            <p>三年级数学</p>
+                        </div>
+                        <div class="message">
+                            <div class="time">2017年2月18日-2017年6月17日</div>
+                            <div class="video">
+                                <span class="glyphicon glyphicon-play"></span>
+                                <p class="blue">方田教育</p>
+                                <p class="black">2017三年级数学大纲解读</p>
+                            </div>
+                        </div>
+                        <p>已报<span class="num">213</span>人</p>
+                        <a class="btn_ft">课程详情</a>
+                    </div>
                 </div>
             </div>
-            <div class="course_enter">
-                立即报名
-            </div>
-        </div>
-        </div>
-       
-        <!-- include footer.php -->
-        <!-- <php include "public/footer.php" ? >-->
-        <a id="back-top" href="#"><span class="glyphicon glyphicon-menu-up"></span></a>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="plugins/jquery/jquery-min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/fangtian.js"></script>
-        <!-- <script src="js/user.js"></script> -->
-        <script>
-        $(function() {
-            $(".video img").click(function() {
-                $(".introduce").show()
-            })
-            $(".close").click(function() {
+        </section>
+    </div>
+    <!-- include footer.php -->
+     <?php include "public/footer.php" ?>
+    <a id="back-top" href="#"><span class="glyphicon glyphicon-menu-up"></span></a>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="plugins/jquery/jquery-min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/fangtian.js"></script>
+    <!-- <script src="js/user.js"></script> -->
+    <script>
+    $(function() {
+        // video--------------
+        $(".video img").click(function() {
+            $(".introduce").show()
+        })
+        $(".close").click(function() {
                 $(".introduce").hide()
             })
-        })
-        </script>
+            // -------------------
+        console.log($(".bottom").offset().top)
+        
+        $(document).scroll(function() {
+          if($(document).scrollTop()>=340){
+            $(".bottom").addClass('fixed');
+          }else{
+            $(".bottom").removeClass('fixed');
+          }
+        });
+
+    })
+    </script>
 </body>
 
 </html>
