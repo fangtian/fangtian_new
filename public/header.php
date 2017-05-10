@@ -9,11 +9,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="navbar-content collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="icon visible-xs"> <span class="glyphicon glyphicon-user"></span></li>
+                    <li class="icon"> <span class="glyphicon glyphicon-user"></span></li>
                     <li class="reg"><a href="#" data-toggle="modal" data-target="#registerModal">注册</a></li>
                     <li class="login"><span class="btn_ft" data-toggle="modal" data-target="#loginModal">登录</span></li>
                 </ul>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav nav_list">
                     <li class="visible-lg">
                         <span class="glyphicon glyphicon-map-marker "></span> &nbsp;&nbsp;
                         <select >

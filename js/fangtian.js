@@ -39,7 +39,7 @@ $(document).ready(function() {
     // navbar highlight
     // ---------------------------------------------------------
     $("#home a:contains('首页')").addClass('selected');
-    $("#course a:contains('选课中心')").addClass('selected');
+    $("#ft_course a:contains('选课中心')").addClass('selected');
     $("#interaction a:contains('交流中心')").addClass('selected');
     $("#about a:contains('关于我们')").addClass('selected');
     // ---------------------------------------------------------

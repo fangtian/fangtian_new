@@ -8,7 +8,7 @@
     <meta name="Keywords" Content="数理化,培优,奥数,数学,物理,化学,迎春杯,华杯赛,">
     <meta name="description" Content="网页描述文字">
     <link rel="shortcut icon" href="images/uploads/favicon.ico" />
-    <link rel="bookmark" href="images/uploads/favicon.ico" type="image/x-icon" 　/>
+    <link rel="bookmark" href="images/uploads/favicon.ico" type="image/x-icon" />
     <title>方田教育</title>
     <!-- Bootstrap -->
     <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,9 +33,9 @@
     <div id="ft_course_detail">
         <section class="course_nav visible-xs">
             <ul>
-                <li><a href="#">班级选择</a></li>
-                <li><a class="active" href="#" title="">课程介绍</a></li>
-                <li><a href="#" title="">热报课程</a></li>
+                <li><a href="#1F">班级选择</a></li>
+                <li><a href="#" class="active">课程介绍</a></li>
+                <li><a href="#3F">热报课程</a></li>
             </ul>
         </section>
         <section class="banner">
@@ -66,7 +66,7 @@
                             <li class="course_day">
                                 <span class="title">上课时间: </span><span class="time">2017年2月18日-2017年6月17日</span>
                             </li>
-                            <li class="course_serve">
+                            <li class="course_serve" id="1F">
                                 <span class="title hidden-xs">课程服务:</span>
                                 <span class="list "><i class="glyphicon glyphicon-ok-circle hiden-sm"></i>家长旁听</span>
                                 <span class="list "><i class="glyphicon glyphicon-ok-circle hiden-sm"></i>随时退费</span>
@@ -90,13 +90,13 @@
                             <ul class="">
                                 <li class="current">安庆路</li>
                                 <li>五里墩</li>
-                                <li>北一环</li>
+                                <li>亳州路</li>
                             </ul>
                         </div>
                         <div class="teacher">
                             <span class="title">选老师</span>
                             <ul class="">
-                                <li><span class="name current">曹柯南老师</span></li>
+                                <li class="current"><span class="name ">曹柯南老师</span></li>
                                 <li><span class="name">曹媛老师</span></li>
                                 <li><span class="name">曹柯南老师</span></li>
                                 <li><span class="name">曹柯南老师</span></li>
@@ -123,39 +123,40 @@
                                 <tbody>
                                     <tr>
                                         <th>上午</th>
-                                        <td><span class="hot">名额：3</span></td>
-                                        <td><span class="hot">名额：3</span></td>
-                                        <td><span class="hot">名额：3</span></td>
-                                        <td><span class="hot">名额：3</span></td>
-                                        <td><span class="hot">名额：3</span></td>
-                                        <td><span class="hot">名额：3</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">名额：3</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">名额：3</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">名额：3</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">名额：3</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">名额：3</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">名额：3</span></td>
+                                        
                                     </tr>
                                     <tr>
                                         <th>中午</th>
-                                        <td><span class="hot">名额：3</span></td>
-                                        <td><span class="hot">名额：3</span></td>
-                                        <td><span class="hot">名额：3</span></td>
-                                        <td><span class="hot">名额：3</span></td>
-                                        <td><span class="hot">名额：3</span></td>
-                                        <td><span class="hot">名额：3</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">名额：3</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">名额：3</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">名额：3</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">名额：3</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">名额：3</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">名额：3</span></td>
                                     </tr>
                                     <tr>
                                         <th>下午</th>
-                                        <td><span class="full">已满</span></td>
-                                        <td><span class="full">已满</span></td>
-                                        <td><span class="full">已满</span></td>
-                                        <td><span class="full">已满</span></td>
-                                        <td><span class="full">已满</span></td>
-                                        <td><span class="full">已满</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="full btn">已满</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="full">已满</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="full">已满</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="full">已满</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="full">已满</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="full">已满</span></td>
                                     </tr>
                                     <tr>
                                         <th>晚上</th>
-                                        <td><span class="hot">热报中</span></td>
-                                        <td><span class="hot">热报中</span></td>
-                                        <td><span class="hot current">热报中</span></td>
-                                        <td><span class="hot">热报中</span></td>
-                                        <td><span class="hot">热报中</span></td>
-                                        <td><span class="hot">热报中</span></td>
+                                        <td class="current"><span class="hour">12:00~15:00</span><span class="hot">热报中</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">热报中</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot ">热报中</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">热报中</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">热报中</span></td>
+                                        <td><span class="hour">12:00~15:00</span><span class="hot">热报中</span></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -166,7 +167,7 @@
             <div class="bottom">
                 <div class="container">
                     <div class="tab_result">
-                        <div class="amount visible-lg visible-xs">
+                        <div class="amount">
                             已报: <span class="num">257</span> 人
                         </div>
                         <div class="chose">
@@ -184,10 +185,24 @@
                 </div>
             </div>
         </section>
-        <section class="course_hot">
+        <section class="course_desc">
             <div class="container">
                 <div class="course_head">
-                    <h2>热报课程</h2>
+                    <h3>课程简介</h2>
+                </div>
+            </div>
+        </section>
+        <section class="course_brief">
+            <div class="container">
+                <div class="course_head">
+                    <h3>课程大纲</h2>
+                </div>
+            </div>
+        </section>
+        <section class="course_hot" id="3F">
+            <div class="container">
+                <div class="course_head">
+                    <h3>热报课程</h2>
                 </div>
                 <div class="content swiper-course">
                     <div class="list col-xs-12">
@@ -249,7 +264,7 @@
         </section>
     </div>
     <!-- include footer.php -->
-     <?php include "public/footer.php" ?>
+    <?php include "public/footer.php" ?>
     <a id="back-top" href="#"><span class="glyphicon glyphicon-menu-up"></span></a>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="plugins/jquery/jquery-min.js"></script>
@@ -268,16 +283,50 @@
             })
             // -------------------
         console.log($(".bottom").offset().top)
-        
+
         $(document).scroll(function() {
-          if($(document).scrollTop()>=340){
-            $(".bottom").addClass('fixed');
-          }else{
-            $(".bottom").removeClass('fixed');
-          }
+            if ($(document).scrollTop() >= 340) {
+                $(".bottom").addClass('fixed');
+            } else {
+                $(".bottom").removeClass('fixed');
+            }
         });
 
+
+        $(".area li").click(function() {
+            $(this).addClass('current').siblings().removeClass("current");  
+            console.log($(".area .current ").html() )  
+            $('.amount').hide().siblings().show();
+            
+            $('.result li:eq(0)').html($(".area .current").html()) 
+        })
+
+        $(".teacher li").click(function() {
+            $(this).addClass('current ').siblings().removeClass("current"); 
+            console.log($(".teacher .current span").html() ) 
+            $('.amount').hide().siblings().show();
+            
+            $('.result li:eq(1)').html($(".teacher .current span").html()) 
+
+        })
+
+        $(".times tr td").click(function() {
+            $(".times tr td").removeClass("current");  
+            $(this).addClass("current ")  
+            if($(this).children('span').hasClass("full")){
+                $(this).removeClass('current')
+            }
+            console.log($(".times .current .hour").html() )  
+        })
+
+
+
     })
+
+
+
+    
+ 
     </script>
 </body>
 
