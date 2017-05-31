@@ -1,0 +1,23 @@
+0000000000000000000000000000000000000000 e54ed5e158997add21a0bcc2dcb541ff6fbc56c9 huangdong-fangtian <huangdong@fangtian.me> 1491374786 +0800	clone: from https://github.com/fangtian/fangtian_new
+e54ed5e158997add21a0bcc2dcb541ff6fbc56c9 c57553bb245ce4227249b08c0f1c2fd35dd9118c huangdong-fangtian <huangdong@fangtian.me> 1492391759 +0800	commit: 项目重置
+c57553bb245ce4227249b08c0f1c2fd35dd9118c 84810145d5ceb1061cf820a8b21ff3168d669466 huangdong-fangtian <huangdong@fangtian.me> 1492399827 +0800	commit: 初始化目录
+84810145d5ceb1061cf820a8b21ff3168d669466 8238f2e36b9be5800f4dd192b2417fd69ef76692 huangdong-fangtian <huangdong@fangtian.me> 1492423077 +0800	commit: 首页结构
+8238f2e36b9be5800f4dd192b2417fd69ef76692 6f9e7c60324a00e89151ae3bdae2d836eb95e66e huangdong-fangtian <huangdong@fangtian.me> 1492481549 +0800	commit: css 基础调整
+6f9e7c60324a00e89151ae3bdae2d836eb95e66e 564b9b0492980cf200e62c7908c601c2d2e841f2 huangdong-fangtian <huangdong@fangtian.me> 1492510238 +0800	commit: 公共类搭建
+564b9b0492980cf200e62c7908c601c2d2e841f2 d2dcde82fe76f0224f4dfb65931c82718314cb83 huangdong-fangtian <huangdong@fangtian.me> 1492677829 +0800	commit: 导航结构
+d2dcde82fe76f0224f4dfb65931c82718314cb83 1c303e31beb1e2470870171c6eb7d8999006d8a9 huangdong-fangtian <huangdong@fangtian.me> 1492768936 +0800	commit: 导航优化
+1c303e31beb1e2470870171c6eb7d8999006d8a9 1b60f24c6c582d72fe152f3e19efe83e74814605 huangdong-fangtian <huangdong@fangtian.me> 1493005586 +0800	commit: Signed-off-by: huangdong-fangtian <huangdong@fangtian.me>
+1b60f24c6c582d72fe152f3e19efe83e74814605 a9154fa4f44935023ae31eaad50e2191896798b4 huangdong-fangtian <huangdong@fangtian.me> 1493017970 +0800	commit: 课程中心筛选
+a9154fa4f44935023ae31eaad50e2191896798b4 9a459f7cb524e496de050ebfdd308e1447bc9259 huangdong-fangtian <huangdong@fangtian.me> 1493022966 +0800	commit: Signed-off-by: huangdong-fangtian <huangdong@fangtian.me>
+9a459f7cb524e496de050ebfdd308e1447bc9259 5990aa2a5fc7c883353199ec561ee146c86fbe00 huangdong-fangtian <huangdong@fangtian.me> 1493115080 +0800	commit: 首页
+5990aa2a5fc7c883353199ec561ee146c86fbe00 515d1517643bf997fecee0658d6bef447370daef huangdong-fangtian <huangdong@fangtian.me> 1493198250 +0800	commit: 首页pc结构
+515d1517643bf997fecee0658d6bef447370daef 4af18666b169b53c869fe9ef0b2a40122f12bdb5 huangdong-fangtian <huangdong@fangtian.me> 1493287377 +0800	commit: Signed-off-by: huangdong-fangtian <huangdong@fangtian.me>
+4af18666b169b53c869fe9ef0b2a40122f12bdb5 ebbd20a3bd78140999e0bbed27e0875e3563fe69 huangdong-fangtian <huangdong@fangtian.me> 1493374528 +0800	commit: Signed-off-by: huangdong-fangtian <huangdong@fangtian.me>
+ebbd20a3bd78140999e0bbed27e0875e3563fe69 730d89a439fcb271ae6c714651e4189be8e4f904 huangdong-fangtian <huangdong@fangtian.me> 1493719752 +0800	commit: 选课中心
+730d89a439fcb271ae6c714651e4189be8e4f904 5c0e759cbabe92dddc91326580bbb4cb3cab0922 huangdong-fangtian <huangdong@fangtian.me> 1493784104 +0800	commit: 选课中心
+5c0e759cbabe92dddc91326580bbb4cb3cab0922 83b5a59caf2f3dea098316ea393c37c43377d947 huangdong-fangtian <huangdong@fangtian.me> 1493805802 +0800	commit: 课程详情
+83b5a59caf2f3dea098316ea393c37c43377d947 c2127f57c34439eab891446c213980fb4ba9f1e3 huangdong-fangtian <huangdong@fangtian.me> 1493892522 +0800	commit: 课程详情
+c2127f57c34439eab891446c213980fb4ba9f1e3 b01737b27dccaa9091a473299aa82c7b78dedf44 huangdong-fangtian <huangdong@fangtian.me> 1493957679 +0800	commit: 课程详情页
+b01737b27dccaa9091a473299aa82c7b78dedf44 c3d8235f540e40ce4731f90e9e9f451296c248d9 huangdong-fangtian <huangdong@fangtian.me> 1495092950 +0800	pull: Fast-forward
+c3d8235f540e40ce4731f90e9e9f451296c248d9 c0fd9b3338ef7298d1159ff254bd86a7bf65df57 huangdong-fangtian <huangdong@fangtian.me> 1495093024 +0800	commit: Signed-off-by: huangdong-fangtian <huangdong@fangtian.me>
+c0fd9b3338ef7298d1159ff254bd86a7bf65df57 44bdedb2167e6c6b5fb6091078bc5b3b9e7f2306 huangdong-fangtian <huangdong@fangtian.me> 1496190702 +0800	commit: 更改
