@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" Content="数理化,培优,奥数,数学,物理,化学,迎春杯,华杯赛,">
+    <meta name="description" Content="网页描述文字">
+    <link rel="shortcut icon" href="images/uploads/favicon.ico" />
+    <link rel="bookmark" href="images/uploads/favicon.ico" type="image/x-icon" 　/>
+    <title>方田教育</title>
+    <!-- Bootstrap -->
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
+    <!-- fangtian css -->
+    <link href="css/css/fangtian.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+        <div style="clear:both;height:59px;padding:0 0 0 15px;position:relative;">
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0027_Simplified Chinese.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a></div>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- include header.php -->
+    <?php include "public/header.php" ?>
+    <div id="user_center">
+        <div class="container">
+            <?php include "public/user_nav.php" ?>
+            <section class="user_content">
+                
+                <div class="exam">
+                    <div class="user_exam">
+                        <h4 class="title"><span class="glyphicon glyphicon-book"></span> 今日天天练</h4>
+                        <div class="content">
+                            <div class="exam_subject">
+                                <p>1.专注于中小学数学高端课程，为您精选每一位老师，在上课前，上课中和上课后三个环节严格控制教学质量。使用最先进的在线直播技术，把最优质的教育资源送到您身边。利用互联网大数据的优势，为每个孩子定制专属练习，真正做到个性化学习。</p>
+                            </div>
+                            <div class="exam_img">
+                                <img src="images/uploads/exam.jpg" alt="">
+                            </div>
+                            <ul class="options">
+                                <li class="checked"> <span class="">A</span>我也不知道些什么</li>
+                                <li class=""><span class="">B</span>我也不知道些什么</li>
+                                <li class=""><span class="">C</span>我也不知道些什么</li>
+                                <li class=""><span class="">D</span>我也不知道些什么</li>     
+                            </ul>
+                            <input type="file">
+                           <!--  <div id="score" class="answer">
+                                <span class="btn_ft">得分</span>
+                                <div class="answer_content">
+                                    本题得分为 <ins>0</ins> 分
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <span class="btn_ft">解析</span>
+                                <div class="answer_content">
+                                    控制教学质量。使用最先进的在线直播技术，把最优质的教育资源送到您身边。利用互联网大数据的优势，为每个孩
+                                </div>
+                            </div>
+                            <div class="exam_num"><span class="current">1</span><span>2</span><span>3</span></div> -->
+                            <div class="tollbar">
+                                <!-- <button class="btn_ft">上一题</button>  -->
+                                 <button class="btn_ft">提交</button>
+                                <!-- <button class="btn_ft">下一题</button>    -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user_score">
+                          <h4 class="title"><span class="glyphicon glyphicon-book"></span>天天练成绩分析</h4>
+                          <select name="" id="">
+                    <option value="">曹媛老师周六上午尖子班</option>
+                    <option value="">杨禾兆昆老师周六上午尖子班</option>
+                    <option value="">曹媛老师周六上午尖子班</option>
+                </select>
+                        <div class="result">
+                            <div class="wrap">
+                                <div class="circle">
+                                    <div class="percent left"></div>
+                                    <div class="percent right wth0"></div>
+                                </div>
+                                <div class="num"><span>0</span>%</div>
+                            </div>
+                            <ul class="user_result">
+                                <li>累计<span>30</span></li>
+                                <li>完成<span>27</span></li>
+                                <li>错误<span>2</span></li>
+                                <li>正确率<span class="percents">75%</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user_analyse">
+                      
+                        <div class="content">
+                            <div id="main">
+                                <h4>每周做题正确率</h4>
+                                <div id="canvas1"></div>
+                            </div>
+                            <div id="detail">
+                                <h4>知识点得分比较</h4>
+                                <div id="canvas2"></div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            </div>
+        </div>
+        <!-- include footer.php -->
+        <?php include "public/footer.php" ?>
+        <a id="back-top" href="#"><span class="glyphicon glyphicon-menu-up"></span></a>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="plugins/jquery/jquery-min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="plugins/echart/echarts.min.js"></script>
+        <script src="js/fangtian.js"></script>
+        <!-- <script src="js/user.js"></script> -->
+        <script>
+        var end = 90;
+        var percent = 0;
+        var loading = setInterval(function() {
+            if (percent > 100) {
+                percent = 0;
+                $('.circle').removeClass('clip-auto');
+                $('.right').addClass('wth0');
+            } else if (percent > 50) {
+                $('.circle').addClass('clip-auto');
+                $('.right').removeClass('wth0');
+            }
+            $('.left').css("-webkit-transform", "rotate(" + (18 / 5) * percent + "deg)");
+            $('.num>span').text(percent);
+            if (percent == end) {
+                clearInterval(loading)
+            }
+            percent++;
+        }, 20);
+
+        // 折线图
+        var myChart = echarts.init(document.getElementById('canvas1'));
+        var myChart2 = echarts.init(document.getElementById('canvas2'));
+        option = {
+            title: {
+
+            },
+            grid: {
+                x: 45,
+                y: 45,
+                x2: 20,
+                y2: 20
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: ['我的正确率', '平均正确率']
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    dataZoom: {
+                        yAxisIndex: 'none'
+                    },
+                    dataView: {
+                        readOnly: false
+                    },
+                    magicType: {
+                        type: ['line', 'bar']
+                    },
+                    restore: {},
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15']
+            },
+            yAxis: {
+                type: 'value',
+                axisLabel: {
+                    formatter: '{value}%'
+                }
+            },
+            series: [{
+                name: '我的正确率',
+                type: 'line',
+                data: [80, 77, 85, 63, 69, 80, 60],
+
+            }, {
+                name: '平均正确率',
+                type: 'line',
+                data: [80, 76, 75, 65, 83, 92, 73],
+            }]
+        };
+
+        option2 = {
+            title: {
+                
+            },
+
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'cross'
+                }
+            },
+            legend: {
+                data: ['平均得分', '我的得分'],
+                top:-5,
+                right:0,
+                orient: 'vertical'
+
+            },
+            grid: {
+
+            },
+            radar: {
+                indicator: [{
+                    name: '计算',
+                    max: 100
+                }, {
+                    name: '几何',
+                    max: 100
+                }, {
+                    name: '几何',
+                    max: 100
+                }, {
+                    name: '几何',
+                    max: 100
+                }, {
+                    name: '几何',
+                    max: 100
+                }, {
+                    name: '几何',
+                    max: 100
+                }, {
+                    name: '几何',
+                    max: 100
+                }],
+                axisLabel: {
+                    show:true,
+                }
+
+            },
+            series: [{
+                name: '',
+                type: 'radar',
+                // areaStyle: {normal: {}},
+                data: [{
+                    value: [80, 76, 60, 77, 76, 66, 82],
+                    name: '平均得分',
+                    areaStyle: {
+                        normal: {
+                            opacity: 0.9,
+                            color: new echarts.graphic.RadialGradient(0.5, 0.5, 1, [{
+                                color: '#B8D3E4',
+                                offset: 0
+                            }, {
+                                color: '#72ACD1',
+                                offset: 1
+                            }])
+                        }
+                    }
+                }, {
+                    value: [95, 82, 73, 85, 66, 63, 86],
+                    name: '我的得分'
+                }]
+            }],
+
+        };
+        myChart.setOption(option);
+        myChart2.setOption(option2);
+        window.onresize = myChart.resize;
+        window.onresize = myChart2.resize;
+        </script>
+</body>
+
+</html>

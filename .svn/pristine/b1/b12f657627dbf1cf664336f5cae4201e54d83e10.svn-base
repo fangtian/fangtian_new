@@ -1,0 +1,293 @@
+#homepage {
+    width: 100%;
+    position: relative;
+    -webkit-transition: 1s cubic-bezier(.86, 0, .07, 1);
+    transition: 1s cubic-bezier(.86, 0, .07, 1);
+    section {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        &:nth-child(2),
+        &:nth-child(4) {
+            background: #E7EEF1
+        }
+        .fp-tableCell {
+            height: 100%;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+        }
+        .course_head {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .pull-left {
+            h2 {
+                font-size: 30px;
+                font-weight: 800;
+            }
+            p {
+                font-size: 22px;
+            }
+        }
+        .aboutme,
+        .wedo {
+            h2 {
+                font-size: 30px;
+                font-weight: 800;
+                margin-bottom: 30px;
+            }
+            p {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+        .swiper-pagination {
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+            text-align: center;
+            z-index: 9;
+            span {
+                margin: 15px;
+            }
+        }
+    }
+    .course {
+        .num {
+            margin: 0 10px;
+            font-size: 50px;
+            font-family: ftFont;
+            color: #F7941D;
+        }
+        .content {
+            overflow: hidden;
+            .list {
+                text-align: center;
+                background-color: white;
+                overflow: hidden;
+                margin: 0;
+                .head {
+                    overflow: hidden;
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    height: 120px;
+                    border-bottom: 1px solid #EEF3F4;
+                    span {
+                        position: absolute;
+                        height: 30px;
+                        line-height: 30px;
+                        top: 12px;
+                        left: -35px;
+                        width: 120px;
+                        transform: rotate(-45deg);
+                        background-color: #E20000;
+                        color: white;
+                    }
+                    h4 {
+                        width: 100%;
+                        height: 65px;
+                        text-align: center;
+                        font-weight: 800;
+                        font-size: 20px;
+                        border-bottom: 1px solid #EEF3F4;
+                        margin: 0;
+                        padding: 30px 0;
+                    }
+                    .line {
+                        width: 110px;
+                        position: absolute;
+                        left: 50%;
+                        top: 64px;
+                        margin-left: -55px;
+                        height: 1px;
+                        background-color: red;
+                    }
+                    p {
+                        text-align: center;
+                        font-size: 24px;
+                        font-family: Tahoma;
+                        letter-spacing: 2px;
+                        color: black;
+                        margin: 10px 0 0 0;
+                    }
+                }
+                .message {
+                    margin-top: 140px;
+                    .time {
+                        margin-bottom: 26px;
+                        font-size: 12px;
+                    }
+                    .video {
+                        width: 90%;
+                        height: 110px;
+                        margin: 0 auto;
+                        border-radius: 5px;
+                        border: 1px solid #eee;
+                        box-shadow: 1px 1px 1px #888888;
+                        position: relative;
+                        .blue {
+                            margin-top: 35px;
+                            color: #005896;
+                            font-weight: 700;
+                        }
+                        .black {
+                            color: black;
+                            font-weight: 700;
+                            margin-top: 5px;
+                        }
+                        span {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            color: #29C2E1;
+                            font-size: 30px;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            padding-top: 8px;
+                            padding-left: 6px;
+                            border: 1px solid #eee;
+                            background-color: rgba(250, 250, 250, 0.2);
+                            box-shadow: 0px 0px 20px #B9B9B9;
+                            &:before {
+                                opacity: 0.6
+                            }
+                        }
+                    }
+                }
+                a {
+                    padding: 10px;
+                    display: block;
+                    width: 120px;
+                    line-height: 1;
+                    margin: 15px auto;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .teacher {
+        width: 100%;
+        .teacher_list {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .thumbnail {
+                margin: 0 10px;
+            }
+        }
+    }
+    .aboutme {
+        height: 200px;
+        h2 {
+            padding-bottom: 30px;
+        }
+        p {
+            padding-left: 50px;
+        }
+        .col-sm-5 {
+            display: flex;
+            justify-content: space-around;
+            img {
+                display: block;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .wedo {
+        .btn_ft {
+            padding: 6px;
+            display: inline-block;
+            width: 120px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+    .location {
+        dl {
+            padding-left: 30px;
+            dt {
+                font-size: 26px;
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #333;
+            }
+            dd {
+                margin-top: 12px;
+                p {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        section {
+            &.swiper-container {}
+            &.course {
+                padding: 40px 0;
+                .course_head {
+                    margin-bottom: 0;
+                }
+                .content {
+                    .list {
+                        .head {
+                            height: 75px;
+                            h4 {
+                                height: 38px;
+                                padding: 10px 0;
+                            }
+                            .line {
+                                top: 38px;
+                            }
+                            p {
+                                margin: 0;
+                            }
+                        }
+                        .message {
+                            margin-top: 85px;
+                            .time {
+                                margin-bottom: 10px;
+                            }
+                        }
+                        .num {
+                            font-size: 42px;
+                        }
+                        .btn_ft {
+                            line-height: .9;
+                        }
+                    }
+                }
+            }
+            &.teacher {
+                padding-top: 40px;
+                .thumbnail {
+                    width: 50%;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                    }
+                    h3{
+                        font-size: 20px;
+                    }
+                }
+            }
+            &.about {}
+            &.location {}
+        }
+    }
+}

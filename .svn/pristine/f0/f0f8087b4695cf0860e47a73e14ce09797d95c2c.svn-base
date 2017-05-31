@@ -1,0 +1,729 @@
+#homepage {
+  width: 100%;
+}
+#homepage .fp-tableCell {
+  /* height: calc( 100vh - 40px)!important; */
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#homepage .fp-tableCell .container {
+  height: 100%;
+}
+#homepage .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+#homepage .swiper-container .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+#homepage .swiper-container .swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 9;
+}
+#homepage .swiper-container .swiper-pagination span {
+  margin: 20px;
+}
+#homepage .course .num {
+  margin: 0 10px;
+  font-size: 50px;
+  font-family: ftFont;
+  color: #F7941D;
+}
+#homepage .course .course_head ul {
+  margin-top: 30px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+#homepage .course .course_head ul li {
+  text-align: center;
+}
+#homepage .course .course_head ul li span {
+  display: block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 50%;
+  background-color: #ED9324;
+  color: white;
+  margin-bottom: 25px;
+}
+#homepage .course .content {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+#homepage .course .content .list {
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+  margin: 0;
+}
+#homepage .course .content .list .statu.hot {
+  background-color: #ED9324;
+}
+#homepage .course .content .list .statu.danger {
+  background-color: #E20000;
+}
+#homepage .course .content .list .statu.full {
+  background-color: #919494;
+}
+#homepage .teacher .container {
+  overflow: hidden;
+}
+@media (min-width: 769px) {
+  #homepage .course {
+    background-color: #E7EFEF;
+  }
+  #homepage .course .course_head {
+    padding-top: 50px;
+    width: 100%;
+    height: 40vh;
+  }
+  #homepage .course .course_head .course_title {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #homepage .course .content {
+    height: 60vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #homepage .course .content .list {
+    height: 50vh;
+    width: 28%;
+    text-align: center;
+    position: relative;
+  }
+  #homepage .course .content .list h3,
+  #homepage .course .content .list h4 {
+    height: 15%;
+    width: 100%;
+    margin: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  #homepage .course .content .list .statu {
+    text-decoration: none;
+    position: absolute;
+    left: -26px;
+    top: 14px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 100px;
+    height: 24px;
+    background-color: #ED9324;
+    color: white;
+    line-height: 24px;
+  }
+  #homepage .course .content .list .video {
+    width: 65%;
+    height: 25%;
+    box-shadow: 2px 2px 5px #888888;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+  }
+  #homepage .course .content .list .video span {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 100%;
+    -webkit-transform: translateY(-35px);
+    -ms-transform: translateY(-35px);
+    transform: translateY(-35px);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 5px #888888;
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 5px;
+    border-radius: 50%;
+    color: #8CD8EB;
+  }
+  #homepage .course .content .btn_ft {
+    padding: 6px 10px;
+    margin-top: 10px;
+    line-height: 1;
+    border-color: transparent;
+  }
+  #homepage .course .content .btn_ft:active,
+  #homepage .course .content .btn_ft:hover,
+  #homepage .course .content .btn_ft:focus {
+    outline: none;
+    background-color: #F79B38;
+    color: white;
+  }
+  #homepage .course .bottom {
+    display: none;
+  }
+  #homepage .teacher {
+    width: 100%;
+    background-color: #E7EFEF;
+  }
+  #homepage .teacher .course_head {
+    height: 20vh;
+    padding-top: 60px;
+  }
+  #homepage .teacher .course_title {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #homepage .teacher .teacher_list {
+    height: 78vh;
+    position: relative;
+  }
+  #homepage .teacher .teacher_list .img {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: 35vh;
+    background-position: center;
+    background-size: cover;
+  }
+  #homepage .teacher .teacher_list .img .message {
+    height: 10vh;
+    width: 60%;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background-color: #55C2E1;
+    -webkit-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    text-align: center;
+  }
+  #homepage .teacher .teacher_list .img .message h3 {
+    margin: 5px 0;
+  }
+  #homepage .teacher .teacher_list .img .message span {
+    color: white;
+    letter-spacing: 2px;
+  }
+  #homepage .teacher .teacher_list .introduce {
+    height: 30vh;
+    padding: 8vh 10px 10px;
+    background-color: #fff;
+    text-indent: 26px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #homepage .teacher .bottom {
+    display: none;
+  }
+  #homepage .about {
+    background-color: #E5EFF0;
+    padding-top: 50px;
+  }
+  #homepage .about .aboutme {
+    height: 35vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage .about .aboutme .title {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage .about .aboutme p {
+    padding-left: 15px;
+    text-indent: 28px;
+  }
+  #homepage .about .aboutme ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #homepage .about .aboutme ul li {
+    width: 17vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 30px;
+  }
+  #homepage .about .aboutme ul li img {
+    width: 17vh;
+  }
+  #homepage .about .wedo {
+    height: 56vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage .about .wedo .content {
+    height: 40vh;
+    text-align: right;
+    padding-right: 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage .about .wedo .content .right {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage .about .wedo .content .right p {
+    padding: 20px 30px;
+    text-indent: 28px;
+    text-align: left;
+  }
+  #homepage .about .wedo .btn_ft {
+    padding: 6px;
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  #homepage .about .wedo .btn_ft:active,
+  #homepage .about .wedo .btn_ft:hover,
+  #homepage .about .wedo .btn_ft:focus {
+    outline: none;
+    background-color: #F79B38;
+    color: white;
+  }
+  #homepage .location .course_head {
+    height: 25vh;
+    padding-top: 60px;
+  }
+  #homepage .location dl {
+    padding-left: 30px;
+  }
+  #homepage .location dl dt {
+    font-size: 26px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #333;
+  }
+  #homepage .location dl dd {
+    margin-top: 12px;
+  }
+  #homepage .location dl dd p {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  #homepage section {
+    overflow: hidden;
+  }
+  #homepage section.course .container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #homepage section.course .course_head {
+    padding-top: 11vh;
+    width: 100%;
+    height: 27vh;
+  }
+  #homepage section.course .course_head ul {
+    margin-top: 0;
+    margin-bottom: 5px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage section.course .course_head ul li {
+    text-align: center;
+  }
+  #homepage section.course .course_head ul li span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 50%;
+    background-color: #ED9324;
+    color: white;
+    margin-bottom: 15px;
+  }
+  #homepage section.course .content {
+    height: 63vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+  }
+  #homepage section.course .content .list {
+    width: 45%;
+    height: 26vh;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+  }
+  #homepage section.course .content .list .statu {
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 24px;
+    background-color: #ED9324;
+    color: white;
+    line-height: 24px;
+    border-radius: 0 12px 12px 0;
+    padding-right: 8px;
+  }
+  #homepage section.course .content .list.math {
+    background-color: #CFCDED;
+  }
+  #homepage section.course .content .list.phy {
+    background-color: #BBE9F3;
+  }
+  #homepage section.course .content .list.chem {
+    background-color: #F1D9B3;
+  }
+  #homepage section.course .content .list h4 {
+    margin-top: 32px;
+  }
+  #homepage section.course .content .list h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  #homepage section.course .content .list p {
+    color: #ED9324;
+  }
+  #homepage section.course .content .list p .num {
+    font-size: 40px;
+    color: #fff;
+  }
+  #homepage section.course .bottom {
+    height: 10vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  #homepage section.course .bottom .btn_ft {
+    width: 30%;
+    text-align: center;
+    line-height: 2;
+    border-color: transparent;
+  }
+  #homepage section.course .bottom .btn_ft:active,
+  #homepage section.course .bottom .btn_ft:hover,
+  #homepage section.course .bottom .btn_ft:focus {
+    outline: none;
+    background-color: #29C2E1;
+    color: white;
+  }
+  #homepage section.teacher .container {
+    text-align: center;
+    padding: 0;
+  }
+  #homepage section.teacher .container .course_head {
+    height: 20vh;
+    padding-top: 40px;
+    text-align: left;
+  }
+  #homepage section.teacher .container .course_head h2 {
+    font-size: 26px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+  }
+  #homepage section.teacher .container .teacher_list {
+    height: 70vh;
+    position: relative;
+  }
+  #homepage section.teacher .container .teacher_list .img {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: 35vh;
+    background-position: center;
+    background-size: cover;
+  }
+  #homepage section.teacher .container .teacher_list .img .message {
+    height: 10vh;
+    width: 50%;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background-color: #55C2E1;
+    -webkit-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    text-align: center;
+  }
+  #homepage section.teacher .container .teacher_list .img .message h3 {
+    margin: 5px 0;
+  }
+  #homepage section.teacher .container .teacher_list .img .message span {
+    color: white;
+    letter-spacing: 2px;
+  }
+  #homepage section.teacher .container .teacher_list .introduce {
+    margin-top: 9vh;
+    padding: 0 10px;
+    text-indent: 26px;
+  }
+  #homepage section.teacher .container .bottom {
+    height: 10vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  #homepage section.teacher .container .bottom .btn_ft {
+    text-align: center;
+    width: 30%;
+    line-height: 2;
+    border-color: transparent;
+  }
+  #homepage section.teacher .container .bottom .btn_ft:active,
+  #homepage section.teacher .container .bottom .btn_ft:hover,
+  #homepage section.teacher .container .bottom .btn_ft:focus {
+    outline: none;
+    background-color: #29C2E1;
+    color: white;
+  }
+  #homepage section.about {
+    background-color: #E5EFF0;
+  }
+  #homepage section.about .container {
+    width: 100%;
+    padding: 0;
+  }
+  #homepage section.about .container h2 {
+    height: 16vh;
+    padding-top: 40px;
+    padding-left: 20px;
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 26px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #homepage section.about .aboutme {
+    height: 30vh;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage section.about .aboutme .title {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0 15px;
+  }
+  #homepage section.about .aboutme .title img {
+    width: 50px;
+  }
+  #homepage section.about .aboutme p {
+    padding-left: 15px;
+    text-indent: 28px;
+  }
+  #homepage section.about .aboutme ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage section.about .aboutme ul li {
+    width: 24%;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  #homepage section.about .aboutme ul li img {
+    width: 100%;
+  }
+  #homepage section.about .wedo {
+    width: 100%;
+    height: 54vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage section.about .wedo .activity {
+    height: 24vh;
+  }
+  #homepage section.about .wedo .right {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0 15px;
+  }
+  #homepage section.about .wedo .right img {
+    width: 50px;
+  }
+  #homepage section.location .container {
+    width: 100%;
+    margin: 0;
+    padding: 40px 0 0 0;
+  }
+  #homepage section.location #allmap {
+    height: 200px;
+    padding: 0;
+  }
+}

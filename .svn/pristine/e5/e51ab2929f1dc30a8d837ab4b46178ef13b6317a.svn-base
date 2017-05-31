@@ -1,0 +1,15 @@
+<div class="teacher_info">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="teacher_img">
+                <a href="" target="_blank"><img src="" alt="俞堃" class="img-circle" width="160px"></a>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <a href="" target="_blank" "><h4>俞堃老师</h4></a>
+            <h5 class="teacher_desc ">中国科学技术大学  学士，毕业于中国科学技术大学，方田全职骨干教师。希望杯教练员，小升初专家，方田尖端班教师。长期在论坛分享知识点和习题等资料，受到家长们的高度关注和广泛认可。</h5>
+            <h5 class="teacher_special ">授课特点：深入浅出，课堂节奏明朗。</h5>
+            <h5 class="teacher_special1 ">教学宣言：有活力，有能力，有诗与书，有粉丝千百里。</h5>
+        </div>
+    </div>
+</div>

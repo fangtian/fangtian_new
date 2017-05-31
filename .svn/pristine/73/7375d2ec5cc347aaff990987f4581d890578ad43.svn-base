@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="choose_time">
+        <h4>报名第三步：选时间</h4>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        <!--h5 class="btn btn-danger" id="teacherall" onclick="clickweekall();">所有时间</h5-->
+                    </th>
+                    <th id="stage1">05月01日-05月01日</th>
+                    <th id="stage2"></th>
+                    <th id="stage3"></th>
+                    <th id="stage4"></th>
+                    <th id="stage5">05月06日-05月06日</th>
+                    <th id="stage6"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th style="width:50px;">上午</th>
+                    <td style="padding:0px;"><span id="1-0" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="2-0" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="3-0" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="4-0" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="5-0" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="6-0" style="width:100%;"></span></td>
+                </tr>
+                <tr>
+                    <th>中午</th>
+                    <td style="padding:0px;"><span id="1-3" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="2-3" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="3-3" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="4-3" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="5-3" style="width:100%;" class="available bg-success btn">333</span></td>
+                    <td style="padding:0px;"><span id="6-3" style="width:100%;"></span></td>
+                </tr>
+                <tr>
+                    <th>下午</th>
+                    <td style="padding:0px;"><span id="1-1" style="width:100%;" class="available bg-success btn">热报中</span></td>
+                    <td style="padding:0px;"><span id="2-1" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="3-1" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="4-1" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="5-1" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="6-1" style="width:100%;"></span></td>
+                </tr>
+                <tr>
+                    <th>晚上</th>
+                    <td style="padding:0px;"><span id="1-2" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="2-2" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="3-2" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="4-2" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="5-2" style="width:100%;"></span></td>
+                    <td style="padding:0px;"><span id="6-2" style="width:100%;"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../plugins/jquery/jquery-min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+    for (var i = 1; i < $("thead>tr>th").length; i++) {
+        if ($($("thead>tr>th")[i]).html() == "") {
+            $("thead>tr>th")[i].remove();
+            $("tbody>tr").each(function() {
+                $(this).children()[i].remove()
+            });
+            i = i - 1;
+        }
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="id_video_container_9031868222952237908" style="width:100%;height:426px;"></div>
+    <script src="https://qzonestyle.gtimg.cn/open/qcloud/video/h5/h5connect.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    (function() {
+        var option = {
+            "auto_play": "1",
+            "file_id": "9031868222952237908",
+            "app_id": "1253795584",
+            "width": 640,
+            "height": 426,
+            "https": 1
+        };
+        /*调用播放器进行播放*/
+        new qcVideo.Player(
+            /*代码中的id_video_container将会作为播放器放置的容器使用,可自行替换*/
+            "id_video_container_9031868222952237908",
+            option
+        );
+    })()
+    </script>
+</body>
+
+</html>
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>在canvas上绘制视频图像</title>
+    <style>
+    video {
+        border: 1px solid red;
+        width: 400px;
+        height: 300px;
+    }
+    </style>
+    <script>
+    window.addEventListener("load", function() {
+        alert("页面加载完成");
+        //获取视频对象
+        
+    }, true);
+    </script>
+</head>
+
+<body>
+    <video id="myvideo" controls autobuffer>
+        <source src="video/test.webm">
+        <p>请在支持HTML5 video标签的浏览器中</p>
+    </video>
+    <canvas id="mycanvas" width="400" height="300" style="border: 1px solid red">
+    </canvas>
+    <script>
+    	var myvideo = document.getElementById("myvideo");
+        //获取画布对象
+        var mycanvas = document.getElementById("mycanvas");
+        //为我们的视频对象添加时间更新的函数，当时间变化时候，执行我们的函数
+        window.addEventListener("timeupdate", function() {
+            mycanvas.getContext("2d").drawImage(myvideo, 0, 0, 400, 300);
+        }, true);
+    </script>
+</body>
+
+</html>
